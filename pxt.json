@@ -1,0 +1,18 @@
+{
+  "name": "FWD Education",
+  "version": "0.0.0",
+  "description": "Climate Action Kit Generation 2",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*",
+    "pxt-jacdac": "github:microsoft/pxt-jacdac"
+  },
+  "files": [
+    "README.md",
+    "main.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
