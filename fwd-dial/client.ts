@@ -3,12 +3,12 @@ namespace modules {
    * Wrapper for FWD Edu rotary encoder, "Dial"
    **/
   export class FwdEduDial {
-    private _dialClient: jacdac.RotaryEncoderClient
+    private _dialClient: modules.RotaryEncoderClient
     private _cwAction: (delta: number) => void
     private _ccwAction: (delta: number) => void
 
     constructor(role: string) {
-      this._dialClient = new jacdac.RotaryEncoderClient(role)
+      this._dialClient = new modules.RotaryEncoderClient(role)
     }
     
     //% group="Dial"
