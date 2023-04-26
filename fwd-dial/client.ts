@@ -1,9 +1,10 @@
-namespace modules {
+//% block="Dial" color=#cccc00
+namespace FwdEduDial {
   /**
    * Wrapper for FWD Edu rotary encoder, "Dial"
    **/
   //% fixedInstances
-  export class FwdEduDial extends modules.RotaryEncoderClient {
+  export class FwdEduDialClient extends modules.RotaryEncoderClient {
     private _cwAction: (delta: number) => void
     private _ccwAction: (delta: number) => void
 
@@ -26,19 +27,15 @@ namespace modules {
     //% group="Dial"
     //% block="%dial clicks per full turn"
     //% blockId=fwd_dial_get_clicks_per_turn
-    //% color="#00cc00"
     clicksPerTurn(): number { return this.clicksPerTurn() }
     
     //% group="Dial"
-    //% block="%rotaryencoder position"
+    //% block="%rotaryencoder absolute position"
     //% blockId=fwd_dial_get_position
-    //% color="#00cc00"
-     position(): number { return this.position() }
+    position(): number { return this.position() }
     
-    
-
   }
 
   //% fixedInstance whenUsed weight=1 block="dial1"
-  export const dial1 = new FwdEduDial("dial1")
+  export const dial1 = new FwdEduDialClient("dial1")
 }
