@@ -8,7 +8,7 @@ namespace fwdEduDial {
   }
 
   /**
-   * Wrapper for FWD Edu rotary encoder, "Dial"
+   * Wrapper for FWD Edu rotary encoder, aka "Dial"
    **/
   //% fixedInstances
   export class FwdEduDialClient extends modules.RotaryEncoderClient {
@@ -48,7 +48,7 @@ namespace fwdEduDial {
      */
     //% group="Dial"
     //% blockId=jacdac_rotaryencoder_on_dial_turned
-    //% block="on %rotaryencoder turned %direction by %delta steps"
+    //% block="on $dial turned $direction"
     //% weight=98
     onDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
       if (direction === dialDirection.cw) {
