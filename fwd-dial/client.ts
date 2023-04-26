@@ -30,9 +30,27 @@ namespace FwdEduDial {
     clicksPerTurn(): number { return this.clicksPerTurn() }
     
     //% group="Dial"
-    //% block="%rotaryencoder absolute position"
+    //% block="%dial absolute position"
     //% blockId=fwd_dial_get_position
     position(): number { return this.position() }
+
+    /**
+     * Run code when the dial is turned in a specific direction
+     * @param direction 
+     * @param handler handler is run when the dial is turned cw|ccw
+     */
+    //% group="Dial"
+    //% blockId=jacdac_rotaryencoder_on_dial_turned
+    //% block="on %rotaryencoder turned %direction by %delta steps"
+    //% weight=98
+    onDialTurned(direction: '⟳' | '⟲', handler: (delta: number) => void): void {
+      if (direction === '⟳') {
+        this._cwAction = handler
+      } else if (direction === '⟲') {
+        this._ccwAction = handler
+      }
+    }
+
     
   }
 
