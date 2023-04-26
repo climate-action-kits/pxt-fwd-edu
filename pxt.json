@@ -9,7 +9,8 @@
   },
   "files": [
     "README.md",
-		"fwd-dial/client.ts"
+		"fwd-dial/client.ts",
+		"fwd-led/client.ts"
   ],
   "public": true,
   "supportedTargets": [

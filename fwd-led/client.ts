@@ -1,7 +1,8 @@
-//% block="LED" color=#cc00cc
+//% block="Light Ring" color=#cc00cc
 namespace fwdEduLED {
   const MAX_BRIGHTNESS = 10
 
+  //% fixedInstances
   export class FwdEduLEDClient extends modules.LedClient {
 
     constructor(role: string) {
@@ -25,4 +26,7 @@ namespace fwdEduLED {
     shift(offset = 1): void { this.shift(offset) }
 
   }
+
+  //% fixedInstance whenUsed
+  export const led1 = new FwdEduLEDClient("led 1")
 }
