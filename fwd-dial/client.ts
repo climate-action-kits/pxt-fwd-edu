@@ -1,5 +1,12 @@
 //% block="Dial" color=#cccc00
-namespace FwdEduDial {
+namespace fwdEduDial {
+  export const enum dialDirection {
+    //% block="↻"
+    cw,
+    //% block="↺"
+    ccw
+  }
+
   /**
    * Wrapper for FWD Edu rotary encoder, "Dial"
    **/
@@ -43,10 +50,10 @@ namespace FwdEduDial {
     //% blockId=jacdac_rotaryencoder_on_dial_turned
     //% block="on %rotaryencoder turned %direction by %delta steps"
     //% weight=98
-    onDialTurned(direction: '⟳' | '⟲', handler: (delta: number) => void): void {
-      if (direction === '⟳') {
+    onDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
+      if (direction === dialDirection.cw) {
         this._cwAction = handler
-      } else if (direction === '⟲') {
+      } else {
         this._ccwAction = handler
       }
     }
