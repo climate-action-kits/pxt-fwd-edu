@@ -1,0 +1,19 @@
+{
+  "name": "FWDEDU-led",
+  "version": "0.0.0",
+  "description": "Climate Action Kit Gen. 2 LED",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*",
+    "jacdac": "github:microsoft/pxt-jacdac",
+    "jacdac-led": "github:microsoft/pxt-jacdac/led"
+  },
+  "files": [
+    "README.md",
+    "client.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
