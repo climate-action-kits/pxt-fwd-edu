@@ -1,15 +1,16 @@
 {
   "name": "FWD Education",
   "version": "0.0.0",
-  "description": "Climate Action Kit Generation 2",
+  "description": "Climate Action Kit Gen. 2 Kit",
   "license": "MIT",
   "dependencies": {
     "core": "*",
-    "pxt-jacdac": "github:microsoft/pxt-jacdac"
+    "pxt-jacdac": "github:microsoft/pxt-jacdac",
+    "jacdac-rotary-encoder": "github:microsoft/pxt-jacdac/rotary-encoder"
   },
   "files": [
     "README.md",
-    "main.ts"
+		"fwd-dial/client.ts"
   ],
   "public": true,
   "supportedTargets": [

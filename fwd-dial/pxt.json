@@ -1,0 +1,18 @@
+{
+  "name": "FWDEDU-dial",
+  "version": "0.0.0",
+  "description": "Climate Action Kit Gen. 2 Dial",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*",
+    "jacdac": "github:microsoft/pxt-jacdac"
+  },
+  "files": [
+    "README.md",
+    "client.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
