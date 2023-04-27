@@ -10,23 +10,23 @@ namespace fwdEduLED {
     }
 
     //% block
-    setBrightness(value: number): void {
+    fwdSetBrightness(value: number): void {
       this.setBrightness(value / MAX_BRIGHTNESS)
     }
 
     //% block
-    brightness(): number {
-      return this.brightness()
+    fwdBrightness(): number {
+      return this.brightness() * MAX_BRIGHTNESS
     }
 
     //% block
-    rotate(offset = 1): void { this.rotate(offset) }
+    fwdRotate(offset = 1): void { this.rotate(offset) }
 
     //% block
-    shift(offset = 1): void { this.shift(offset) }
+    fwdShift(offset = 1): void { this.shift(offset) }
 
   }
 
   //% fixedInstance whenUsed
-  export const led1 = new FwdEduLEDClient("led 1")
+  export const ledRing = new FwdEduLEDClient("led 1")
 }
