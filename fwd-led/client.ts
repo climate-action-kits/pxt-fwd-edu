@@ -14,7 +14,7 @@ namespace fwdEduLED {
       this.setBrightness(value / MAX_BRIGHTNESS)
     }
 
-    //% block
+    //% block="$ledRing brightness"
     fwdBrightness(): number {
       return this.brightness() * MAX_BRIGHTNESS
     }
@@ -28,5 +28,5 @@ namespace fwdEduLED {
   }
 
   //% fixedInstance whenUsed
-  export const ledRing = new FwdEduLEDClient("led 1")
+  export const ledRing = new FwdEduLEDClient("LED ring")
 }
