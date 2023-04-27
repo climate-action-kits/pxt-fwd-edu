@@ -5,7 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "core": "*",
-    "pxt-jacdac": "github:microsoft/pxt-jacdac"
+    "jacdac": "github:microsoft/pxt-jacdac",
+    "jacdac-button":  "github:microsoft/pxt-jacdac/button"
   },
   "files": [
     "README.md",
