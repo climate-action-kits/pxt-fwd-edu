@@ -1,5 +1,4 @@
-//% block="Dial" color=#cccc00
-namespace fwdEduDial {
+namespace fwdSensors {
   export const enum dialDirection {
     //% block="↻"
     cw,
