@@ -1,0 +1,19 @@
+{
+  "name": "fwd-edu-solar",
+  "version": "0.0.0",
+  "description": "FWD Edu Climate Action Kit Gen. 2 Solar",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*",
+    "jacdac": "github:microsoft/pxt-jacdac",
+    "jacdac-light-level": "github:microsoft/pxt-jacdac/light-level"
+  },
+  "files": [
+    "README.md",
+    "client.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
