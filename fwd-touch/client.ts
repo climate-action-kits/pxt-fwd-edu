@@ -1,6 +1,7 @@
 namespace fwdSensors {
 
-  export class FwdEduTouchClient extends modules.ButtonClient {
+  //% fixedInstances
+  export class FwdTouchClient extends modules.ButtonClient {
 
     constructor(role: string) {
       super(role)
@@ -27,4 +28,6 @@ namespace fwdSensors {
 
   }
 
+  //% fixedInstance whenUsed
+  export const touch = new FwdTouchClient("touch1")
 }

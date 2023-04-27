@@ -26,7 +26,7 @@ namespace fwdSensors {
   }
 
   //% fixedInstances
-  export class FwdEduLEDClient extends modules.LedClient {
+  export class FwdLEDClient extends modules.LedClient {
 
     constructor(role: string) {
       super(role)
@@ -70,5 +70,5 @@ namespace fwdSensors {
   }
 
   //% fixedInstance whenUsed
-  export const ledRing = new FwdEduLEDClient("LED ring")
+  export const ledRing = new FwdLEDClient("LED ring")
 }

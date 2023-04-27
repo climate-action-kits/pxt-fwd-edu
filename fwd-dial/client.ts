@@ -10,7 +10,7 @@ namespace fwdSensors {
    * Wrapper for FWD Edu rotary encoder, aka "Dial"
    **/
   //% fixedInstances
-  export class FwdEduDialClient extends modules.RotaryEncoderClient {
+  export class FwdDialClient extends modules.RotaryEncoderClient {
     private _cwAction: (delta: number) => void
     private _ccwAction: (delta: number) => void
 
@@ -61,5 +61,5 @@ namespace fwdSensors {
   }
 
   //% fixedInstance whenUsed weight=1 block="dial1"
-  export const dial1 = new FwdEduDialClient("dial1")
+  export const dial1 = new FwdDialClient("dial1")
 }
