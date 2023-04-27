@@ -13,7 +13,7 @@ namespace fwdEduLED {
       super(role)
     }
 
-    //% block="set brightness to $value"
+    //% block="set brightness to %value"
     //% value.min=0
     //% value.max=10
     //% value.defl=10
