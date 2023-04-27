@@ -14,9 +14,9 @@ namespace fwdEduLED {
     }
 
     //% block="set brightness to $value"
-    //% $value.min=0
-    //% $value.max=10
-    //% $value.defl=10
+    //% value.min=0
+    //% value.max=10
+    //% value.defl=10
     fwdSetBrightness(value: number): void {
       this.setBrightness(toServiceBrightness(value))
     }
