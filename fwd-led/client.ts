@@ -7,21 +7,21 @@ namespace fwdSensors {
   //% block="LEDs"
   //% group="LED Lights"
   export const enum pixelNames {
-		//% block="PXL1"
+		//% block="%led PXL1"
     PXL1 = 0,
-		//% block="PXL2"
+		//% block="%led PXL2"
     PXL2 = 1,
-		//% block="PXL3"
+		//% block="%led PXL3"
     PXL3 = 2,
-		//% block="PXL4"
+		//% block="%led PXL4"
     PXL4 = 3,
-		//% block="PXL5"
+		//% block="%led PXL5"
     PXL5 = 4,
-		//% block="PXL6"
+		//% block="%led PXL6"
     PXL6 = 5,
-		//% block="PXL7"
+		//% block="%led PXL7"
     PXL7 = 6,
-		//% block="PXL8"
+		//% block="%led PXL8"
     PXL8 = 7,
   }
 
@@ -32,38 +32,38 @@ namespace fwdSensors {
       super(role)
     }
 
-    //% block="set brightness to %value"
+    //% block="%led set brightness to %value"
     //% group="LED Lights"
     //% value.min=0 value.max=10 value.defl=10
     fwdSetBrightness(value: number): void {
       this.setBrightness(toServiceBrightness(value))
     }
 
-    //% block="number of pixels"
+    //% block="%led number of pixels"
     //% group="LED Lights"
     fwdNumPixels(): number {
       return this.numPixels();
     }
 
-    //% block="brightness"
+    //% block="%led brightness"
     //% group="LED Lights"
     fwdBrightness(): number {
       return toBlocksBrightness(this.brightness())
     }
 
-    //% block="set %index to %rgb=colorPicker
+    //% block="%led set %index to %rgb=colorPicker"
     //% group="LED Lights"
     fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
 
-    //% block="set all LEDs to %rgb=colorPicker
+    //% block="%led set all LEDs to %rgb=colorPicker"
     //% group="LED Lights"
     fwdSetAllPixelsColour(rgb: number): void { this.setAll(rgb) }
 
-    //% block
+    //% block="%led rotate the pattern by %offset"
     //% group="LED Lights"
     fwdRotate(offset = 1): void { this.rotate(offset) }
 
-    //% block
+    //% block=shift the pattern by %offset"
     //% group="LED Lights"
     fwdShift(offset = 1): void { this.shift(offset) }
 
