@@ -33,12 +33,12 @@ namespace fwdSensors {
     //% group="Dial"
     //% block="%dial clicks per full turn"
     //% blockId=fwd_dial_get_clicks_per_turn
-    clicksPerTurn(): number { return this.clicksPerTurn() }
+    fwdClicksPerTurn(): number { return this.clicksPerTurn() }
     
     //% group="Dial"
     //% block="%dial absolute position"
     //% blockId=fwd_dial_get_position
-    position(): number { return this.position() }
+    fwdPosition(): number { return this.position() }
 
     /**
      * Run code when the dial is turned in a specific direction
@@ -49,7 +49,7 @@ namespace fwdSensors {
     //% blockId=jacdac_rotaryencoder_on_dial_turned
     //% block="on $dial turned $direction"
     //% weight=98
-    onDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
+    fwdOnDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
       if (direction === dialDirection.cw) {
         this._cwAction = handler
       } else {

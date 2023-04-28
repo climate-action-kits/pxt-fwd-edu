@@ -12,12 +12,12 @@ namespace fwdMotors {
     //% group="Pump"
     //% block="%dial clicks per full turn"
     //% blockId=fwd_dial_get_clicks_per_turn
-    clicksPerTurn(): number { return this.clicksPerTurn() }
+    fwdClicksPerTurn(): number { return this.clicksPerTurn() }
     
     //% group="Pump"
     //% block="%dial absolute position"
     //% blockId=fwd_dial_get_position
-    position(): number { return this.position() }
+    fwdPosition(): number { return this.position() }
 
   }
 
@@ -33,12 +33,12 @@ namespace fwdMotors {
     //% group="Servo (Positional)"
     //% block="%dial clicks per full turn"
     //% blockId=fwd_dial_get_clicks_per_turn
-    clicksPerTurn(): number { return this.clicksPerTurn() }
+    fwdClicksPerTurn(): number { return this.clicksPerTurn() }
     
     //% group="Servo (Positional)"
     //% block="%dial absolute position"
     //% blockId=fwd_dial_get_position
-    position(): number { return this.position() }
+    fwdPosition(): number { return this.position() }
 
   }
 
