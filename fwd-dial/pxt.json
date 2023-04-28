@@ -6,7 +6,8 @@
   "dependencies": {
     "core": "*",
     "jacdac": "github:microsoft/pxt-jacdac",
-    "jacdac-rotary-encoder": "github:microsoft/pxt-jacdac/rotary-encoder"
+    "jacdac-rotary-encoder": "github:microsoft/pxt-jacdac/rotary-encoder",
+    "jacdac-button": "github:microsoft/pxt-jacdac/button"
   },
   "files": [
     "README.md",

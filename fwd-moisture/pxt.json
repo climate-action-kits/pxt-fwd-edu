@@ -5,7 +5,8 @@
   "license": "MIT",
   "dependencies": {
     "core": "*",
-    "pxt-jacdac": "github:microsoft/pxt-jacdac"
+    "jacdac": "github:microsoft/pxt-jacdac",
+    "jacdac-soil-moisture": "github:microsoft/pxt-jacdac/soil-moisture"
   },
   "files": [
     "README.md",
