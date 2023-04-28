@@ -1,0 +1,18 @@
+{
+  "name": "fwd-edu-moisture",
+  "version": "0.0.0",
+  "description": "FWD Edu Climate Action Kit Gen. 2 Moisture",
+  "license": "MIT",
+  "dependencies": {
+    "core": "*",
+    "pxt-jacdac": "github:microsoft/pxt-jacdac"
+  },
+  "files": [
+    "README.md",
+    "client.ts"
+  ],
+  "public": true,
+  "supportedTargets": [
+    "microbit"
+  ]
+}
