@@ -14,12 +14,6 @@ namespace fwdSensors {
     fwdLightLevel(): number { this.lightLevel() * 100 }
 
     /**
-    */
-    //% group="Solar"
-    //% block="%lightlevel light level (\\%)"
-    fwdLightLevel(): number { this.lightLevel() * 100 }
-
-    /**
      * Run code when the light level changes by the given threshold value.
      */
     //% group="Solar"
