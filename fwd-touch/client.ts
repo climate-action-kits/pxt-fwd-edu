@@ -17,7 +17,7 @@ namespace fwdSensors {
      */
     //% group="Touch"
     //% block="%button hold duration (ms)"
-    fwdHoldDuration(): number { this.holdDuration() }
+    fwdHoldDuration(): number { return this.holdDuration() }
 
     /**
      */

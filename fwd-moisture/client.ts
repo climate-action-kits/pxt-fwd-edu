@@ -11,7 +11,7 @@ namespace fwdSensors {
     */
     //% group="Moisture"
     //% block="%soilmoisture moisture level (\\%)"
-    fwdMoistureLevel(): number { this.moisture() }
+    fwdMoistureLevel(): number { return this.moisture() }
 
     /**
     */

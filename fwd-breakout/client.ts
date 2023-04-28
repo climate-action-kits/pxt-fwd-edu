@@ -9,16 +9,6 @@ namespace fwdMotors {
       super(role)
     }
     
-    //% group="Pump"
-    //% block="%dial clicks per full turn"
-    //% blockId=fwd_dial_get_clicks_per_turn
-    fwdClicksPerTurn(): number { return this.clicksPerTurn() }
-    
-    //% group="Pump"
-    //% block="%dial absolute position"
-    //% blockId=fwd_dial_get_position
-    fwdPosition(): number { return this.position() }
-
   }
 
   /**
@@ -30,16 +20,6 @@ namespace fwdMotors {
       super(role)
     }
     
-    //% group="Servo (Positional)"
-    //% block="%dial clicks per full turn"
-    //% blockId=fwd_dial_get_clicks_per_turn
-    fwdClicksPerTurn(): number { return this.clicksPerTurn() }
-    
-    //% group="Servo (Positional)"
-    //% block="%dial absolute position"
-    //% blockId=fwd_dial_get_position
-    fwdPosition(): number { return this.position() }
-
   }
 
 }
