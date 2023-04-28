@@ -9,10 +9,8 @@
     "jacdac-led": "github:microsoft/pxt-jacdac/led"
   },
   "files": [
-    "README.md",
     "client.ts"
   ],
-  "public": true,
   "supportedTargets": [
     "microbit"
   ]

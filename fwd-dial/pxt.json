@@ -10,10 +10,8 @@
     "jacdac-button": "github:microsoft/pxt-jacdac/button"
   },
   "files": [
-    "README.md",
     "client.ts"
   ],
-  "public": true,
   "supportedTargets": [
     "microbit"
   ]
