@@ -46,8 +46,8 @@ namespace fwdSensors {
      * @param handler handler is run when the dial is turned cw|ccw
      */
     //% group="Dial"
-    //% blockId=jacdac_rotaryencoder_on_dial_turned
     //% block="on $dial turned $direction"
+    //% blockId=fwd_dial_on_dial_turned
     //% weight=98
     fwdOnDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
       if (direction === dialDirection.cw) {

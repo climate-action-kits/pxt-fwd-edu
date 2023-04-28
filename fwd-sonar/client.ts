@@ -11,13 +11,14 @@ namespace fwdSensors {
     */
     //% group="Sonar"
     //% block="%distance distance "
-    fwdLightLevel(): number { return this.distance() }
+    //% blockId=fwd_sonar_get_distance
+    fwdDistance(): number { return this.distance() }
 
     /**
     */
     //% group="Sonar"
     //% block="on %distance distance changed by %threshold m"
-    //% weight=97
+    //% blockId=fwd_sonar_on_distance_change
     fwdOnDistanceChangedBy(threshold: number, handler: () => void): void {
       this.onReadingChangedBy(threshold / 100, handler)
     }

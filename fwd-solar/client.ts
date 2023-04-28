@@ -11,6 +11,7 @@ namespace fwdSensors {
     */
     //% group="Solar"
     //% block="%lightlevel light level (\\%)"
+    //% blockId=fwd_solar_light_level
     fwdLightLevel(): number { return this.lightLevel() * 100 }
 
     /**
@@ -18,27 +19,23 @@ namespace fwdSensors {
      */
     //% group="Solar"
     //% block="on %lightlevel light level changed by %threshold (\\%)"
-    //% weight=97
+    //% blockId=fwd_solar_on_light_level_changed
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    onLightLevelChangedBy(threshold: number, handler: () => void): void {
-      this.onReadingChangedBy(threshold / 100, handler)
-    }
+    fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
 
     /**
      * Run code when the light level changes by the given threshold value.
      */
     //% group="Solar"
-    //% blockId=jacdac_lightlevel_on_light_level_past_threshold
     //% block="on %lightlevel light level changed by %threshold (\\%)"
+    //% blockId=fwd_solar_on_light_level_changed
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    onLightLevelPastThreshold(threshold: number, direction: 'over' | 'under', handler: () => void): void {
-      this.onReadingChangedBy(0.01, (_) => {
-          const difference = this.lightLevel() - threshold > 0;
-          const isPastThreshold = 
-          direction === 'over' && difference ||
-          direction === 'under' && !difference;
-          return isPastThreshold && handler();
-          })
+    fwdIsLightLevelPastThreshold(threshold: number, direction: 'over' | 'under' ): boolean {
+      const difference = this.lightLevel() - threshold > 0;
+      const isPastThreshold = 
+        direction === 'over' && difference ||
+        direction === 'under' && !difference;
+      return isPastThreshold 
     }
 
     /**
@@ -46,13 +43,13 @@ namespace fwdSensors {
      */
     //% group="Solar"
     //% block="graph the light level"
+    //% blockId=fwd_solar_chart
     //% weight=40
-    displayLuminance(): void {
-      this.onReadingChangedBy(5 / 100, () => {
-          let lum = 100 - this.lightLevel();
-          led.plotBarGraph(lum, 100);
-          });
+    fwdDisplayLuminance(): void {
+      loops.everyInterval(100, () => {
+        let lum = 100 - this.lightLevel();
+        led.plotBarGraph(lum, 100);
+      });
     }
-    }
-
+  }
 }
