@@ -1,6 +1,5 @@
 namespace fwdSensors {
 
-  //% block="line sensor state"
   export const enum lineSensorState {
     //% block="○"
     miss = 0,
@@ -34,7 +33,7 @@ namespace fwdSensors {
     //% group="Line"
     //% block="on $this state changes"
     //% blockId=fwd_line_sensor_on_state_change
-    fwdOnLineSensorStateChange( handler: () => void ): void { this.onReadingChangedBy( 50, handler ) }
+    fwdOnLineSensorStateChange( handler: () => void ): void { this.onReadingChangedBy( 0.50, handler ) }
 
   }
 
