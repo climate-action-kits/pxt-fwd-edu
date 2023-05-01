@@ -31,12 +31,13 @@ namespace fwdSensors {
     }
     
     //% group="Dial"
-    //% block="%dial clicks per full turn"
+    //% block="$this clicks per full turn"
+    //% rotaryencoder.defl=dial1
     //% blockId=fwd_dial_get_clicks_per_turn
     fwdClicksPerTurn(): number { return this.clicksPerTurn() }
     
     //% group="Dial"
-    //% block="%dial absolute position"
+    //% block="$this absolute position"
     //% blockId=fwd_dial_get_position
     fwdPosition(): number { return this.position() }
 
@@ -46,7 +47,7 @@ namespace fwdSensors {
      * @param handler handler is run when the dial is turned cw|ccw
      */
     //% group="Dial"
-    //% block="on $dial turned $direction"
+    //% block="on $this turned $direction"
     //% blockId=fwd_dial_on_dial_turned
     //% weight=98
     fwdOnDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
