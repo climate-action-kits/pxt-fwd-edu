@@ -4,8 +4,14 @@ namespace fwdSensors {
   export class FwdSolarClient extends modules.LightLevelClient {
     MAX_REPORT_BRIGHTNESS = 100
     MAX_SERVICE_BRIGHTNESS = 1
-    toBlocksBrightness = ( serviceBrightness: number ): number => { return this.MAX_REPORT_BRIGHTNESS * serviceBrightness / this.MAX_SERVICE_BRIGHTNESS } 
-    toServiceBrightness = ( reportBrightness: number ): number => { return this.MAX_SERVICE_BRIGHTNESS * reportBrightness / this.MAX_REPORT_BRIGHTNESS } 
+
+    toBlocksBrightness ( serviceBrightness: number ): number {
+      return this.MAX_REPORT_BRIGHTNESS * serviceBrightness / this.MAX_SERVICE_BRIGHTNESS
+    } 
+
+    toServiceBrightness ( reportBrightness: number ): number {
+      return this.MAX_SERVICE_BRIGHTNESS * reportBrightness / this.MAX_REPORT_BRIGHTNESS
+    } 
 
     constructor(role: string) {
       super(role)
