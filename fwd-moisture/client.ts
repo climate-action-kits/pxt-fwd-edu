@@ -10,14 +10,14 @@ namespace fwdSensors {
     /**
     */
     //% group="Moisture"
-    //% block="%soilmoisture moisture level (\\%)"
+    //% block="$this moisture level (\\%)"
     //% blockId=fwd_moisture_get_level
     fwdMoistureLevel(): number { return this.moisture() }
 
     /**
     */
     //% group="Moisture"
-    //% block="on %soilmoisture moisture level changed by %threshold (\\%)"
+    //% block="on $this moisture level changed by $threshold (\\%)"
     //% blockId=fwd_moisture_on_level_change
     //% weight=97
     //% threshold.min=0 threshold.max=100 threshold.defl=5
@@ -28,7 +28,7 @@ namespace fwdSensors {
     /**
     */
     //% group="Moisture"
-    //% block="on %soilmoisture moisture level %direction %threshold (\\%)"
+    //% block="on $this moisture level $direction $threshold (\\%)"
     //% blockId=fwd_moisture_on_level_threshold_check
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsMoistureLevelPastThreshold( threshold: number, direction: 'over' | 'under' ): boolean {
@@ -40,5 +40,6 @@ namespace fwdSensors {
     }
   }
 
+  //% fixedInstance whenUsed
   export const soilMoisture1 = new FwdSoilMoistureClient("soil moisture 1");
 }
