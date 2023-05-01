@@ -55,12 +55,12 @@ namespace fwdSensors {
       return toBlocksBrightness(this.brightness())
     }
 
-    //% block="%led set %index to %rgb=colorPicker"
+    //% block="%led set %index to %rgb=colorWheelPicker"
     //% blockId=fwd_led_set_single_pixel_colour
     //% group="LED Lights"
     fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
 
-    //% block="%led set all LEDs to %rgb=colorPicker"
+    //% block="%led set all LEDs to %rgb=colorWheelPicker"
     //% blockId=fwd_led_set_all_pixels_colour
     //% group="LED Lights"
     fwdSetAllPixelsColour(rgb: number): void { this.setAll(rgb) }
