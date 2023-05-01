@@ -35,17 +35,6 @@ namespace fwdSensors {
         direction === thresholdDirection.under && !difference;
       return isPastThreshold 
     }
-
-    /**
-     * Convenience function to graph luminance
-     */
-    //% group="Solar"
-    //% block="graph the light level of $this"
-    //% blockId=fwd_solar_chart
-    //% weight=40
-    fwdDisplayLuminance(): void {
-      led.plotBarGraph(100 - this.lightLevel(), 100);
-    }
   }
 
   //% fixedInstance whenUsed
