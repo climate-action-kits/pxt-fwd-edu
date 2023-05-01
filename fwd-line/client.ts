@@ -18,21 +18,21 @@ namespace fwdSensors {
     /**
     */
     //% group="Line"
-    //% block="%reflectedlight state"
+    //% block="$this state"
     //% blockId=fwd_line_sensor_state
     fwdLineSensorState(): lineSensorState { return Math.round(this.brightness()/100) }
 
     /**
     */
     //% group="Line"
-    //% block="%reflectedlight state is %state"
+    //% block="$this state is $state"
     //% blockId=fwd_line_sensor_state_check
     fwdIsLineSensorState(state: lineSensorState): boolean { return state === this.fwdLineSensorState() }
 
     /**
      */
     //% group="Line"
-    //% block="on %reflectedlight state changes"
+    //% block="on $this state changes"
     //% blockId=fwd_line_sensor_on_state_change
     fwdOnLineSensorStateChange( handler: () => void ): void { this.onReadingChangedBy( 50, handler ) }
 
