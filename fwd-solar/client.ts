@@ -1,4 +1,8 @@
 namespace fwdSensors {
+  const MAX_REPORT_BRIGHTNESS = 100
+  const MAX_SERVICE_BRIGHTNESS = 1
+  const toBlocksBrightness = ( serviceBrightness: number ): number => { return MAX_REPORT_BRIGHTNESS * serviceBrightness / MAX_SERVICE_BRIGHTNESS } 
+  const toServiceBrightness = ( reportBrightness: number ): number => { return MAX_SERVICE_BRIGHTNESS * reportBrightness / MAX_REPORT_BRIGHTNESS } 
 
   //% fixedInstances
   export class FwdSolarClient extends modules.LightLevelClient {
@@ -12,7 +16,7 @@ namespace fwdSensors {
     //% group="Solar"
     //% block="$this light level (\\%)"
     //% blockId=fwd_solar_get_light_level
-    fwdLightLevel(): number { return this.lightLevel() }
+    fwdLightLevel(): number { return toBlocksBrightness(this.lightLevel()) }
 
     /**
     */
@@ -20,7 +24,7 @@ namespace fwdSensors {
     //% block="on $this light level changed by $threshold (\\%)"
     //% blockId=fwd_solar_on_light_level_changed
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
+    fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy( toServiceBrightness(threshold), handler) }
 
     /**
     */
