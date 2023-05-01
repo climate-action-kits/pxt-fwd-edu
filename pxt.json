@@ -6,7 +6,7 @@
   "dependencies": {
     "core": "*",
     "jacdac": "github:microsoft/pxt-jacdac",
-		"fwd-edu-solar": "github:climate-action-kits/pxt-fwd-edu/fwd-solar"
+		"fwd-edu-sonar": "github:climate-action-kits/pxt-fwd-edu/fwd-sonar"
   },
   "files": [
     "main.ts"
