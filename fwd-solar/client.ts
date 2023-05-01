@@ -47,8 +47,7 @@ namespace fwdSensors {
       led.plotBarGraph(100 - this.lightLevel(), 100);
     }
   }
-}
 
-//% fixedInstance whenUsed
-export const solar1 = new FwdSolarClient("solar 1");
+  //% fixedInstance whenUsed
+  export const solar1 = new FwdSolarClient("solar 1");
 }
