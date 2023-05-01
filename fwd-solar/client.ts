@@ -15,7 +15,7 @@ namespace fwdSensors {
     fwdLightLevel(): number { return this.lightLevel() }
 
     /**
-     */
+    */
     //% group="Solar"
     //% block="on $this light level changed by $threshold (\\%)"
     //% blockId=fwd_solar_on_light_level_changed
@@ -23,7 +23,7 @@ namespace fwdSensors {
     fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
 
     /**
-     */
+    */
     //% group="Solar"
     //% block="is $this light level $direction $threshold (\\%)"
     //% blockId=fwd_solar_is_light_level_past_threshold
@@ -44,13 +44,11 @@ namespace fwdSensors {
     //% blockId=fwd_solar_chart
     //% weight=40
     fwdDisplayLuminance(): void {
-      loops.everyInterval(100, () => {
-        let lum = 100 - this.lightLevel();
-        led.plotBarGraph(lum, 100);
-      });
+      led.plotBarGraph(100 - this.lightLevel(), 100);
     }
   }
+}
 
-  //% fixedInstance whenUsed
-  export const solar1 = new FwdSolarClient("solar 1");
+//% fixedInstance whenUsed
+export const solar1 = new FwdSolarClient("solar 1");
 }
