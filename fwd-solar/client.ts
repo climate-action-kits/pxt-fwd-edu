@@ -11,11 +11,10 @@ namespace fwdSensors {
     */
     //% group="Solar"
     //% block="$this light level (\\%)"
-    //% blockId=fwd_solar_light_level
+    //% blockId=fwd_solar_get_light_level
     fwdLightLevel(): number { return this.lightLevel() }
 
     /**
-     * Run code when the light level changes by the given threshold value.
      */
     //% group="Solar"
     //% block="on $this light level changed by $threshold (\\%)"
@@ -24,10 +23,9 @@ namespace fwdSensors {
     fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
 
     /**
-     * Run code when the light level changes by the given threshold value.
      */
     //% group="Solar"
-    //% block="is $this light level changed by $threshold (\\%)"
+    //% block="is $this light level $direction $threshold (\\%)"
     //% blockId=fwd_solar_is_light_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsLightLevelPastThreshold(threshold: number, direction: thresholdDirection ): boolean {
