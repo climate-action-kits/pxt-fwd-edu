@@ -42,7 +42,7 @@ namespace fwdSensors {
      * Convenience function to graph luminance
      */
     //% group="Solar"
-    //% block="graph the light level"
+    //% block="graph the light level of $this"
     //% blockId=fwd_solar_chart
     //% weight=40
     fwdDisplayLuminance(): void {
@@ -52,4 +52,7 @@ namespace fwdSensors {
       });
     }
   }
+
+  //% fixedInstance whenUsed
+  export const solar1 = new FwdSolarClient("solar 1");
 }
