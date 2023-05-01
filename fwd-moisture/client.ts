@@ -28,7 +28,7 @@ namespace fwdSensors {
     /**
     */
     //% group="Moisture"
-    //% block="on $this moisture level $direction $threshold (\\%)"
+    //% block="is $this moisture level $direction $threshold (\\%)"
     //% blockId=fwd_moisture_on_level_threshold_check
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsMoistureLevelPastThreshold( threshold: number, direction: thresholdDirection ): boolean {
