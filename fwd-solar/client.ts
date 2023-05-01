@@ -28,7 +28,7 @@ namespace fwdSensors {
      */
     //% group="Solar"
     //% block="on %lightlevel light level changed by %threshold (\\%)"
-    //% blockId=fwd_solar_on_light_level_changed
+    //% blockId=fwd_solar_is_light_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsLightLevelPastThreshold(threshold: number, direction: 'over' | 'under' ): boolean {
       const difference = this.lightLevel() - threshold > 0;
