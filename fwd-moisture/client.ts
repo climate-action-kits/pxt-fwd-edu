@@ -40,4 +40,5 @@ namespace fwdSensors {
     }
   }
 
+  export const soilMoisture1 = new FwdSoilMoistureClient("soil moisture 1");
 }
