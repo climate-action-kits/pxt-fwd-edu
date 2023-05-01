@@ -6,7 +6,12 @@
   "dependencies": {
     "core": "*",
     "jacdac": "github:microsoft/pxt-jacdac",
-		"fwd-edu-line": "github:climate-action-kits/pxt-fwd-edu/fwd-line"
+		"fwd-edu-dial": "github:climate-action-kits/pxt-fwd-edu/fwd-dial",
+		"fwd-edu-line": "github:climate-action-kits/pxt-fwd-edu/fwd-line",
+		"fwd-edu-moisture": "github:climate-action-kits/pxt-fwd-edu/fwd-moisture",
+		"fwd-edu-solar": "github:climate-action-kits/pxt-fwd-edu/fwd-solar",
+		"fwd-edu-sonar": "github:climate-action-kits/pxt-fwd-edu/fwd-sonar",
+		"fwd-edu-touch": "github:climate-action-kits/pxt-fwd-edu/fwd-touch"
   },
   "files": [
     "main.ts"
