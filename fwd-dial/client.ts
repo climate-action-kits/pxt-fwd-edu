@@ -43,9 +43,9 @@ namespace fwdSensors {
 
     /**
      * Run code when the dial is turned in a specific direction
-     * @param direction 
-     * @param handler handler is run when the dial is turned cw|ccw
+     * @param delta
      */
+    //% draggableParameters="reporter"
     //% group="Dial"
     //% block="on $this turned $direction"
     //% blockId=fwd_dial_on_dial_turned
