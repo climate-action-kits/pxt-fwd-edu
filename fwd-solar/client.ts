@@ -10,15 +10,15 @@ namespace fwdSensors {
     /**
     */
     //% group="Solar"
-    //% block="%lightlevel light level (\\%)"
+    //% block="$this light level (\\%)"
     //% blockId=fwd_solar_light_level
-    fwdLightLevel(): number { return this.lightLevel() * 100 }
+    fwdLightLevel(): number { return this.lightLevel() }
 
     /**
      * Run code when the light level changes by the given threshold value.
      */
     //% group="Solar"
-    //% block="on %lightlevel light level changed by %threshold (\\%)"
+    //% block="on $this light level changed by $threshold (\\%)"
     //% blockId=fwd_solar_on_light_level_changed
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
@@ -27,14 +27,14 @@ namespace fwdSensors {
      * Run code when the light level changes by the given threshold value.
      */
     //% group="Solar"
-    //% block="on %lightlevel light level changed by %threshold (\\%)"
+    //% block="is $this light level changed by $threshold (\\%)"
     //% blockId=fwd_solar_is_light_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    fwdIsLightLevelPastThreshold(threshold: number, direction: 'over' | 'under' ): boolean {
+    fwdIsLightLevelPastThreshold(threshold: number, direction: thresholdDirection ): boolean {
       const difference = this.lightLevel() - threshold > 0;
       const isPastThreshold = 
-        direction === 'over' && difference ||
-        direction === 'under' && !difference;
+        direction === thresholdDirection.over && difference ||
+        direction === thresholdDirection.under && !difference;
       return isPastThreshold 
     }
 
