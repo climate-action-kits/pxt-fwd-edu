@@ -20,7 +20,7 @@ namespace fwdSensors {
     //% block="on $this distance changed by $threshold m"
     //% blockId=fwd_sonar_on_distance_change
     fwdOnDistanceChangedBy(threshold: number, handler: () => void): void {
-      this.onReadingChangedBy(threshold / 100, handler)
+      this.onReadingChangedBy(threshold, handler)
     }
 
     /**
