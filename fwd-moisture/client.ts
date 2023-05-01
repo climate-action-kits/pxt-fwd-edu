@@ -11,7 +11,7 @@ namespace fwdSensors {
     */
     //% group="Moisture"
     //% block="$this moisture level (\\%)"
-    //% blockId=fwd_moisture_get_level
+    //% blockId=fwd_moisture_get_moisture_level
     fwdMoistureLevel(): number { return this.moisture() }
 
     /**
@@ -19,17 +19,14 @@ namespace fwdSensors {
     //% group="Moisture"
     //% block="on $this moisture level changed by $threshold (\\%)"
     //% blockId=fwd_moisture_on_level_change
-    //% weight=97
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    onMoistureLevelChangedBy(threshold: number, handler: () => void): void {
-      this.onReadingChangedBy(threshold, handler)
-    }
+    fwdOnMoistureLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
 
     /**
     */
     //% group="Moisture"
     //% block="is $this moisture level $direction $threshold (\\%)"
-    //% blockId=fwd_moisture_on_level_threshold_check
+    //% blockId=fwd_moisture_is_moisture_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsMoistureLevelPastThreshold( threshold: number, direction: thresholdDirection ): boolean {
       const difference = this.moisture() - threshold > 0;
