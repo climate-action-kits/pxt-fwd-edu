@@ -10,14 +10,14 @@ namespace fwdSensors {
     /**
     */
     //% group="Sonar"
-    //% block="%distance distance "
+    //% block="$this distance (m)"
     //% blockId=fwd_sonar_get_distance
     fwdDistance(): number { return this.distance() }
 
     /**
     */
     //% group="Sonar"
-    //% block="on %distance distance changed by %threshold m"
+    //% block="on $this distance changed by $threshold m"
     //% blockId=fwd_sonar_on_distance_change
     fwdOnDistanceChangedBy(threshold: number, handler: () => void): void {
       this.onReadingChangedBy(threshold / 100, handler)
@@ -26,14 +26,17 @@ namespace fwdSensors {
     /**
     */
     //% group="Sonar"
-    //% block="on %distance distance is %direction %threshold m"
+    //% block="is $this distance $direction $threshold m"
     //% blockId=fwd_solar_is_distance_past_threshold
-    fwdDistancePastThreshold(threshold: number, direction: 'over' | 'under' ): boolean {
+    fwdDistancePastThreshold(threshold: number, direction: thresholdDirection ): boolean {
       const difference = this.distance() - threshold > 0;
       const isPastThreshold = 
-        direction === 'over' && difference ||
-        direction === 'under' && !difference;
+        direction === thresholdDirection.over && difference ||
+        direction === thresholdDirection.under && !difference;
       return isPastThreshold 
     }
   }
+
+  //% fixedInstance whenUsed
+  export const sonar1 = new FwdSonarClient("sonar 1");
 }
