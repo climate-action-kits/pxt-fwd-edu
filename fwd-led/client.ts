@@ -23,12 +23,12 @@ namespace fwdSensors {
 
   //% fixedInstances
   export class FwdLEDClient extends modules.LedClient {
-    static MAX_REPORT_BRIGHTNESS = 10
-    static MAX_SERVICE_BRIGHTNESS = 100
-    static toBlocksBrightness ( serviceBrightness: number ): number {
+    MAX_REPORT_BRIGHTNESS = 10
+    MAX_SERVICE_BRIGHTNESS = 100
+    toBlocksBrightness ( serviceBrightness: number ): number {
       return this.MAX_REPORT_BRIGHTNESS * serviceBrightness / this.MAX_SERVICE_BRIGHTNESS
     } 
-    static toServiceBrightness ( reportBrightness: number ): number {
+    toServiceBrightness ( reportBrightness: number ): number {
       return this.MAX_SERVICE_BRIGHTNESS * reportBrightness / this.MAX_REPORT_BRIGHTNESS
     } 
 
