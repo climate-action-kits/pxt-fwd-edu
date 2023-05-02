@@ -1,6 +1,7 @@
 namespace fwdSensors {
 
   //% block="LED labels"
+  //% group="LED Lights"
   //% blockId=fwd_led_names
   export const enum pixelNames {
 		//% block="PXL1"
@@ -32,7 +33,7 @@ namespace fwdSensors {
       super(role)
     }
 
-    //% block="$this set brightness to $value"
+    //% block="set $this brightness to $value"
     //% blockId=fwd_led_set_brightness
     //% group="LED Lights"
     //% value.min=0 value.max=10 value.defl=10
@@ -54,22 +55,22 @@ namespace fwdSensors {
       return this.toBlocksBrightness(this.brightness())
     }
 
-    //% block="$this set $index to $rgb=colorWheelPicker"
+    //% block="set $this $index to $rgb=colorWheelPicker"
     //% blockId=fwd_led_set_single_pixel_colour
     //% group="LED Lights"
     fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
 
-    //% block="$this set all LEDs to $rgb=colorWheelPicker"
+    //% block="set all $this LEDs to $rgb=colorWheelPicker"
     //% blockId=fwd_led_set_all_pixels_colour
     //% group="LED Lights"
     fwdSetAllPixelsColour(rgb: number): void { this.setAll(rgb) }
 
-    //% block="$this rotate the pattern by $offset"
+    //% block="rotate $this pattern by $offset"
     //% blockId=fwd_led_rotate_pattern
     //% group="LED Lights"
     fwdRotate(offset = 1): void { this.rotate(offset) }
 
-    //% block=shift the pattern by $offset"
+    //% block="shift $this pattern by $offset"
     //% blockId=fwd_led_shift_pattern
     //% group="LED Lights"
     fwdShift(offset = 1): void { this.shift(offset) }
