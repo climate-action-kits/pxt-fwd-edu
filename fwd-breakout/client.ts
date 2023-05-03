@@ -46,7 +46,7 @@ namespace fwdMotors {
    */
   //% fixedInstances
   export class FwdServoClient extends modules.ServoClient {
-    private readonly _angleRange: number
+    readonly _angleRange: number
 
     constructor(role: string) {
       super(role)
@@ -65,7 +65,7 @@ namespace fwdMotors {
     //% group="Servo"
     //% block="$this angle (°)"
     //% blockId=fwd_servo_get_angle
-    fwdGetAngle(): number { return this.actualAngle() }
+    fwdGetAngle(): number { return this.angle() }
 
     /**
      */
@@ -75,6 +75,23 @@ namespace fwdMotors {
     //% angle.shadow="protractorPicker"
     //% angle.min=-90 angle.max=90
     fwdSetAngle(angle: number): void { this.setAngle(angle) }
+
+    /**
+     */
+    //% group="Servo"
+    //% block="set $this to $target ° and wait"
+    //% blockId=fwd_servo_set_angle_and_wait
+    //% target.shadow="protractorPicker"
+    //% target.min=-90 target.max=90
+    fwdSetAngleAndWait(target: number): void {
+      let maxPauseDuration = (this.responseSpeed() / 60) * this._angleRange || 360
+      let travelDistance = Math.abs(this.fwdGetAngle() > target ?
+        this.fwdGetAngle() - target :
+        target - this.fwdGetAngle()
+      )
+      this.setAngle(target)
+      basic.pause( maxPauseDuration * travelDistance / this._angleRange )
+    }
 
     /**
      */
@@ -102,9 +119,6 @@ namespace fwdMotors {
       this.setAngle( this.mapToServo(speed, -100, 100) )
     }
 
-
-
-
   }
 
   export const enum presetServoPosition {
@@ -127,8 +141,9 @@ namespace fwdMotors {
   /**
    */
   //% group="Servo"
-  //% block="%position"
+  //% block="position %position"
   //% blockId=fwd_servo_position_enum
+  //% position.defl=0
   export function fwdPositionPresets(position: presetServoPosition): number {
     return position as number
   }
