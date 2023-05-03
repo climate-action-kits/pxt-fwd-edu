@@ -56,7 +56,7 @@ namespace fwdMotors {
     //% group="Servo"
     //% block="$this angle (°)"
     //% blockId=fwd_servo_get_angle
-    fwdGetAngle(): void { return this.actualAngle() }
+    fwdGetAngle(): number { return this.actualAngle() }
 
     /**
      */
