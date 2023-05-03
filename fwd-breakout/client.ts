@@ -77,7 +77,7 @@ namespace fwdMotors {
      */
     //% group="Servo"
     //% block="set $this $state"
-    //% blockId=fwd_servo_is_enabled
+    //% blockId=fwd_servo_set_enabled
     //% state.shadow="toggleOnOff"
     fwdSetEnabled(state: boolean): void { return this.setEnabled(state) }
 
