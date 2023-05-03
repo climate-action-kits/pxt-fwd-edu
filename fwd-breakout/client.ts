@@ -20,7 +20,7 @@ namespace fwdMotors {
      */
     //% group="Pump"
     //% block="set $this $state"
-    //% blockId=fwd_relay_get_status
+    //% blockId=fwd_relay_set_status
     //% state.shadow="toggleOnOff"
     fwdSetActive(state: boolean): void { this.setActive(state) }
     
@@ -28,7 +28,7 @@ namespace fwdMotors {
      */
     //% group="Pump"
     //% block="run $this for $duration"
-    //% blockId=fwd_relay_get_status
+    //% blockId=fwd_relay_timed_run
     //% duration.shadow="timePicker"
     fwdTimedRun(duration: number): void { control.inBackground(() => {
         this.setActive(true)
