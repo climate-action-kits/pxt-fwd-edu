@@ -39,4 +39,8 @@ namespace fwdSensors {
 
   //% fixedInstance
   export const line1 = new FwdLineFollowerClient("line1");
+  //% fixedInstance
+  export const line2 = new FwdLineFollowerClient("line2");
+  //% fixedInstance
+  export const line3 = new FwdLineFollowerClient("line3");
 }
