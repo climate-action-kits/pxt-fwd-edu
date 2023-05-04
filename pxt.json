@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "FWD Edu Climate Action Kit Gen. 2 Kit",
     "license": "MIT",
     "dependencies": {
@@ -16,8 +16,8 @@
         "fwd-edu-touch": "github:climate-action-kits/pxt-fwd-edu/fwd-touch"
     },
     "files": [
-      "motors.ts",
-      "sensors.ts"
+        "motors.ts",
+        "sensors.ts"
     ],
     "public": true,
     "supportedTargets": [

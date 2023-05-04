@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-dial",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "FWD Edu Climate Action Kit Gen. 2 Dial",
     "license": "MIT",
     "dependencies": {
@@ -10,7 +10,7 @@
         "jacdac-button": "github:microsoft/pxt-jacdac/button"
     },
     "files": [
-				"../sensors.ts",
+        "../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-led",
-    "version": "0.8.0",
+    "version": "0.8.1",
     "description": "FWD Edu Climate Action Kit Gen. 2 LED",
     "license": "MIT",
     "dependencies": {
@@ -9,7 +9,7 @@
         "jacdac-led": "github:microsoft/pxt-jacdac/led"
     },
     "files": [
-				"../sensors.ts",
+        "../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [
