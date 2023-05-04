@@ -10,7 +10,8 @@
     "jacdac-relay": "github:microsoft/pxt-jacdac/relay"
   },
   "files": [
-    "client.ts"
+    "client.ts",
+    "driving.ts"
   ],
   "supportedTargets": [
     "microbit"
