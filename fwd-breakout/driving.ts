@@ -1,6 +1,7 @@
 namespace fwdMotors {
    
   function createDrivingControls () {
+    let enabled = false
     let leftMotor: fwdMotors.FwdServoClient
     let rightMotor: fwdMotors.FwdServoClient
     let leftBias = 1
@@ -14,14 +15,17 @@ namespace fwdMotors {
       } else { 
         rightBias = (100 - bias) / 100
       }
+      enabled = true
     }
 
     function drive (direction: -1 | 1, speed: number) : void {
+      if (!enabled) return
       leftMotor.fwdSetSpeed( direction * speed * leftBias )
       rightMotor.fwdSetSpeed( -direction * speed * rightBias )  //motors are mounted opposite directions
     }
 
     function turnInPlace ( angle: number ) : void {
+      if (!enabled) return
       // angle is how far to turn. Neg: left, Pos: right.
       const DEG_PER_SEC = 30  // magic number, determined by testing
       const direction = angle > 0 ? 1 : -1
@@ -40,14 +44,38 @@ namespace fwdMotors {
 
   }
 
+  export const enum drivingDirection {
+    //% block="forward"
+    forward = -1,
+    //% block="reverse"
+    reverse = 1
+  }
+
   export const drivingControls = createDrivingControls()
 
+  //% group="Driving"
   //% block="Setup driving| left motor $left | right motor $right || left/right bias $bias"
+  //% blockId=fwd_driving_setup
   //% bias.shadow="speedPicker"
   //% inlineInputMode=external
   export function setupDriving (left: FwdServoClient, right: FwdServoClient, bias?: number) {
     drivingControls.initMotors(left, right, bias)
   }
 
+  //% group="Driving"
+  //% block="Drive $direction || at $speed"
+  //% blockId=fwd_driving_drive
+  //% speed.shadow="speedPicker"
+  export function drive (direction: drivingDirection, speed: number) {
+    drivingControls.drive(direction, speed)
+  }
+
+  //% group="Driving"
+  //% block="Turn $angle in place"
+  //% blockId=fwd_driving_drive
+  //% angle.min=-359 angle.max=359
+  export function turn (angle: number) {
+    drivingControls.turnInPlace(angle)
+  }
 
 }
