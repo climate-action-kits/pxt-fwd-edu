@@ -46,18 +46,19 @@ namespace fwdMotors {
    */
   //% fixedInstances
   export class FwdServoClient extends modules.ServoClient {
-    readonly _angleRange: number
 
     constructor(role: string) {
       super(role)
+    }
 
-      this._angleRange = this.maxAngle() - this.minAngle()
+    get angleRange(): number {
+      return this.maxAngle() - this.minAngle()
     }
 
     mapToServo(angle: number, min: number, max: number): number {
       let inputRange = max - min
       let scaledInput = (angle - min) / inputRange
-      return scaledInput * this._angleRange + this.minAngle();
+      return scaledInput * this.angleRange + this.minAngle();
     }
 
     /**
@@ -84,13 +85,13 @@ namespace fwdMotors {
     //% target.shadow="protractorPicker"
     //% target.min=-90 target.max=90
     fwdSetAngleAndWait(target: number): void {
-      let maxPauseDuration = (this.responseSpeed() / 60) * this._angleRange || 360
+      let maxPauseDuration = (this.responseSpeed() / 60) * this.angleRange || 360
       let travelDistance = Math.abs(this.fwdGetAngle() > target ?
         this.fwdGetAngle() - target :
         target - this.fwdGetAngle()
       )
       this.setAngle(target)
-      basic.pause( maxPauseDuration * travelDistance / this._angleRange )
+      basic.pause( maxPauseDuration * travelDistance / this.angleRange )
     }
 
     /**
