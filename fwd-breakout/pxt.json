@@ -1,19 +1,19 @@
 {
-  "name": "fwd-edu-dial",
-  "version": "0.0.0",
-  "description": "FWD Edu Climate Action Kit Gen. 2 Dial",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*",
-    "jacdac": "github:microsoft/pxt-jacdac",
-    "jacdac-servo": "github:microsoft/pxt-jacdac/servo",
-    "jacdac-relay": "github:microsoft/pxt-jacdac/relay"
-  },
-  "files": [
-    "client.ts",
-    "driving.ts"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ]
+    "name": "fwd-edu-dial",
+    "version": "0.8.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Dial",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac",
+        "jacdac-servo": "github:microsoft/pxt-jacdac/servo",
+        "jacdac-relay": "github:microsoft/pxt-jacdac/relay"
+    },
+    "files": [
+        "client.ts",
+        "driving.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
 }

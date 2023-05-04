@@ -1,17 +1,17 @@
 {
-  "name": "fwd-edu-led",
-  "version": "0.0.0",
-  "description": "FWD Edu Climate Action Kit Gen. 2 LED",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*",
-    "jacdac": "github:microsoft/pxt-jacdac",
-    "jacdac-led": "github:microsoft/pxt-jacdac/led"
-  },
-  "files": [
-    "client.ts"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ]
+    "name": "fwd-edu-led",
+    "version": "0.8.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 LED",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac",
+        "jacdac-led": "github:microsoft/pxt-jacdac/led"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
 }

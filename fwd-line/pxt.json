@@ -1,17 +1,17 @@
 {
-  "name": "fwd-edu-line",
-  "version": "0.0.0",
-  "description": "FWD Edu Climate Action Kit Gen. 2 Line",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*",
-    "jacdac": "github:microsoft/pxt-jacdac",
-    "jacdac-reflected-light": "github:microsoft/pxt-jacdac/reflected-light"
-  },
-  "files": [
-    "client.ts"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ]
+    "name": "fwd-edu-line",
+    "version": "0.8.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Line",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac",
+        "jacdac-reflected-light": "github:microsoft/pxt-jacdac/reflected-light"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
 }

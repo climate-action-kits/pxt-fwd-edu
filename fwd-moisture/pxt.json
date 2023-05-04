@@ -1,17 +1,17 @@
 {
-  "name": "fwd-edu-moisture",
-  "version": "0.0.0",
-  "description": "FWD Edu Climate Action Kit Gen. 2 Moisture",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*",
-    "jacdac": "github:microsoft/pxt-jacdac",
-    "jacdac-soil-moisture": "github:microsoft/pxt-jacdac/soil-moisture"
-  },
-  "files": [
-    "client.ts"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ]
+    "name": "fwd-edu-moisture",
+    "version": "0.8.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Moisture",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac",
+        "jacdac-soil-moisture": "github:microsoft/pxt-jacdac/soil-moisture"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
 }
