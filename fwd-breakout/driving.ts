@@ -72,7 +72,7 @@ namespace fwdMotors {
 
   //% group="Driving"
   //% block="Turn $angle in place"
-  //% blockId=fwd_driving_drive
+  //% blockId=fwd_driving_turn_in_place
   //% angle.min=-359 angle.max=359
   export function turn (angle: number) {
     drivingControls.turnInPlace(angle)
