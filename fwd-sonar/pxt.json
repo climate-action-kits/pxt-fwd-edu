@@ -9,6 +9,7 @@
         "jacdac-distance": "github:microsoft/pxt-jacdac/distance"
     },
     "files": [
+				"../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

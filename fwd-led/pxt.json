@@ -9,6 +9,7 @@
         "jacdac-led": "github:microsoft/pxt-jacdac/led"
     },
     "files": [
+				"../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

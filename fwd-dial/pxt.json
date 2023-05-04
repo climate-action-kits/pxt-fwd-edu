@@ -10,6 +10,7 @@
         "jacdac-button": "github:microsoft/pxt-jacdac/button"
     },
     "files": [
+				"../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

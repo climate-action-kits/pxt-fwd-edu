@@ -10,6 +10,7 @@
         "jacdac-relay": "github:microsoft/pxt-jacdac/relay"
     },
     "files": [
+        "../motors.ts",
         "client.ts",
         "driving.ts"
     ],

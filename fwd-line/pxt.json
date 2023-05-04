@@ -9,6 +9,7 @@
         "jacdac-reflected-light": "github:microsoft/pxt-jacdac/reflected-light"
     },
     "files": [
+				"../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

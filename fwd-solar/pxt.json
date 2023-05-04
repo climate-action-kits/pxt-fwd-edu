@@ -9,6 +9,7 @@
         "jacdac-light-level": "github:microsoft/pxt-jacdac/light-level"
     },
     "files": [
+				"../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [
