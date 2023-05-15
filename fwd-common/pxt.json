@@ -1,0 +1,16 @@
+{
+    "name": "fwd-edu-common",
+    "version": "0.8.3",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Shared resources",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+      "sensors.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}
+
