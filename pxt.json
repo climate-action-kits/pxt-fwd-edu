@@ -1,12 +1,12 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "0.8.3",
+    "version": "0.9.0",
     "description": "FWD Edu Climate Action Kit Gen. 2 Kit",
     "license": "MIT",
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
-				"fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
+        "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
         "fwd-edu-breakout": "github:climate-action-kits/pxt-fwd-edu/fwd-breakout",
         "fwd-edu-dial": "github:climate-action-kits/pxt-fwd-edu/fwd-dial",
         "fwd-edu-led": "github:climate-action-kits/pxt-fwd-edu/fwd-led",

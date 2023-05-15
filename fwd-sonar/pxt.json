@@ -1,12 +1,12 @@
 {
     "name": "fwd-edu-sonar",
-    "version": "0.8.3",
+    "version": "0.9.0",
     "description": "FWD Edu Climate Action Kit Gen. 2 Sonar",
     "license": "MIT",
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
-				"fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
+        "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
         "jacdac-distance": "github:microsoft/pxt-jacdac/distance"
     },
     "files": [
