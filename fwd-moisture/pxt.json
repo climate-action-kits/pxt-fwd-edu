@@ -6,10 +6,10 @@
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
+				"fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
         "jacdac-soil-moisture": "github:microsoft/pxt-jacdac/soil-moisture"
     },
     "files": [
-        "../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

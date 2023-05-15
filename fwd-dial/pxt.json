@@ -6,11 +6,11 @@
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
+				"fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
         "jacdac-rotary-encoder": "github:microsoft/pxt-jacdac/rotary-encoder",
         "jacdac-button": "github:microsoft/pxt-jacdac/button"
     },
     "files": [
-        "../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [

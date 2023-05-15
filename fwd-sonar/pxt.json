@@ -6,10 +6,10 @@
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
+				"fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
         "jacdac-distance": "github:microsoft/pxt-jacdac/distance"
     },
     "files": [
-        "../sensors.ts",
         "client.ts"
     ],
     "supportedTargets": [
