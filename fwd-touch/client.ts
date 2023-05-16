@@ -12,7 +12,7 @@ namespace fwdSensors {
     //% group="Touch"
     //% block="on $this $event"
     //% blockId=fwd_touch_on_touch
-    fwdOnTouch(ev: jacdac.ButtonEvent, handler: () => void) { this.onEvent(ev, handler) }
+    fwdOnTouch(event: jacdac.ButtonEvent, handler: () => void) { this.onEvent(event, handler) }
 
     /**
      */
