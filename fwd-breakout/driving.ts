@@ -63,7 +63,7 @@ namespace fwdMotors {
   }
 
   //% group="Driving"
-  //% block="Drive $direction || at $speed"
+  //% block="Drive $direction at $speed"
   //% blockId=fwd_driving_drive
   //% speed.shadow="speedPicker"
   export function drive (direction: drivingDirection, speed: number) {
