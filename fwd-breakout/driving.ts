@@ -72,7 +72,7 @@ namespace fwdMotors {
 
   //% group="Driving"
   //% block="Stop motors"
-  //% blockId=fwd_driving_drive
+  //% blockId=fwd_driving_stop
   export function stop () {
     drivingControls.drive(1, 0)
   }
