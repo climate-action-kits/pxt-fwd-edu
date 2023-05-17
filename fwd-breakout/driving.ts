@@ -71,6 +71,13 @@ namespace fwdMotors {
   }
 
   //% group="Driving"
+  //% block="Stop motors"
+  //% blockId=fwd_driving_drive
+  export function stop () {
+    drivingControls.drive(1, 0)
+  }
+
+  //% group="Driving"
   //% block="Turn $angle in place"
   //% blockId=fwd_driving_turn_in_place
   //% angle.min=-359 angle.max=359
