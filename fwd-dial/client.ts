@@ -20,7 +20,7 @@ namespace fwdSensors {
       this._cwAction = (_) => {}
       this._ccwAction = (_) => {}
 
-      this.onReadingChangedBy(1, (delta) => {
+      this.onReadingChangedBy(1, (delta: number) => {
         if (delta < 0) {
           this._cwAction(delta)
         } else {
@@ -47,10 +47,10 @@ namespace fwdSensors {
      */
     //% draggableParameters="reporter"
     //% group="Dial"
-    //% block="on $this turned $direction"
+    //% block="on $this turned || by $direction"
     //% blockId=fwd_dial_on_dial_turned
     //% weight=98
-    fwdOnDialTurned(direction: dialDirection, handler: (delta: number) => void): void {
+    fwdOnDialTurned(direction: dialDirection, handler: (difference: number) => void): void {
       if (direction === dialDirection.cw) {
         this._cwAction = handler
       } else {
