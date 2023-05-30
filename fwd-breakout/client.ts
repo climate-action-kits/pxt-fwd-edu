@@ -63,14 +63,14 @@ namespace fwdMotors {
 
     /**
      */
-    //% group="Servo"
+    //% group="Servo (270° Positional)"
     //% block="$this angle (°)"
     //% blockId=fwd_servo_get_angle
     fwdGetAngle(): number { return this.angle() }
 
     /**
      */
-    //% group="Servo"
+    //% group="Servo (270° Positional)"
     //% block="set $this to $angle °"
     //% blockId=fwd_servo_set_angle
     //% angle.shadow="protractorPicker"
@@ -79,7 +79,7 @@ namespace fwdMotors {
 
     /**
      */
-    //% group="Servo"
+    //% group="Servo (270° Positional)"
     //% block="set $this to $target ° and wait"
     //% blockId=fwd_servo_set_angle_and_wait
     //% target.shadow="protractorPicker"
@@ -96,14 +96,14 @@ namespace fwdMotors {
 
     /**
      */
-    //% group="Servo"
+    //% group="Servo (270° Positional)"
     //% block="$this state"
     //% blockId=fwd_servo_is_enabled
     fwdIsEnabled(): boolean { return this.enabled() }
 
     /**
      */
-    //% group="Servo"
+    //% group="Servo (270° Positional)"
     //% block="set $this $state"
     //% blockId=fwd_servo_set_enabled
     //% state.shadow="toggleOnOff"
@@ -141,7 +141,7 @@ namespace fwdMotors {
 
   /**
    */
-  //% group="Servo"
+  //% group="Servo (270° Positional)"
   //% block="position %position"
   //% blockId=fwd_servo_position_enum
   //% position.defl=0
