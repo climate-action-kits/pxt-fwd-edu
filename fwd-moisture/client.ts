@@ -10,14 +10,14 @@ namespace fwdSensors {
     /**
     */
     //% group="Moisture"
-    //% block="$this moisture level (\\%)"
+    //% block="$this level (\\%)"
     //% blockId=fwd_moisture_get_moisture_level
     fwdMoistureLevel(): number { return this.moisture() }
 
     /**
     */
     //% group="Moisture"
-    //% block="on $this moisture level changed by $threshold (\\%)"
+    //% block="on $this level changed by $threshold (\\%)"
     //% blockId=fwd_moisture_on_level_change
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdOnMoistureLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy(threshold, handler) }
@@ -25,7 +25,7 @@ namespace fwdSensors {
     /**
     */
     //% group="Moisture"
-    //% block="is $this moisture level $direction $threshold (\\%)"
+    //% block="is $this level $direction $threshold (\\%)"
     //% blockId=fwd_moisture_is_moisture_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsMoistureLevelPastThreshold( threshold: number, direction: thresholdDirection ): boolean {
