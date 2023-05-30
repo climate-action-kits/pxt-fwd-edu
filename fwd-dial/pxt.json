@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-dial",
-    "version": "0.10.2",
+    "version": "0.11.0",
     "description": "FWD Edu Climate Action Kit Gen. 2 Dial",
     "license": "MIT",
     "dependencies": {
