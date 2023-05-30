@@ -123,20 +123,26 @@ namespace fwdMotors {
   }
 
   export const enum presetServoPosition {
-    //% block=🕛
-    pos0 = -90,
-    //% block=🕐
-    pos1 = -60,
-    //% block=🕑
-    pos2 = -30,
-    //% block=🕒
-    pos3 = 0,
-    //% block=🕓
-    pos4 = 30,
-    //% block=🕔
-    pos5 = 60,
-    //% block=🕕
-    pos6 = 90
+    //% block="🕛 00:00"
+    pos0 = 0,
+    //% block="🕐 01:00"
+    pos1 = 30,
+    //% block="🕑 02:00"
+    pos2 = 60,
+    //% block="🕒 03:00"
+    pos3 = 90,
+    //% block="🕓 04:00"
+    pos4 = 120,
+    //% block="🕔 05:00"
+    pos5 = 150,
+    //% block="🕕 06:00"
+    pos6 = 180,
+    //% block="🕖 07:00"
+    pos7 = 210,
+    //% block="🕗 08:00"
+    pos8 = 240,
+    //% block="🕘 09:00"
+    pos9 = 270,
   }
 
   /**
