@@ -31,7 +31,7 @@ namespace fwdSensors {
     }
     
     /**
-     * @returns The number of steps that make up a full turn of the dial
+     * The number of steps that make up a full turn of the dial
      */
     //% group="Dial"
     //% block="$this clicks per full turn"
