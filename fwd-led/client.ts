@@ -36,6 +36,10 @@ namespace fwdSensors {
       super(role)
     }
 
+    /*
+     * Set the brightness of the LED ring
+     * @param brightness Level between 0 (off) and 10 (full power)
+     */
     //% block="set $this brightness to $value"
     //% blockId=fwd_led_set_brightness
     //% group="LED Lights"
@@ -44,6 +48,9 @@ namespace fwdSensors {
       this.setBrightness(this.toServiceBrightness(value))
     }
 
+    /*
+     * Returns how many lights make up an LED ring
+     */
     //% block="$this number of pixels"
     //% blockId=fwd_led_num_pixels
     //% group="LED Lights"
@@ -51,6 +58,9 @@ namespace fwdSensors {
       return this.numPixels();
     }
 
+    /*
+     * Returns the brightness level of the ring, 0-10
+     */
     //% block="$this brightness"
     //% blockId=fwd_led_get_brightness
     //% group="LED Lights"
@@ -58,21 +68,40 @@ namespace fwdSensors {
       return this.toBlocksBrightness(this.brightness())
     }
 
+    /*
+     * Set a specific LED to a color
+     * @param index the LED number
+     * @param rgb color value using either the blocks color picker or hex value
+     * TODO: fix the color picker
+     */
     //% block="set $this $index to $rgb=colorWheelPicker"
     //% blockId=fwd_led_set_single_pixel_colour
     //% group="LED Lights"
     fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
 
+    /*
+     * Set all LEDs to a color
+     * @param rgb color value using either the blocks color picker or hex value
+     * TODO: fix the color picker
+     */
     //% block="set all $this LEDs to $rgb=colorWheelPicker"
     //% blockId=fwd_led_set_all_pixels_colour
     //% group="LED Lights"
     fwdSetAllPixelsColour(rgb: number): void { this.setAll(rgb) }
 
+    /*
+     * Rotate the light pattern left or right, wrapping the last pixel back to the first
+     * @param offset The number of positions to rotate. Positive are clockwise, negative are counter-clockwise
+     */
     //% block="rotate $this pattern by $offset"
     //% blockId=fwd_led_rotate_pattern
     //% group="LED Lights"
     fwdRotate(offset = 1): void { this.rotate(offset) }
 
+    /*
+     * Shift the light pattern left or right. If the light pattern is shifted past the first or last light, that part of the pattern is removed.
+     * @param offset The number of positions to shift. Positive are clockwise, negative are counter-clockwise
+     */
     //% block="shift $this pattern by $offset"
     //% blockId=fwd_led_shift_pattern
     //% group="LED Lights"
