@@ -30,12 +30,20 @@ namespace fwdSensors {
 
     }
     
+    /**
+     * @returns The number of steps that make up a full turn of the dial
+     */
     //% group="Dial"
     //% block="$this clicks per full turn"
     //% rotaryencoder.defl=dial1
     //% blockId=fwd_dial_get_clicks_per_turn
     fwdClicksPerTurn(): number { return this.clicksPerTurn() }
     
+    /**
+     * The absolute position of the dial since it was last connected.
+     * Positive numbers are clockwise, negative are counter-clockwise. Zero is the starting position.
+     * This number reflects the sum of all movements, so three steps clockwise followed by five counter-clockwise will read -1 (includes zero as a position)
+     */
     //% group="Dial"
     //% block="$this absolute position"
     //% blockId=fwd_dial_get_position
@@ -43,7 +51,8 @@ namespace fwdSensors {
 
     /**
      * Run code when the dial is turned in a specific direction
-     * @param delta
+     * @param direction choose between clockwise and counter-clockwise
+     * @param difference the number of dial positions turned since the last update
      */
     //% draggableParameters="reporter"
     //% group="Dial"
