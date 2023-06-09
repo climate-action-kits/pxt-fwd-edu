@@ -54,7 +54,7 @@ namespace fwdMotors {
   export const drivingControls = createDrivingControls()
 
   //% group="Driving"
-  //% block="Setup driving| left motor $left | right motor $right || left/right bias $bias"
+  //% block="setup driving| left motor $left | right motor $right || left/right bias $bias"
   //% blockId=fwd_driving_setup
   //% bias.shadow="speedPicker"
   //% inlineInputMode=external
@@ -63,7 +63,7 @@ namespace fwdMotors {
   }
 
   //% group="Driving"
-  //% block="Drive $direction at $speed"
+  //% block="drive $direction at $speed"
   //% blockId=fwd_driving_drive
   //% speed.shadow="speedPicker"
   export function drive (direction: drivingDirection, speed: number) {
@@ -71,14 +71,14 @@ namespace fwdMotors {
   }
 
   //% group="Driving"
-  //% block="Stop motors"
+  //% block="stop motors"
   //% blockId=fwd_driving_stop
   export function stop () {
     drivingControls.drive(1, 0)
   }
 
   //% group="Driving"
-  //% block="Turn $angle in place"
+  //% block="turn $angle in place"
   //% blockId=fwd_driving_turn_in_place
   //% angle.min=-359 angle.max=359
   export function turn (angle: number) {
