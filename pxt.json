@@ -3,7 +3,6 @@
     "version": "0.13.1",
     "description": "FWD Edu Climate Action Kit Gen. 2 Kit",
     "license": "MIT",
-    "icon": "icon.png",
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
