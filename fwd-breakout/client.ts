@@ -1,6 +1,7 @@
 namespace fwdMotors {
 
   /**
+   * The pump is an on-board relay
    */
   //% fixedInstances
   export class FwdRelayClient extends modules.RelayClient {
@@ -10,6 +11,7 @@ namespace fwdMotors {
     }
 
     /**
+     * The current state of the pump. true = running
      */
     //% group="Pump"
     //% block="$this active"
@@ -17,6 +19,8 @@ namespace fwdMotors {
     fwdIsActive(): boolean { return this.active() }
 
     /**
+     * Set the pump to either running or stopped
+     * @param state running = true, stopped = false
      */
     //% group="Pump"
     //% block="set $this $state"
@@ -25,6 +29,8 @@ namespace fwdMotors {
     fwdSetActive(state: boolean): void { this.setActive(state) }
     
     /**
+     * Turn the pump on and have it run in the background before turning off.
+     * @param duration how long the pump should run for before turning itself off
      */
     //% group="Pump"
     //% block="run $this for $duration"
@@ -51,17 +57,18 @@ namespace fwdMotors {
       super(role)
     }
 
+    /**
+     * Reports the servo's total range of motion in degrees
+     */
+    //% group="Servo (270° Positional)"
+    //% block="$this angle range (°)"
+    //% blockId=fwd_servo_get_angle_range
     get angleRange(): number {
       return this.maxAngle() - this.minAngle()
     }
 
-    mapToServo(angle: number, min: number, max: number): number {
-      let inputRange = max - min
-      let scaledInput = (angle - min) / inputRange
-      return scaledInput * this.angleRange + this.minAngle();
-    }
-
     /**
+     * Reports what angle the servo is set to
      */
     //% group="Servo (270° Positional)"
     //% block="$this angle (°)"
@@ -69,15 +76,19 @@ namespace fwdMotors {
     fwdGetAngle(): number { return this.angle() }
 
     /**
+     * Set what angle the servo should point to, and immediately run the next block
+     * @param angle servo angle
      */
     //% group="Servo (270° Positional)"
     //% block="set $this to $angle °"
     //% blockId=fwd_servo_set_angle
     //% angle.shadow="protractorPicker"
-    //% angle.min=-90 angle.max=90
+    //% angle.min=0 angle.max=270
     fwdSetAngle(angle: number): void { this.setAngle(angle) }
 
     /**
+     * Set what angle the servo should point to, and wait for the movement to finish before running the next block
+     * @param angle servo angle
      */
     //% group="Servo (270° Positional)"
     //% block="set $this to $target ° and wait"
@@ -95,29 +106,42 @@ namespace fwdMotors {
     }
 
     /**
+     * Is the servo enabled or disabled? Enabled = true, disabled = false
      */
-    //% group="Servo (270° Positional)"
+    //% group="Servo (Both)"
     //% block="$this state"
     //% blockId=fwd_servo_is_enabled
     fwdIsEnabled(): boolean { return this.enabled() }
 
     /**
+     * Set the servo to enabled or disabled
+     * @param state enabled = true, disabled = false
      */
-    //% group="Servo (270° Positional)"
+    //% group="Servo (Both)"
     //% block="set $this $state"
     //% blockId=fwd_servo_set_enabled
     //% state.shadow="toggleOnOff"
     fwdSetEnabled(state: boolean): void { return this.setEnabled(state) }
 
     /**
+     * Reports what speed the servo is set to
      */
-    //% group="Servo (continuous)"
+    //% group="Servo (Continuous)"
+    //% block="$this angle (°)"
+    //% blockId=fwd_servo_get_angle
+    fwdGetSpeed(): number { return Math.map( this.angle(), this.minAngle(), this.maxAngle(), -100, 100 )  }
+
+    /**
+     * Set what speed the servo should run at
+     * @param speed Can be set between 100% foward and -100% reverse
+     */
+    //% group="Servo (Continuous)"
     //% block="set $this $speed \\%"
     //% blockId=fwd_servo_continuous_set_speed
     //% speed.shadow="speedPicker"
     //% speed.min=-100 speed.max=100
     fwdSetSpeed(speed: number): void { 
-      this.setAngle( this.mapToServo(speed, -100, 100) )
+      this.setAngle( Math.map(speed, -100, 100, this.minAngle(), this.maxAngle()) )
     }
 
   }
@@ -146,6 +170,7 @@ namespace fwdMotors {
   }
 
   /**
+   * Preset servo positions based on a clock's hour hand
    */
   //% group="Servo (270° Positional)"
   //% block="position %position"

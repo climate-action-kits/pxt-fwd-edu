@@ -53,6 +53,12 @@ namespace fwdMotors {
 
   export const drivingControls = createDrivingControls()
 
+  /*
+   * Use this block before using the other driving blocks to set which motors get treated as left and right
+   * @param left set which motor will be treated as the left motor
+   * @param right set which motor will be treated as the right motor
+   * @param bias if the motors don't spin at quite the same rate, use the bias to balance them
+   */
   //% group="Driving"
   //% block="setup driving| left motor $left | right motor $right || left/right bias $bias"
   //% blockId=fwd_driving_setup
@@ -62,6 +68,12 @@ namespace fwdMotors {
     drivingControls.initMotors(left, right, bias)
   }
 
+  /*
+   * Drive either forwards or backwards
+   * (requires setup driving to used first)
+   * @param direction choose forwards or backwards
+   * @param speed choose 0-100% speed
+   */
   //% group="Driving"
   //% block="drive $direction at $speed"
   //% blockId=fwd_driving_drive
@@ -70,6 +82,9 @@ namespace fwdMotors {
     drivingControls.drive(direction, speed)
   }
 
+  /*
+   * Stop driving or turning. Sets speeds to zero.
+   */
   //% group="Driving"
   //% block="stop motors"
   //% blockId=fwd_driving_stop
@@ -77,6 +92,10 @@ namespace fwdMotors {
     drivingControls.drive(1, 0)
   }
 
+  /*
+   * Turns the vehicle left or right in place by turning the wheels in opposite directions
+   * @param angle Positive angles turn right, negative angles turn left
+   */
   //% group="Driving"
   //% block="turn $angle in place"
   //% blockId=fwd_driving_turn_in_place
