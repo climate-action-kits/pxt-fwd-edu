@@ -8,6 +8,7 @@ namespace fwdSensors {
     }
 
     /**
+     * Returns the sensor's distance reading in meters
     */
     //% group="Sonar"
     //% block="$this distance (m)"
@@ -15,6 +16,8 @@ namespace fwdSensors {
     fwdDistance(): number { return this.distance() }
 
     /**
+     * Runs code when the distance changes by more than a certain amount between readings
+     * @param threshold how many percent two readings have to differ by before code is run
     */
     //% group="Sonar"
     //% block="on $this distance changed by $threshold m"
@@ -24,6 +27,9 @@ namespace fwdSensors {
     }
 
     /**
+     * Runs code when the distance goes over or under a set threshold
+     * @param threshold what distance is the cut off before the code is run
+     * @param direction run when the distance is over or under your set threshold
     */
     //% group="Sonar"
     //% block="is $this distance $direction $threshold m"
