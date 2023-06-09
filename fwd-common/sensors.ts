@@ -1,5 +1,5 @@
 //% block="Sensors" color=#80CE4E
-//% icon="\uf8dd"
+//% icon="\uf519"
 //% weight=201
 namespace fwdSensors {
   export const enum thresholdDirection {
