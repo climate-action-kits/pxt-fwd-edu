@@ -8,6 +8,8 @@ namespace fwdSensors {
     }
 
     /**
+     * Code to run when a chosen event occurs
+     * @param event Button pressed (down), held, released (up)
      */
     //% group="Touch"
     //% block="on $this $event"
@@ -15,6 +17,7 @@ namespace fwdSensors {
     fwdOnTouch(event: jacdac.ButtonEvent, handler: () => void) { this.onEvent(event, handler) }
 
     /**
+     * Returns the ms duration of the last button hold in ms
      */
     //% group="Touch"
     //% block="$this hold duration (ms)"
@@ -22,6 +25,7 @@ namespace fwdSensors {
     fwdHoldDuration(): number { return this.holdDuration() }
 
     /**
+     * Returns true if the button is currently pressed, otherwise false
      */
     //% group="Touch"
     //% block="$this pressed"
