@@ -15,6 +15,7 @@ namespace fwdSensors {
     }
 
     /**
+     * Returns whether or not the line sensor is detecting a reflection
     */
     //% group="Line"
     //% block="$this state"
@@ -22,6 +23,8 @@ namespace fwdSensors {
     fwdLineSensorState(): lineSensorState { return Math.round(this.brightness()/100) }
 
     /**
+     * Checks for a specific line sensor state
+     * @param state ○ (miss) or ● (hit)
     */
     //% group="Line"
     //% block="$this state is $state"
@@ -29,6 +32,7 @@ namespace fwdSensors {
     fwdIsLineSensorState(state: lineSensorState): boolean { return state === this.fwdLineSensorState() }
 
     /**
+     * Runs code when the sensor changes from one state to another
      */
     //% group="Line"
     //% block="on $this state changes"
