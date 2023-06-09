@@ -18,6 +18,7 @@ namespace fwdSensors {
     }
 
     /**
+     * Returns the sensor's light level as a number between 0-100
     */
     //% group="Solar"
     //% block="$this light level (\\%)"
@@ -25,6 +26,8 @@ namespace fwdSensors {
     fwdLightLevel(): number { return this.lightLevel() }
 
     /**
+     * Runs code when the light level changes by more than a certain amount between readings
+     * @param threshold how many percent two readings have to differ by before code is run
     */
     //% group="Solar"
     //% block="on $this light level changed by $threshold (\\%)"
@@ -33,6 +36,9 @@ namespace fwdSensors {
     fwdOnLightLevelChangedBy(threshold: number, handler: () => void): void { this.onReadingChangedBy( this.toServiceBrightness(threshold), handler) }
 
     /**
+     * Runs code when the light level goes above or below a set threshold
+     * @param threshold what light level is the cut off before the code is run
+     * @param direction run when the level is above or below your set threshold
     */
     //% group="Solar"
     //% block="is $this light level $direction $threshold (\\%)"
