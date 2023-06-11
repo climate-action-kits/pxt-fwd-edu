@@ -19,6 +19,7 @@
     "files": [
         "README.md",
         "icon.png",
+        "test.ts",
         "main.ts"
     ],
     "public": true,
