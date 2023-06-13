@@ -128,7 +128,7 @@ namespace fwdMotors {
      */
     //% group="Servo (Continuous)"
     //% block="$this angle (°)"
-    //% blockId=fwd_servo_get_angle
+    //% blockId=fwd_servo_get_speed
     fwdGetSpeed(): number { return Math.map( this.angle(), this.minAngle(), this.maxAngle(), -100, 100 )  }
 
     /**
