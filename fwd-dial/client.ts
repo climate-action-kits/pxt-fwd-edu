@@ -56,7 +56,7 @@ namespace fwdSensors {
      */
     //% draggableParameters="reporter"
     //% group="Dial"
-    //% block="on $this turned || by $direction"
+    //% block="on $this turned by $direction"
     //% blockId=fwd_dial_on_dial_turned
     //% weight=98
     fwdOnDialTurned(direction: dialDirection, handler: (difference: number) => void): void {
