@@ -1,6 +1,6 @@
 function demoRunPumpDuration () {
-  console.info("Make sure the pump is connected to the board, and the board is on")
-  console.info("A heart will display on the microbit, and then random icons will cycle for 5s\n \
+  console.log("Make sure the pump is connected to the board, and the board is on")
+  console.log("A heart will display on the microbit, and then random icons will cycle for 5s\n \
                while the pump runs for 2 seconds in the background. This will repeat twice.")
   let startTime = 0
   while (!fwdMotors.pump.isConnected()) {
@@ -19,8 +19,8 @@ function demoRunPumpDuration () {
 }
 
 function demoSetAngleAndWait () {
-  console.info("Make sure a positional servo is connected to the left board connector, and the board is on")
-  console.info("A heart will display on the microbit, and then the servo arm will sweep between its maxima\n \
+  console.log("Make sure a positional servo is connected to the left board connector, and the board is on")
+  console.log("A heart will display on the microbit, and then the servo arm will sweep between its maxima\n \
                for 10 seconds. It should be able to reach its maxima before additional code gets run. This will repeat twice.")
   let startTime = 0
   while (!fwdMotors.servo1.isConnected()) {
@@ -42,7 +42,7 @@ function demoSetAngleAndWait () {
   }
 }
 
-console.info("Test new pump block")
+console.log("Test new pump block")
 demoRunPumpDuration()
-console.info("Test new servo block")
+console.log("Test new servo block")
 demoSetAngleAndWait()
