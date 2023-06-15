@@ -96,7 +96,7 @@ namespace fwdMotors {
     //% target.shadow="protractorPicker"
     //% target.min=-90 target.max=90
     fwdSetAngleAndWait(target: number): void {
-      let maxPauseDuration = (this.responseSpeed() / 60) * this.angleRange || 360
+      let maxPauseDuration = (this.responseSpeed() / 60) * this.angleRange + 20 || 380
       let travelDistance = Math.abs(this.fwdGetAngle() > target ?
         this.fwdGetAngle() - target :
         target - this.fwdGetAngle()
