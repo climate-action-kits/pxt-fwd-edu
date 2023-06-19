@@ -74,7 +74,7 @@ namespace fwdSensors {
      * @param rgb color value using either the blocks color picker or hex value
      * TODO: fix the color picker
      */
-    //% block="set $this $index to $rgb=colorWheelPicker"
+    //% block="set $this $index to $rgb=colorNumberPicker"
     //% blockId=fwd_led_set_single_pixel_colour
     //% group="LED Lights"
     fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
@@ -84,7 +84,7 @@ namespace fwdSensors {
      * @param rgb color value using either the blocks color picker or hex value
      * TODO: fix the color picker
      */
-    //% block="set all $this LEDs to $rgb=colorWheelPicker"
+    //% block="set all $this LEDs to $rgb=colorNumberPicker"
     //% blockId=fwd_led_set_all_pixels_colour
     //% group="LED Lights"
     fwdSetAllPixelsColour(rgb: number): void { this.setAll(rgb) }
