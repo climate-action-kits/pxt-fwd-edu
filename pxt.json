@@ -19,8 +19,10 @@
     "files": [
         "README.md",
         "icon.png",
-        "test.ts",
         "main.ts"
+    ],
+    "testFiles": [
+        "test.ts"
     ],
     "public": true,
     "supportedTargets": [
