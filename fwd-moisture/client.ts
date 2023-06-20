@@ -37,8 +37,8 @@ namespace fwdSensors {
     fwdIsMoistureLevelPastThreshold( threshold: number, direction: ThresholdDirection ): boolean {
       const difference = this.moisture() - threshold > 0;
       const isPastThreshold = 
-        direction === ThresholdDirection.over && difference ||
-        direction === ThresholdDirection.under && !difference;
+        direction === ThresholdDirection.Over && difference ||
+        direction === ThresholdDirection.Under && !difference;
       return isPastThreshold;
     }
   }

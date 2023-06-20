@@ -46,9 +46,9 @@ namespace fwdMotors {
 
   export const enum DrivingDirection {
     //% block="forward"
-    forward = -1,
+    Forward = -1,
     //% block="reverse"
-    reverse = 1
+    Reverse = 1
   }
 
   export const drivingControls = createDrivingControls()

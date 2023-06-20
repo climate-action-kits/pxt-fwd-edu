@@ -2,9 +2,9 @@ namespace fwdSensors {
 
   export const enum LineSensorState {
     //% block="○"
-    miss = 0,
+    Miss = 0,
     //% block="●"
-    hit = 1
+    Hit = 1
   } 
 
   //% fixedInstances

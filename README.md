@@ -15,8 +15,8 @@ Some samples of what coding with the Climate Action Kit can be seen below
 Using a soil moisture sensor and a pump, you can create an auto-watering system that will water the plant when the soil is dry and stop when it is damp.
 ```blocks
 basic.forever(function () {
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(15, fwdSensors.ThresholdDirection.under)) {
-        while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(42, fwdSensors.ThresholdDirection.under)) {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(15, fwdSensors.ThresholdDirection.Under)) {
+        while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(42, fwdSensors.ThresholdDirection.Under)) {
             fwdMotors.pump.fwdSetActive(true)
             basic.pause(1000)
             fwdMotors.pump.fwdSetActive(false)

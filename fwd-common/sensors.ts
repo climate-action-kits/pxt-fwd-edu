@@ -7,8 +7,8 @@
 namespace fwdSensors {
   export const enum ThresholdDirection {
     //% block="over"
-    over,
+    Over,
     //% block="under"
-    under 
+    Under 
   }
 }
