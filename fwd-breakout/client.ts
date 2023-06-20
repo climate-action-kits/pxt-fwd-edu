@@ -146,7 +146,7 @@ namespace fwdMotors {
 
   }
 
-  export const enum presetServoPosition {
+  export const enum PresetServoPosition {
     //% block="🕛 00:00"
     pos0 = 0,
     //% block="🕐 01:00"
@@ -176,7 +176,7 @@ namespace fwdMotors {
   //% block="position %position"
   //% blockId=fwd_servo_position_enum
   //% position.defl=0
-  export function fwdPositionPresets(position: presetServoPosition): number {
+  export function fwdPositionPresets(position: PresetServoPosition): number {
     return position as number
   }
 

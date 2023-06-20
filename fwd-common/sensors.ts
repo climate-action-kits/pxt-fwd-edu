@@ -5,7 +5,7 @@
 //% icon="\uf1eb"
 //% weight=201
 namespace fwdSensors {
-  export const enum thresholdDirection {
+  export const enum ThresholdDirection {
     //% block="over"
     over,
     //% block="under"

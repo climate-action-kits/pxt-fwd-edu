@@ -2,7 +2,7 @@ namespace fwdSensors {
 
   //% group="LED Lights"
   //% blockId=fwd_led_names
-  export const enum pixelNames {
+  export const enum PixelNames {
 		//% block="PXL1"
     PXL1 = 0,
 		//% block="PXL2"
@@ -77,7 +77,7 @@ namespace fwdSensors {
     //% block="set $this $index to $rgb=colorNumberPicker"
     //% blockId=fwd_led_set_single_pixel_colour
     //% group="LED Lights"
-    fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
+    fwdSetPixelColour(index: PixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
 
     /**
      * Set all LEDs to a color

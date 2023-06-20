@@ -44,7 +44,7 @@ namespace fwdMotors {
 
   }
 
-  export const enum drivingDirection {
+  export const enum DrivingDirection {
     //% block="forward"
     forward = -1,
     //% block="reverse"
@@ -78,7 +78,7 @@ namespace fwdMotors {
   //% block="drive $direction at $speed"
   //% blockId=fwd_driving_drive
   //% speed.shadow="speedPicker"
-  export function drive (direction: drivingDirection, speed: number) {
+  export function drive (direction: DrivingDirection, speed: number) {
     drivingControls.drive(direction, speed)
   }
 

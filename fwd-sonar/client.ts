@@ -34,11 +34,11 @@ namespace fwdSensors {
     //% group="Sonar"
     //% block="$this distance is $direction $threshold m"
     //% blockId=fwd_solar_is_distance_past_threshold
-    fwdDistancePastThreshold(threshold: number, direction: thresholdDirection ): boolean {
+    fwdDistancePastThreshold(threshold: number, direction: ThresholdDirection ): boolean {
       const difference = this.distance() - threshold > 0;
       const isPastThreshold = 
-        direction === thresholdDirection.over && difference ||
-        direction === thresholdDirection.under && !difference;
+        direction === ThresholdDirection.over && difference ||
+        direction === ThresholdDirection.under && !difference;
       return isPastThreshold 
     }
   }

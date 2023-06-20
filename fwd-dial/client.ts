@@ -1,5 +1,5 @@
 namespace fwdSensors {
-  export const enum dialDirection {
+  export const enum DialDirection {
     //% block="↻"
     cw,
     //% block="↺"
@@ -59,8 +59,8 @@ namespace fwdSensors {
     //% block="on $this turned by $direction $difference"
     //% blockId=fwd_dial_on_dial_turned
     //% weight=98
-    fwdOnDialTurned(direction: dialDirection, handler: (difference: number) => void): void {
-      if (direction === dialDirection.cw) {
+    fwdOnDialTurned(direction: DialDirection, handler: (difference: number) => void): void {
+      if (direction === DialDirection.cw) {
         this._cwAction = handler
       } else {
         this._ccwAction = handler

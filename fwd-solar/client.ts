@@ -44,11 +44,11 @@ namespace fwdSensors {
     //% block="$this light level is $direction $threshold (\\%)"
     //% blockId=fwd_solar_is_light_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    fwdIsLightLevelPastThreshold(threshold: number, direction: thresholdDirection ): boolean {
+    fwdIsLightLevelPastThreshold(threshold: number, direction: ThresholdDirection ): boolean {
       const difference = this.lightLevel() - threshold > 0;
       const isPastThreshold = 
-        direction === thresholdDirection.over && difference ||
-        direction === thresholdDirection.under && !difference;
+        direction === ThresholdDirection.over && difference ||
+        direction === ThresholdDirection.under && !difference;
       return isPastThreshold 
     }
   }

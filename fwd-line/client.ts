@@ -1,6 +1,6 @@
 namespace fwdSensors {
 
-  export const enum lineSensorState {
+  export const enum LineSensorState {
     //% block="○"
     miss = 0,
     //% block="●"
@@ -20,7 +20,7 @@ namespace fwdSensors {
     //% group="Line"
     //% block="$this state"
     //% blockId=fwd_line_sensor_state
-    fwdLineSensorState(): lineSensorState { return Math.round(this.brightness()/100) }
+    fwdLineSensorState(): LineSensorState { return Math.round(this.brightness()/100) }
 
     /**
      * Checks for a specific line sensor state
@@ -29,7 +29,7 @@ namespace fwdSensors {
     //% group="Line"
     //% block="$this state is $state"
     //% blockId=fwd_line_sensor_state_check
-    fwdIsLineSensorState(state: lineSensorState): boolean { return state === this.fwdLineSensorState() }
+    fwdIsLineSensorState(state: LineSensorState): boolean { return state === this.fwdLineSensorState() }
 
     /**
      * Runs code when the sensor changes from one state to another

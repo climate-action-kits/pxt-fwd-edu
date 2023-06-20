@@ -34,11 +34,11 @@ namespace fwdSensors {
     //% block="$this level is $direction $threshold (\\%)"
     //% blockId=fwd_moisture_is_moisture_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
-    fwdIsMoistureLevelPastThreshold( threshold: number, direction: thresholdDirection ): boolean {
+    fwdIsMoistureLevelPastThreshold( threshold: number, direction: ThresholdDirection ): boolean {
       const difference = this.moisture() - threshold > 0;
       const isPastThreshold = 
-        direction === thresholdDirection.over && difference ||
-        direction === thresholdDirection.under && !difference;
+        direction === ThresholdDirection.over && difference ||
+        direction === ThresholdDirection.under && !difference;
       return isPastThreshold;
     }
   }
