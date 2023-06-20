@@ -36,7 +36,7 @@ namespace fwdSensors {
       super(role)
     }
 
-    /*
+    /**
      * Set the brightness of the LED ring
      * @param brightness Level between 0 (off) and 10 (full power)
      */
@@ -48,7 +48,7 @@ namespace fwdSensors {
       this.setBrightness(this.toServiceBrightness(value))
     }
 
-    /*
+    /**
      * Returns how many lights make up an LED ring
      */
     //% block="$this number of pixels"
@@ -58,7 +58,7 @@ namespace fwdSensors {
       return this.numPixels();
     }
 
-    /*
+    /**
      * Returns the brightness level of the ring, 0-10
      */
     //% block="$this brightness"
@@ -68,7 +68,7 @@ namespace fwdSensors {
       return this.toBlocksBrightness(this.brightness())
     }
 
-    /*
+    /**
      * Set a specific LED to a color
      * @param index the LED number
      * @param rgb color value using either the blocks color picker or hex value
@@ -79,7 +79,7 @@ namespace fwdSensors {
     //% group="LED Lights"
     fwdSetPixelColour(index: pixelNames | number, rgb: number): void { this.setPixelColor(index, rgb) }
 
-    /*
+    /**
      * Set all LEDs to a color
      * @param rgb color value using either the blocks color picker or hex value
      * TODO: fix the color picker
@@ -89,7 +89,7 @@ namespace fwdSensors {
     //% group="LED Lights"
     fwdSetAllPixelsColour(rgb: number): void { this.setAll(rgb) }
 
-    /*
+    /**
      * Rotate the light pattern left or right, wrapping the last pixel back to the first
      * @param offset The number of positions to rotate. Positive are clockwise, negative are counter-clockwise
      */
@@ -99,7 +99,7 @@ namespace fwdSensors {
     //% offset.defl=1
     fwdRotate(offset:number): void { this.rotate(offset) }
 
-    /*
+    /**
      * Shift the light pattern left or right. If the light pattern is shifted past the first or last light, that part of the pattern is removed.
      * @param offset The number of positions to shift. Positive are clockwise, negative are counter-clockwise
      */
