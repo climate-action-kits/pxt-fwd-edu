@@ -41,7 +41,7 @@ namespace fwdSensors {
      * @param direction run when the level is above or below your set threshold
     */
     //% group="Solar"
-    //% block="is $this light level $direction $threshold (\\%)"
+    //% block="$this light level is $direction $threshold (\\%)"
     //% blockId=fwd_solar_is_light_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsLightLevelPastThreshold(threshold: number, direction: thresholdDirection ): boolean {

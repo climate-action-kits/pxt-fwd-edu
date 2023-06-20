@@ -60,7 +60,7 @@ namespace fwdMotors {
    * @param bias if the motors don't spin at quite the same rate, use the bias to balance them
    */
   //% group="Driving"
-  //% block="setup driving| left motor $left | right motor $right || left/right bias $bias"
+  //% block="setup driving|left motor $left|right motor $right||left/right bias $bias"
   //% blockId=fwd_driving_setup
   //% bias.shadow="speedPicker"
   //% inlineInputMode=external
