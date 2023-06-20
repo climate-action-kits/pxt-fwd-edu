@@ -96,7 +96,8 @@ namespace fwdSensors {
     //% block="rotate $this pattern by $offset"
     //% blockId=fwd_led_rotate_pattern
     //% group="LED Lights"
-    fwdRotate(offset = 1): void { this.rotate(offset) }
+    //% offset.defl=1
+    fwdRotate(offset:number): void { this.rotate(offset) }
 
     /*
      * Shift the light pattern left or right. If the light pattern is shifted past the first or last light, that part of the pattern is removed.
@@ -105,7 +106,8 @@ namespace fwdSensors {
     //% block="shift $this pattern by $offset"
     //% blockId=fwd_led_shift_pattern
     //% group="LED Lights"
-    fwdShift(offset = 1): void { this.shift(offset) }
+    //% offset.defl=1
+    fwdShift(offset:number): void { this.shift(offset) }
 
   }
 
