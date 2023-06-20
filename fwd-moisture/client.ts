@@ -31,7 +31,7 @@ namespace fwdSensors {
      * @param direction run when the level is above or below your set threshold
     */
     //% group="Moisture"
-    //% block="is $this level $direction $threshold (\\%)"
+    //% block="$this level is $direction $threshold (\\%)"
     //% blockId=fwd_moisture_is_moisture_level_past_threshold
     //% threshold.min=0 threshold.max=100 threshold.defl=5
     fwdIsMoistureLevelPastThreshold( threshold: number, direction: thresholdDirection ): boolean {

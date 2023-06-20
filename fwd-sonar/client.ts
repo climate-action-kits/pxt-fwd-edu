@@ -32,7 +32,7 @@ namespace fwdSensors {
      * @param direction run when the distance is over or under your set threshold
     */
     //% group="Sonar"
-    //% block="is $this distance $direction $threshold m"
+    //% block="$this distance is $direction $threshold m"
     //% blockId=fwd_solar_is_distance_past_threshold
     fwdDistancePastThreshold(threshold: number, direction: thresholdDirection ): boolean {
       const difference = this.distance() - threshold > 0;
