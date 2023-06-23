@@ -6,19 +6,19 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
 Welcome to Plants & Pollinators Coding Tutorial.
-![built project](tutorial-assets/project-beetouch-400.png)
+![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-beetouch-400.png)
 
 ## Step 2 @showdialog
 Plug your USB cable into the micro:bit. 
-![breakout board](tutorial-assets/connect-microbit.gif)
+![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
 Insert it into the Climate Action Kit board. 
-![breakout board](tutorial-assets/breakout-resized.png)
+![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
 Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
-![pair gif](tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 
 Click ``||Variables:Variables||``. Click on |Make a Variable| to create a new ``||Variables:Variable||``.  

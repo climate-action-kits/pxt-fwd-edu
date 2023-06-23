@@ -5,19 +5,19 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ```
 ## Step 1 @showdialog
 Welcome to Tree Seeder Coding Tutorial
-![built project](tutorial-assets/project-treeseeder-400.png)
+![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-treeseeder-400.png)
 
 ## Step 2 @showdialog
 Plug your USB cable into the micro:bit. 
-![breakout board](tutorial-assets/connect-microbit.gif)
+![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
 Insert it into the Climate Action Kit board. 
-![breakout board](tutorial-assets/breakout-resized.png)
+![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
 Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
-![pair gif](tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Setup Driving||`` block inside ``||basic:on start||`` loop.
