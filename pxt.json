@@ -18,6 +18,12 @@
     },
     "files": [
         "README.md",
+				"advancedagriculture.md",
+				"electricvehicle.md",
+				"plantsnpollinators.md",
+				"solarenergy.md",
+				"treeseeder.md",
+				"windenergy.md",
         "icon.png"
     ],
     "testFiles": [
