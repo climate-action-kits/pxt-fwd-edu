@@ -1,5 +1,5 @@
 # pxt-fwd-edu (beta)
-Climate Action Kit (2nd generation)
+Climate Action Kit (2nd generation), by Forward Education
 
 [ Find us at https://forwardedu.com/ ](https://forwardedu.com/)
 
@@ -49,7 +49,6 @@ basic.forever(function () {
 })
 ```
 ## Supported Targets
-
 
 * for PXT/microbit
 
