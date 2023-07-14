@@ -1,7 +1,7 @@
 {
     "name": "pxt-fwd-edu",
     "version": "0.18.2",
-    "description": "FWD Edu Climate Action Kit Gen. 2 Kit",
+    "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2 Kit",
     "license": "MIT",
     "dependencies": {
         "core": "*",
