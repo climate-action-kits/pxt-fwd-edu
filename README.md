@@ -28,16 +28,16 @@ basic.forever(function () {
 
 Control a servo arm with a dial.
 ```blocks
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.ccw, function (difference) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetAngle(Math.constrain(fwdMotors.servo1.fwdGetAngle() + 5 * difference, 0, 270))
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.dialDirection.cw, function (difference) {
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetAngle(Math.constrain(fwdMotors.servo1.fwdGetAngle() + 5 * difference, 0, 270))
 })
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Up, function () {
-    fwdMotors.servo1.fwdSetAngleAndWait(fwdMotors.fwdPositionPresets(fwdMotors.presetServoPosition.pos4))
+    fwdMotors.servo1.fwdSetAngleAndWait(fwdMotors.fwdPositionPresets(fwdMotors.PresetServoPosition.Pos4))
 })
-fwdMotors.servo1.fwdSetAngle(fwdMotors.fwdPositionPresets(fwdMotors.presetServoPosition.pos4))
+fwdMotors.servo1.fwdSetAngle(fwdMotors.fwdPositionPresets(fwdMotors.PresetServoPosition.Pos4))
 ```
 
 Control LED ring based on distance and light level

@@ -29,12 +29,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 ## Step 6
 Right click ``||fwdSensors:on dial1 turned difference||`` block and duplicate. _Note: New block will be grey._
-```blocks
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    })
-```
+![greyed out example](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-greyed-out-demo.png)
 ## Step 7
 Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned difference||`` block. _Note: Greyed out block will turn green._
 ![dial direction](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dialdirectiondiff.gif)
