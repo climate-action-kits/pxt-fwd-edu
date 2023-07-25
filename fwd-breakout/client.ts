@@ -127,7 +127,7 @@ namespace fwdMotors {
      * Reports what speed the servo is set to
      */
     //% group="Servo (Continuous)"
-    //% block="$this speed (%)"
+    //% block="$this speed (\\%)"
     //% blockId=fwd_servo_get_speed
     fwdGetSpeed(): number { return Math.map( this.angle(), this.minAngle(), this.maxAngle(), -100, 100 )  }
 
