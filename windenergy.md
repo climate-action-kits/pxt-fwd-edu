@@ -20,17 +20,22 @@ Insert it into the Climate Action Kit board.
 Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
 ![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
 
-## Step 5
+## Step 5 @showhint
+Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
+![wind](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-6-Dial.gif)
+
+## Step 6
 Click ``||fwdSensors:Sensors||`` drag and drop
 ``||fwdSensors:on dial1 turned difference||`` block in workspace. 
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     })
 ```
-## Step 6
+## Step 7
 Right click ``||fwdSensors:on dial1 turned difference||`` block and duplicate. _Note: New block will be grey._
 ![greyed out example](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-greyed-out-demo.png)
-## Step 7
+
+## Step 8
 Change the direction arrow of the greyed out ``||fwdSensors:on dial1 turned difference||`` block. _Note: Greyed out block will turn green._
 ![dial direction](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-direction-switch.gif)
 ```blocks
@@ -39,7 +44,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     })
 ```
-## Step 8
+## Step 9
 Click ``||fwdSensors:Sensors||`` drag and drop 
 ``||fwdSensors:on touch down||`` block in workspace.
 ```blocks
@@ -50,7 +55,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     })
 ```
-## Step 9
+## Step 10
 Click ``||fwdMotors:Motors||`` drag and drop 
 ``||fwdMotors:set servo1 to 50 %||`` inside
 ``||fwdSensors:on dial1 turned difference||`` block.
@@ -63,7 +68,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     })
 ```
-## Step 10 
+## Step 11 
 Right click ``||fwdMotors:set servo1 to 50 %||`` block and duplicate.
 Drag and drop inside the second ``||fwdSensors:on dial1 turned difference||`` block.
 ```blocks
@@ -77,7 +82,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 ```
 
-## Step 11
+## Step 12
 Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set servo1 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set servo1 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -89,7 +94,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(50)
 })
 ```
-## Step 12
+## Step 13
 Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set servo1 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set servo1 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -101,7 +106,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 13
+## Step 14
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo1 50 %||`` block inside ``||fwdSensors:on touch down||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -114,7 +119,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 14
+## Step 15
 Change speed of ``||fwdMotors:set servo1 50 %||`` block inside ``||fwdSensors:on touch down||``
 to ``||0||``.
 ```blocks
@@ -128,6 +133,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 15
-``|Download|`` and test your code.
+## Step 16 @showhint
+``|Download|`` and test your code.The simulator shows how it should work.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
+![dial-servo](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-13-wind.gif)
