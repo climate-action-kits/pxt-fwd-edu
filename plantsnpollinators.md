@@ -5,7 +5,7 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
-Welcome to Plants & Pollinators Coding Tutorial.
+Welcome to Plants & Pollinators Coding Tutorial!
 ![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-beetouch-400.png)
 
 ## Step 2 @showdialog
