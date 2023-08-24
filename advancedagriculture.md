@@ -22,7 +22,7 @@ Click three dots besides ``|Download|`` button and follow the steps to pair your
 
 ## Step 5 @showhint
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
-![moisture](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-4-moisture.gif)
+![moisture](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 6
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||`` block inside ``||basic:forever||`` loop.
@@ -128,4 +128,4 @@ basic.forever(function () {
 ## Step 14 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automatic Irrigation System! - Go back to the lesson for more activities and extensions.
-![moisture-pump](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-11-Moisture-pump.gif)
+![moisture-pump](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-11-Moisture-pump.gif)

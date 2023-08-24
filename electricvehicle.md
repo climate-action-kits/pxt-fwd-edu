@@ -21,7 +21,7 @@ Click three dots besides ``|Download|`` button and follow the steps to pair your
 
 ## Step 5 @showhint
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
-![line](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-5-Line.gif)
+![line](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-5-Line.gif)
 
 ## Step 6
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Setup Driving||`` block inside ``||basic:on start||`` loop.
@@ -298,4 +298,4 @@ basic.forever(function () {
 ## Step 22 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Electric Vehicle Prototype! - Go back to the lesson for more activities and extensions.
-![line-servos](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-16-ev-line.gif)
+![line-servos](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-16-ev-line.gif)

@@ -21,7 +21,7 @@ Click three dots besides ``|Download|`` button and follow the steps to pair your
 
 ## Step 5 @showhint
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
-![servo-nocode](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-2.png)
+![servo-nocode](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-2.png)
 
 ## Step 6
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Setup Driving||`` block inside ``||basic:on start||`` loop.
@@ -238,4 +238,4 @@ input.onButtonPressed(Button.A, function () {
 ## Step 20 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automated Tree Seeder Prototype! - Go back to the lesson for more activities and extensions.
-![servos](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-15-tree.gif)
+![servos](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-15-tree.gif)
