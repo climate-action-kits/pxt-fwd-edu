@@ -19,16 +19,20 @@ Insert it into the Climate Action Kit board.
 Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
 ![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
 
-## Step 5 
+## Step 5 @showhint
+Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
+![solar](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-8-Solar.gif)
+
+## Step 6
 Click ``||Variables:Variables||``. Click on |Make a Variable| to
 create a new ``||Variables:Variable||``.
 Name it ``||Variables:position||``.
 
-## Step 6
+## Step 7
 Inside ``||Variables:Variables||`` there is ``||Variables:position||``
 and more blocks.
 
-## Step 7 
+## Step 8 
 Click ``||Variables:Variables||``. Drag and drop
 ``||Variables:set position to 0||`` inside ``||basic:on start||`` block. 
 Change ``||Variables:0||`` to ``||Variables:-90||``.
@@ -37,7 +41,7 @@ let position = -90
 basic.forever(function(){
 })
 ```
-## Step 8 
+## Step 9 
 Click ``||logic:Logic||`` drag and drop ``||logic:If true then else||``
 block inside the ``||basic:forever||`` loop.
 ```blocks
@@ -49,7 +53,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 9 
+## Step 10 
 Click ``||logic:Logic||`` drag and drop ``||logic:comparison block||`` ``||logic: greater than >||`` to
 replace ``||logic:true||`` condition of the ``||logic: if then else||`` loop.
 ```blocks
@@ -61,7 +65,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 10 
+## Step 11 
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:solar1 light level %||``
 block to replace ``||0||`` on left side of the ``||logic:comparison||`` block.
 ```blocks
@@ -73,7 +77,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 11
+## Step 12
 Click right side of the ``||logic:comparison||`` block.
 Change ``||0||`` to ``||75||``.
 ```blocks
@@ -85,7 +89,7 @@ basic.forever(function(){
     }
 })
 ```
-## Step 12 
+## Step 13 
 Click ``||basic:Basic||`` drag and drop ``||basic:show icon||`` block 
 inside ``||logic:if true then||`` condition. 
 Select ``||basic:target||`` icon.
@@ -98,7 +102,7 @@ basic.forever(function () {
     else {}
 })
 ```
-## Step 13
+## Step 14
 Click ``||fwdMotors:Motors||`` drag and drop 
 ``||fwdMotors:set servo1 off||`` block under 
 ``||basic:show icon target||`` block. 
@@ -112,7 +116,7 @@ basic.forever(function () {
     else {}
 })
 ```
-## Step 14 
+## Step 15 
 Click ``||basic:Basic||`` drag and drop ``||basic:show icon||`` block
 inside ``||logic:else||`` condition.
 Select ``||basic: small diamond icon||``.
@@ -127,7 +131,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 15
+## Step 16
 Click ``||Variables:Variables||`` drag and drop 
 ``||Variables:change position by 1||`` block 
 under ``||basic:show icon small diamond||`` block.
@@ -143,7 +147,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 16
+## Step 17
 Change the value of ``||variables:change position by 1||`` to ``||10||``.
 ```blocks
 let position = -90
@@ -157,7 +161,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 17
+## Step 18
 Click ``||logic:Logic||`` drag and drop ``||logic:if true then||``
 block under the ``||Variables:change position by 10||`` block. 
 ```blocks
@@ -174,7 +178,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 18
+## Step 19
 Click ``||logic:Logic||`` drag and drop ``||logic:comparison||`` ``||logic: less than <||``
 block to replace ``||logic:true||`` condition of ``||logic: if true then||``
 block. Change ``||logic: less than < to greater than >||``.
@@ -193,7 +197,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 19
+## Step 20
 Click ``||Variables:Variables||`` drag and drop 
 ``||Variables:position||`` block on left side of the 
 ``||logic:comparison||`` block. 
@@ -212,7 +216,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 20
+## Step 21
 Change ``||0||`` to ``||90||`` on right side of the ``||logic:comparison||``
 block. 
 ```blocks
@@ -230,7 +234,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 21
+## Step 22
 Click ``||Variables:Variables||`` drag and drop ``||Variables:set position to 0||`` 
 inside ``||logic:if||`` ``||variables:position||`` ``||logic: > 90 then||`` block.
 ```blocks
@@ -250,7 +254,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 22
+## Step 23
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo 0 '||``
 block under ``||logic:if then||`` condition.
 ```blocks
@@ -269,7 +273,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 23
+## Step 24
 Click ``||Variables:Variables||`` drag and drop ``||Variables:position||`` block 
 to replace ``||0||`` in ``||fwdMotors:set servo 1 to 0 '||`` block.
 ```blocks
@@ -288,7 +292,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 24
+## Step 25
 Click ``||basic:Basic||`` drag and drop ``||basic:pause||`` block under
 ``||fwdMotors:set servo1 to||`` ``||Variables:position||`` block. Change
 ``||basic:(ms) 100||`` to ``||basic:(ms) 20||``.
@@ -309,6 +313,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 25
-``|Download|``and test your code.
+## Step 26 @showhint
+``|Download|``and test your code. The simulator shows how it should work.
 Congratulations on completing your Solar Panel Project! - Go back to the lesson for more activities and extensions.
+![solar-servo](https://mbakhtar.github.io/mvp-6-tutorials-update/updated-assets/simulator-14-solar-array.gif)
