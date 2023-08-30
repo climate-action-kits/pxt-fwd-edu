@@ -195,15 +195,14 @@ input.onButtonPressed(Button.B, function () {
 ```
 ## Step 20
 Click ``||Variables:Variables||`` and create ``||Variables:4 Variables||``.
--``||Variables:start_time||``
--``||Variables:stop_time||``
--``||Variables:revolutions||``
--``||Variables:RPM||``
+- ``||Variables:start_time||``
+- ``||Variables:stop_time||``
+- ``||Variables:revolutions||``
+- ``||Variables:RPM||``
 
 ## Step 21
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
-block to replace ``||0||`` block
-under ``||fwdMotors:set servo1 dial1 absolute position||`` block.
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set start_time to 0||``
+inside ``||Input:on button A pressed||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.servo1.fwdSetSpeed(0)
@@ -213,6 +212,11 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+    start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
 })
 ```
 ## Step 20
