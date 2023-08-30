@@ -94,20 +94,6 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 ```
 ## Step 13
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0 to ||`` block 
-under ``||fwdMotors:set servo1||`` ``||fwdSensors:dial1 absolute position||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(50)
-})
-```
-
-## Step 14
 Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set servo1 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set servo1 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -119,20 +105,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 15
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0 to ||`` block 
-under ``||fwdMotors:set servo1||`` ``||fwdSensors:dial1 absolute position||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-```
-## Step 16
+## Step 14
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo1 50 %||`` block inside ``||fwdSensors:on touch down||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -145,7 +118,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 17
+## Step 15
 Change speed of ``||fwdMotors:set servo1 50 %||`` block inside ``||fwdSensors:on touch down||``
 to ``||0||``.
 ```blocks
@@ -159,10 +132,49 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 18
-Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||``
-block on the workspace.
+
+## Step 16
+Click on ``||Variables:Variables||`` and make ``||4||`` ``||Variables:Variables||``.
+- ``||Variables:start_time||``
+- ``||Variables:stop_time||``
+- ``||Variables:revolutions||``
+- ``||Variables:RPM||``
 ```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+```
+## Step 17
+Click on ``||Variables:Variables||`` drag and drop ``||Variables:set start_time to 0||``
+inside ``||Basic:on start||`` block. Repeat this for all the ``||Variables:Variables||``.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+```
+## Step 18
+Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||`` block on the workspace.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.servo1.fwdSetSpeed(0)
 })
@@ -176,85 +188,75 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 ## Step 19
-Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||``
-block on the workspace. Change ``||Input:A||`` to ``||Input:B||``.
+Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||`` block on the workspace.
+_Note: This block will be greyed out._ Change the ``||Input:button A||`` to ``||Input:button B||``.
 ```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.servo1.fwdSetSpeed(0)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-input.onButtonPressed(Button.A, function () {
-})
-input.onButtonPressed(Button.B, function () {
-})
-```
-## Step 20
-Click ``||Variables:Variables||`` and create ``||Variables:4 Variables||``.
-- ``||Variables:start_time||``
-- ``||Variables:stop_time||``
-- ``||Variables:revolutions||``
-- ``||Variables:RPM||``
-
-## Step 21
-Click ``||Variables:Variables||`` drag and drop ``||Variables:set start_time to 0||``
-inside ``||Input:on button A pressed||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.servo1.fwdSetSpeed(0)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-input.onButtonPressed(Button.A, function () {
-    start_time = 0
-})
-input.onButtonPressed(Button.B, function () {
-})
-```
-## Step 20
-Change ``||fwdSensors:set ledRing||`` under ``||fwdSensors:on dial1 turned by CCW||``
-colour to black.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.servo1.fwdSetSpeed(0)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-})
-input.onButtonPressed(Button.A, function () {
-    start_time = input.runningTime()
-})
-input.onButtonPressed(Button.B, function () {
-    stop_time = input.runningTime()
-})
 let stop_time = 0
 let start_time = 0
-start_time = 0
-stop_time = 0
 let revolutions = 0
 let RPM = 0
-basic.forever(function () {
-    if (input.buttonIsPressed(Button.B)) {
-        revolutions += 1
-    }
-    RPM = (stop_time - start_time) / 60000
-    basic.showNumber(RPM)
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
 })
-
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+})
+input.onButtonPressed(Button.B, function () {
+})
 ```
-
-## Step 20 @showhint
+## Step 20
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set start_time to 0||`` inside
+``||Input:on button A pressed||``.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
+})
+```
+## Step 21
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set stop_time to 0||`` inside
+``||Input:on button B pressed||``.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
+stop_time = 0
+})
+```
+## Step 22 @showhint
 ``|Download|`` and test your code.The simulator shows how it should work.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
 ![dial-servo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-13-wind.gif)
