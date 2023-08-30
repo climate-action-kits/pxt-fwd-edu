@@ -101,7 +101,6 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0,0xff0000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(50)
@@ -115,7 +114,6 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0,0xff0000) 
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
@@ -129,11 +127,9 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0,0xff0000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
 ## Step 16
@@ -144,11 +140,9 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
 ## Step 17
@@ -160,16 +154,14 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
 ## Step 18
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
-block to replace ``||0||`` in the ``||fwdSensors:set ledRing 0 to||`` block
+block to replace ``||0||`` block
 under ``||fwdMotors:set servo1 dial1 absolute position||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -177,16 +169,14 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(),0xff0000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
 ## Step 19
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
-block to replace ``||0||`` in the ``||fwdSensors:set ledRing 0 to||`` block
+block to replace ``||0||`` block
 under ``||fwdMotors:set servo1 dial1 absolute position||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -194,11 +184,9 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(),0xff0000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(), 0xff0000)
 })
 ```
 ## Step 20
@@ -210,12 +198,30 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(),0x000000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(), 0xff0000)
 })
+input.onButtonPressed(Button.A, function () {
+    start_time = input.runningTime()
+})
+input.onButtonPressed(Button.B, function () {
+    stop_time = input.runningTime()
+})
+let stop_time = 0
+let start_time = 0
+start_time = 0
+stop_time = 0
+let revolutions = 0
+let RPM = 0
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+        revolutions += 1
+    }
+    RPM = (stop_time - start_time) / 60000
+    basic.showNumber(RPM)
+})
+
 ```
 
 ## Step 20 @showhint
