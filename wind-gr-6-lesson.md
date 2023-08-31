@@ -377,7 +377,135 @@ basic.forever(function () {
 RPM = (0-0)
 })
 ```
-## Step 2 @showhint
+## Step 26
+Click ``||Math:Math||`` drag and drop any
+``||Math:operator||`` block to replace the right side ``||Math:0||`` of
+``||Variables:set RPM to||`` ``||Math: 0 - 0||``. Change the ``||Math:operator|``
+to ``||Math: Division /||``. The ``||Divisor||`` is ``||60000||``.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
+stop_time = 0
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+    revolutions += 1
+    }
+RPM = (0-0)/60000
+})
+```
+## Step 27
+Click ``||Variables:Variables||`` drag and drop ``||Variables:stop_time||`` to
+replace left ``||Math:0||``. Drag and drop ``||Variables:start_time||`` to replace
+right ``||Math:0||``.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
+stop_time = 0
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+    revolutions += 1
+    }
+RPM = (stop_time - start_time)/60000
+})
+```
+## Step 28
+Click ``||Basic:Basic||`` drag and drop ``||Basic:show number||`` block under
+``||Variables:set RPM to||`` ``||Math:(stop_time-start_time)/60000||``. Replace
+``||0||`` with ``||Variables:RPM||``.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
+stop_time = 0
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+    revolutions += 1
+    }
+RPM = (stop_time - start_time)/60000
+basic.showNumber(RPM)
+})
+```
+## Step 29
+Click ``||Input:Input||`` drag and drop ``||Input:running time||`` block to replace
+``||0||`` in ``||Variables:start_time||`` and ``||Variables:stop_time||``
+nested in ``||Input:on button A pressed||`` and ``||Input:on button A pressed||``
+respectively.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = input.runningTime()
+})
+input.onButtonPressed(Button.B, function () {
+stop_time = input.runningTime()
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+    revolutions += 1
+    }
+RPM = (stop_time - start_time)/60000
+basic.showNumber(RPM)
+})
+```
+## Step 30 @showhint
 ``|Download|`` and test your code.The simulator shows how it should work.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
 ![dial-servo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-13-wind.gif)
