@@ -313,7 +313,38 @@ basic.forever(function () {
     }
 })
 ```
-## Step 24 @showhint
+## Step 24
+Click ``||Variables:Variables||`` drag and drop ``||Variables:change revolutions by 1||`` 
+block inside ``||Logic:if||`` ``||Input:button B is pressed||`` ``||Logic:then||``
+block.
+``||Basic:forever||``block.
+```blocks
+let stop_time = 0
+let start_time = 0
+let revolutions = 0
+let RPM = 0
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.servo1.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.servo1.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+input.onButtonPressed(Button.A, function () {
+start_time = 0
+})
+input.onButtonPressed(Button.B, function () {
+stop_time = 0
+})
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.B)) {
+    revolutions += 1
+    }
+})
+```
+## Step 2 @showhint
 ``|Download|`` and test your code.The simulator shows how it should work.
 Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
 ![dial-servo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-13-wind.gif)
