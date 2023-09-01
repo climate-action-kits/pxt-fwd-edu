@@ -1,4 +1,4 @@
-# Automatic Irrigation System
+# Advanced Agriculture
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
@@ -125,9 +125,9 @@ basic.forever(function () {
         }
 })
 ```
-## New Steps after this
-Click ``||basic:basic||`` drag and drop ``||basic:clear screen||`` 
-block under ``||basic:pause (ms) 500||`` block.
+## Step 14
+Click ``||Logic:Logic||`` drag and drop ``||Logic:If true then||`` block under 
+``||Logic: If then else||`` block. Repeat this step ``||Logic:4||`` times. 
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
@@ -138,25 +138,17 @@ basic.forever(function () {
         basic.pause(500)
         basic.clearScreen()
     }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(80, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    if(true){
     }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(60, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(5, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(4, 0xff0000)
+    if(true){
     }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(40, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(3, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(2, 0xff0000)
+    if (true){
     }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    if (true){
     }
 })
-
 ```
-## Step 14 @showhint
+## Step 15 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automatic Irrigation System! - Go back to the lesson for more activities and extensions.
 ![moisture-pump](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-11-Moisture-pump.gif)
