@@ -122,7 +122,108 @@ basic.forever(function () {
 })
 ```
 ## Step 17
-``||LED:LED||``
+Click ``||LED:LED||`` drag and drop ``||LED: plot bar graph of 0 upto 0||`` block
+under ``||fwdSensors:set all pixels colour||`` block
+```blocks
+let bugVisits = 0
+bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        led.plotBarGraph(0,0)
+    }
+})
+```
+## Step 18
+Click ``||Variables:Variables||`` drag and drop ``||Variables:bugVisits||`` block
+to replace ``||0||`` in ``||LED:plot bar grap of 0||`` block. Change ``||LED:upto 0||``
+to ``||25||``
+```blocks
+let bugVisits = 0
+bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        led.plotBarGraph(
+        bugVisits,
+        25
+        )
+    }
+})
+```
+## Step 19
+Click ``||Input:Input||`` drag and drop ``||Input:on button A pressed||`` block
+on the workspace.
+```blocks
+input.onButtonPressed(Button.A, function () {
+})
+let bugVisits = 0
+bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        led.plotBarGraph(
+        bugVisits,
+        25
+        )
+    }
+})
+```
+## Step 20
+Click ``||Basic:Basic||`` drag and drop ``||Basic:clear screen||`` block inside
+``||Input:on button A pressed||`` block.
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
+})
+let bugVisits = 0
+bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        led.plotBarGraph(
+        bugVisits,
+        25
+        )
+    }
+})
+```
+## Step 21
+Click ``||Basic:Basic||`` drag and drop ``||Basic:show number||`` block under
+``||Basic:clear screen||`` block. Click ``||Variables:Variables||`` drag and drop
+``||Variables:bugVisits||`` block to replace ``||0||`` in ``||Basic:show number||`` block.
+```blocks
+input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
+    basic.showNumber(bugVisits)
+})
+let bugVisits = 0
+bugVisits = 0
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        led.plotBarGraph(
+        bugVisits,
+        25
+        )
+    }
+})
+```
+## Step 22
+Click ``||Basic:Basic||`` drag and drop ``||Basic:pause (ms) 100||`` block under
+``||Basic:show number||`` ``||Variables:bugVisits||`` block. Click ``||Basic:Basic||`` drag and drop ``||Basic:pause (ms) 100||`` block under
+``||Basic:clear screen||`` block under ``||Basic:pause (ms) 100||`` block. Change ``||100||``
+of ``||Basic:pause (ms) 100||`` block to ``||Basic:5000||``.
 ```blocks
 input.onButtonPressed(Button.A, function () {
     basic.clearScreen()
@@ -144,8 +245,7 @@ basic.forever(function () {
     }
 })
 ```
-
-## Step 17 @showhint
+## Step 23 @showhint
 Click ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions.
 ![touch-led](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-10-LED-bee.gif)
