@@ -148,7 +148,30 @@ basic.forever(function () {
     }
 })
 ```
-## Step 15 @showhint
+## Step 15
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:soilMoisture1 level is over||`` block
+to replace ``||Logic:true||`` condition of ``||Logic:4 if true then||`` blocks.
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        fwdMotors.pump.fwdTimedRun(500)
+        basic.pause(500)
+        basic.clearScreen()
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+})
+```
+## Step 16 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automatic Irrigation System! - Go back to the lesson for more activities and extensions.
 ![moisture-pump](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-11-Moisture-pump.gif)
