@@ -171,7 +171,160 @@ basic.forever(function () {
     }
 })
 ```
-## Step 16 @showhint
+## Step 16
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block
+under ``||fwdSensors:soilMoisture1 level is over||`` block.
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        fwdMotors.pump.fwdTimedRun(500)
+        basic.pause(500)
+        basic.clearScreen()
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    }
+})
+```
+## Step 17
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0||`` block
+under remaining ``||fwdSensors:3 soilMoisture1 level is over||`` blocks.
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        fwdMotors.pump.fwdTimedRun(500)
+        basic.pause(500)
+        basic.clearScreen()
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+})
+```
+## Step 18
+Right click ``||fwdSensors:set ledRing 0||`` block and duplicate it. Each 
+``||Logic:If||`` ``||fwdSensors:soilMoisture1 is over||`` ``||Logic:then||`` block
+should have ``||fwdSensors:2 set ledRing 0||`` blocks inside the ``||Logic:If condition||`` block.
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        fwdMotors.pump.fwdTimedRun(500)
+        basic.pause(500)
+        basic.clearScreen()
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+})
+```
+## Step 19
+Change the threshold values of the ``||fwdSensors:soilMoisture1 level over||`` block
+- ``||fwdSensors:soilMositure1 level over 80||``
+- ``||fwdSensors:soilMositure1 level over 60||``
+- ``||fwdSensors:soilMositure1 level over 40||``
+- ``||fwdSensors:soilMositure1 level over 20||`` 
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        fwdMotors.pump.fwdTimedRun(500)
+        basic.pause(500)
+        basic.clearScreen()
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(80, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(60, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(40, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+})
+```
+## Step 20
+Change the ``||fwdSensors:LED Ring pixel values||`` in pairs.
+- Pair 1 
+- ``||fwdSensors:set ledRing 0 to 5||``
+- ``||fwdSensors:set ledRing 0 to 4||``
+- Pair 2
+- ``||fwdSensors:set ledRing 0 to 3||``
+- ``||fwdSensors:set ledRing 0 to 2||``
+- Pair 3
+- ``||fwdSensors:set ledRing 0 to 1||``
+- ``||fwdSensors:set ledRing 0 to 0||``
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        basic.showIcon(IconNames.Happy)
+    } else {
+        basic.showIcon(IconNames.Sad)
+        fwdMotors.pump.fwdTimedRun(500)
+        basic.pause(500)
+        basic.clearScreen()
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(80, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(60, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetPixelColour(5, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(4, 0xff0000)
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(40, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetPixelColour(3, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(2, 0xff0000)
+    }
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Over)) {
+        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    }
+})
+```
+## Step 21 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automatic Irrigation System! - Go back to the lesson for more activities and extensions.
 ![moisture-pump](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-11-Moisture-pump.gif)
