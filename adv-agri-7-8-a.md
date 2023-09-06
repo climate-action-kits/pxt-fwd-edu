@@ -138,14 +138,6 @@ basic.forever(function () {
         basic.pause(500)
         basic.clearScreen()
     }
-    if(true){
-    }
-    if(true){
-    }
-    if (true){
-    }
-    if (true){
-    }
 })
 ```
 ## Step 15
@@ -160,14 +152,6 @@ basic.forever(function () {
         fwdMotors.pump.fwdTimedRun(500)
         basic.pause(500)
         basic.clearScreen()
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
     }
 })
 ```
@@ -184,15 +168,6 @@ basic.forever(function () {
         basic.pause(500)
         basic.clearScreen()
     }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-     fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    }
 })
 ```
 ## Step 17
@@ -207,18 +182,6 @@ basic.forever(function () {
         fwdMotors.pump.fwdTimedRun(500)
         basic.pause(500)
         basic.clearScreen()
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
     }
 })
 ```
@@ -235,21 +198,6 @@ basic.forever(function () {
         fwdMotors.pump.fwdTimedRun(500)
         basic.pause(500)
         basic.clearScreen()
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-    if(fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)){
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
     }
 })
 ```
@@ -268,21 +216,6 @@ basic.forever(function () {
         fwdMotors.pump.fwdTimedRun(500)
         basic.pause(500)
         basic.clearScreen()
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(80, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(60, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(40, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
     }
 })
 ```
