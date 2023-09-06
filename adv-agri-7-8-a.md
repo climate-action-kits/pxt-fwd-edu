@@ -1,4 +1,4 @@
-# Vertical Farming and UV Lights
+# Advanced Agriculture
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
@@ -28,7 +28,7 @@ Look below the @boardname@ simulator to see the Climate Action Board and the con
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||`` block inside ``||basic:forever||`` loop.
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     )}
 ```
 ## Step 7
@@ -36,7 +36,7 @@ Click ``||logic: Logic||`` drag and drop ``||logic:If then Else||``
 block under ``||fwdSensors:set all ledRing LEDs to 10||`` block.
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (true) {
           } 
     else {
@@ -48,7 +48,7 @@ Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:is soilMoisture1 m
 to replace ``||logic:true||`` condition of ``||logic:if then else||`` block.
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)) {
           } 
     else {
@@ -60,7 +60,7 @@ Click ``||basic:basic||`` drag and drop ``||basic:show icon||`` block inside ``|
 Select ``||basic: :)||`` icon.
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)) {
           basic.showIcon(IconNames.Happy)} 
     else {
@@ -72,7 +72,7 @@ Click ``||basic:basic||`` drag and drop ``||basic:show icon||`` block inside ``|
 Select ``||basic: :(||`` icon.
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)) {
           basic.showIcon(IconNames.Happy)} 
     else {
@@ -84,7 +84,7 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:run pump for 500||`` 
  ``||basic: :(||`` icon. 
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
         basic.showIcon(IconNames.Happy)
         } else {
@@ -98,7 +98,7 @@ Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||`` block under
 Change the ``||basic:100||`` to ``||basic:500||``
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
         basic.showIcon(IconNames.Happy)
         } else {
@@ -114,7 +114,7 @@ Click ``||basic:basic||`` drag and drop ``||basic:clear screen||``
 block under ``||basic:pause (ms) 500||`` block.
 ```blocks
 basic.forever(function () {
-    fwdSensors.ledRing.fwdSetAllPixelsColour(10)
+    
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
         basic.showIcon(IconNames.Happy)
         } else {
@@ -125,7 +125,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 14
+## Step 14 - New Steps Starting here
 Click ``||Logic:Logic||`` drag and drop ``||Logic:If true then||`` block under 
 ``||Logic: If then else||`` block. Repeat this step ``||Logic:4||`` times. 
 ```blocks
@@ -298,33 +298,6 @@ Change the ``||fwdSensors:LED Ring pixel values||`` in pairs.
 - ``||fwdSensors:set ledRing 0 to 1||``
 - ``||fwdSensors:set ledRing 0 to 0||``
 ```blocks
-basic.forever(function () {
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        basic.showIcon(IconNames.Happy)
-    } else {
-        basic.showIcon(IconNames.Sad)
-        fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
-        basic.clearScreen()
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(80, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(60, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(5, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(4, 0xff0000)
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(40, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(3, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(2, 0xff0000)
-    }
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Over)) {
-        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff0000)
-        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-    }
-})
-
-```blocks
 input.onButtonPressed(Button.A, function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(0x7f00ff)
     basic.pause(plant_A)
@@ -362,8 +335,6 @@ basic.forever(function () {
     }
 })
 ```
-```
-
 ## Step 21 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automatic Irrigation System! - Go back to the lesson for more activities and extensions.
