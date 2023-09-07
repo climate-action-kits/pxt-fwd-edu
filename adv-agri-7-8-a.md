@@ -126,8 +126,12 @@ basic.forever(function () {
 })
 ```
 ## Step 14 - New Steps Starting here
-Click ``||Logic:Logic||`` drag and drop ``||Logic:If true then||`` block under 
-``||Logic: If then else||`` block. Repeat this step ``||Logic:4||`` times. 
+Click ``||Variables:Variables||`` and create ``||Variables:5 Variables||``
+- ``||Variables:timer_start||``
+- ``||Variables:timer_stop||``
+- ``||Variables:plant_B||``
+- ``||Variables:plant_A||``
+- ``||Variables:run_pump_count||`` 
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
@@ -141,8 +145,9 @@ basic.forever(function () {
 })
 ```
 ## Step 15
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:soilMoisture1 level is over||`` block
-to replace ``||Logic:true||`` condition of ``||Logic:4 if true then||`` blocks.
+Click ``||Variables:Variables||`` drag and drop ``||Variables:plant_A||``
+``||Variables:plant_B||`` and ``||Variables:run_pump_count||`` inside
+``||Basic:on start||`` block.
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
@@ -154,6 +159,9 @@ basic.forever(function () {
         basic.clearScreen()
     }
 })
+let plant_B = 0
+let plant_A = 0
+let run_pump_count = 0
 ```
 ## Step 16
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block
