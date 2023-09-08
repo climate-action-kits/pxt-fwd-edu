@@ -1,4 +1,4 @@
-# Advanced Agriculture
+# Vertical Farming and UV Lights
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
