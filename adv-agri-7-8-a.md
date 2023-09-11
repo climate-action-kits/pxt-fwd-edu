@@ -25,15 +25,8 @@ Look below the @boardname@ simulator to see the Climate Action Board and the con
 ![moisture](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 6
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||`` block inside ``||basic:forever||`` loop.
-```blocks
-basic.forever(function () {
-    
-    )}
-```
-## Step 7
 Click ``||logic: Logic||`` drag and drop ``||logic:If then Else||``
-block under ``||fwdSensors:set all ledRing LEDs to 10||`` block.
+block inside ``||basic:forever||`` loop.
 ```blocks
 basic.forever(function () {
     
@@ -43,7 +36,7 @@ basic.forever(function () {
         }
         )}
 ```
-## Step 8
+## Step 7
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:is soilMoisture1 moisture level over 5%||`` 
 to replace ``||logic:true||`` condition of ``||logic:if then else||`` block.
 ```blocks
@@ -55,7 +48,7 @@ basic.forever(function () {
         }
         )}
 ```
-## Step 9
+## Step 8
 Click ``||basic:basic||`` drag and drop ``||basic:show icon||`` block inside ``||logic:if then||`` condition. 
 Select ``||basic: :)||`` icon.
 ```blocks
@@ -67,7 +60,7 @@ basic.forever(function () {
         }
         )}
 ```
-## Step 10
+## Step 9
 Click ``||basic:basic||`` drag and drop ``||basic:show icon||`` block inside ``||logic:else||`` condition.
 Select ``||basic: :(||`` icon.
 ```blocks
@@ -79,7 +72,7 @@ basic.forever(function () {
         basic.showIcon(IconNames.Sad)}
         )}
 ```
-## Step 11
+## Step 10
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:run pump for 500||`` under 
  ``||basic: :(||`` icon. 
 ```blocks
@@ -93,7 +86,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 12
+## Step 11
 Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||fwdMotors:run pump for 500||`` block. 
 Change the ``||basic:100||`` to ``||basic:500||``
 ```blocks
@@ -109,7 +102,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 13
+## Step 12
 Click ``||basic:basic||`` drag and drop ``||basic:clear screen||`` 
 block under ``||basic:pause (ms) 500||`` block.
 ```blocks
@@ -125,7 +118,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 14 - New Steps Starting here
+## Step 13 - New Steps Starting here
 Click ``||Variables:Variables||`` and create ``||Variables:5 Variables||``
 - ``||Variables:timer_start||``
 - ``||Variables:timer_stop||``
@@ -144,7 +137,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 15
+## Step 14
 Click ``||Variables:Variables||`` drag and drop ``||Variables:plant_A||``
 ``||Variables:plant_B||`` and ``||Variables:run_pump_count||`` inside
 ``||Basic:on start||`` block.
@@ -163,9 +156,9 @@ let plant_B = 0
 let plant_A = 0
 let run_pump_count = 0
 ```
-## Step 16
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block
-under ``||fwdSensors:soilMoisture1 level is over||`` block.
+## Step 15
+Change ``||Variables:plant_A||`` value to ``||Variables:5000||`` and 
+``||Variables:plant_B||`` value to ``||Variables:2000||``.
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
@@ -177,8 +170,11 @@ basic.forever(function () {
         basic.clearScreen()
     }
 })
+let plant_B = 2000
+let plant_A = 5000
+let run_pump_count = 0
 ```
-## Step 17
+## Step 16
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0||`` block
 under remaining ``||fwdSensors:3 soilMoisture1 level is over||`` blocks.
 ```blocks
@@ -193,7 +189,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 18
+## Step 17
 Right click ``||fwdSensors:set ledRing 0||`` block and duplicate it. Each 
 ``||Logic:If||`` ``||fwdSensors:soilMoisture1 is over||`` ``||Logic:then||`` block
 should have ``||fwdSensors:2 set ledRing 0||`` blocks inside the ``||Logic:If condition||`` block.
@@ -209,7 +205,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 19
+## Step 18
 Change the threshold values of the ``||fwdSensors:soilMoisture1 level over||`` block
 - ``||fwdSensors:soilMositure1 level over 80||``
 - ``||fwdSensors:soilMositure1 level over 60||``
@@ -227,7 +223,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 20
+## Step 19
 Change the ``||fwdSensors:LED Ring pixel values||`` in pairs.
 - Pair 1 
 - ``||fwdSensors:set ledRing 0 to 5||``
@@ -276,7 +272,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 21 @showhint
+## Step 20 @showhint
 ``|Download|`` and test your code. The simulator shows how it should work.
 Congratulations on completing your Automatic Irrigation System! - Go back to the lesson for more activities and extensions.
 ![moisture-pump](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-11-Moisture-pump.gif)
