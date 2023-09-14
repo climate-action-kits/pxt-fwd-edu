@@ -32,33 +32,34 @@ fwdMotors.servo1,
 )
 ```
 ## Step 7
-Change the ``||fwdMotors:left motor to servo2||``
+Change the ``||fwdMotors:left motor to servo1||``
 and ``||fwdMotors: right motor to servo3||``.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
 ```
 ## Step 8
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo 1 to 0 '||``
-block under ``||fwdMotors:Setup Driving||`` block.
+block under ``||fwdMotors:Setup Driving||`` block. Change ``||fwdMotors:servo1||`` to
+``||fwdMotors:servo2||``.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 ```
 ## Step 9
 Click ``||input:Input||`` drag and drop ``||input:on button A pressed||`` block
 in workspace.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {    
     })
 )
@@ -68,10 +69,10 @@ Click ``||loops:Loops||`` drag and drop ``||loops:repeat 4 times||`` block insid
 ``||input:on button A pressed||`` block.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {}
 })
@@ -81,10 +82,10 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:drive forward at 50||
 block inside ``||loops:repeat 4 times||`` loop block.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
@@ -96,10 +97,10 @@ Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block
 under ``||fwdMotors:drive forward at 50||`` block.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
@@ -111,10 +112,10 @@ input.onButtonPressed(Button.A, function () {
 Change ``||basic:pause (ms) 100||`` to ``||basic: (ms) 2000||``.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
@@ -124,72 +125,74 @@ input.onButtonPressed(Button.A, function () {
 ```
 ## Step 14
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo1 0 '||`` 
-block under ``||basic:pause (ms) 2000||`` block.
+block under ``||basic:pause (ms) 2000||`` block. Change ``||fwdMotors:servo1||`` to
+``||fwdMotors:servo2||``.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
     basic.pause(2000)
-    fwdMotors.servo1.fwdSetAngle(0)
+    fwdMotors.servo2.fwdSetAngle(0)
     }
 })
 ```
 ## Step 15
-Change ``||fwdMotors:set servo1 to 0 '||`` to ``||fwdMotors:45||``
+Change ``||fwdMotors:set servo2 to 0 '||`` to ``||fwdMotors:45||``
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
     basic.pause(2000)
-    fwdMotors.servo1.fwdSetAngle(45)
+    fwdMotors.servo2.fwdSetAngle(45)
     }
 })
 ```
 ## Step 16   
 Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` under 
-``||fwdMotors:set servo1 to 45 '||`` block. Change ``||basic:(ms) 100||`` to
+``||fwdMotors:set servo2 to 45 '||`` block. Change ``||basic:(ms) 100||`` to
 ``||basic:(ms) 500||``
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
     basic.pause(2000)
-    fwdMotors.servo1.fwdSetAngle(45)
+    fwdMotors.servo2.fwdSetAngle(45)
     basic.pause(500)
     }
 })
 ```
 ## Step 17
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo1 to 0 '||``
-block under ``||basic:pause (ms) 500||`` block.
+block under ``||basic:pause (ms) 500||`` block. Change ``||fwdMotors:servo1||`` to
+``||fwdMotors:servo2||``.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
-fwdMotors.servo1.fwdSetAngle(0)
+fwdMotors.servo2.fwdSetAngle(0)
 input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
     basic.pause(2000)
-    fwdMotors.servo1.fwdSetAngle(45)
+    fwdMotors.servo2.fwdSetAngle(45)
     basic.pause(500)
-    fwdMotors.servo1.fwdSetAngle(0)
+    fwdMotors.servo2.fwdSetAngle(0)
     }
 })
 ```
@@ -198,7 +201,7 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:stop motors||`` block
 under ``||loops:repeat 4 times||`` block.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 )
 fwdMotors.servo1.fwdSetAngle(0)
@@ -206,9 +209,9 @@ input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
     fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
     basic.pause(2000)
-    fwdMotors.servo1.fwdSetAngle(45)
+    fwdMotors.servo2.fwdSetAngle(45)
     basic.pause(500)
-    fwdMotors.servo1.fwdSetAngle(0)
+    fwdMotors.servo2.fwdSetAngle(0)
     }
     fwdMotors.stop()
 })
@@ -219,7 +222,7 @@ Click ``||fwdMotors:+||`` on ``||fwdMotors:Setup Driving||``
 block inside ``||basic:on start||`` block. Set bias to ``||fwdMotors: 0||``.
 ```blocks
 fwdMotors.setupDriving(
-fwdMotors.servo2,
+fwdMotors.servo1,
 fwdMotors.servo3,
 0,
 )
@@ -228,9 +231,9 @@ input.onButtonPressed(Button.A, function () {
     for (let index = 0; index < 4; index++) {
         fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 100)
         basic.pause(2000)
-        fwdMotors.servo1.fwdSetAngle(45)
+        fwdMotors.servo2.fwdSetAngle(45)
         basic.pause(500)
-        fwdMotors.servo1.fwdSetAngle(0)
+        fwdMotors.servo2.fwdSetAngle(0)
     }
     fwdMotors.stop()
 })
