@@ -28,12 +28,12 @@ fwdMotors.servo1,
 )
 ```
 ## Step 6
-Change the ``||fwdMotors:right motor to servo2||``. 
+Change the ``||fwdMotors:right motor to servo3||``. 
 Keep the ``||fwdMotors: left motor to servo1||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 ```
 ## Step 7
@@ -41,7 +41,7 @@ Click ``||logic:Logic||`` drag and drop ``||logic:if else||`` block inside ``||b
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (true) {}
@@ -54,7 +54,7 @@ block to replace the ``||logic:true||`` condition.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0, fwdSensors.ThresholdDirection.Over)) {
@@ -70,7 +70,7 @@ Change ``||fwdSensors:0||`` to ``||fwdSensors:0.2||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -85,7 +85,7 @@ inside ``||logic:true||`` condition of ``||logic:if else||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -101,7 +101,7 @@ Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` under
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -119,7 +119,7 @@ to ``||fwdMotors:reverse||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -137,7 +137,7 @@ Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` under
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -157,7 +157,7 @@ to ``||fwdMotors:25||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -177,7 +177,7 @@ Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` under
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -197,7 +197,7 @@ block inside ``||logic:else||`` condition.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -218,7 +218,7 @@ block inside ``||basic:on start||`` block. Set bias to ``||fwdMotors: 0||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 0
 )
 basic.forever(function () {
