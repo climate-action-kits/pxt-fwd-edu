@@ -32,12 +32,12 @@ fwdMotors.servo1,
 )
 ```
 ## Step 7
-Change the ``||fwdMotors:right motor to servo2||``. 
+Change the ``||fwdMotors:right motor to servo3||``. 
 Keep the ``||fwdMotors: left motor to servo1||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 ```
 ## Step 8
@@ -45,7 +45,7 @@ Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block inside 
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (true) {
@@ -57,7 +57,7 @@ Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under t
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (true) {
@@ -71,7 +71,7 @@ Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` block under t
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (true) {
@@ -87,7 +87,7 @@ Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is â€
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -103,7 +103,7 @@ Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line2 state is o|
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -119,7 +119,7 @@ Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line3 state is â€
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -136,7 +136,7 @@ Click ``||fwdMotors: Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||``
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -152,7 +152,7 @@ Change ``||fwdMotors:Turn 0||`` to ``||fwdMotors:5||``
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -170,7 +170,7 @@ Change the ``||fwdMotors:Drive forward 50||`` to ``||fwdMotors:20||``
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -190,7 +190,7 @@ Change the ``||fwdMotors:Turn 0||`` to ``||fwdMotors:-5||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -209,7 +209,7 @@ Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -230,7 +230,7 @@ block under ``||fwdMotors:Drive Forward at 20||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -252,7 +252,7 @@ block under ``||fwdMotors:Turn -5 in place||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 )
 basic.forever(function () {
     if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
@@ -277,7 +277,7 @@ Change ``||basic:pause (ms) 100||`` to ``||basic:500||`` for all
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.servo3,
 0
 )
 basic.forever(function () {
