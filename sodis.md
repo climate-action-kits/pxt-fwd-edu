@@ -2,7 +2,7 @@
 
 ## Step 1 @showdialog
 Welcome to Solar Disinfection Coding Tutorial
-![built-project-image](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/sodis-prototype-resized.png)
+![built-project-image](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/sodis-prototype.png)
 
 ## Step 2 @showdialog
 Plug your USB cable into the micro:bit. 
