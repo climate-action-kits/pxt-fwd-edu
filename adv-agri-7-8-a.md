@@ -118,7 +118,7 @@ basic.forever(function () {
         }
 })
 ```
-## Step 13 - New Steps Starting here
+## Step 13
 Click ``||Variables:Variables||`` and create ``||Variables:5 Variables||``
 - ``||Variables:timer_start||``
 - ``||Variables:timer_stop||``
@@ -565,12 +565,12 @@ block to replace ``||0||`` in both:
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        timer_stop = runningTime()
+        timer_stop = input.runningTime()
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
         fwdMotors.pump.fwdTimedRun(500)
-        timer_start = runningTime()
+        timer_start = input.runningTime()
         basic.pause(500)
         basic.clearScreen()
     }
@@ -601,12 +601,12 @@ block inside ``||Logic:else||`` condition under ``||Basic:pause (ms) 500||`` blo
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        timer_stop = runningTime()
+        timer_stop = input.runningTime()
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
         fwdMotors.pump.fwdTimedRun(500)
-        timer_start = runningTime()
+        timer_start = input.runningTime()
         basic.pause(500)
         run_pump_count += 1
         basic.clearScreen()
@@ -637,12 +637,12 @@ Click ``||Basic:Basic||`` drag and drop ``||Basic:show number||`` block inside
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        timer_stop = runningTime()
+        timer_stop = input.runningTime()
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
         fwdMotors.pump.fwdTimedRun(500)
-        timer_start = runningTime()
+        timer_start = input.runningTime()
         basic.pause(500)
         run_pump_count += 1
         basic.clearScreen()
@@ -674,12 +674,12 @@ Click ``||Math:Math||`` drag and drop ``||Math:Division||`` block to replace
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        timer_stop = runningTime()
+        timer_stop = input.runningTime()
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
         fwdMotors.pump.fwdTimedRun(500)
-        timer_start = runningTime()
+        timer_start = input.runningTime()
         basic.pause(500)
         run_pump_count += 1
         basic.clearScreen()
@@ -711,12 +711,12 @@ Click ``||Math:Math||`` drag and drop ``||Math:Substraction||`` block to replace
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        timer_stop = runningTime()
+        timer_stop = input.runningTime()
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
         fwdMotors.pump.fwdTimedRun(500)
-        timer_start = runningTime()
+        timer_start = input.runningTime()
         basic.pause(500)
         run_pump_count += 1
         basic.clearScreen()
@@ -752,12 +752,12 @@ and ``||Variables:timer_stop||`` block to replace
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
-        timer_stop = runningTime()
+        timer_stop = input.runningTime()
         basic.showIcon(IconNames.Happy)
     } else {
         basic.showIcon(IconNames.Sad)
         fwdMotors.pump.fwdTimedRun(500)
-        timer_start = runningTime()
+        timer_start = input.runningTime()
         basic.pause(500)
         run_pump_count += 1
         basic.clearScreen()
