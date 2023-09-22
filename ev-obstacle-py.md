@@ -29,18 +29,18 @@ Look below the @boardname@ simulator to see the Climate Action Board and the con
 on the workspace.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo1,
+fwdMotors.leftServo,
+fwdMotors.leftServo,
 )
 ```
 ## Step 7
-Change the ``||fwdMotors:right motor to servo2||``. 
-Keep the ``||fwdMotors: left motor to servo1||``. Also set ``||fwdMotors:bias to 0||``.
+Change the ``||fwdMotors:right motor to middleServo||``. 
+Keep the ``||fwdMotors: left motor to leftServo||``. Also set ``||fwdMotors:bias to 0||``.
 ![changing-servo-bias](https://mbakhtar.github.io/ev-python-tutorial-v1/setup-driving-py.gif)
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0
 )
 ```
@@ -48,8 +48,8 @@ fwdMotors.servo2,
 Click ``||basic:Basic||`` drag and drop ``||basic:run code forever||`` loop.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0
 )
 basic.forever(function () {
@@ -61,8 +61,8 @@ Click ``||logic:Logic||`` drag and drop ``||logic:if else||`` block
 inside ``||basic:run code forever||`` block.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (true) {} 
@@ -75,8 +75,8 @@ block for ``||logic:If :||`` condition. Change threshold distance to 0.2.
 Also change ``||OVER to UNDER||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2 fwdSensors.ThresholdDirection.UNDER)) {
@@ -90,8 +90,8 @@ Erase the word ``||pass||`` inside ``||logic:if :||`` loop. Click
 inside ``||Logic:if condition||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -106,8 +106,8 @@ block under ``||fwdMotors:stop motors||``.
 Change ``||basic:100||`` to ``||basic:1000||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0
 )
 basic.forever(function () {
@@ -124,8 +124,8 @@ Change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.
 
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -142,8 +142,8 @@ block under ``||fwdMotors:drive direction at speed||``.
 Change ``||basic:100||`` to ``||basic:1000||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -160,8 +160,8 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:turn angle in place||
 under ``||basic:pause (ms) 1000||`` block. Change ``||fwdMotors:0||`` to ``||fwdMotors:25||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -180,8 +180,8 @@ block under ``||fwdMotors:turn angle in place||``.
 Change ``||basic:100||`` to ``||basic:1000||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -200,8 +200,8 @@ Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:drive direction at sp
 block inside ``||Logic:else condition||``.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
@@ -220,8 +220,8 @@ basic.forever(function () {
 This is the final code.
 ```spy
 fwdMotors.setupDriving(
-fwdMotors.servo1,
-fwdMotors.servo2,
+fwdMotors.leftServo,
+fwdMotors.middleServo,
 0)
 basic.forever(function () {
     if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
