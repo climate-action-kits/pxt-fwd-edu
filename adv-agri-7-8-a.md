@@ -138,8 +138,8 @@ basic.forever(function () {
 })
 ```
 ## Step 14
-Click ``||Variables:Variables||`` drag and drop ``||Variables:plant_A||``
-``||Variables:plant_B||`` and ``||Variables:run_pump_count||`` inside
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set plant_A to 0||`` ,
+``||Variables:set plant_B to 0||`` and ``||Variables:set run_pump_count to 0||`` blocks inside
 ``||Basic:on start||`` block.
 ```blocks
 basic.forever(function () {
