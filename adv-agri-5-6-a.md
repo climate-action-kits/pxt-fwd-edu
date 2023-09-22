@@ -127,7 +127,7 @@ basic.forever(function () {
 ```
 ## Step 14
 Click ``||Logic:Logic||`` drag and drop ``||Logic:If true then||`` block under 
-``||Logic: If then else||`` block. Repeat this step ``||Logic:4||`` times. 
+``||Logic: If then else||`` block. Repeat this step ``||Logic:4||`` times. _Note: You should have 4 ``||Logic:If then||`` blocks._
 ```blocks
 basic.forever(function () {
     if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {

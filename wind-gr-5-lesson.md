@@ -1,4 +1,4 @@
-# Battery Storage for Wind Power
+# Power Storage for Wind Power
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 =github:climate-action-kits/pxt-fwd-edu
