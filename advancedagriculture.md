@@ -1,4 +1,4 @@
-# Automatic Irrigation System
+# Smart Farming with Automation
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
@@ -45,11 +45,11 @@ basic.forever(function () {
 ```
 ## Step 8
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:is soilMoisture1 moisture level over 5%||`` 
-to replace ``||logic:true||`` condition of ``||logic:if then else||`` block.
+to replace ``||logic:true||`` condition of ``||logic:if then else||`` block. Change ``||fwdSensors:5% to 50||``.
 ```blocks
 basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)) {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
           } 
     else {
         }
@@ -61,7 +61,7 @@ Select ``||basic: :)||`` icon.
 ```blocks
 basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)) {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
           basic.showIcon(IconNames.Happy)} 
     else {
         }
@@ -73,7 +73,7 @@ Select ``||basic: :(||`` icon.
 ```blocks
 basic.forever(function () {
     fwdSensors.ledRing.fwdSetAllPixelsColour(10)
-    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(5, fwdSensors.ThresholdDirection.Over)) {
+    if (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
           basic.showIcon(IconNames.Happy)} 
     else {
         basic.showIcon(IconNames.Sad)}
