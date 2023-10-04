@@ -41,7 +41,7 @@ fwdMotors.rightServo,
 )
 ```
 ## Step 8
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set servo 1 to 0 '||``
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo to 0°||``
 block under ``||fwdMotors:Setup Driving||`` block. Change ``||fwdMotors:leftServo||`` to
 ``||fwdMotors:middleServo||``.
 ```blocks
@@ -78,7 +78,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 ## Step 11
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:drive forward at 50||``
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:drive forward at 50%||``
 block inside ``||loops:repeat 4 times||`` loop block.
 ```blocks
 fwdMotors.setupDriving(
@@ -94,7 +94,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 ## Step 12
 Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block
-under ``||fwdMotors:drive forward at 50||`` block.
+under ``||fwdMotors:drive forward at 50%||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -124,7 +124,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 ## Step 14
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo 0 '||`` 
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo 0°||`` 
 block under ``||basic:pause (ms) 2000||`` block. Change ``||fwdMotors:leftServo||`` to
 ``||fwdMotors:middleServo||``.
 ```blocks
@@ -142,7 +142,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 ## Step 15
-Change ``||fwdMotors:set middleServo to 0 '||`` to ``||fwdMotors:45||``
+Change ``||fwdMotors:set middleServo to 0°||`` to ``||fwdMotors:45°||``
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -159,7 +159,7 @@ input.onButtonPressed(Button.A, function () {
 ```
 ## Step 16   
 Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` under 
-``||fwdMotors:set middleServo to 45 '||`` block. Change ``||basic:(ms) 100||`` to
+``||fwdMotors:set middleServo to 45°||`` block. Change ``||basic:(ms) 100||`` to
 ``||basic:(ms) 500||``
 ```blocks
 fwdMotors.setupDriving(
@@ -177,7 +177,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 ## Step 17
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo to 0 '||``
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo to 0°||``
 block under ``||basic:pause (ms) 500||`` block. Change ``||fwdMotors:leftServo||`` to
 ``||fwdMotors:middleServo||``.
 ```blocks
