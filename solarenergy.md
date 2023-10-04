@@ -104,14 +104,14 @@ basic.forever(function () {
 ```
 ## Step 14
 Click ``||fwdMotors:Motors||`` drag and drop 
-``||fwdMotors:set servo1 off||`` block under 
+``||fwdMotors:set leftServo off||`` block under 
 ``||basic:show icon target||`` block. 
 ```blocks
 let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
     basic.showIcon(IconNames.Target)
-    fwdMotors.servo1.fwdSetEnabled(false)
+    fwdMotors.leftServo.fwdSetEnabled(false)
     } 
     else {}
 })
@@ -125,7 +125,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         }
@@ -140,7 +140,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 1
@@ -154,7 +154,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -169,7 +169,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -187,7 +187,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -206,7 +206,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -224,7 +224,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -242,7 +242,7 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
@@ -262,14 +262,14 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (position > 90) {
             position = -90
         }
-        fwdMotors.servo1.fwdSetAngle(0)
+        fwdMotors.leftServo.fwdSetAngle(0)
     }
 })
 ```
@@ -281,34 +281,34 @@ let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (position > 90) {
             position = -90
         }
-        fwdMotors.servo1.fwdSetAngle(position)
+        fwdMotors.leftServo.fwdSetAngle(position)
         }
 })
 ```
 ## Step 25
 Click ``||basic:Basic||`` drag and drop ``||basic:pause||`` block under
-``||fwdMotors:set servo1 to||`` ``||Variables:position||`` block. Change
+``||fwdMotors:set leftServo to||`` ``||Variables:position||`` block. Change
 ``||basic:(ms) 100||`` to ``||basic:(ms) 20||``.
 ```blocks
 let position = -90
 basic.forever(function () {
     if (fwdSensors.solar1.fwdLightLevel() > 75) {
         basic.showIcon(IconNames.Target)
-        fwdMotors.servo1.fwdSetEnabled(false)
+        fwdMotors.leftServo.fwdSetEnabled(false)
     } else {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (position > 90) {
             position = -90
         }
-        fwdMotors.servo1.fwdSetAngle(position)
+        fwdMotors.leftServo.fwdSetAngle(position)
         basic.pause(20)
     }
 })
