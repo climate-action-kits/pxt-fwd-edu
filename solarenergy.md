@@ -24,7 +24,7 @@ Look below the @boardname@ simulator to see the Climate Action Board and the con
 ![solar](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-8-Solar.gif)
 
 ## Step 6
-Click ``||Variables:Variables||``. Click on |Make a Variable| to
+Click ``||Variables:Variables||``. Click on ``||Make a Variable||`` to
 create a new ``||Variables:Variable||``.
 Name it ``||Variables:position||``.
 
