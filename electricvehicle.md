@@ -83,7 +83,7 @@ basic.forever(function () {
 })
 ```
 ## Step 11
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is •||`` to replace ``||logic:true||`` condition of 1st ``||logic:if true then||`` block.
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line1 state is ●||`` to replace ``||logic:true||`` condition of 1st ``||logic:if true then||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -99,7 +99,7 @@ basic.forever(function () {
 })
 ```
 ## Step 12
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line2 state is o||`` to replace ``||logic:true||`` condition of 2nd ``||logic:if true then||`` block. _Note: Use drop down menu to change line number._
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line2 state is ○||`` to replace ``||logic:true||`` condition of 2nd ``||logic:if true then||`` block. _Note: Use drop down menu to change line number._
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -115,7 +115,7 @@ basic.forever(function () {
 })
 ```
 ## Step 13
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line3 state is •||`` to replace ``||logic:true||`` condition of 3rd ``||logic:if true then||`` block.  _Note: Use drop down menu to change line number._
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors: line3 state is ●||`` to replace ``||logic:true||`` condition of 3rd ``||logic:if true then||`` block.  _Note: Use drop down menu to change line number._
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -131,8 +131,8 @@ basic.forever(function () {
 })
 ```
 ## Step 14
-Click ``||fwdMotors: Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` block inside 1st ``||logic: if||`` 
-``||fwdSensors:line1 state is •||`` ``||logic:then||`` condition.
+Click ``||fwdMotors: Motors||`` drag and drop ``||fwdMotors: Turn 0° in place||`` block inside 1st ``||logic: if||`` 
+``||fwdSensors:line1 state is ●||`` ``||logic:then||`` condition.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -148,7 +148,7 @@ basic.forever(function () {
         })
 ```
 ## Step 15
-Change ``||fwdMotors:Turn 0||`` to ``||fwdMotors:5||``
+Change ``||fwdMotors:Turn 0°||`` to ``||fwdMotors:5°||``
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -164,9 +164,9 @@ basic.forever(function () {
         })
 ```
 ## Step 16
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50||`` block inside 2nd
-``||logic:if||`` ``||fwdSensors:line2 state is o||`` ``||logic:then||`` condition.
-Change the ``||fwdMotors:Drive forward 50||`` to ``||fwdMotors:20||``
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive forward 50%||`` block inside 2nd
+``||logic:if||`` ``||fwdSensors:line2 state is ○||`` ``||logic:then||`` condition.
+Change the ``||fwdMotors:Drive forward 50%||`` to ``||fwdMotors:20%||``
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -184,9 +184,9 @@ basic.forever(function () {
 })
 ```
 ## Step 17
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors: Turn 0 in place||`` block inside 3rd ``||logic:if||``
-``||fwdSensors:line3 state is •||`` ``||logic:then||`` condition. 
-Change the ``||fwdMotors:Turn 0||`` to ``||fwdMotors:-5||``.
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors: Turn 0° in place||`` block inside 3rd ``||logic:if||``
+``||fwdSensors:line3 state is ●||`` ``||logic:then||`` condition. 
+Change the ``||fwdMotors:Turn 0°||`` to ``||fwdMotors:-5°||``.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -205,7 +205,7 @@ basic.forever(function () {
 })
 ```
 ## Step 18
-Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||fwdMotors:Turn 5 in place||`` block.
+Click ``||basic:Basic||`` drag and drop ``||basic:pause (ms) 100||`` block under ``||fwdMotors:Turn 5° in place||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -226,7 +226,7 @@ basic.forever(function () {
 ```
 ## Step 19
 Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
-block under ``||fwdMotors:Drive Forward at 20||`` block.
+block under ``||fwdMotors:Drive Forward at 20%||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
@@ -248,7 +248,7 @@ basic.forever(function () {
 ```
 ## Step 20
 Click ``||basic:basic||`` drag and drop ``||basic:pause (ms) 100||``
-block under ``||fwdMotors:Turn -5 in place||`` block.
+block under ``||fwdMotors:Turn -5° in place||`` block.
 ```blocks
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
