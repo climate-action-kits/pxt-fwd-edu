@@ -57,80 +57,80 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 ## Step 10
 Click ``||fwdMotors:Motors||`` drag and drop 
-``||fwdMotors:set leftServo to 50 %||`` inside
+``||fwdMotors:set rightServo to 50 %||`` inside
 ``||fwdSensors:on dial1 turned difference||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     })
 ```
 ## Step 11 
-Right click ``||fwdMotors:set leftServo to 50 %||`` block and duplicate.
+Right click ``||fwdMotors:set rightServo to 50 %||`` block and duplicate.
 Drag and drop inside the second ``||fwdSensors:on dial1 turned difference||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 ```
 
 ## Step 12
-Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set leftServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set leftServo 50 %||`` block. 
+Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set rightServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set rightServo 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 ```
 ## Step 13
-Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set leftServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set leftServo 50 %||`` block. 
+Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set rightServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set rightServo 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
 ## Step 14
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||`` block.
+Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set rightServo 50 %||`` block inside ``||fwdSensors:on touch down||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
 ## Step 15
-Change speed of ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||``
+Change speed of ``||fwdMotors:set rightServo 50 %||`` block inside ``||fwdSensors:on touch down||``
 to ``||0||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdMotors.rightServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    fwdMotors.rightServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
 ## Step 16 @showhint
