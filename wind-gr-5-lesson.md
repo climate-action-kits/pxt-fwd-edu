@@ -3,25 +3,31 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 =github:climate-action-kits/pxt-fwd-edu
 ```
+
 ## Step 1 @showdialog
-Welcome to Wind Turbine Coding Tutorial
+Welcome to Power Storage for Wind Energy Coding Tutorial.
 ![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-windturbine-200.png)
 
 ## Step 2 @showdialog
-Use the LED light to indicate the charge level of the wind turbine's battery. The faster it's spinning, the higher the charge. The wind turbine should move in the same direction as the dial is being turned, and use the button function to stop. When the wind turbine is not moving, and therefore not generating power, the battery is considered 'dead' and should not display any lights.
+In this coding tutorial use the LED light to indicate the level of 'charge' the wind turbine's battery has 
+based on how fast the wind turbine is spinning. The faster it's spinning, the 
+higher the charge. The wind turbine should move in the same direction as the 
+dial is being turned, and use the button function to stop. When the wind turbine
+is not moving, and therefore not generating power, the battery is considered 'dead'
+and should not display any lights.
 
 ## Step 3 @showdialog
 Turn on the Climate Action Kit board. 
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
-## Step 4 @showhint
-Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
+## Step 4 
+Click three dots besides the ``|Download|`` button and follow the steps to pair your micro:bit.
 ![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5
-Next, click the ``|Download|`` button to download the blank project to startup the simulators.
+Next, click the ``|Download|`` button to download the blank project to start-up the simulators.
 
-## Step 6 @showhint
+## Step 6 
 Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
@@ -57,45 +63,100 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     })
 ```
 ## Step 11
-Click ``||fwdMotors:Motors||`` drag and drop 
-``||fwdMotors:set leftServo to 50 %||`` inside
-``||fwdSensors:on dial1 turned difference||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    })
-```
-## Step 12 
-Right click ``||fwdMotors:set leftServo to 50 %||`` block and duplicate.
-Drag and drop inside the second ``||fwdSensors:on dial1 turned difference||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
-})
-```
+Click ``||Variables:Variables||`` and make a ``||Variables:Variable||`` 
+``||Variables:turbinespeed||``.
 
-## Step 13
-Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set leftServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set leftServo 50 %||`` block. 
+## Step 12
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set turbinespeed to 0||``
+block inside ``||Basic:on start||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+})
+turbinespeed = 0
+```
+## Step 13
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set turbinespeed to 0||``
+block inside ``||fwdSensors:on dial1 turned difference||`` block.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    turbinespeed = 0
 })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+})
+let turbinespeed = 0
+turbinespeed = 0
 ```
 ## Step 14
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set turbinespeed to 0||``
+block inside the other ``||fwdSensors:on dial1 turned difference||`` block.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = 0
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+turbinespeed = 0
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 15
+Click ``||fwdMotors:Motors||`` drag and drop 
+``||fwdMotors:set leftServo to 50 %||`` under
+``||Variables:set turbinespeed to 0||``
+block.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = 0
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = 0
+})
+```
+## Step 16
+Right click ``||fwdMotors:set leftServo to 50 %||`` block and duplicate it.
+Drag and drop under the other ``||Variables:set turbinespeed to 0||``
+block.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = 0
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = 0
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+```
+## Step 17
+Click ``||fwdSensors:Sensors||``. 
+Drag ``||fwdSensors:dial1 absolute position||`` 
+oval block close to ``||Variables:set turbinespeed to 0||`` 
+replace ``||Variables:0||`` of ``||Variables:set turbinespeed to 0||`` block. 
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = 0
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+```
+## Needs to be updated from here onwards
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0 to ||`` block 
 under ``||fwdMotors:set leftServo||`` ``||fwdSensors:dial1 absolute position||`` block.
 ```blocks
@@ -110,7 +171,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 })
 ```
 
-## Step 15
+## 
 Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set leftServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set leftServo 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -123,7 +184,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
 })
 ```
-## Step 16
+## 
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0 to ||`` block 
 under ``||fwdMotors:set leftServo||`` ``||fwdSensors:dial1 absolute position||`` block.
 ```blocks
@@ -138,7 +199,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
-## Step 17
+## 
 Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -153,7 +214,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
-## Step 18
+## 
 Change speed of ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||``
 to ``||0||``.
 ```blocks
@@ -169,7 +230,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
-## Step 19
+## 
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
 block to replace ``||0||`` in the ``||fwdSensors:set ledRing 0 to||`` block
 under ``||fwdMotors:set leftServo dial1 absolute position||`` block.
@@ -186,7 +247,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
 })
 ```
-## Step 20
+## 
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
 block to replace ``||0||`` in the ``||fwdSensors:set ledRing 0 to||`` block
 under ``||fwdMotors:set leftServo dial1 absolute position||`` block.
@@ -203,7 +264,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(), 0xff0000)
 })
 ```
-## Step 21
+## 
 Change ``||fwdSensors:set ledRing||`` under ``||fwdSensors:on dial1 turned by CCW||``
 colour to black.
 ```blocks
@@ -219,10 +280,37 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(), 0xff0000)
 })
 ```
-## Step 22 @showhint
-``|Download|`` and test your code.Click the bulb icon to see how
+## 
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.leftServo.fwdSetSpeed(turbinespeed)
+    if (turbinespeed <= -80) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.leftServo.fwdSetSpeed(turbinespeed)
+    if (turbinespeed >= 80) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## 2nd Last Step 
+``|Download|`` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
 ![dial-servo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-13-wind.gif)
 
-## Step 23 @showdialog
-Congratulations on completing your Wind Turbine Project! - Go back to the lesson for more activities and extensions.
+## Last Step @showdialog
+Congratulations on completing your Power Storage for Wind Energy Project! - Go back to the lesson for more activities and extensions.
