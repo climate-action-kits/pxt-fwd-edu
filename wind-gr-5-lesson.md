@@ -109,7 +109,7 @@ turbinespeed = 0
 ```
 ## Step 15
 Click ``||fwdMotors:Motors||`` drag and drop 
-``||fwdMotors:set leftServo to 50 %||`` under
+``||fwdMotors:set rightServo to 50 %||`` under
 ``||Variables:set turbinespeed to 0||``
 block.
 ```blocks
@@ -117,178 +117,402 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     turbinespeed = 0
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     turbinespeed = 0
 })
+let turbinespeed = 0
+turbinespeed = 0
 ```
 ## Step 16
-Right click ``||fwdMotors:set leftServo to 50 %||`` block and duplicate it.
+Right click ``||fwdMotors:set rightServo to 50 %||`` block and duplicate it.
 Drag and drop under the other ``||Variables:set turbinespeed to 0||``
 block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.rightServo.fwdSetSpeed(0)
     })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     turbinespeed = 0
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     turbinespeed = 0
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
+let turbinespeed = 0
+turbinespeed = 0
 ```
 ## Step 17
+Click ``||fwdMotors:Motors||`` drag and drop 
+``||fwdMotors:set rightServo to 50 %||`` under
+``||fwdSensors:on touch down||`` block. Change ``||fwdMotors:50%||`` to ``||fwdMotors:0%||``
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.rightServo.fwdSetSpeed(0)
+    })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = 0
+    fwdMotors.rightServo.fwdSetSpeed(50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = 0
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 18
 Click ``||fwdSensors:Sensors||``. 
 Drag ``||fwdSensors:dial1 absolute position||`` 
-oval block close to ``||Variables:set turbinespeed to 0||`` 
+oval block close to ``||Variables:set turbinespeed to 0||`` to
 replace ``||Variables:0||`` of ``||Variables:set turbinespeed to 0||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     turbinespeed = fwdSensors.dial1.fwdPosition()
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     turbinespeed = 0
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
+let turbinespeed = 0
+turbinespeed = 0
 ```
-## Needs to be updated from here onwards
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0 to ||`` block 
-under ``||fwdMotors:set leftServo||`` ``||fwdSensors:dial1 absolute position||`` block.
+## Step 19
+Click ``||fwdSensors:Sensors||``. 
+Drag ``||fwdSensors:dial1 absolute position||`` 
+oval block close to the other ``||Variables:set turbinespeed to 0||`` to 
+replace ``||Variables:0||`` of ``||Variables:set turbinespeed to 0||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0,0xff0000)
+fwdMotors.rightServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
-})
-```
-
-## 
-Click ``||fwdSensors:Sensors||``. Drag ``||fwdSensors:dial1 absolute position||`` oval block close to ``||fwdMotors:set leftServo 50 %||`` replace ``||fwdMotors:50 %||`` of ``||fwdMotors:set leftServo 50 %||`` block. 
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0,0xff0000) 
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
+let turbinespeed = 0
+turbinespeed = 0
 ```
-## 
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set ledRing 0 to ||`` block 
-under ``||fwdMotors:set leftServo||`` ``||fwdSensors:dial1 absolute position||`` block.
+## Step 20
+Click ``||Variables:Variables||``. 
+Drag ``||Variables:turbinespeed||`` 
+oval block close to ``||fwdMotors:set rightServo to 50 %||`` to 
+replace ``||fwdMotors:50||`` of ``||fwdMotors:set rightServo to 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0,0xff0000)
+fwdMotors.rightServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-})
-```
-## 
-Click ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(50)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(50)
 })
+let turbinespeed = 0
+turbinespeed = 0
 ```
-## 
-Change speed of ``||fwdMotors:set leftServo 50 %||`` block inside ``||fwdSensors:on touch down||``
-to ``||0||``.
+## Step 21
+Click ``||Variables:Variables||``. 
+Drag ``||Variables:turbinespeed||`` 
+oval block close to the other ``||fwdMotors:set rightServo to 50 %||`` to 
+replace ``||fwdMotors:50||`` of ``||fwdMotors:set rightServo to 50 %||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+fwdMotors.rightServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
 })
+let turbinespeed = 0
+turbinespeed = 0
 ```
-## 
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
-block to replace ``||0||`` in the ``||fwdSensors:set ledRing 0 to||`` block
-under ``||fwdMotors:set leftServo dial1 absolute position||`` block.
+## Step 22
+Click ``||Logic:Logic||`` drag and drop ``||Logic:if true then else||`` block 
+under ``||fwdMotors:set rightServo||`` ``||Variables:turbinespeed||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
-})
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(),0xff0000)
+fwdMotors.rightServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
-})
-```
-## 
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:dial1 absolute position||``
-block to replace ``||0||`` in the ``||fwdSensors:set ledRing 0 to||`` block
-under ``||fwdMotors:set leftServo dial1 absolute position||`` block.
-```blocks
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (true){
+    }
+    else{
+    }
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(),0xff0000)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(), 0xff0000)
-})
+let turbinespeed = 0
+turbinespeed = 0
 ```
-## 
-Change ``||fwdSensors:set ledRing||`` under ``||fwdSensors:on dial1 turned by CCW||``
-colour to black.
+## Step 23
+Click ``||Logic:Logic||`` drag and drop ``||Logic:if true then else||`` block 
+under the other ``||fwdMotors:set rightServo||`` ``||Variables:turbinespeed||`` block.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (true){
+    }
+    else{
+    }
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(),0x000000)
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (true){
+    }
+    else{
+    }
 })
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(fwdSensors.dial1.fwdPosition())
-    fwdSensors.ledRing.fwdSetPixelColour(fwdSensors.dial1.fwdPosition(), 0xff0000)
-})
+let turbinespeed = 0
+turbinespeed = 0
 ```
-## 
+## Step 24
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block
+under ``||Logic:If true then else||`` block. Change the ``||fwdSensors:LED||`` 
+colour to ``||fwdSensors:Green||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (true){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (true){
+    }
+    else{
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 25
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block
+under the other ``||Logic:If true then else||`` block.  Change the ``||fwdSensors:LED||`` 
+colour to ``||fwdSensors:Green||``.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (true){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (true){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 26
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block
+under both ``||Logic:else||`` condition.  Change the ``||fwdSensors:LED||`` 
+colour to yellow.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (true){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (true){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 27
+Click ``||Logic:Logic||`` drag and drop ``||Logic:Comparison <||`` block to 
+replace the ``||Logic:true||`` condition in both ``||Logic:if true then else||`` blocks.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (0<0){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (0<0){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 28
+Click ``||Variables:Variables||`` drag and drop ``||Variables:turbinespeed||`` 
+oval block to replace the ``||Logic:0||`` on the left side in both 
+``||Logic:Comparison||`` blocks.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (turbinespeed<0){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (turbinespeed<0){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 30
+Click ``||Logic:<||`` change it to ``||Logic:>||`` on 
+``||fwdSensors:on dial1 turned by CW||`` block. Change the ``||Logic:0||`` to 
+``||Logic:80||``.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (turbinespeed>80){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (turbinespeed<0){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 31
+Change the ``||Logic:0||`` to 
+``||Logic: -80||`` on the ``||Logic:<||`` block under 
+``||fwdSensors:on dial1 turned by CCW||`` block. 
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+fwdMotors.rightServo.fwdSetSpeed(0)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+    if (turbinespeed>80){
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    turbinespeed = fwdSensors.dial1.fwdPosition()
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
+     if (turbinespeed<-80){
+     fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    else{
+    fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+})
+let turbinespeed = 0
+turbinespeed = 0
+```
+## Step 32
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing to||`` block
+inside ``||fwdSensors:on touch down||`` block under ``||fwdMotors:set rightServo to 0%||`` block.
+Change the ``||fwdSensors:LED||`` colour to black.
+```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.rightServo.fwdSetSpeed(0)
     fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     turbinespeed = fwdSensors.dial1.fwdPosition()
-    fwdMotors.leftServo.fwdSetSpeed(turbinespeed)
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
     if (turbinespeed <= -80) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
     } else {
@@ -297,7 +521,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     turbinespeed = fwdSensors.dial1.fwdPosition()
-    fwdMotors.leftServo.fwdSetSpeed(turbinespeed)
+    fwdMotors.rightServo.fwdSetSpeed(turbinespeed)
     if (turbinespeed >= 80) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
     } else {
@@ -307,10 +531,10 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 let turbinespeed = 0
 turbinespeed = 0
 ```
-## 2nd Last Step 
+## Step 33
 ``|Download|`` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
 ![dial-servo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-13-wind.gif)
 
-## Last Step @showdialog
+## Step 34 @showdialog
 Congratulations on completing your Power Storage for Wind Energy Project! - Go back to the lesson for more activities and extensions.
