@@ -150,7 +150,7 @@ the simulator shows the components working.
 ## Step 19 @showdialog
 If after ``|Downloading|`` your project does not work please refer to the 
 image and make sure your components are assigned correctly.
-![correct-assignment](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/correct-assignment)
+![correct-assignment](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/correct-assignment.png)
 
 ## Step 20 @showdialog
 Need help in assigning the right components to their simulators. Watch the video.

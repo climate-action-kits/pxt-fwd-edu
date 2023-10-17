@@ -26,7 +26,7 @@ Next, click the ``|Download|`` button to download the blank project to start-up 
 ## Step 6 @showdialog
 This is how the simulators should look after a successful download. You can see 
 the Servo Motors along side the Pump.
-![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/board-no-servos.png)
+![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/board-no-sensors.png)
 
 ## Step 7 @showhint
 Look below the @boardname@ simulator to see the Climate Action Board and the connected devices. Try to turn the motors on and off using
@@ -269,7 +269,7 @@ the simulator shows the components working.
 ## Step 23 @showdialog
 If after ``|Downloading|`` your project does not work please refer to the 
 image and make sure your components are assigned correctly.
-![correct-assignment](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/correct-assignment-tree.gif)
+![correct-assignment](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/correct-assignment-tree.png)
 
 ## Step 24 @showdialog
 Need help in assigning the right components to their simulators. Watch the video.
