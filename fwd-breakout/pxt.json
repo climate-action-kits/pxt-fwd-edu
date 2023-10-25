@@ -12,7 +12,9 @@
     },
     "files": [
         "client.ts",
-        "driving.ts"
+        "driving.ts",
+        "_locales/fr/fwd-edu-breakout-strings.json",
+        "_locales/fr/fwd-edu-breakout-jsdoc-strings.json"
     ],
     "supportedTargets": [
         "microbit"

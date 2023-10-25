@@ -1,0 +1,20 @@
+{
+  "fwdMotors.FwdRelayClient": "The pump is an on-board relay",
+  "fwdMotors.FwdRelayClient.fwdIsActive": "The current state of the pump. true = running",
+  "fwdMotors.FwdRelayClient.fwdSetActive": "Set the pump to either running or stopped",
+  "fwdMotors.FwdRelayClient.fwdSetActive|param|state": "running = true, stopped = false",
+  "fwdMotors.FwdRelayClient.fwdTimedRun": "Turn the pump on and have it run in the background before turning off.",
+  "fwdMotors.FwdRelayClient.fwdTimedRun|param|duration": "how long the pump should run for before turning itself off",
+  "fwdMotors.FwdServoClient.angleRange": "Reports the servo's total range of motion in degrees",
+  "fwdMotors.FwdServoClient.fwdGetAngle": "Reports what angle the servo is set to",
+  "fwdMotors.FwdServoClient.fwdGetSpeed": "Reports what speed the servo is set to",
+  "fwdMotors.FwdServoClient.fwdIsEnabled": "Is the servo enabled or disabled? Enabled = true, disabled = false",
+  "fwdMotors.FwdServoClient.fwdSetAngle": "Set what angle the servo should point to, and immediately run the next block",
+  "fwdMotors.FwdServoClient.fwdSetAngleAndWait": "Set what angle the servo should point to, and wait for the movement to finish before running the next block",
+  "fwdMotors.FwdServoClient.fwdSetAngle|param|angle": "servo angle",
+  "fwdMotors.FwdServoClient.fwdSetEnabled": "Set the servo to enabled or disabled",
+  "fwdMotors.FwdServoClient.fwdSetEnabled|param|state": "enabled = true, disabled = false",
+  "fwdMotors.FwdServoClient.fwdSetSpeed": "Set what speed the servo should run at",
+  "fwdMotors.FwdServoClient.fwdSetSpeed|param|speed": "Can be set between 100% foward and -100% reverse",
+  "fwdMotors.fwdPositionPresets": "Preset servo positions based on a clock's hour hand"
+}
