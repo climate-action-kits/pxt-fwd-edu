@@ -1,0 +1,5 @@
+{
+  "fwdSensors.ThresholdDirection.Over|block": "over",
+  "fwdSensors.ThresholdDirection.Under|block": "under",
+  "{id:category}FwdSensors": "FwdSensors"
+}
