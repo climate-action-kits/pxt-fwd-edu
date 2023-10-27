@@ -182,9 +182,9 @@ namespace fwdMotors {
 
     
   //% fixedInstance
-  export const leftServo = new FwdServoClient("leftServo")
+  export const leftServo = new FwdServoClient("leftServo?srvo=0")
   //% fixedInstance
-  export const middleServo = new FwdServoClient("middleServo")
+  export const middleServo = new FwdServoClient("middleServo?srvo=1")
   //% fixedInstance
-  export const rightServo = new FwdServoClient("rightServo")
+  export const rightServo = new FwdServoClient("rightServo?srvo=2")
 }
