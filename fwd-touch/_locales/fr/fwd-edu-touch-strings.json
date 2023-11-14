@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdTouchClient.fwdHoldDuration|block": "$this durée de la rétantion (ms)",
+  "fwdSensors.FwdTouchClient.fwdIsPressed|block": "$this appuyé",
+  "fwdSensors.FwdTouchClient.fwdOnTouch|block": "en $this $event",
+  "{id:group}Touch": "Senseur tactile "
+}
