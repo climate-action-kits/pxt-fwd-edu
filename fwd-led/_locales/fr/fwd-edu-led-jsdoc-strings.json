@@ -1,0 +1,14 @@
+{
+  "fwdSensors.FwdLEDClient.fwdBrightness": "Retourne le niveau de luminosité de l'anneau, de 0 à 10.",
+  "fwdSensors.FwdLEDClient.fwdNumPixels": "Retourne le nombre de lumières composant un anneau LED",
+  "fwdSensors.FwdLEDClient.fwdRotate": "Tourner le patron de lumière vers la gauche ou la droite, en emballant le dernier pixel au premier Le nombre de positions qui vont tourner. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre.",
+  "fwdSensors.FwdLEDClient.fwdRotate|param|offset": "Le nombre de positions qui vont tourner. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre.",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour": "Établir toutes les LEDs sur une couleurnTOUT: réparer le sélecteur de couleur valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour|param|rgb": "valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdSetBrightness": "Régler la luminosité de l'anneau LED",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour": "Établir une LED spécifique sur une couleur\n\n\nTOUT : corrige le sélecteur de couleur le numéro de LED valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|index": "le numéro de LED",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|rgb": "valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdShift": "Déplacer le patron de lumière vers la gauche ou la droite. Si le patron de lumière est déplacé au-delà de la première ou de la dernière lumière, cette partie du patron est supprimée Le nombre de positions qui vont être changées. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre.",
+  "fwdSensors.FwdLEDClient.fwdShift|param|offset": "Le nombre de positions qui vont être changées. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre."
+}

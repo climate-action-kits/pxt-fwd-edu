@@ -1,0 +1,8 @@
+{
+  "fwdSensors.FwdSonarClient.fwdDistance": "Devuelve la lectura de distancia del sensor en metros Ejecuta el código cuando la distancia supera o baja un límite establecido Se ejecuta cuando la distancia está por encima o por debajo del límite establecido cuál es la distancia límite antes de ejecutar el código",
+  "fwdSensors.FwdSonarClient.fwdDistancePastThreshold": "Ejecuta el código cuando la distancia supera o baja un límite establecido Se ejecuta cuando la distancia está por encima o por debajo del límite establecido cuál es la distancia límite antes de ejecutar el código",
+  "fwdSensors.FwdSonarClient.fwdDistancePastThreshold|param|direction": "Se ejecuta cuando la distancia está por encima o por debajo del límite establecido",
+  "fwdSensors.FwdSonarClient.fwdDistancePastThreshold|param|threshold": "cuál es la distancia límite antes de ejecutar el código",
+  "fwdSensors.FwdSonarClient.fwdOnDistanceChangedBy": "ejecuta el código cuando la distancia cambia en más de una cierta cantidad entre lecturas cuánto por ciento tienen que diferir dos lecturas antes de que se ejecute el código",
+  "fwdSensors.FwdSonarClient.fwdOnDistanceChangedBy|param|threshold": "cuánto por ciento tienen que diferir dos lecturas antes de que se ejecute el código"
+}
