@@ -1,4 +1,4 @@
 {
-  "fwdSensors.ThresholdDirection.Over|block": "Sur",
-  "fwdSensors.ThresholdDirection.Under|block": "Sous"
+  "fwdSensors.ThresholdDirection.Over|block": "Au-dessus",
+  "fwdSensors.ThresholdDirection.Under|block": "Au-dessous"
 }
