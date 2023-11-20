@@ -2,5 +2,5 @@
   "fwdSensors.FwdDialClient.fwdClicksPerTurn|block": "Clics par tour complet",
   "fwdSensors.FwdDialClient.fwdOnDialTurned|block": "en $this tourné par $direction $difference",
   "fwdSensors|block": "Capteurs",
-  "{id:group}Dial": "Sélecteur"
+  "{id:group}Dial": "Capteurs"
 }
