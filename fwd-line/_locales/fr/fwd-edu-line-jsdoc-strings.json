@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdLineFollowerClient.fwdIsLineSensorState": "Vérifie l'état d'un capteur de ligne spécifique",
+  "fwdSensors.FwdLineFollowerClient.fwdIsLineSensorState|param|state": "○ (raté) ou ● (touché)",
+  "fwdSensors.FwdLineFollowerClient.fwdLineSensorState": "Indique si le capteur de ligne détecte ou non une réflexion",
+  "fwdSensors.FwdLineFollowerClient.fwdOnLineSensorStateChange": "Exécute le code lorsque le capteur passe d'un état à un autre"
+}

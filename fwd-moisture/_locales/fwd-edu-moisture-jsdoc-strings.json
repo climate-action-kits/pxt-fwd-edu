@@ -1,0 +1,8 @@
+{
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold": "Runs code when the moisture level goes above or below a set threshold",
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold|param|direction": "run when the level is above or below your set threshold",
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold|param|threshold": "what moisture level is the cut off before the code is run",
+  "fwdSensors.FwdSoilMoistureClient.fwdMoistureLevel": "Returns the sensor's moisture level as a number between 0-100",
+  "fwdSensors.FwdSoilMoistureClient.fwdOnMoistureLevelChangedBy": "Runs code when the moisture level changes by more than a certain amount between readings",
+  "fwdSensors.FwdSoilMoistureClient.fwdOnMoistureLevelChangedBy|param|threshold": "how many percent two readings have to differ by before code is run"
+}

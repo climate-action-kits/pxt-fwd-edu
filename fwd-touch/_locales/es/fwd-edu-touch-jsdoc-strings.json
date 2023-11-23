@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdTouchClient.fwdHoldDuration": "Devuelve la duración en ms de la última pulsación del botón en ms",
+  "fwdSensors.FwdTouchClient.fwdIsPressed": "devuelve el verdadero si el botón está presionado actualmente, de lo contrario es falso",
+  "fwdSensors.FwdTouchClient.fwdOnTouch": "Código a ejecutar cuando se produzca un evento seleccionado Botón presionado (abajo), sostenido, soltado (arriba)",
+  "fwdSensors.FwdTouchClient.fwdOnTouch|param|event": "Botón presionado (abajo), sostenido, soltado (arriba)"
+}

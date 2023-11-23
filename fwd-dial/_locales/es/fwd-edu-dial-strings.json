@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdDialClient.fwdClicksPerTurn|block": "$this clics por giro completo",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned|block": "en $this girado por $direction $difference",
+  "fwdSensors.FwdDialClient.fwdPosition|block": "$this posición absoluta",
+  "fwdSensors|block": "Sensores",
+  "{id:group}Dial": "Selector"
+}

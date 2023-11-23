@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold|block": "$this el nivel es $direction $threshold (\\%)",
+  "fwdSensors.FwdSoilMoistureClient.fwdMoistureLevel|block": "$this nivel (\\%)",
+  "fwdSensors.FwdSoilMoistureClient.fwdOnMoistureLevelChangedBy|block": "en $this el nivel cambiado por $threshold (\\%)",
+  "{id:group}Moisture": "Humedad"
+}

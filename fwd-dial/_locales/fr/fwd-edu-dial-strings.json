@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdDialClient.fwdClicksPerTurn|block": "Clics par tour complet",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned|block": "en $this tourné par $direction $difference",
+  "fwdSensors.FwdDialClient.fwdPosition|block": "$this position absolue",
+  "fwdSensors|block": "Capteurs",
+  "{id:group}Dial": "Capteurs"
+}

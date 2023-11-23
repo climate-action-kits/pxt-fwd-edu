@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdTouchClient.fwdHoldDuration": "Returns the ms duration of the last button hold in ms",
+  "fwdSensors.FwdTouchClient.fwdIsPressed": "Returns true if the button is currently pressed, otherwise false",
+  "fwdSensors.FwdTouchClient.fwdOnTouch": "Code to run when a chosen event occurs",
+  "fwdSensors.FwdTouchClient.fwdOnTouch|param|event": "Button pressed (down), held, released (up)"
+}

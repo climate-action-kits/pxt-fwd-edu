@@ -1,0 +1,20 @@
+{
+  "fwdMotors.FwdRelayClient": "La bomba es un relé incorporado El estado actual de la bomba. verdadero = funcionando Configurar la bomba en funcionamiento o detenida funcionando = verdadero, detenido = falso Enciende la bomba y hace que funcione en segundo plano antes de apagarla. cuánto tiempo debe funcionar la bomba antes de apagarse sola",
+  "fwdMotors.FwdRelayClient.fwdIsActive": "El estado actual de la bomba. verdadero = funcionando",
+  "fwdMotors.FwdRelayClient.fwdSetActive": "Configurar la bomba en funcionamiento o detenida funcionando = verdadero, detenido = falso",
+  "fwdMotors.FwdRelayClient.fwdSetActive|param|state": "funcionando = verdadero, detenido = falso",
+  "fwdMotors.FwdRelayClient.fwdTimedRun": "Enciende la bomba y hace que funcione en segundo plano antes de apagarla. cuánto tiempo debe funcionar la bomba antes de apagarse sola",
+  "fwdMotors.FwdRelayClient.fwdTimedRun|param|duration": "cuánto tiempo debe funcionar la bomba antes de apagarse sola",
+  "fwdMotors.FwdServoClient.angleRange": "Informa el rango total de movimiento del servo en grados",
+  "fwdMotors.FwdServoClient.fwdGetAngle": "Informa sobre el ángulo en el que está ajustado el servo",
+  "fwdMotors.FwdServoClient.fwdGetSpeed": "Informa sobre la velocidad a la que está ajustado el servo",
+  "fwdMotors.FwdServoClient.fwdIsEnabled": "¿Está activado o desactivado el servo? Habilitado = verdadero, deshabilitado = falso",
+  "fwdMotors.FwdServoClient.fwdSetAngle": "Establecer el ángulo al que debe apuntar el servo e inmediatamente ejecutar el siguiente bloque Establecer el ángulo al que debe apuntar el servo y esperar a que termine el movimiento antes de ejecutar el siguiente bloque ángulo del servo",
+  "fwdMotors.FwdServoClient.fwdSetAngleAndWait": "Establecer el ángulo al que debe apuntar el servo y esperar a que termine el movimiento antes de ejecutar el siguiente bloque",
+  "fwdMotors.FwdServoClient.fwdSetAngle|param|angle": "ángulo del servo",
+  "fwdMotors.FwdServoClient.fwdSetEnabled": "Establecer el servo en habilitado o deshabilitado Habilitado = verdadero, deshabilitado = falso",
+  "fwdMotors.FwdServoClient.fwdSetEnabled|param|state": "Habilitado = verdadero, deshabilitado = falso",
+  "fwdMotors.FwdServoClient.fwdSetSpeed": "Establecer la velocidad a la que debe funcionar el servo Se puede establecer entre 100% hacia adelante y -100% en reversa",
+  "fwdMotors.FwdServoClient.fwdSetSpeed|param|speed": "Se puede establecer entre 100% hacia adelante y -100% en reversa",
+  "fwdMotors.fwdPositionPresets": "Preestablecer las posiciones del servo basadas en la manecilla de las horas de un reloj"
+}

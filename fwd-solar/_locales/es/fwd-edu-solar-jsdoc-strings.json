@@ -1,0 +1,8 @@
+{
+  "fwdSensors.FwdSolarClient.fwdIsLightLevelPastThreshold": "Ejecuta el código cuando el nivel de luz está por encima o por debajo de un límite establecido funcionar cuando el nivel está por encima o por debajo del límite establecido qué nivel de luz hace el corte antes de ejecutar el código",
+  "fwdSensors.FwdSolarClient.fwdIsLightLevelPastThreshold|param|direction": "funcionar cuando el nivel está por encima o por debajo del límite establecido",
+  "fwdSensors.FwdSolarClient.fwdIsLightLevelPastThreshold|param|threshold": "qué nivel de luz hace el corte antes de ejecutar el código",
+  "fwdSensors.FwdSolarClient.fwdLightLevel": "Devuelve el nivel de luz del sensor como un número entre 0 y 100",
+  "fwdSensors.FwdSolarClient.fwdOnLightLevelChangedBy": "Ejecuta el código cuando el nivel de luz cambia en más de una cierta cantidad entre lecturas cuánto por ciento tienen que diferir dos lecturas antes de que se ejecute el código",
+  "fwdSensors.FwdSolarClient.fwdOnLightLevelChangedBy|param|threshold": "cuánto por ciento tienen que diferir dos lecturas antes de que se ejecute el código"
+}
