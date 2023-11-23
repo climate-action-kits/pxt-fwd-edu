@@ -1,22 +1,22 @@
 {
-  "name": "fwd-edu-touch",
-  "version": "0.34.0",
-  "description": "FWD Edu Climate Action Kit Gen. 2 Touch",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*",
-    "jacdac": "github:microsoft/pxt-jacdac",
-    "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
-    "jacdac-button": "github:microsoft/pxt-jacdac/button"
-  },
-  "files": [
-    "client.ts",
-    "_locales/es/fwd-edu-touch-jsdoc-strings.json",
-    "_locales/es/fwd-edu-touch-strings.json",
-    "_locales/fr/fwd-edu-touch-jsdoc-strings.json",
-    "_locales/fr/fwd-edu-touch-strings.json"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ]
+    "name": "fwd-edu-touch",
+    "version": "1.0.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Touch",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac",
+        "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
+        "jacdac-button": "github:microsoft/pxt-jacdac/button"
+    },
+    "files": [
+        "client.ts",
+        "_locales/es/fwd-edu-touch-jsdoc-strings.json",
+        "_locales/es/fwd-edu-touch-strings.json",
+        "_locales/fr/fwd-edu-touch-jsdoc-strings.json",
+        "_locales/fr/fwd-edu-touch-strings.json"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
 }

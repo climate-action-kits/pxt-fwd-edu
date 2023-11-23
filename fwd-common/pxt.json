@@ -1,20 +1,20 @@
 {
-  "name": "fwd-edu-common",
-  "version": "0.34.0",
-  "description": "FWD Edu Climate Action Kit Gen. 2 Shared resources",
-  "license": "MIT",
-  "dependencies": {
-    "core": "*"
-  },
-  "files": [
-    "motors.ts",
-    "sensors.ts",
-    "_locales/es/fwd-edu-common-jsdoc-strings.json",
-    "_locales/es/fwd-edu-common-strings.json",
-    "_locales/fr/fwd-edu-common-jsdoc-strings.json",
-    "_locales/fr/fwd-edu-common-strings.json"
-  ],
-  "supportedTargets": [
-    "microbit"
-  ]
+    "name": "fwd-edu-common",
+    "version": "1.0.0",
+    "description": "FWD Edu Climate Action Kit Gen. 2 Shared resources",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "motors.ts",
+        "sensors.ts",
+        "_locales/es/fwd-edu-common-jsdoc-strings.json",
+        "_locales/es/fwd-edu-common-strings.json",
+        "_locales/fr/fwd-edu-common-jsdoc-strings.json",
+        "_locales/fr/fwd-edu-common-strings.json"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
 }
