@@ -15,7 +15,7 @@
   "fwdMotors.drive|block": "Conducir $direction a $speed",
   "fwdMotors.setupDriving|block": "configurar motor de conducción izquierdo $left|motor derecho $right||izquierdo/derecho bias $bias",
   "fwdMotors.stop|block": "detener los motores",
-  "fwdMotors.turn|block": "girar $angle °en su lugar",
+  "fwdMotors.turn|block": "girar $angle ° en su lugar",
   "fwdMotors|block": "Motores",
   "{id:group}Driving": "Conducción",
   "{id:group}Pump": "Bomba",

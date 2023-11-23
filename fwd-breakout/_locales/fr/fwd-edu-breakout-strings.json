@@ -15,6 +15,7 @@
   "fwdMotors.drive|block": "Conduire $direction à $speed",
   "fwdMotors.setupDriving|block": "confugurer le moteur de conduite gauche $left|moteur droit $right||gauche/droit bias $bias",
   "fwdMotors.stop|block": "Arrêtez les moteurs",
+  "fwdMotors.turn|block": "tourne de $angle ° en place",
   "fwdMotors|block": "Moteurs",
   "{id:group}Driving": "Conduite",
   "{id:group}Pump": "Pompe",

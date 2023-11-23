@@ -1,14 +1,14 @@
 {
   "fwdSensors.FwdLEDClient.fwdBrightness": "Retourne le niveau de luminosité de l'anneau, de 0 à 10.",
   "fwdSensors.FwdLEDClient.fwdNumPixels": "Retourne le nombre de lumières composant un anneau LED",
-  "fwdSensors.FwdLEDClient.fwdRotate": "Tourner le patron de lumière vers la gauche ou la droite, en emballant le dernier pixel au premier Le nombre de positions qui vont tourner. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre.",
-  "fwdSensors.FwdLEDClient.fwdRotate|param|offset": "Le nombre de positions qui vont tourner. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre.",
-  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour": "Établir toutes les LEDs sur une couleurnTOUT: réparer le sélecteur de couleur valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
-  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour|param|rgb": "valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
-  "fwdSensors.FwdLEDClient.fwdSetBrightness": "Régler la luminosité de l'anneau LED",
-  "fwdSensors.FwdLEDClient.fwdSetPixelColour": "Établir une LED spécifique sur une couleur\n\n\nTOUT : corrige le sélecteur de couleur le numéro de LED valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
-  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|index": "le numéro de LED",
-  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|rgb": "valeur de couleur en utilisant soit le sélecteur de couleur des blocs soit la valeur hexadécimale",
-  "fwdSensors.FwdLEDClient.fwdShift": "Déplacer le patron de lumière vers la gauche ou la droite. Si le patron de lumière est déplacé au-delà de la première ou de la dernière lumière, cette partie du patron est supprimée Le nombre de positions qui vont être changées. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre.",
-  "fwdSensors.FwdLEDClient.fwdShift|param|offset": "Le nombre de positions qui vont être changées. Les nombres positifs sont dans le sens des aiguilles d’une montre, les négatifs dans le sens contraire des aiguilles d’une montre."
+  "fwdSensors.FwdLEDClient.fwdRotate": "Faire pivoter le motif lumineux vers la gauche ou la droite, en ramenant le dernier pixel au premier.",
+  "fwdSensors.FwdLEDClient.fwdRotate|param|offset": "Le nombre de positions à tourner. Les positions positives sont dans le sens des aiguilles d'une montre, les positions négatives sont dans le sens inverse des aiguilles d'une montre.",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour": "Régler toutes les DEL sur une couleur",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour|param|rgb": "valeur de la couleur à l'aide du sélecteur de couleurs des blocs ou de la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdSetBrightness": "Régler la luminosité de l'anneau DEL",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour": "Fixer une couleur à une DEL spécifique",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|index": "le numéro de la DEL",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|rgb": "valeur de la couleur à l'aide du sélecteur de couleurs des blocs ou de la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdShift": "Décaler le motif lumineux vers la gauche ou la droite. Si le motif lumineux est déplacé au-delà de la première ou de la dernière lumière, cette partie du motif est supprimée.",
+  "fwdSensors.FwdLEDClient.fwdShift|param|offset": "Le nombre de positions à modifier. Les positions positives sont dans le sens des aiguilles d'une montre, les positions négatives sont dans le sens inverse."
 }
