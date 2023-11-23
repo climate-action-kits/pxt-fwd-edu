@@ -1,9 +1,7 @@
-# pxt-fwd-edu (beta)
+# pxt-fwd-edu 
 Climate Action Kit (2nd generation), by Forward Education
 
 [ Find us at https://forwardedu.com/ ](https://forwardedu.com/)
-
-This extension is currently in beta
 
 ## Example Usage
 
