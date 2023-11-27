@@ -1,0 +1,8 @@
+{
+  "fwdSensors": "Blocks for the Climate Action Kit sensor components",
+  "fwdSensors.FwdDialClient": "Wrapper for FWD Edu rotary encoder, aka \"Dial\"",
+  "fwdSensors.FwdDialClient.fwdClicksPerTurn": "The number of steps that make up a full turn of the dial",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned": "Run code when the dial is turned in a specific direction",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned|param|direction": "choose between clockwise and counter-clockwise",
+  "fwdSensors.FwdDialClient.fwdPosition": "The absolute position of the dial since it was last connected.\nPositive numbers are clockwise, negative are counter-clockwise. Zero is the starting position.\nThis number reflects the sum of all movements, so three steps clockwise followed by five counter-clockwise will read -1 (includes zero as a position)"
+}

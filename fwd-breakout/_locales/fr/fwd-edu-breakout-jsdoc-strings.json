@@ -1,0 +1,20 @@
+{
+  "fwdMotors.FwdRelayClient": "La pompe est un relais embarqué",
+  "fwdMotors.FwdRelayClient.fwdIsActive": "L'état actuel de la pompe. vrai = en marche",
+  "fwdMotors.FwdRelayClient.fwdSetActive": "Régler la pompe sur marche ou arrêt",
+  "fwdMotors.FwdRelayClient.fwdSetActive|param|state": "en marche = vrai, arrêté = faux",
+  "fwdMotors.FwdRelayClient.fwdTimedRun": "Active la pompe et la fait fonctionner en arrière-plan avant de l'éteindre",
+  "fwdMotors.FwdRelayClient.fwdTimedRun|param|duration": "la durée pendant laquelle la pompe doit fonctionner avant de s'arrêter",
+  "fwdMotors.FwdServoClient.angleRange": "Indique l'amplitude totale du mouvement du servo en degrés.",
+  "fwdMotors.FwdServoClient.fwdGetAngle": "Indique l'angle auquel le servo est réglé",
+  "fwdMotors.FwdServoClient.fwdGetSpeed": "Indique la vitesse à laquelle le servo est réglé",
+  "fwdMotors.FwdServoClient.fwdIsEnabled": "Le servo est-il activé ou désactivé ? Activé = vrai, désactivé = faux",
+  "fwdMotors.FwdServoClient.fwdSetAngle": "Définir l'angle auquel le servo doit pointer, et exécuter immédiatement le bloc suivant",
+  "fwdMotors.FwdServoClient.fwdSetAngleAndWait": "Définir l'angle vers lequel le servo doit pointer et attendre la fin du mouvement avant d'exécuter le bloc suivant.",
+  "fwdMotors.FwdServoClient.fwdSetAngle|param|angle": "angle du servo",
+  "fwdMotors.FwdServoClient.fwdSetEnabled": "Régler le servo pour qu'il soit activé ou désactivé",
+  "fwdMotors.FwdServoClient.fwdSetEnabled|param|state": "activé = vrai, désactivé = faux",
+  "fwdMotors.FwdServoClient.fwdSetSpeed": "Définir la vitesse à laquelle le servo doit fonctionner",
+  "fwdMotors.FwdServoClient.fwdSetSpeed|param|speed": "Peut être réglé entre 100% en avant et -100% en arrière",
+  "fwdMotors.fwdPositionPresets": "Positions prédéfinies des servos en fonction de l'aiguille des heures d'une horloge"
+}

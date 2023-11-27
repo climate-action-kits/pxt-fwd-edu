@@ -1,0 +1,11 @@
+{
+  "fwdSensors.DialDirection.CCW|block": "↺",
+  "fwdSensors.DialDirection.CW|block": "↻",
+  "fwdSensors.FwdDialClient.fwdClicksPerTurn|block": "$this clicks per full turn",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned|block": "on $this turned by $direction $difference",
+  "fwdSensors.FwdDialClient.fwdPosition|block": "$this absolute position",
+  "fwdSensors.dial1|block": "dial1",
+  "fwdSensors|block": "Sensors",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}Dial": "Dial"
+}

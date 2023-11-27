@@ -46,9 +46,9 @@ namespace fwdMotors {
 
   export const enum DrivingDirection {
     //% block="forward"
-    Forward = -1,
+    Forward = 1,
     //% block="reverse"
-    Reverse = 1
+    Reverse = -1
   }
 
   export const drivingControls = createDrivingControls()
@@ -64,8 +64,9 @@ namespace fwdMotors {
   //% block="setup driving|left motor $left|right motor $right||left/right bias $bias"
   //% blockId=fwd_driving_setup
   //% bias.shadow="speedPicker"
+  //% bias.defl=0
   //% inlineInputMode=external
-  export function setupDriving (left: FwdServoClient, right: FwdServoClient, bias?: number) {
+  export function setupDriving (left: FwdServoClient, right: FwdServoClient, bias = 0) {
     drivingControls.initMotors(left, right, bias)
   }
 
@@ -98,7 +99,7 @@ namespace fwdMotors {
    * @param angle Positive angles turn right, negative angles turn left
    */
   //% group="Driving"
-  //% block="turn $angle in place"
+  //% block="turn $angle ° in place"
   //% blockId=fwd_driving_turn_in_place
   //% angle.min=-359 angle.max=359
   export function turn (angle: number) {

@@ -1,0 +1,7 @@
+{
+  "fwdSensors.FwdTouchClient.fwdHoldDuration|block": "$this hold duration (ms)",
+  "fwdSensors.FwdTouchClient.fwdIsPressed|block": "$this pressed",
+  "fwdSensors.FwdTouchClient.fwdOnTouch|block": "on $this $event",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}Touch": "Touch"
+}

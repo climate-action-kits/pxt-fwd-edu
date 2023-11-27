@@ -1,3 +1,7 @@
+built/
+pxt_modules/
+tsconfig.json
+
 # Logs
 logs
 *.log

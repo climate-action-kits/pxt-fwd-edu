@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-touch",
-    "version": "0.19.2",
+    "version": "1.0.1",
     "description": "FWD Edu Climate Action Kit Gen. 2 Touch",
     "license": "MIT",
     "dependencies": {
@@ -10,7 +10,11 @@
         "jacdac-button": "github:microsoft/pxt-jacdac/button"
     },
     "files": [
-        "client.ts"
+        "client.ts",
+        "_locales/es/fwd-edu-touch-jsdoc-strings.json",
+        "_locales/es/fwd-edu-touch-strings.json",
+        "_locales/fr/fwd-edu-touch-jsdoc-strings.json",
+        "_locales/fr/fwd-edu-touch-strings.json"
     ],
     "supportedTargets": [
         "microbit"

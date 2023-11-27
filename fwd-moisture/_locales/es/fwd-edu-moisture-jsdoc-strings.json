@@ -1,0 +1,8 @@
+{
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold": "Ejecuta el código cuando el nivel de humedad supera o baja un límite establecido Ejecutarse cuando el nivel está por encima o por debajo del límite establecido cuál nivel de humedad indica el corte antes de ejecutar el código",
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold|param|direction": "Ejecutarse cuando el nivel está por encima o por debajo del límite establecido",
+  "fwdSensors.FwdSoilMoistureClient.fwdIsMoistureLevelPastThreshold|param|threshold": "cuál nivel de humedad indica el corte antes de ejecutar el código",
+  "fwdSensors.FwdSoilMoistureClient.fwdMoistureLevel": "Devuelve el nivel de humedad del sensor como un número entre 0 y 100",
+  "fwdSensors.FwdSoilMoistureClient.fwdOnMoistureLevelChangedBy": "Ejecuta el código cuando el nivel de humedad cambia en más de una cierta cantidad entre lecturas cuánto por ciento tienen que diferir dos lecturas antes de que se ejecute el código",
+  "fwdSensors.FwdSoilMoistureClient.fwdOnMoistureLevelChangedBy|param|threshold": "cuánto por ciento tienen que diferir dos lecturas antes de que se ejecute el código"
+}

@@ -1,0 +1,8 @@
+{
+  "fwdSensors": "Blocs pour les composants des capteurs de la trousse d'action climatique.",
+  "fwdSensors.FwdDialClient": "Enveloppe pour codeur rotatif FWD Edu, alias \"cadran\"",
+  "fwdSensors.FwdDialClient.fwdClicksPerTurn": "Nombre de pas correspondant à un tour complet du cadran",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned": "Exécuter un code lorsque le cadran est tourné dans une direction spécifique",
+  "fwdSensors.FwdDialClient.fwdOnDialTurned|param|direction": "choisir entre le sens des aiguilles d'une montre et le sens inverse des aiguilles d'une montre",
+  "fwdSensors.FwdDialClient.fwdPosition": "La position absolue du cadran depuis sa dernière connexion.\nLes nombres positifs sont dans le sens des aiguilles d'une montre, les négatifs sont dans le sens inverse des aiguilles d'une montre. Le zéro est la position de départ.\nCe nombre reflète la somme de tous les mouvements, ainsi trois pas dans le sens des aiguilles d'une montre suivis de cinq dans le sens inverse des aiguilles d'une montre donneront -1 (y compris le zéro comme position)."
+}

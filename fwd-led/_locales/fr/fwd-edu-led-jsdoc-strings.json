@@ -1,0 +1,14 @@
+{
+  "fwdSensors.FwdLEDClient.fwdBrightness": "Retourne le niveau de luminosité de l'anneau, de 0 à 10.",
+  "fwdSensors.FwdLEDClient.fwdNumPixels": "Retourne le nombre de lumières composant un anneau LED",
+  "fwdSensors.FwdLEDClient.fwdRotate": "Faire pivoter le motif lumineux vers la gauche ou la droite, en ramenant le dernier pixel au premier.",
+  "fwdSensors.FwdLEDClient.fwdRotate|param|offset": "Le nombre de positions à tourner. Les positions positives sont dans le sens des aiguilles d'une montre, les positions négatives sont dans le sens inverse des aiguilles d'une montre.",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour": "Régler toutes les DEL sur une couleur",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour|param|rgb": "valeur de la couleur à l'aide du sélecteur de couleurs des blocs ou de la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdSetBrightness": "Régler la luminosité de l'anneau DEL",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour": "Fixer une couleur à une DEL spécifique",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|index": "le numéro de la DEL",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|param|rgb": "valeur de la couleur à l'aide du sélecteur de couleurs des blocs ou de la valeur hexadécimale",
+  "fwdSensors.FwdLEDClient.fwdShift": "Décaler le motif lumineux vers la gauche ou la droite. Si le motif lumineux est déplacé au-delà de la première ou de la dernière lumière, cette partie du motif est supprimée.",
+  "fwdSensors.FwdLEDClient.fwdShift|param|offset": "Le nombre de positions à modifier. Les positions positives sont dans le sens des aiguilles d'une montre, les positions négatives sont dans le sens inverse."
+}

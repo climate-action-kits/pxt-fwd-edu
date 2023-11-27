@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdTouchClient.fwdHoldDuration": "Renvoie la durée du dernier maintien du bouton en ms",
+  "fwdSensors.FwdTouchClient.fwdIsPressed": "Renvoie vrai si le bouton est actuellement enfoncé, sinon faux",
+  "fwdSensors.FwdTouchClient.fwdOnTouch": "Code à exécuter lorsqu'un événement choisi se produit",
+  "fwdSensors.FwdTouchClient.fwdOnTouch|param|event": "Bouton enfoncé (vers le bas), maintenu, relâché (vers le haut)"
+}

@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdLineFollowerClient.fwdIsLineSensorState": "Checks for a specific line sensor state",
+  "fwdSensors.FwdLineFollowerClient.fwdIsLineSensorState|param|state": "○ (miss) or ● (hit)",
+  "fwdSensors.FwdLineFollowerClient.fwdLineSensorState": "Returns whether or not the line sensor is detecting a reflection",
+  "fwdSensors.FwdLineFollowerClient.fwdOnLineSensorStateChange": "Runs code when the sensor changes from one state to another"
+}

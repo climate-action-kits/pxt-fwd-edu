@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdSolarClient.fwdIsLightLevelPastThreshold|block": "$this el nivel de luz es $direction $threshold (\\%)",
+  "fwdSensors.FwdSolarClient.fwdLightLevel|block": "$this nivel de luz (\\%)",
+  "fwdSensors.FwdSolarClient.fwdOnLightLevelChangedBy|block": "en $this el nivel de luz es cambiado por $threshold (\\%)",
+  "{id:group}Solar": "Solar"
+}

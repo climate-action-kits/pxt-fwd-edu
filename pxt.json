@@ -1,11 +1,11 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "0.19.2",
+    "version": "1.0.1",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
         "core": "*",
-        "jacdac": "github:microsoft/pxt-jacdac",
+        "jacdac": "github:microsoft/pxt-jacdac#v1.9.23",
         "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
         "fwd-edu-breakout": "github:climate-action-kits/pxt-fwd-edu/fwd-breakout",
         "fwd-edu-dial": "github:climate-action-kits/pxt-fwd-edu/fwd-dial",
@@ -19,13 +19,22 @@
     "files": [
         "README.md",
         "advancedagriculture.md",
+        "adv-agri-5-6-a.md",
+        "adv-agri-7-8-a.md",
+        "bees-5-6.md",
         "blank-project.md",
         "electricvehicle.md",
         "ev-obstacle-py.md",
         "plantsnpollinators.md",
+        "motm-line.md",
+        "motm-obs.md",
+        "sodis.md",
         "solarenergy.md",
         "treeseeder.md",
         "windenergy.md",
+        "wind-gr-5-lesson.md",
+        "wind-gr-6-lesson.md",
+        "wind-power-storage.md",
         "icon.png"
     ],
     "testFiles": [

@@ -1,0 +1,6 @@
+{
+  "fwdSensors.FwdLineFollowerClient.fwdIsLineSensorState": "Verifica el estado de un sensor de línea específico ○ (fallar) o ● (golpear)",
+  "fwdSensors.FwdLineFollowerClient.fwdIsLineSensorState|param|state": "○ (fallar) o ● (golpear)",
+  "fwdSensors.FwdLineFollowerClient.fwdLineSensorState": "Devuelve si el sensor de línea está detectando o no un reflejo",
+  "fwdSensors.FwdLineFollowerClient.fwdOnLineSensorStateChange": "Ejecuta un código cuando el sensor cambia de un estado a otro"
+}

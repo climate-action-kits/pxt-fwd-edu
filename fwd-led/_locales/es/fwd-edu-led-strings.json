@@ -1,0 +1,20 @@
+{
+  "fwdSensors.FwdLEDClient.fwdBrightness|block": "brillo de $this",
+  "fwdSensors.FwdLEDClient.fwdNumPixels|block": "número de píxeles de $this",
+  "fwdSensors.FwdLEDClient.fwdRotate|block": "girar el patrón de $this por $offset",
+  "fwdSensors.FwdLEDClient.fwdSetAllPixelsColour|block": "establecer todos los LEDs de $this a $rgb=colorNumberPicker",
+  "fwdSensors.FwdLEDClient.fwdSetBrightness|block": "establecer el brillo de $this a $value",
+  "fwdSensors.FwdLEDClient.fwdSetPixelColour|block": "establecer el $index de $this a $rgb=colorNumberPicker",
+  "fwdSensors.FwdLEDClient.fwdShift|block": "desplazar el patrón de $this por $offset",
+  "fwdSensors.PixelNames.PXL1|block": "PXL1",
+  "fwdSensors.PixelNames.PXL2|block": "PXL2",
+  "fwdSensors.PixelNames.PXL3|block": "PXL3",
+  "fwdSensors.PixelNames.PXL4|block": "PXL4",
+  "fwdSensors.PixelNames.PXL5|block": "PXL5",
+  "fwdSensors.PixelNames.PXL6|block": "PXL6",
+  "fwdSensors.PixelNames.PXL7|block": "PXL7",
+  "fwdSensors.PixelNames.PXL8|block": "PXL8",
+  "{id:category}FwdSensors": "FwdSensors",
+  "{id:group}LED Lights": "LED Lights"
+}
+
