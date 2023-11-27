@@ -1,7 +1,9 @@
-# pxt-fwd-edu 
+# pxt-fwd-edu (beta)
 Climate Action Kit (2nd generation), by Forward Education
 
 [ Find us at https://forwardedu.com/ ](https://forwardedu.com/)
+
+This extension is currently in beta
 
 ## Example Usage
 
@@ -27,15 +29,15 @@ basic.forever(function () {
 Control a servo arm with a dial.
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetAngle(Math.constrain(fwdMotors.leftServo.fwdGetAngle() + 5 * difference, 0, 270))
+    fwdMotors.servo1.fwdSetAngle(Math.constrain(fwdMotors.servo1.fwdGetAngle() + 5 * difference, 0, 270))
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetAngle(Math.constrain(fwdMotors.leftServo.fwdGetAngle() + 5 * difference, 0, 270))
+    fwdMotors.servo1.fwdSetAngle(Math.constrain(fwdMotors.servo1.fwdGetAngle() + 5 * difference, 0, 270))
 })
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Up, function () {
-    fwdMotors.leftServo.fwdSetAngleAndWait(fwdMotors.fwdPositionPresets(fwdMotors.PresetServoPosition.Pos4))
+    fwdMotors.servo1.fwdSetAngleAndWait(fwdMotors.fwdPositionPresets(fwdMotors.PresetServoPosition.Pos4))
 })
-fwdMotors.leftServo.fwdSetAngle(fwdMotors.fwdPositionPresets(fwdMotors.PresetServoPosition.Pos4))
+fwdMotors.servo1.fwdSetAngle(fwdMotors.fwdPositionPresets(fwdMotors.PresetServoPosition.Pos4))
 ```
 
 Control LED ring based on distance and light level

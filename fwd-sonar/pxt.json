@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-sonar",
-    "version": "1.0.1",
+    "version": "0.19.2",
     "description": "FWD Edu Climate Action Kit Gen. 2 Sonar",
     "license": "MIT",
     "dependencies": {
@@ -10,11 +10,7 @@
         "jacdac-distance": "github:microsoft/pxt-jacdac/distance"
     },
     "files": [
-        "client.ts",
-        "_locales/es/fwd-edu-sonar-jsdoc-strings.json",
-        "_locales/es/fwd-edu-sonar-strings.json",
-        "_locales/fr/fwd-edu-sonar-jsdoc-strings.json",
-        "_locales/fr/fwd-edu-sonar-strings.json"
+        "client.ts"
     ],
     "supportedTargets": [
         "microbit"

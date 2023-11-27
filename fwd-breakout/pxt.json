@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-breakout",
-    "version": "1.0.1",
+    "version": "0.19.2",
     "description": "FWD Edu Climate Action Kit Gen. 2 Breakout Board",
     "license": "MIT",
     "dependencies": {
@@ -12,11 +12,7 @@
     },
     "files": [
         "client.ts",
-        "driving.ts",
-        "_locales/es/fwd-edu-breakout-jsdoc-strings.json",
-        "_locales/es/fwd-edu-breakout-strings.json",
-        "_locales/fr/fwd-edu-breakout-jsdoc-strings.json",
-        "_locales/fr/fwd-edu-breakout-strings.json"
+        "driving.ts"
     ],
     "supportedTargets": [
         "microbit"

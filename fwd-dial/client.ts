@@ -21,7 +21,7 @@ namespace fwdSensors {
       this._ccwAction = (_) => {}
 
       this.onReadingChangedBy(1, (delta: number) => {
-        if (delta > 0) {
+        if (delta < 0) {
           this._cwAction(delta)
         } else {
           this._ccwAction(delta)

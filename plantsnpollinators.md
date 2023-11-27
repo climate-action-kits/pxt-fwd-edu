@@ -1,48 +1,46 @@
-# Protecting Pollinators with a Bee Counter
+# Plants & Pollinators
+
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
-Welcome to Protecting Pollinators with a Bee Counter Coding Tutorial.
-![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-beetouch-200.png)
+Welcome to Plants & Pollinators Coding Tutorial.
+![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-beetouch-400.png)
 
 ## Step 2 @showdialog
-In this coding tutorial we will count the number of pollinators that visit your monitoring station. Whenever a pollinator lands on the touch sensor the pixels of the LED Ring are turned on, and we increase the visitor count on the micro:bit LEDs by one.
+Plug your USB cable into the micro:bit. 
+![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
-Turn on the Climate Action Kit board.
-![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
+Insert it into the Climate Action Kit board. 
+![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint
-Click three dots besides ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+Click three dots besides ``|Download|`` button and follow the steps to pair your micro:bit.
 ![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
 
 ## Step 5 @showhint
-Next, click the ``|Download|`` button to download the blank project to start-up the simulators.
-
-## Step 6 @showhint
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try touching the Touch Sensor on your project. The virtual simulators will react to it.
+Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try to interact with your sensor and the simulator will react to it.
 ![touch](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-7-Touch.gif)
 
-## Step 7
+## Step 6
 Click ``||Variables:Variables||``. Click on |Make a Variable| to create a new ``||Variables:Variable||``.  
 Name it ``||Variables:bugVisits||``.
 
-## Step 8
+## Step 7
 Inside ``||Variables:Variables||`` there is ``||Variables:bugVisits||``
 and more blocks.
 
-## Step 9
+## Step 8
 Click ``||Variables:Variables||`` drag and drop ``||Variables:set bugVisits to 0||`` block
 inside ``||basic:on start||`` block.
 ```blocks
 let bugVisits = 0
 basic.forever(function (){})
 ```
-
-## Step 10
-Click ``||basic:Basic||`` drag and drop ``||basic:show number 0||`` block
+## Step 9
+Click ``||basic:Basic||`` drag and drop ``||basic:showNumber||`` block
 under ``||Variables:set bugVisits to 0||`` block.
 ```blocks
 let bugVisits = 0
@@ -50,8 +48,8 @@ basic.showNumber(0)
 basic.forever(function (){})
 ```
 
-## Step 11
-Click ``||logic:Logic||`` drag and drop ``||logic:if true then||``
+## Step 10
+Click ``||logic:Logic||`` drag and drop ``||logic:if true then||`` 
 conditional block inside ``||basic:forever||`` loop.
 ```blocks
 let bugVisits = 0
@@ -61,8 +59,7 @@ basic.forever(function (){
  }
 })
 ```
-
-## Step 12
+## Step 11
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:touch pressed||`` block to replace ``||logic:true||`` condition of ``||logic:if true then||`` block.
 ```blocks
 let bugVisits = 0
@@ -72,8 +69,7 @@ basic.forever(function () {
             }
 })
 ```
-
-## Step 13
+## Step 12
 Click ``||Variables:Variables||`` drag and drop
  ``||Variables:change bugVisits by 1||`` block inside
  ``||logic:if||`` ``||fwdSensors:touch pressed||`` ``||logic: then||`` block.
@@ -86,37 +82,34 @@ basic.forever(function () {
         }
 })
 ```
-
-## Step 14
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||`` block under ``||Variables:change bugVisits by 1||`` block.
+## Step 13
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||`` block under ``||Variables:change bugVisits by 1||`` block.
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
         }
 })
 ```
-
-## Step 15
-Click ``||basic:Basic||`` drag and drop ``||basic:show number||`` block under ``||fwdSensors:set all ledRing LEDs to||`` block.
+## Step 14
+Click ``||basic:Basic||`` drag and drop ``||basic:show number||`` block under ``||fwdSensors:set all ledRing LEDs to 10||`` block.
 ```blocks
 let bugVisits = 1
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
         basic.showNumber(0)
     }
 })
 ```
-
-## Step 16
-Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||``
-block under ``||basic:show number 0||``
+## Step 15
+Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to 10||``
+block under ``||basic:show number||``
 block.
 ```blocks
 let bugVisits = 1
@@ -124,37 +117,29 @@ basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
         basic.showNumber(0)
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
     }
 })
 ```
-
-## Step 17
+## Step 16
 Click ``||Variables:Variables||`` drag and drop ``||Variables:bugVisits||``
-to replace the ``||0||`` in both ``||basic:show number 0||``.
-Change color of second ``||fwdSensors:LED Ring||`` block to ``||control:black||``.
+to replace the ``||0||`` in both ``||basic:show number||``.
+Change value of second ``||fwdSensors:LED Ring||`` block to ``||0||``. 
 ```blocks
 let bugVisits = 1
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(10)
         basic.showNumber(bugVisits )
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0)
     }
 })
 ```
-
-## Step 18 @showhint
-``|Download|`` and test your code. Click the bulb icon to see how
-the simulator shows the components working.
+## Step 17 @showhint
+Click ``|Download|`` and test your code. The simulator shows how it should work.
+Congratulations on completing your Plants and Pollinator Project! - Go back to the lesson for more activities and extensions.
 ![touch-led](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-10-LED-bee.gif)
-
-## Step 19 @showdialog
-Congratulations on completing your Protecting Pollinators with a Bee Counter Project!
-
-## Step 20 @showdialog
-After your project is complete, go back to the lesson for more challenges and extensions.
