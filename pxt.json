@@ -33,8 +33,10 @@
         "treeseeder.md",
         "windenergy.md",
         "wind-gr-5-lesson.md",
+        "_locales/fr/wind-gr-5-lesson.md",
         "wind-gr-6-lesson.md",
         "wind-power-storage.md",
+        "_locales/fr/wind-power-storage.md",
         "icon.png"
     ],
     "testFiles": [
