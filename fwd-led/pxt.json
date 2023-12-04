@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-led",
-    "version": "1.1.2",
+    "version": "1.2.0",
     "description": "FWD Edu Climate Action Kit Gen. 2 LED",
     "license": "MIT",
     "dependencies": {
