@@ -1,4 +1,4 @@
-# Powering the Future with Wind Energy
+# Alimenter l’avenir avec l’énergie éolienne
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
@@ -31,19 +31,19 @@ Regarde sous le simulateur micro:bit pour voir la plaque d’Action pour le Clim
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8
-Clique sur ``||fwdSensors:Sensors||``. Ensuite, fait glisser et dépose le bloc
-``||fwdSensors:on dial1 turned difference||`` dans l’espace de travail.
+Clique sur ``||fwdSensors:Capteurs||``. Ensuite, fait glisser et dépose le bloc
+``||fwdSensors:en dial1 tourné par difference||`` dans l’espace de travail.
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     })
 ```
 
 ## Step 9
-Fait clic droit sur le bloc ``||fwdSensors:on dial1 turned difference||``  et duplique-le. _Remarque : Le nouveau bloc sera gris._
+Fait clic droit sur le bloc ``||fwdSensors:en dial1 tourné par difference||``  et duplique-le. _Remarque : Le nouveau bloc sera gris._
 ![greyed out example](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-greyed-out-demo.png)
 
 ## Step 10
-Change la flèche directionnelle du bloc atténué ``||fwdSensors:on dial1 turned difference||``._Remarque : Le bloc atténué deviendra vert._
+Change la flèche directionnelle du bloc atténué ``||fwdSensors:en dial1 tourné par difference||``._Remarque : Le bloc atténué deviendra vert._
 ![dial direction](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-direction-switch.gif)
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
@@ -53,8 +53,8 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 11
-Clique sur ``||fwdSensors:Sensors||`` Ensuite, fait glisser et dépose le bloc
-``||fwdSensors:on touch down||`` dans l’espace de travail.
+Clique sur ``||fwdSensors:Capteurs||`` Ensuite, fait glisser et dépose le bloc
+``||fwdSensors:en touch down||`` dans l’espace de travail.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
@@ -65,9 +65,9 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 12
-Clique sur ``||fwdMotors:Motors||``. Ensuite, fait glisser et dépose le bloc
-``||fwdMotors:set leftServo to 50 %||`` à l’intérieur du bloc
-``||fwdSensors:on dial1 turned difference||``.
+Clique sur ``||fwdMotors:Moteurs||``. Ensuite, fait glisser et dépose le bloc
+``||fwdMotors:mettre leftServo to 50 %||`` à l’intérieur du bloc
+``||fwdSensors:en dial1 tourné par difference||``.
 Après, change ``||fwdMotors:leftServo||`` au ``||fwdMotors:middleServo||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -80,7 +80,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 13
-Fait clic droit sur le bloc ``||fwdMotors:set middleServo to 50 %||`` et duplique-le. Ensuite, fait-le glisser et dépose-le à l’intérieur du deuxième bloc ``||fwdSensors:on dial1 turned difference||``.
+Fait clic droit sur le bloc ``||fwdMotors:mettre middleServo to 50 %||`` et duplique-le. Ensuite, fait-le glisser et dépose-le à l’intérieur du deuxième bloc ``||fwdSensors:en dial1 tourné par difference||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     })
@@ -93,7 +93,8 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 14
-Fait clic sur ``||fwdSensors:Sensors||``. Ensuite, fait glisser le bloc avec une forme ovale ``||fwdSensors:dial1 absolute position||`` près du bloc ``||fwdMotors:set middleServo 50 %||``. Remplace le ``||fwdMotors:50 %||`` dans le bloc ``||fwdMotors:set middleServo 50 %||``.
+Fait clic sur ``||fwdSensors:Capteurs||``. Ensuite, fait glisser le bloc avec une forme ovale 
+``||fwdSensors:dial1 position absolue||`` près du bloc ``||fwdMotors:mettre middleServo 50 %||``. Remplace le ``||fwdMotors:50 %||`` dans le bloc ``||fwdMotors:mettre middleServo 50 %||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
@@ -106,8 +107,8 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 15
-Clique sur ``||fwdSensors:Sensors||``.
-Ensuite, fait glisser le bloc avec une forme ovale ``||fwdSensors:dial1 absolute position||`` près du deuxième  bloc ``||fwdMotors:set middleServo 50 %||``. Remplace le ``||fwdMotors:50 %||`` dans le bloc ``||fwdMotors:set middleServo 50 %||``.
+Clique sur ``||fwdSensors:Capteurs||``.
+Ensuite, fait glisser le bloc avec une forme ovale ``||fwdSensors:dial1 position absolue||`` près du deuxième  bloc ``||fwdMotors:mettre middleServo 50 %||``. Remplace le ``||fwdMotors:50 %||`` dans le bloc ``||fwdMotors:mettre middleServo 50 %||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
@@ -120,7 +121,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 16
-Clique sur ``||fwdMotors:Motors||``. Ensuite, fait glisser et dépose le bloc ``||fwdMotors:set leftServo 50 %||`` à l'intérieur du bloc ``||fwdSensors:on touch down||``. Change ``||fwdMotors:leftServo||`` au ``||fwdMotors:middleServo||``.
+Clique sur ``||fwdMotors:Moteurs||``. Ensuite, fait glisser et dépose le bloc ``||fwdMotors:mettre leftServo 50 %||`` à l'intérieur du bloc ``||fwdSensors:en touch down||``. Change ``||fwdMotors:leftServo||`` au ``||fwdMotors:middleServo||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
     fwdMotors.middleServo.fwdSetSpeed(50)
@@ -134,7 +135,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 ```
 
 ## Step 17
-Change la vitesse du bloc ``||fwdMotors:set middleServo 50 %||`` à l'intérieur du bloc ``||fwdSensors:on touch down||``
+Change la vitesse du bloc ``||fwdMotors:mettre middleServo 50 %||`` à l'intérieur du bloc ``||fwdSensors:en touch down||``
 en ``||0||``.
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -153,7 +154,7 @@ Clique sur ``|Download|`` et teste ton code. Clique sur l’icône de l’ampoul
 ![dial-middleServo](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/dial-middleServo.gif)
 
 ## Step 19 @showdialog
-Si après d’avoir complété le ``|Downloading|`` ton projet ne fonctionne pas, regarde l’image et assure-toi que tes composants sont correctement assignés.
+Si après d’avoir complété le ``|Download|`` ton projet ne fonctionne pas, regarde l’image et assure-toi que tes composants sont correctement assignés.
 ![correct-assignment](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/correct-assignment.png)
 
 ## Step 20 @showdialog
