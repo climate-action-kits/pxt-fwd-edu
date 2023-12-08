@@ -37,6 +37,9 @@
         "wind-gr-6-lesson.md",
         "wind-power-storage.md",
         "_locales/fr/wind-power-storage.md",
+        "lesson-final-code/wind-1-code.md",
+        "lesson-final-code/wind-2-code.md",
+        "lesson-final-code/wind-3-code.md",
         "icon.png"
     ],
     "testFiles": [
