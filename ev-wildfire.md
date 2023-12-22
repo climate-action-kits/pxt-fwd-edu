@@ -9,7 +9,7 @@ Welcome to Wildfire Tracking with Autonomous Vehicles
 
 ## Step 2 @showdialog
 In this coding tutorial the vehicle will be moving around a perimeter and keeping
- a check on Light, Temperature and Sound. Press the button A and B to start and stop moving the vehicle.
+ a check on Light and Temperature. Press the button A and B to start and stop moving the vehicle.
 
 ## Step 3 @showdialog
 Turn on the Climate Action Kit board.
@@ -58,7 +58,6 @@ Click ``||Variables:Variables||`` and then click |Make a Variable| to create
 these ``||Variables:Variables||``
 - ``||Variables:IsDrivingEnabled||``
 - ``||Variables:lightThreshold||``
-- ``||Variables:soundThreshold||``
 - ``||Variables:temperatureThreshold||``
 
 ## Step 11
@@ -581,37 +580,6 @@ basic.forever(function () {
 ```
 
 ## Step 30
-Click ``||Variables:Variables||`` drag and drop ``||Variables:soundThreshold||``
-block to replace left ``||Logic:0||`` of right ``||Logic:Comparison||`` condition.
-```blocks
-input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = true
-})
-input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = false
-})
-let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdMotors.leftServo,
-fwdMotors.rightServo
-)
-basic.forever(function () {
-    if (IsDrivingEnabled) {
-        for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
-            basic.pause(5000)
-            fwdMotors.turn(25)
-           if (lightThreshold < 0  || temperatureThreshold < 0 || soundThreshold < 0) {
-            } else {
-            }
-        }
-    } else {
-        fwdMotors.stop()
-    }
-})
-```
-
-## Step 31
 Click ``||Input:Input||`` drag and drop ``||Input:light level||``
 block to replace right ``||Logic:0||`` of  ``||Logic:Comparison||`` condition with
 ``||Variables:lightThreshold||`` block on the left.
@@ -633,7 +601,7 @@ basic.forever(function () {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-           if (lightThreshold < input.lightLevel()  || temperatureThreshold < 0 || soundThreshold < 0) {
+           if (lightThreshold < input.lightLevel()  || temperatureThreshold < 0) {
             } else {
             }
         }
@@ -643,7 +611,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 32
+## Step 31
 Click ``||Input:Input||`` drag and drop ``||Input:temperature ('C)||``
 block to replace right ``||Logic:0||`` of  ``||Logic:Comparison||`` condition with
 ``||Variables:temperatureThreshold||`` block in the middle.
@@ -665,7 +633,7 @@ basic.forever(function () {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-           if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature() || soundThreshold < 0) {
+           if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature()) {
             } else {
             }
         }
@@ -675,44 +643,12 @@ basic.forever(function () {
 })
 ```
 
-## Step 33
-Click ``||Input:Input||`` drag and drop ``||Input:sound level||``
-block to replace right ``||Logic:0||`` of  ``||Logic:Comparison||`` condition with
-``||Variables:lightThreshold||`` block on the right.
-```blocks
-input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = true
-})
-input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = false
-})
-let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdMotors.leftServo,
-fwdMotors.rightServo
-)
-basic.forever(function () {
-    if (IsDrivingEnabled) {
-        for (let index = 0; index < 4; index++) {
-            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
-            basic.pause(5000)
-            fwdMotors.turn(25)
-           if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature() || soundThreshold < input.soundLevel()) {
-            } else {
-            }
-        }
-    } else {
-        fwdMotors.stop()
-    }
-})
-```
-## Step 34
-Click ``||Variables:Variables||`` drag and drop ``||Variables:set temperatureThreshold to 0||``,
-``||Variables:set lightThreshold to 0||`` and ``||Variables:set soundThreshold to 0||`` blocks inside
+## Step 32
+Click ``||Variables:Variables||`` drag and drop ``||Variables:set temperatureThreshold to 0||`` and 
+``||Variables:set lightThreshold to 0||`` blocks inside
 ``||Basic:on start||`` block under ``||fwdMotors:setup driving||`` block.
 Recommended threshold values:
 - Temperature = 25
-- Sound = 100
 - Light = 100
 - _Note: Adjust the threshold values according to your surroundings._
 ```blocks
@@ -725,7 +661,6 @@ input.onButtonPressed(Button.B, function () {
 let IsDrivingEnabled = false
 let lightThreshold = 100
 let temperatureThreshold = 25
-let soundThreshold = 100
 fwdMotors.setupDriving(
 fwdMotors.leftServo,
 fwdMotors.rightServo
@@ -736,7 +671,7 @@ basic.forever(function () {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-           if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature() || soundThreshold < input.soundLevel()) {
+           if (lightThreshold < input.lightLevel()  || temperatureThreshold < input.temperature()) {
             } else {
             }
         }
@@ -745,7 +680,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 35
+## Step 33
 Click ``||Loops:Loops||`` drag and drop ``||Loops:repeat 4 times||``
 block to nest inside ``||Logic:if true then||`` block.
 ```blocks
@@ -762,14 +697,13 @@ fwdMotors.rightServo
 )
 let lightThreshold = 100
 let temperatureThreshold = 25
-let soundThreshold = 100
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold || input.soundLevel() > soundThreshold) {
+            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     }
             } else {
@@ -781,7 +715,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 36
+## Step 34
 Click ``||Music:Music||`` drag and drop two ``||Music:play tone Middle C for 1 beat||``
 blocks to nest inside ``||Loops:repeat 4 times||`` block.
 ```blocks
@@ -798,14 +732,13 @@ fwdMotors.rightServo
 )
 let lightThreshold = 100
 let temperatureThreshold = 25
-let soundThreshold = 100
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold || input.soundLevel() > soundThreshold) {
+            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -818,7 +751,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 37
+## Step 35
 Click ``||Music:Music||`` drag and drop ``||Music:stop all sounds||``
 blocks to nest inside ``||Logic:else||`` condition.
 ```blocks
@@ -835,14 +768,13 @@ fwdMotors.rightServo
 )
 let lightThreshold = 100
 let temperatureThreshold = 25
-let soundThreshold = 100
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold || input.soundLevel() > soundThreshold) {
+            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -858,7 +790,7 @@ basic.forever(function () {
 ```
 
 
-## Step 38
+## Step 36
 Click ``||Basic:Basic||`` drag and drop ``||Basic:pause (ms) 100||`` block under 
 ``||Logic:else||`` condition. Change ``||Basic:100||`` to ``||Basic:1000||``.
 ```blocks
@@ -875,14 +807,13 @@ fwdMotors.rightServo
 )
 let lightThreshold = 100
 let temperatureThreshold = 25
-let soundThreshold = 100
 basic.forever(function () {
     if (IsDrivingEnabled) {
         for (let index = 0; index < 4; index++) {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
             basic.pause(5000)
             fwdMotors.turn(25)
-            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold || input.soundLevel() > soundThreshold) {
+            if (input.lightLevel() > lightThreshold || input.temperature() > temperatureThreshold) {
                 for (let index = 0; index < 4; index++) {
                     music.playTone(262, music.beat(BeatFraction.Whole))
                     music.playTone(262, music.beat(BeatFraction.Whole))
@@ -898,27 +829,27 @@ basic.forever(function () {
 })
 ```
 
-## Step 39 @showhint
+## Step 37 @showhint
 ``|Download|`` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
 ![sonar-servos](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-17-ev-obstacle.gif)
 
-## Step 40 @showhint
+## Step 38 @showhint
 ``|Download|`` and test your code. Click the bulb icon to see how
 the simulator shows the components working.
 ![servos](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/final-sim-tree.gif)
 
-## Step 41 @showdialog
+## Step 39 @showdialog
 If after ``|Downloading|`` your project does not work please refer to the
 image and make sure your components are assigned correctly.
 ![correct-assignment](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/correct-assignment-tree.png)
 
-## Step 42 @showdialog
+## Step 40 @showdialog
 Need help in assigning the right components to their simulators. Watch the video.
 ![final-download](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/servo-assign.gif)
 
-## Step 43 @showdialog
+## Step 41 @showdialog
 Congratulations on completing your Wildfire Tracking with Autonomous Vehicles Project!
 
-## Step 44 @showdialog
+## Step 42 @showdialog
 After your project is complete go back to the lesson for more challenges and extensions.
