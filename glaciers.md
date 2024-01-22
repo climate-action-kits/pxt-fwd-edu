@@ -5,7 +5,7 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
 Welcome to Monitoring Glaciers
-![built project](https://raw.githubusercontent.com/mbakhtar/pxt-fwd-edu/main/tutorial-assets/glacier-comb-resized.png)
+![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/glacier-comb-resized.png)
 
 ## Step 2 @showdialog
 In this coding tutorial the device continuously measures distances to its left and right, and decides which direction to go based on which path is less obstructed.
