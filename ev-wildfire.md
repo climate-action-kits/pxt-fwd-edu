@@ -5,7 +5,7 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Step 1 @showdialog
 Welcome to Wildfire Tracking with Autonomous Vehicles
-![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/project-electric-200.png)
+![built project](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/wildfire-iso-resized.png)
 
 ## Step 2 @showdialog
 In this coding tutorial the vehicle will be moving around a perimeter and keeping
