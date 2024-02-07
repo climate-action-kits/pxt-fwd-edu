@@ -241,7 +241,7 @@ basic.forever(function () {
 ```
 ## Step 23
 Click ``||Variables:Variables||`` drag and drop ``||Variables:set position to 0||``
-inside ``||logic:if||`` ``||variables:position||`` ``||logic: > 90 then||`` block.
+inside ``||logic:if||`` ``||variables:position||`` ``||logic: > 90 then||`` block. Change 0 in ``||Variables:set position to 0||`` to -90. 
 ```blocks
 let position = -90
 basic.forever(function () {
@@ -252,7 +252,7 @@ basic.forever(function () {
         basic.showIcon(IconNames.SmallDiamond)
         position += 10
         if (position > 90) {
-        position = 0
+        position = -90
         }
        
     }
