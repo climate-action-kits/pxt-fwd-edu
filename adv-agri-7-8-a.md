@@ -309,8 +309,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 23
 Click ``||Basic:Basic||`` drag and drop ``||Basic:pause (ms) 100||``
@@ -342,8 +342,8 @@ basic.pause(100)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 24
 Click ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:set all ledRing LEDs to||``
@@ -377,8 +377,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 25
 Change ``||fwdSensors:set all ledRing LEDs to||`` under ``||input:on button A pressed||``
@@ -412,8 +412,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 26
 Change both LED colors of ``||Input:on button A pressed||`` and ``||input:on button B pressed||``
@@ -446,8 +446,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 27
 Click ``||Variables:Variables||`` drag and drop ``||Variables:plant_A||`` block to replace
@@ -479,8 +479,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 28
 Click ``||Variables:Variables||`` drag and drop ``||Variables:plant_B||`` block to replace
@@ -512,8 +512,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 29
 Click ``||Variables:Variables||`` to make two new ``||Variables:Variables||``.
@@ -553,8 +553,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 
 ## Step 31
@@ -589,8 +589,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+})
 ```
 ## Step 32
 Click ``||Input:Input||`` then ``||Input:more||`` drag and drop ``||input:running time (ms)||``
@@ -626,8 +626,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+)}
 ```
 
 ## Step 33
@@ -663,8 +663,8 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
-}
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
+)}
 ```
 ## Step 34
 Click ``||Basic:Basic||`` drag and drop ``||Basic:show number||`` block inside
@@ -699,9 +699,9 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
 basic.showNumber(0)
-}
+)}
 ```
 ## Step 35
 Click ``||Math:Math||`` drag and drop ``||Math:Division||`` block to replace
@@ -736,9 +736,9 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
 basic.showNumber(0/0)
-}
+})
 ```
 ## Step 36
 Click ``||Math:Math||`` drag and drop ``||Math:Substraction||`` block to replace
@@ -773,9 +773,9 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
 basic.showNumber(0-0/0)
-}
+})
 ```
 
 ## Step 37
@@ -814,9 +814,9 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 input.onButtonPressed(Button.AB, function(){
 fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
 })
-input.onLogoEvent(TouchButtonEvent.Pressed, function()){
+input.onLogoEvent(TouchButtonEvent.Pressed, function(){
 basic.showNumber(timer_stop-timer_start/60000)
-}
+})
 ```
 ## Step 38 @showhint
 ``|Download|`` and test your code. Click the bulb icon to see how
