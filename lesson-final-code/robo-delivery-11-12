@@ -7,10 +7,11 @@
 * This is the complete code for this activity.
 ```template
 input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = true
+    IsDrivingEnabled = false
+    fwdMotors.stop()
 })
 input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = false
+    IsDrivingEnabled = true
 })
 let IsDrivingEnabled = false
 fwdMotors.setupDriving(
@@ -21,17 +22,24 @@ fwdMotors.rightServo,
 basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            fwdMotors.stop()
-            basic.pause(1000)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
-            basic.pause(1000)
-            fwdMotors.turn(25)
-            basic.pause(1000)
+            music.ringTone(262)
+            basic.pause(500)
+            music.stopAllSounds()
         } else {
-            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+                fwdMotors.turn(5)
+                basic.pause(500)
+            }
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Miss)) {
+                fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 20)
+                basic.pause(500)
+            }
+            if (fwdSensors.line1.fwdIsLineSensorState(fwdSensors.LineSensorState.Hit)) {
+                fwdMotors.turn(-5)
+                basic.pause(500)
+            }
         }
-    } else {
-        fwdMotors.stop()
     }
 })
+
 ```
