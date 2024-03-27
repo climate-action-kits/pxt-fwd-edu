@@ -61,12 +61,16 @@ namespace fwdMotors {
    */
   //% group="Driving"
   //% weight=20
-  //% block="setup driving|left motor $left|right motor $right||left/right bias $bias"
+  //% block="setup driving|left motor $left|right motor $right|left/right bias $bias"
   //% blockId=fwd_driving_setup
   //% bias.shadow="speedPicker"
   //% bias.defl=0
   //% inlineInputMode=external
-  export function setupDriving (left: FwdServoClient, right: FwdServoClient, bias = 0) {
+  export function setupDriving (
+    left: FwdServoClient = leftServo,
+    right: FwdServoClient = rightServo,
+    bias = 0
+  ) {
     drivingControls.initMotors(left, right, bias)
   }
 
