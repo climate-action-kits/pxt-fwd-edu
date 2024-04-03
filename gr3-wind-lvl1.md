@@ -11,7 +11,8 @@ Welcome to Powering the Future with Wind Energy Level 1!
 For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
 
 ## Step 1 @showdialog 
-Step  
+![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/G3.SC.L1%20-%20Powering%20Future%20Wind%20Energy_1.png) 
+  
 
 ## Step 2 @showdialog 
 Step 
