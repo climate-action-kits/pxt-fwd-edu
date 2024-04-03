@@ -42,6 +42,7 @@ basic.forever(function () {
     }
 })
 ```
+
 ## Activity 2 Setting up Coding @showdialog 
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
 
