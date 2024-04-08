@@ -4,38 +4,38 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
 
-## Activity 1 Bulding your Project
+## Activity 1 Building Your Project
 Welcome to Powering the Future with Wind Energy Level 1!
-
+![Step by step]([https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/G3.SC.L1%20-%20Powering%20Future%20Wind%20Energy_1.png](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1ProjectRender.webp) 
 ## Welcome @showdialog
 For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
 
 ## Step 1 @showdialog 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/G3.SC.L1%20-%20Powering%20Future%20Wind%20Energy_1.png) 
+![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs1.png)
   
 
 ## Step 2 @showdialog 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs2.png) 
 
 ## Step 3 @showdialog
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-assets/tutorial-assets/gr3-wind-lvl1sbs3.png) 
+![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs3.png) 
 
 ## Step 4 @showdialog
-![Step byStep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-assets/tutorial-assets/gr3-wind-lvl1sbs4.png)
+![Step byStep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs4.png)
 
 ## Step 5 @showdialog
-![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-assets/tutorial-assets/gr3-wind-lvl1sbs5.png)  
+![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)  
 
 ## Activity 2 @showdialog
 
 ## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
+![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Step 2 @showhint
 Click three dots besides ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/pairmicrobit-280x203.gif)
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Step 3 @showhint
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
