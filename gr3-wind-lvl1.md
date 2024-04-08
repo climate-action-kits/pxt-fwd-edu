@@ -82,14 +82,15 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ## Step 9 
 What do you notice about each one of the [show icon] blocks in our code?
 
-~hint 
+~hint What did that do?
 - Each block will display a different incon on the mirco:bit LED
 - One icon for each direction
 hint~
 
 ## Step 10 
 Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click the dropdown arrow, and choose any pattern. Click the drop down arrow and choose any pattern. 
-~hint 
+
+~hint What did that do?
 - Make sure you choose a different for each one. 
 hint~ 
 
