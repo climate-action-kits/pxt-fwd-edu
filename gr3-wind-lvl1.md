@@ -4,9 +4,11 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
 
-## Activity 1 Building Your Project
-Welcome to Powering the Future with Wind Energy Level 1!
-![Step by step]([https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/G3.SC.L1%20-%20Powering%20Future%20Wind%20Energy_1.png](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1ProjectRender.webp) 
+## Activity 1 Building Your Project @showdialog
+Welcome to Powering the Future with Wind Energy Level 1 
+
+![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1ProjectRender.webp) 
+
 ## Welcome @showdialog
 For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
 
@@ -27,6 +29,7 @@ For this project, we will use the Dial to trigger different symbols to show on t
 ![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)  
 
 ## Activity 2 @showdialog
+Coding Set up
 
 ## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
@@ -37,28 +40,28 @@ Click three dots besides ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Step 3 @showhint
-Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
-
-## Step 4 @showdialog
-Click the three dots beside [Download] button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
-
-## Step 5 @showdialog 
+## Step 3 @showdialog 
 Next, click the [Download] button to download the blank project to start-up the simulators. 
 
-## Step 6 @showdialog 
+## Step 4 @showdialog 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
-## Step 7 @showhint
+## Step 5 @showhint
 Look below the @boardname@ simulator to see the Climate Action kit Breakout Board and the connected sensors.
 Try turning the Dial on your project, the virtual  simulator will react to it.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
-## Step 8 
+## Step 6 @showhint
+Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
+
+## Activity 3 @showdialog
+Coding your Project
+
+## Step 1 
 Look at our coding workshop below. We have three sets of code blocks here. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?  
 
-~hint
+~hint What did that do?
 - One block is for clockwise direction
 - One block is for counterclockwise 
 - One is for pushing down on the dial
