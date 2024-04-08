@@ -13,8 +13,8 @@ Welcome to the Level 2 Wind Turbine Project!
 ## Step 2 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
 
-
 ## Step 3 @showdialog 
+![stepbystep] (https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
 
 ## Step 4 @showdialog 
 
