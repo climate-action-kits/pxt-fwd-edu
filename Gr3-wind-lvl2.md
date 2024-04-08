@@ -76,7 +76,8 @@ Try clicking the on/off button on the virtual simulator for the first Servo Moto
 
 ## Step 8 
 Look at our coding workspace below. We have three sets of code blocks. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?
-~hint Click here 
+
+~hint Why did we do that? 
 - One block is for clockwise direction
 - One block is for counterclockwise 
 - One is for pushing down on the dial
@@ -158,7 +159,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ## Step 15 
 Now, change the speed of that ``||fwdMotors:set leftServo to 50 %||`` block to be 0%. 
 
-~hint Why did we did that?  
+~hint Why did we do that?  
 -  A speed of 0% will stop the motor 
 hint~ 
 
@@ -174,10 +175,11 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 })
 ```
 ## Step 16 
-Click the [Download] button to download the code to your project. 
+Click the [Download] button to download the code for your project. 
+![download](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Step 17 @showdialog 
-Congratulations on finishing your coding prototype! Try testiny our project in real0life! This is what your finish prototype should look like! 
+Congratulations on finishing your coding prototype! Try testing our project in real life! This is what your finished prototype should look like! 
 
 # Step 18 
 In the next step, you can click the [Done] button to finish the tutorial. This will end the tutorial and keep your code! 
