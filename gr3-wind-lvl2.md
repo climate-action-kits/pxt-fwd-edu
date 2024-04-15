@@ -17,7 +17,7 @@ Code our project to make it interactive
 ## Build Step 2 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
 
-## BuildStep 3 @showdialog 
+## Build Step 3 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
 
 ## Build Step 4 @showdialog 
