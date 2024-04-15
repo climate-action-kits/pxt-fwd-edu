@@ -3,45 +3,52 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
-## Activity 1 Building your Protoype @showdialog 
-Welcome to the Level 2 Wind Turbine Project! 
+## Activity 1: Building your Protoype @showdialog 
+Welcome to the Level 2 Wind Turbine Project! In this project, you will use the dial to control the servo motor! 
+In this tutorial, we will…
+Build our project with the Climate Action Kit
+Connect our project to the computer
+Code our project to make it interactive
 
-## Step 1 @showdialog 
+## Build Step 1 @showdialog 
 
 ![wind](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
 
-## Step 2 @showdialog 
+## Build Step 2 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
 
-## Step 3 @showdialog 
+## BuildStep 3 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
 
-## Step 4 @showdialog 
+## Build Step 4 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png) 
 
-## Step 5 @showdialog 
+## Build Step 5 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png) 
 
-## Step 6 @showdialog 
+## Build Step 6 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
 
-## Step 7 @showdialog 
+## Build Step 7 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
 
-## Step 8 @showdialog 
+## Build Step 8 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
 
-## Step 9 @showdialog 
+## Build Step 9 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
 
-## Step 10 @showdialog 
+## Build Step 10 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
 
-##Step 11 @showdialog 
+## Build Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Activity 2 Coding your Prototype @showdialog 
-Welcome to the coding section!
+## Activity 2: Coding set up @showdialog  
+Step 1
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+
+![plugin](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp) 
 
 ```template 
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -51,30 +58,32 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
 	})
 ```
-## Step 1 @showdialog 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-
-## Step 2 @showdialog 
-Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
+## Step 2 @showhint
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
 
 ## Step 3 
-Click the three dots beside [Download] button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
+Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
 
-## Step 4 
-Next, click the [Download] button to download the blank project to start-up the simulators. 
+## Step 4 @showdialog 
+This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
+![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
-## Step 5 
-This is how the simulators should look after a successful pairing and download. 
+## Step 5 @showhint
+Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Try turning the Dial on your project, the virtual  simulator will react to it.
+![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
-## Step 6 
-Look below the virtual micro:bit on the left to see the virtual robotic components - these are our simulators! Try turning the Dial on your project in real-life. The virtual simulator Dial will react to it! 
-
-## Step 7 
+## Step 6 @showhint
 Try clicking the on/off button on the virtual simulator for the first Servo Motor (labelled Left). What happens? Can you use the slider to change the speed? 
 
-## Time to start Coding 
+## Step 7 @showhint
+Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck.
 
-## Step 8 
+## Activity 3 Coding Your Project @showdialog
+Coding your Project
+
+## Coding Step 1 
 Look at our coding workspace below. We have three sets of code blocks. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?
 
 ~hint Why did we do that? 
@@ -83,16 +92,16 @@ Look at our coding workspace below. We have three sets of code blocks. What do y
 - One is for pushing down on the dial
 hint~
 
-## Step 9 
+## Coding Step 2 
 These ``||fwdSensors:on dial1 turned difference||`` blocks are called Inputs. They wait for a specific action, in our case, a Dial turned. Once triggered, the code that's inside will take place.
 
-## Step 10 
+## Coding Step 3  
 Let's add an action inside of our input blocks. Click on the ``||fwdMotors:Motors||`` drawers and find the 'Servo (Continuous)' section. Drag a ``||fwdMotors:set leftServo to 50 %||`` block onto the workspace.
 
 ```blocks 
 fwdMotors.leftServo.fwdSetSpeed(50) 
 ``` 
-## Step 11 
+## Coding Step 4
 Place the ``||fwdMotors:set leftServo to 50 %||`` block inside of the first ``||fwdSensors:on dial1 turned difference||`` block. 
 
 ```blocks
@@ -106,7 +115,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 	
 })
 ```
-## Step 12 
+## Coding Step 5 
 Repeat the previous step to add a ``||fwdMotors:set leftServo to 50 %||`` block inside of the other ``||fwdSensors:on dial1 turned difference||`` block. 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -119,12 +128,12 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
 ```
-## Step 13 
+## Coding Step 6  
 Change the speed of last ``||fwdMotors:set leftServo to 50 %||`` to to be - 50% 
 
 ~hint Why did we do that? 
 - Making the speed a negative value will cause the Motor to go backwards 
-- This way, we have one Motor block that goes clockwise, and one that goes counterclockwise
+- This way, we have one Motor block that goes counterclockwise, and one that goes clockwise
 hint~
 
 ```blocks 
@@ -138,7 +147,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ```
-## Step 14 
+## Coding Step 7 
 Drag another ``||fwdMotors:set leftServo to 50 %||`` block into the workspace and add it inside of the ``||fwdSensors:on touch down||`` input block. 
 
 ~hint Why did we do that? 
@@ -156,7 +165,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ``` 
-## Step 15 
+## Coding Step 8 
 Now, change the speed of that ``||fwdMotors:set leftServo to 50 %||`` block to be 0%. 
 
 ~hint Why did we do that?  
@@ -174,15 +183,13 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ```
-## Step 16 
-Click the [Download] button to download the code for your project. 
+## Coding Step 9 
+Click the ``|Download|`` button to download the code for your project. 
 ![download](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Step 17 @showdialog 
+## Coding Step 10  @showdialog 
 Congratulations on finishing your coding prototype! Try testing our project in real life! This is what your finished prototype should look like! 
-
-# Step 18 
-In the next step, you can click the [Done] button to finish the tutorial. This will end the tutorial and keep your code! 
+In the next step, you can click the ``|Done|`` button to finish the tutorial. This will end the tutorial and keep your code! 
 
 
 

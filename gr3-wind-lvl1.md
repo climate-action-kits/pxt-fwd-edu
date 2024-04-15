@@ -4,34 +4,30 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
 
-## Activity 1 Building Your Project @showdialog
-Welcome to Powering the Future with Wind Energy Level 1 
+## Activity 1: Building Your Project @showdialog
+Welcome to Powering the Future with Wind Energy Level 1. For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1ProjectRender.webp) 
 
-## Welcome @showdialog
-For this project, we will use the Dial to trigger different symbols to show on the micro:bit LEDs. Here's what it will look like. 
 
-## Step 1 @showdialog 
+## Build Step 1 @showdialog 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs1.png)
   
 
-## Step 2 @showdialog 
+## Build Step 2 @showdialog 
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs2.png) 
 
-## Step 3 @showdialog
+## Build Step 3 @showdialog
 ![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs3.png) 
 
-## Step 4 @showdialog
+## Build Step 4 @showdialog
 ![Step byStep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs4.png)
 
-## Step 5 @showdialog
+## Build Step 5 @showdialog
 ![Step by Step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind-lvl1sbs5.png)  
 
-## Activity 2 @showdialog
-Coding Set up
-
-## Step 1 @showdialog
+## Activity 2 Coding Set up @showdialog
+## Step 1 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
@@ -40,8 +36,8 @@ Click three dots besides ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Step 3 @showdialog 
-Next, click the [Download] button to download the blank project to start-up the simulators. 
+## Step 3 
+Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
 
 ## Step 4 @showdialog 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
@@ -55,13 +51,13 @@ Try turning the Dial on your project, the virtual  simulator will react to it.
 ## Step 6 @showhint
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
 
-## Activity 3 @showdialog
+## Activity 3 Coding Your Project @showdialog
 Coding your Project
 
 ## Step 1 
-Look at our coding workshop below. We have three sets of code blocks here. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?  
+Look at our coding workspace below. We have three sets of code blocks here. What do you notice is different about each of the ``||fwdSensors:on dial1 turned difference||`` blocks?  
 
-~hint What did that do?
+~hint What does this mean?
 - One block is for clockwise direction
 - One block is for counterclockwise 
 - One is for pushing down on the dial
@@ -79,32 +75,30 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 })
 ```
 
-## Step 9 
-What do you notice about each one of the [show icon] blocks in our code?
+## Step 2 
+What do you notice about each one of the ``||show icon||`` blocks in our code?
 
-~hint What did that do?
-- Each block will display a different incon on the mirco:bit LED
+~hint What does this mean?
+- Each block will display a different icon on the mirco:bit LED
 - One icon for each direction
 hint~
 
-## Step 10 
-Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click the dropdown arrow, and choose any pattern. Click the drop down arrow and choose any pattern. 
+## Step 3 
+Try changing the icons in the ``||basic:show icon||`` blocks for yourself! Click the dropdown arrow, and choose any pattern. 
 
-~hint What did that do?
+~hint What does this mean?
 - Make sure you choose a different for each one. 
 hint~ 
 
-## Step 10 
-Click the [Download] button to download the code to your project. 
+## Step 4 
+Click the ``|Download|`` button to download the code for your project. 
 
-## Step 11 
-Try testing your project in real-life! This is what it should look like. 
+## Step 5 
+Try testing your project in real life! This is what it should look like. What happens to the number when you turn left? Right?
 
-## Step 12 @showdialog 
+## Step 6 @showdialog 
 Congratulations on finishing your coding project! 
-
-## Step 13 @showdialog 
-In the next step, you can click the [Done] button to finish the tutorial. 
+In the next step, you can click the ``|Done|`` button to finish the tutorial. 
 
 
 
