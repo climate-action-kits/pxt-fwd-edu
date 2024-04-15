@@ -29,7 +29,7 @@ For this project, we will use the Touch Sensor to detect when a 'bee' has landed
 
 ## Activity 2:Coding Set up @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
+![breakout board]https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
 
 ## Step 1 @showhint
 Click three dots besides ``|Download|`` button, and click on _Connect Device_.
