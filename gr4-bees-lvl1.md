@@ -9,28 +9,26 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 Welcome to the Monitoring Bees and pollination with a bug counter. 
 For this project, we will use the Touch Sensor to detect when a 'bee' has landed on our project.  The LED light will turn on when a 'bee' visits the project.
 
-## Step 2 @showdialog 
-![beelvl1sbs1](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs1.png)
+## Building Step 1 @showdialog 
+![beelvl1sbs1](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs1.png) 
 
-## Step 3 @showdialog 
-![beelvl1sbs2](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs2.png) 
+## Building Step 2 @showdialog 
+![beelvl1sbs2](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs2.png) 
 
-## Step 4 @showdialog 
-![beeslvl1sbs3](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs3.png)
+## Building Step 3  @showdialog 
+![beeslvl1sbs3[]()](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs3.png)
 
-## Step 5 @showdialog 
-![beeslvl1sbs4](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs4.png)
+## Building Step 4 @showdialog 
+![beeslvl1sbs4](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs4.png)
 
-## Step 6 @showdialog 
-![beeslvl1sbs5](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs5.png)
+## Building Step 5 @showdialog 
+![beeslvl1sbs5](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs5.png)
 
-## Step 7 @showdialog 
-![beeslvl1sbs6](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-lvl1-sbs6.png) 
+## Building Step 6 @showdialog 
+![beeslvl1sbs6](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs6.png) 
 
 ## Activity 2 @showdialog
 Coding Set up
-
-## Step 1 @showdialog 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
