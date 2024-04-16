@@ -92,7 +92,11 @@ basic.forever(function () {
 
 
 ## Coding Step 2 
-These two LED code blocks are rapped inside of another block called ``||logic:if true then||``.  
+These two LED code blocks are wrapped inside of another block called ``||logic:if true then||``.  
+
+~hint WHat does this mean?
+- This block is called a conditional statement
+- The Code inside only happens if this condition is met
 
 ```blocks
 basic.forever(function () {
