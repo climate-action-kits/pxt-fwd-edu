@@ -48,6 +48,19 @@ Try turning the Dial on your project, the virtual  simulator will react to it.
 ## Coding Set up Step 6  @showhint
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck.
 
+## Activity 3:Coding Your Project 
+Take a look at our starter code in the workspace below. We have three groups of code blocks. 
+
+```package
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
 
 
 
