@@ -117,3 +117,21 @@ basic.forever(function () {
     }
 })
 ```
+
+## Coding Step 5 
+Go to the ``||Variables:Variables||`` drawer and click 'Make a Variable'. Call your ``||Variables:bugVisits||``.
+
+~hint Why did we do this
+- You will now see that we have new code blocks available to control our variable
+  hint~ 
+
+```blocks
+basic.showNumber(0)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
