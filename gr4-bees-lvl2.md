@@ -48,10 +48,10 @@ Try turning the Dial on your project, the virtual  simulator will react to it.
 ## Coding Set up Step 6  @showhint
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck.
 
-## Activity 3:Coding Your Project 
+## Activity 3:Coding Your Project Step 1 
 Take a look at our starter code in the workspace below. We have three groups of code blocks. 
 
-```package
+```template
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
@@ -61,6 +61,14 @@ basic.forever(function () {
 })
 ```
 
+## Coding Step 2 
+These two LED code blocks are rapped inside of another block called ``||logic:if true then||`` 
+
+~hint 
+- What does this mean?
+- This block is called a conditional statement
+- The code inside only happens when this condition is met
+  hint~ 
 
 
 
