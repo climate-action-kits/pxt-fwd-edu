@@ -23,4 +23,8 @@ Code our project to make it interactive
 
 ## Building Step 7 
 
+## Activity 2 Coding Set up @showdialog
+ Coding Set Up Step 1 
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+![plugin](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/pluganim.webp) 
 
