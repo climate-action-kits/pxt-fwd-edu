@@ -64,11 +64,13 @@ basic.forever(function () {
 ## Coding Step 2 
 These two LED code blocks are rapped inside of another block called ``||logic:if true then||`` 
 
-~hint 
-- What does this mean?
+~hint What does this mean?
 - This block is called a conditional statement
 - The code inside only happens when this condition is met
   hint~ 
+
+## Coding Step 3 
+The condition for the ``||logic:if true then||`` statement is when a ``||fwdSensors:on touch down||`` occurs. 
 
 
 
