@@ -33,11 +33,18 @@ Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![downloadgif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
+
+
 ## Coding Set up Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Coding Set up Step 4 @showdialog 
 This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors alongside the Pump.
 ![initialdownload](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif) 
+
+## Coding Set up Step 5 @showhint
+Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Try turning the Dial on your project, the virtual  simulator will react to it.
+![simulator](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif) 
 
 
