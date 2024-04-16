@@ -110,7 +110,7 @@ basic.forever(function () {
 ## Coding Step 3 
 Click ``||fwdSensors:Sensors||`` find the Touch next section. Drag ``||fwdSensors:on touch down||`` and use it to replace to true condiction in the ``||logic:if true then||`` statment. 
 
-~ hint What did that do?
+~ hint Why did we do this?
 - Now our conditional statement is looking for the condition of the Touch Sensor being pressed
   hint~
   
@@ -126,7 +126,7 @@ basic.forever(function () {
 ## Coding Step 4
 Now, let's change the LED Light colour. Go to the first ``||fwdSensors:set all ledRing LEDs to||`` block and click on the colour bubble. Choose any colour you would like. Make sure you leave the last  black. 
 
-~hint What did that do?
+~hint Why did we do that?
 - This is how we customize our LED Light colour 
 - We left the last LED Light code block as black because we want the LED Light to turn off after the Touch Sensor is pressed
 hint~
