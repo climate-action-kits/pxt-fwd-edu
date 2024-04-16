@@ -52,6 +52,26 @@ Start coding! Follow the steps at the top of the screen for your instructions. C
 Take a look at our starter code in the workspace below. We have three groups of code blocks. 
 
 ```template
+basic.showNumber(0)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+}) 
+```
+
+## Coding Step 2 
+These two LED code blocks are rapped inside of another block called ``||logic:if true then||`` 
+
+~hint What does this mean?
+- This block is called a conditional statement
+- The code inside only happens when this condition is met
+  hint~
+  
+```blocks
+basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
@@ -61,17 +81,39 @@ basic.forever(function () {
 })
 ```
 
-## Coding Step 2 
-These two LED code blocks are rapped inside of another block called ``||logic:if true then||`` 
-
-~hint What does this mean?
-- This block is called a conditional statement
-- The code inside only happens when this condition is met
-  hint~ 
-
 ## Coding Step 3 
 The condition for the ``||logic:if true then||`` statement is when a ``||fwdSensors:on touch down||`` occurs. 
 
+~hint What does this mean?
+- This means the code inside of the 'if/then' statement will only occur if the Touch Sensor is pressed
+  hint~
 
+  ```blocks
+basic.showNumber(0)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
 
+## Coding Step 4 
+Now we need to create something to keep track of the number of 'bee' visits. This is called a 'Variable'.
 
+~hint What does this mean?
+- A 'variable' is a special code word that holds a value
+- When we call the 'variable' code word, it will tell us what number it's holding
+  hint~
+
+```blocks
+basic.showNumber(0)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
