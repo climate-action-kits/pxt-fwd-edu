@@ -26,5 +26,10 @@ Code our project to make it interactive
 ## Activity 2 Coding Set up @showdialog
  Coding Set Up Step 1 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![plugin](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/pluganim.webp) 
+![plugin](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp) 
+
+## Coding Set up Step 2 @showhint
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
+![downloadgif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
