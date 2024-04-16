@@ -10,4 +10,17 @@ In this tutorial, we will…
 Build our project with the Climate Action Kit
 Connect our project to the computer
 Code our project to make it interactive
- 
+
+## Building Step 1 
+
+## Building Step 2 
+
+## Building Step 3 
+
+## Building Step 5
+
+## Building Step 6 
+
+## Building Step 7 
+
+
