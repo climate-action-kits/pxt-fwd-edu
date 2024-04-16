@@ -65,7 +65,7 @@ basic.forever(function () {
 })
 ```
 
-## Activity 3 Start Coding @showdialog 
+## Activity 3 Start Coding  
 Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck. 
 
 ```blocks 
@@ -78,7 +78,7 @@ basic.forever(function () {
 })
 ```
 
-## Step 1 
+## Coding Step 1 
 Take a look at our starter code in the workspace below. We have two ``||fwdSensors:set all ledRing LEDs to||`` with a pause in between. 
 
 ```blocks
@@ -92,7 +92,7 @@ basic.forever(function () {
 ```
 
 
-## Step 2 
+## Coding Step 2 
 These two LED code blocks are rapped inside of another block called ``||logic:if true then||``.  
 
 ```blocks
@@ -104,7 +104,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 3 
+## Coding Step 3 
 Click ``||fwdSensors:Sensors||`` find the Touch next section. Drag ``||fwdSensors:on touch down||`` and use it to replace to true condiction in the ``||logic:if true then||`` statment. 
 
 ~ hint What did that do?
@@ -120,7 +120,7 @@ basic.forever(function () {
     }
 })
 ```
-## Step 4
+## Coding Step 4
 Now, let's change the LED Light colour. Go to the first ``||fwdSensors:set all ledRing LEDs to||`` block and click on the colour bubble. Choose any colour you would like. Make sure you leave the last  black. 
 
 ~hint What did that do?
@@ -137,16 +137,16 @@ basic.forever(function () {
     }
 })
 ``` 
-## Step 5 
-Click the Download button to download the code for your project.
+## Coding Step 5 
+Click the `|Download|` button to download the code for your project.
 
-## Step 6 @showdialog 
+## Coding Step 6 @showdialog 
 Try testing your project in real life! This is what it should look like.  
 
 
-## Step 7 @showdialog 
+## Coding Step 7 @showdialog 
 Congratulations on finishing your coding project! 
-In the next step, you can click the ``|done|` button to finish the tutorial.
+In the next step, you can click the ``|done|`` button to finish the tutorial.
 
 
 
