@@ -27,12 +27,13 @@ For this project, we will use the Touch Sensor to detect when a 'bee' has landed
 ## Building Step 6 @showdialog 
 ![beeslvl1sbs6](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr4-bees-lvl1-sbs6.png) 
 
-## Activity 2:Coding Set up @showdialog
+## Activity 2: Coding Set up @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board]https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
+
+![breakout board](ttps://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
 
 ## Step 1 @showhint
-Click three dots besides ``|Download|`` button, and click on _Connect Device_.
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
