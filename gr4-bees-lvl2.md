@@ -88,7 +88,7 @@ The condition for the ``||logic:if true then||`` statement is when a ``||fwdSens
 - This means the code inside of the 'if/then' statement will only occur if the Touch Sensor is pressed
   hint~
 
-  ```blocks
+```blocks
 basic.showNumber(0)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
