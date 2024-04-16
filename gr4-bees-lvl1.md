@@ -3,7 +3,6 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
-### @activities 1 
 
 ## Activity 1 Building your Project @showdialog 
 Welcome to the Monitoring Bees and pollination with a bug counter. 
