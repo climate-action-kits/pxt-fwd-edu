@@ -49,7 +49,7 @@ This is how the simulators should look after a successful download. You can see 
 ![download](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif) 
 
 ## Step 5 @showhint
-Look below the @boardname@ simulator to see the Climate Action kit Breakout Board and the connected sensors.
+Look below the @boardname @simulator to see the Climate Action kit Breakout Board and the connected sensors.
 Try clicking the lights on the virtual simulator for the LED Light. What happens? Can you make it different colours?
 
 ## Step 6 @showhint
