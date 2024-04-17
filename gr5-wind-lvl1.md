@@ -39,7 +39,7 @@ Welcome to the Level 1 Wind Turbine Power Storage Project! For this project, we 
 ## Building Step 10 @showdialog 
 ![gr5sbs10](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs10.png) 
 
-## Activity 2 Coding Set up @showdialog
+## Activity 2:Coding Set up @showdialog
 # Step 1 
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 ![plugingif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp) 
@@ -47,4 +47,11 @@ IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and you
 ## Coding Setp up Step 2 @showhint
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
+
+## Coding Step up Step 3 
+Next, click the ``|Download|`` button to download the blank project to start-up the simulators. 
+
+## Coding Set up Step 4 @showdialog 
+This is how the simulators should look after a successful download. You can see the Dial, and the Servo Motors along side the Pump.
+
 
