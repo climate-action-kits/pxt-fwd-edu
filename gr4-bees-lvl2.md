@@ -206,5 +206,25 @@ basic.forever(function () {
     }
 })
 ```
+## Coding Step 10 
+
+Click ``||Variables:Variables||``, drag and drop ``||Variables:bugVisits||`` to replace the 0 inside the ``||basic:show number||`` block.  
+
+~hint Why did we do this?
+- Now the value of the 'bugVisits' variable will be shown on the micro:bit LEDs
+- hint~
+- 
+```blocks
+let bugvisits = 0
+basic.showNumber(bugvisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.showNumber(bugvisits)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
 
 
