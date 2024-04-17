@@ -168,3 +168,23 @@ basic.forever(function () {
     }
 })
 ```
+## Coding Step 8 
+We have now set up our code to display the value of ``||Variables:bugVisits||`` when our code starts up. But we want this number to update and show with every visit. To do this, we need to add that same ``||basic:show number||`` and ``||Variables:bugVisits||`` code to the Forever block. 
+
+~hint What does this mean? 
+- Instead of something just happening once, on start, we want it to happen the whole time 
+- The Forever block is a loop, meaning it will happen over and over again, forever, while our code is on
+hint~ 
+
+```blocks
+let bugvisits = 0
+basic.showNumber(bugvisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
