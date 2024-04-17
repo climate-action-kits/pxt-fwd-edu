@@ -187,4 +187,24 @@ basic.forever(function () {
     }
 })
 ```
+## Coding Step 9 
+Click ``||basic||`` , drag and drop ``||basic:show number||`` block under the first ``||fwdSensors:set all ledRing LEDs to||`` block within the ``||basic:forever||`` block. 
+
+~hint Why did we do this?
+- This will allow us to display the 'bugVisits' number on the micro:bit LEDs every time the Touch Sensor is pressed
+- hint~
+- 
+```blocks
+let bugvisits = 0
+basic.showNumber(bugvisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+        basic.showNumber(0)
+        basic.pause(500)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
 
