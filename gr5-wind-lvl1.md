@@ -27,14 +27,24 @@ Welcome to the Level 1 Wind Turbine Power Storage Project! For this project, we 
 ## Building Step 6 @showdialog 
 ![gr5sbs6](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs6.png) 
 
-## Building Step 7 
+## Building Step 7 @showdialog 
 ![gr5sbs7](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs7.png)
 
-## Building Step 8 
+## Building Step 8 @showdialog 
 ![gr5sbs8](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs8.png)
 
-## Building Step 9 
+## Building Step 9 @showdialog 
 ![gr5sbs9](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs9.png) 
 
-## Building Step 10 
+## Building Step 10 @showdialog 
 ![gr5sbs10](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs10.png) 
+
+## Activity 2 Coding Set up @showdialog
+# Step 1 
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+![plugingif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp) 
+
+## Coding Setp up Step 2 @showhint
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
+
