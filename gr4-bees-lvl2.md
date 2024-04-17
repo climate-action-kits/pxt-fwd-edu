@@ -212,8 +212,8 @@ Click ``||Variables:Variables||``, drag and drop ``||Variables:bugVisits||`` to 
 
 ~hint Why did we do this?
 - Now the value of the 'bugVisits' variable will be shown on the micro:bit LEDs
-- hint~
-- 
+ hint~
+  
 ```blocks
 let bugvisits = 0
 basic.showNumber(bugvisits)
@@ -226,5 +226,16 @@ basic.forever(function () {
     }
 })
 ```
+## Coding Step 11 
+Click the ``||download||`` button to download the code for your project.
+![downloadbuttongif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp) 
+
+## Coding 12 @showdialog 
+Try testing your project in real-life! This is what it should look like. (missing asset) 
+
+## Coding Step 13 
+Congratulations on finishing your coding project! 
+In the next step, you can click the ``||done||``  button to finish the tutorial.
+
 
 
