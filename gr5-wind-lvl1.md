@@ -31,4 +31,7 @@ Welcome to the Level 1 Wind Turbine Power Storage Project! For this project, we 
 ![gr5sbs7](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs7.png)
 
 ## Building Step 8 
-![gr5sbs8](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs8.png) 
+![gr5sbs8](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs8.png)
+
+## Building Step 9 
+![gr5sbs9](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-sbs9.png) 
