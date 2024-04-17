@@ -58,3 +58,8 @@ This is how the simulators should look after a successful download. You can see 
 ## Coding Set up Step 5 @showhint
 Look below the @boardname@simulator to see the Climate Action kit Breakout Board and the connected sensors.
 ![simdial](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif) 
+
+## Coding Set up Step 6  @showhint
+Start coding! Follow the steps at the top of the screen for your instructions. Click the lightbulb icon for a hint if you get stuck.
+
+
