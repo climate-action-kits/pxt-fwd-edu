@@ -57,7 +57,7 @@ IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and you
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Coding Set up Step 2 @showhint
-Click three dots besides ``|Download|`` button, and click on _Connect Device_.
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
