@@ -80,21 +80,21 @@ The code below will make our wind turbine turn. Let's learn some more.  What hap
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
 -  hint~
 
-## Tinker Step 2
+## Tinkering Step 2
 What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
 - When we make the number smaller, the turbine spins more slowly.
 hint~ 
 
-## Tinker Step 3 
+## Tinkering Step 3 
 What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` negative? Try it!
 
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
   hint~
 
-## Tinker Step 4 
+## Tinkering Step 4 
 What happens when you change the direction of the arrow in the ``||fwdSensors:on dial1 turned difference||``? Try it!
 
 ~hint Tell me more! 
@@ -102,12 +102,12 @@ What happens when you change the direction of the arrow in the ``||fwdSensors:on
 - When we change the direction arrow, we will now have to turn the dial in the opposite direction to trigger our code/output.
   hint~
 
-## Tinker Step 5 Challenge time!
+## Tinkering Step 5:Challenge time!
 Can you add another event to your code to make the wind turbine turn in both directions?"
 
 ## Congratulations! @showdialog 
 
-You've completed the activity! If your teacher has asked you to save your project, now is the time!
+You've completed the activity! 
 
 ## Reflection @showdialog 
 Think about something about this project that challenged you. How did you overcome the challenge? How did that make you feel?
