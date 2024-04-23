@@ -45,14 +45,11 @@ We are going to do this in 3 parts:
 ## Building Step 10 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
 
-## Build Step 11 @showdialog 
+## Building Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Building Step 12 @showdialog 
-We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
-
 ## Activity 2: Coding @showdialog 
-We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
+We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro:bit what to do.
 
 ## Coding Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
