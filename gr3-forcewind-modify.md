@@ -63,11 +63,11 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Coding Step 2 
-Click three dots beside ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Coding Step 3 
-Next, click the``|Download|`` button to download code to your project.
+Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Tinker @showdialog 
 We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
