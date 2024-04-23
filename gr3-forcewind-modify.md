@@ -69,32 +69,33 @@ Click three dots beside the ``|Download|`` button, and click on _Connect Device_
 ## Coding Step 3 
 Next, click the ``|Download|`` button to download code to your project.
 
-## Activity 3: Tinker @showdialog 
+## Activity 3: Tinkering @showdialog 
 We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 After each change, you will need to flash your updated code to your project.
 
-## Tinker Step 1
-The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in the blue block bigger? Try it!
+## Tinkering Step 1
+The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
 
 ~hint Tell me more?
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
+-  hint~
 
 ## Tinker Step 2
-What happens when you make the number in the blue block smaller? Try it!
+What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
 - When we make the number smaller, the turbine spins more slowly.
 hint~ 
 
 ## Tinker Step 3 
-What happens when you make the number in the blue block negative? Try it!
+What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` negative? Try it!
 
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
   hint~
 
 ## Tinker Step 4 
-What happens when you change the direction of the arrow in the green block? Try it!
+What happens when you change the direction of the arrow in the ``||fwdSensors:on dial1 turned difference||``? Try it!
 
 ~hint Tell me more! 
 - The green block represents the input of the code. This shows us how we need to interact with our project in order to make something happen. 
