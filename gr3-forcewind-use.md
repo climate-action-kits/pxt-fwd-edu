@@ -99,7 +99,7 @@ What do you think will happen when you turn the dial to the left? Try it now!
   hint~
 
 ## Coding Step 6 
-If you have time, try making other changes to your project. What happens if you connect the dial or motor to different parts of the breakout board? 
+Feeling Confident? Try making other changes to your project. What happens if you connect the dial or motor to different parts of the breakout board? 
 Remember, make one change at a time so you can learn what is happening.
 
 ## Congratulations! @showdialog 
