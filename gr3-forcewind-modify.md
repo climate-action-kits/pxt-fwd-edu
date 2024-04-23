@@ -113,5 +113,5 @@ You've completed the activity!
 Think about something about this project that challenged you. How did you overcome the challenge? How did that make you feel?
 
 ## Finished! @showdialog 
-In the next step, you can click the `|done|` button to finish the tutorial.
+In the next step, you can click the `|Done|` button to finish the tutorial.
 
