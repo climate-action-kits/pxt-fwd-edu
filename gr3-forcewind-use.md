@@ -11,7 +11,7 @@ We are going to do this in 3 parts:
 2. Add code to make it move
 3. Play with our wind turbine to learn how it works
 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-render.webp) 
+![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
 
 ## Build Step 1 @showdialog 
@@ -77,6 +77,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
 ```
+
 ## Coding Step 2 
 Take a look at the two code blocks below. What do you think they do? Take a guess! 
 
