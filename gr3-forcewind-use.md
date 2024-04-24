@@ -53,7 +53,7 @@ We need to connect our project to the computer to make it come to life with code
 
 ## Coding Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
+![breakout board](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
 
 ## Coding Set up Step 2 @showhint
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
