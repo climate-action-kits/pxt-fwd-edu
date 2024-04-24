@@ -117,8 +117,12 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ```
+## Challenge Step 2 
+Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdMotors:Motors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
 
-
+~hint Why did we do that?
+- This is the bock that is going to trigger turning the Wind turbine.
+- hint~ 
 
 ## Congratulations! @showdialog 
 
