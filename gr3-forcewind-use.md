@@ -99,8 +99,8 @@ What do you think will happen when you turn the dial to the left? Try it now!
   hint~
 
 ## Coding Step 6 
-Feeling Confident? Try making other changes to your project. What happens if you connect the dial or motor to different parts of the breakout board? 
-Remember, make one change at a time so you can learn what is happening.
+Feeling confident? Can you add more blocks to your Wind turbine and still have it move? Give it a try now!
+Remember to add one thing at a time to test the weight. 
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
