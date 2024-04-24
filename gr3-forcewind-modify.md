@@ -15,38 +15,38 @@ We are going to do this in 4 parts:
 ![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
 
-## Build Step 1 @showdialog 
+## Building Step 1 @showdialog 
 
 ![wind](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
 
-## Build Step 2 @showdialog 
+## Building Step 2 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
 
-## Build Step 3 @showdialog 
+## Building Step 3 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
 
-## Build Step 4 @showdialog 
+## Building Step 4 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png) 
 
-## Build Step 5 @showdialog 
+## Building Step 5 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png) 
 
-## Build Step 6 @showdialog 
+## Building Step 6 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
 
-## Build Step 7 @showdialog 
+## Building Step 7 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
 
-## Build Step 8 @showdialog 
+## Building Step 8 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
 
-## Build Step 9 @showdialog 
+## Building Step 9 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
 
-## Build Step 10 @showdialog 
+## Building Step 10 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
 
-## Build Step 11 @showdialog 
+## Building Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
 ## Activity 2: Coding @showdialog
@@ -63,54 +63,91 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
 
 ## Coding Step 2 
-Click three dots beside ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Coding Step 3 
-Next, click the``|Download|`` button to download code to your project.
+Next, click the ``|Download|`` button to download code to your project.
 
-## Activity 3: Tinker @showdialog 
+## Activity 3: Tinkering @showdialog 
 We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 After each change, you will need to flash your updated code to your project.
 
-## Tinker Step 1
-The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in the blue block bigger? Try it!
+## Tinkering Step 1
+The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
 
 ~hint Tell me more?
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
+-  hint~
 
-## Tinker Step 2
-What happens when you make the number in the blue block smaller? Try it!
+## Tinkering Step 2
+What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
 - When we make the number smaller, the turbine spins more slowly.
 hint~ 
 
-## Tinker Step 3 
-What happens when you make the number in the blue block negative? Try it!
+## Tinkering Step 3 
+What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` negative? Try it!
 
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
   hint~
 
-## Tinker Step 4 
-What happens when you change the direction of the arrow in the green block? Try it!
+## Tinkering Step 4 
+What happens when you change the direction of the arrow in the ``||fwdSensors:on dial1 turned difference||``? Try it!
 
 ~hint Tell me more! 
 - The green block represents the input of the code. This shows us how we need to interact with our project in order to make something happen. 
 - When we change the direction arrow, we will now have to turn the dial in the opposite direction to trigger our code/output.
   hint~
 
-## Tinker Step 5 Challenge time!
-Can you add another event to your code to make the wind turbine turn in both directions?"
+## Tinkering Step 5:Challenge time!
+Can you add another event to your code to make the wind turbine turn in both directions?
+
+## Challenge Step 1
+The first thing we want to happen is to make the Wind Turbine turn in another direction. Click motors and drag and drop  ``||fwdMotors:set leftServo to 50 %||`` into the workspace.
+
+~hint Why did we do that?
+- This is the event we want to happen 
+hint~
+
+```blocks 
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+```
+## Challenge Step 2 
+Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdMotors:Motors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
+
+~hint Why did we do that?
+- This is the bock that is going to trigger turning the Wind turbine.
+- hint~ 
+
+## Challenge Step 3 
+
+Next, how can you use these two blocks together to make the wind turbine turn in the opposite direction? 
+
+## Challenge Step 4 
+Did you get it right? Check the lightblub before clicking  the ``|download|`` button to download the code to your project.
+
+```blocks
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+
+```
 
 ## Congratulations! @showdialog 
 
-You've completed the activity! If your teacher has asked you to save your project, now is the time!
+You've completed the activity! 
 
 ## Reflection @showdialog 
 Think about something about this project that challenged you. How did you overcome the challenge? How did that make you feel?
 
 ## Finished! @showdialog 
-In the next step, you can click the `|done|` button to finish the tutorial.
+In the next step, you can click the `|Done|` button to finish the tutorial.
 

@@ -11,50 +11,49 @@ We are going to do this in 3 parts:
 2. Add code to make it move
 3. Play with our wind turbine to learn how it works
 
-![Step by step](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr5-wind-lvl1-render.webp) 
+![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
 
-## Build Step 1 @showdialog 
+## Building Step 1 @showdialog 
 
 ![wind](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
 
-## Build Step 2 @showdialog 
+## Building Step 2 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
 
-## Build Step 3 @showdialog 
+## Building Step 3 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
 
-## Build Step 4 @showdialog 
+## Building Step 4 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png) 
 
-## Build Step 5 @showdialog 
+## Building Step 5 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png) 
 
-## Build Step 6 @showdialog 
+## Building Step 6 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
 
-## Build Step 7 @showdialog 
+## Building Step 7 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
 
-## Build Step 8 @showdialog 
+## Building Step 8 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
 
-## Build Step 9 @showdialog 
+## Building Step 9 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
 
-## Build Step 10 @showdialog 
+## Building Step 10 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
 
-## Build Step 11 @showdialog 
+## Building Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Building Step 12 @showdialog 
-We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
+## Activity 2: Coding @showdialog 
+We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro:bit what to do.
 
-## Activity 2:Coding Set up @showdialog
 ## Coding Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
+![breakout board](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
 
 ## Coding Set up Step 2 @showhint
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
@@ -77,18 +76,19 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
 ```
+
 ## Coding Step 2 
 Take a look at the two code blocks below. What do you think they do? Take a guess! 
 
-## Coding Step 3 @showdialog
+## Coding Step 3 
 Let's test it out! We are going to interact with our project and see what happens.
 
-## Coding Step 4 @showdialog 
+## Coding Step 4  
 What do you think will happen when you turn the dial to the right? Try it now!
 
 ~hint Tell me more!
 - When we turn the dial to the right, the green building block should also turn to the right!
--  This what is called the input and output of the code.
+-  This is what is called the input and output of the code.
   hint~
 
 ## Coding Step 5 
@@ -99,15 +99,15 @@ What do you think will happen when you turn the dial to the left? Try it now!
   hint~
 
 ## Coding Step 6 
-If you have time, try making other changes to your project. What happens if you connect the dial or motor to different parts of the breakout board? 
-Remember, make one change at a time so you can learn what is happening.
+Feeling confident? Can you add more blocks to your Wind turbine and still have it move? Give it a try now!
+Remember to add one thing at a time to test the weight. 
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
 
-## Reflection @ Showdialog 
+## Reflection @showdialog 
 List 2 new things you learned today. What is one thing you want to learn more about? 
 
 ## Finished! @showdialog 
-In the next step, you can click the ``|Done|``button to finish the tutorial.
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
 
