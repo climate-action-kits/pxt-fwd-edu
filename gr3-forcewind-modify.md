@@ -60,7 +60,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 
 ## Coding Step 1 @showdialog
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl1-pluganim.webp)
+![breakout board](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
 
 ## Coding Step 2 
 Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
@@ -118,7 +118,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 ```
 ## Challenge Step 2 
-Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdMotors:Motors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
+Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
 
 ~hint Why did we do that?
 - This is the bock that is going to trigger turning the Wind turbine.
