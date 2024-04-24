@@ -103,7 +103,22 @@ What happens when you change the direction of the arrow in the ``||fwdSensors:on
   hint~
 
 ## Tinkering Step 5:Challenge time!
-Can you add another event to your code to make the wind turbine turn in both directions?"
+Can you add another event to your code to make the wind turbine turn in both directions?
+
+## Challenge Step 1
+The first thing we want to happen is to make the Wind Turbine turn in another direction. Click motors and drag and drop  ``||fwdMotors:set leftServo to 50 %||`` into the workspace.
+
+~hint Why did we do that?
+- This is the event we want to happen 
+hint~
+
+```blocks 
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+```
+
+
 
 ## Congratulations! @showdialog 
 
