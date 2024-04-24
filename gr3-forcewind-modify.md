@@ -124,6 +124,23 @@ Now we need to tell the code when we want this to happen, this is called Input. 
 - This is the bock that is going to trigger turning the Wind turbine.
 - hint~ 
 
+## Challenge Step 3 
+
+Next, how can you use these two blocks together to make the wind turbine turn in the opposite direction? 
+
+## Challenge Step 4 
+Did you get it right? Check the lightblub before clicking  the ``|download|`` button to download the code to your project.
+
+```blocks
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(-50)
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+
+```
+
 ## Congratulations! @showdialog 
 
 You've completed the activity! 
