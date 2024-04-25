@@ -74,28 +74,28 @@ We are ready to tinker with our wind turbine! Follow the instructions at the top
 After each change, you will need to flash your updated code to your project.
 
 ## Tinker Step 1
-The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
+The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
 
 ~hint Tell me more?
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
    hint~
 
 ## Tinker Step 2
-What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
+What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
 - When we make the number smaller, the turbine spins more slowly.
 hint~ 
 
 ## Tinker Step 3 
-What happens when you make the number in the ``||fwdMotors:set leftServo to 50 %||`` negative? Try it!
+What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` negative? Try it!
 
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
   hint~
 
 ## Tinker Step 4 
-What happens when you change the direction of the arrow in the ``||fwdSensors:on dial1 turned difference||``? Try it!
+What happens when you change the direction of the arrow in  ``||fwdSensors:on dial1 turned difference||``? Try it!
 
 ~hint Tell me more! 
 - The green block represents the input of the code. This shows us how we need to interact with our project in order to make something happen. 
@@ -103,13 +103,13 @@ What happens when you change the direction of the arrow in the ``||fwdSensors:on
   hint~
 
 ## Challenge time!
-Can you add another event to your code to make the wind turbine turn in both directions?
+Can you add another event to your code to make the wind turbine turn in both directions? Think about it!
 
 ## Challenge Step 1
 The first thing we want to happen is to make the Wind Turbine turn in another direction. Click motors and drag and drop  ``||fwdMotors:set leftServo to 50 %||`` into the workspace.
 
 ~hint Why did we do that?
-- This is the event we want to happen 
+- This is the output we want to happen 
 hint~
 
 ```blocks 
@@ -117,11 +117,12 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
 ```
+
 ## Challenge Step 2 
 Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
 
 ~hint Why did we do that?
-- This is the bock that is going to trigger turning the Wind turbine.
+- This is the block that is going to trigger the turning of the Wind turbine.
 - hint~ 
 
 ## Challenge Step 3 
@@ -129,7 +130,7 @@ Now we need to tell the code when we want this to happen, this is called Input. 
 Next, how can you use these two blocks together to make the wind turbine turn in the opposite direction? 
 
 ## Challenge Step 4 
-Did you get it right? Check the lightblub before clicking  the ``|download|`` button to download the code to your project.
+Did you get it right? Check the lightbulb before clicking the ``|download|`` button to download the code to your project.
 
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
