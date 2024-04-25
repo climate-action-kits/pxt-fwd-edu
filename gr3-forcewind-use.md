@@ -60,7 +60,7 @@ Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
-## Code Set up Step 3 
+## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Activity 3: Use your Project 
@@ -84,29 +84,24 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Use Step 2 
-Take a look at the two code blocks below. What do you think they do? Take a guess! 
-
-## Use Step 3 
-Let's test it out! We are going to interact with our project and see what happens.
-
-## Use Step 4  
-What do you think will happen when you turn the dial to the right? Try it now!
+Take a look at the code below. What do you think will happen to your project when you turn the dial to the right? 
+Try it now
 
 ~hint Tell me more!
 - When we turn the dial to the right, the green building block should also turn to the right!
 -  This is what is called the input and output of the code.
   hint~
 
-## Use Step 5 
+## Use Step 3 
 What do you think will happen when you turn the dial to the left? Try it now!
 
 ~hint Tell me more! 
 -  Nothing happens! There is no code that tells the computer what to do when the dial is turned to the left.
   hint~
 
-## Use Step 6 
+## Use Step 4 
 Feeling confident? Can you add more blocks to your Wind turbine and still have it move? Give it a try now!
-Remember to add one thing at a time to test the weight. 
+ Remember to add one thing at a time to see if your Turbine can still move with the extra pieces!
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
