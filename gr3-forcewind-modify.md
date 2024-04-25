@@ -69,32 +69,32 @@ Click three dots beside the ``|Download|`` button, and click on _Connect Device_
 ## Code Step 3 
 Next, click the ``|Download|`` button to download code to your project.
 
-## Activity 3: Tinker your Project @showdialog 
+## Activity 3: Modify your Project @showdialog 
 We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 After each change, you will need to flash your updated code to your project.
 
-## Tinker Step 1
+## Modify Step 1
 The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
 
 ~hint Tell me more?
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
    hint~
 
-## Tinker Step 2
+## Modify Step 2
 What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
 - When we make the number smaller, the turbine spins more slowly.
 hint~ 
 
-## Tinker Step 3 
+## Modify Step 3 
 What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` negative? Try it!
 
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
   hint~
 
-## Tinker Step 4 
+## Modify Step 4 
 What happens when you change the direction of the arrow in  ``||fwdSensors:on dial1 turned difference||``? Try it!
 
 ~hint Tell me more! 
@@ -106,7 +106,7 @@ What happens when you change the direction of the arrow in  ``||fwdSensors:on di
 Can you add another event to your code to make the wind turbine turn in both directions? Think about it!
 
 ## Challenge Step 1
-The first thing we want to happen is to make the Wind Turbine turn in another direction. Click motors and drag and drop  ``||fwdMotors:set leftServo to 50 %||`` into the workspace.
+The first thing we want to happen is to make the Wind Turbine turn in another direction. Click ``||fwdSensors:Sensors||`` and drag and drop  ``||fwdMotors:set leftServo to 50 %||`` into the workspace.
 
 ~hint Why did we do that?
 - This is the output we want to happen 
@@ -123,7 +123,7 @@ Now we need to tell the code when we want this to happen, this is called Input. 
 
 ~hint Why did we do that?
 - This is the block that is going to trigger the turning of the Wind turbine.
-- hint~ 
+ hint~ 
 
 ## Challenge Step 3 
 
