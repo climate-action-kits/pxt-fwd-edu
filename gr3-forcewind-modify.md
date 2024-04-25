@@ -40,7 +40,7 @@ We are going to do this in 4 parts:
 ## Build Step 8 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
 
-## Building Step 9 @showdialog 
+## Build Step 9 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
 
 ## Build Step 10 @showdialog 
@@ -52,6 +52,7 @@ We are going to do this in 4 parts:
 ## Activity 2: Code your Project @showdialog
 We need to connect our project to the computer to make it come to life with code!
 The code will be the instructions that tell our micro:bit what to do.
+
 ```template
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
