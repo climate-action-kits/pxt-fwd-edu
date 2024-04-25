@@ -67,9 +67,15 @@ Next, click the ``|Download|`` button to download the blank project to start up 
 We are ready to play with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 
 ## Use Step 1 @showdialog 
-Think back to the wind turbine picture. What part of our physical project represents:
-The force of the wind? 
-The Spinning blades 
+Think back to the wind turbine picture. 
+What part of our physical project represents: 
+The wind? 
+The blades?
+
+~hint Tell me more!
+- The dial represents the wind!
+- The circular, green building block represents the blades of the wind turbine.
+  hint~
 
 ```template
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
