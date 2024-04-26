@@ -9,7 +9,7 @@ Let's build a wind turbine!
 We are going to do this in 4 parts:
 1. Build our wind turbine
 2. Add starter code to make it move
-3. Tinker with our code to learn how it works
+3. Modify our code to learn how it works
 4. Complete a small coding challenge
 
 ![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
@@ -54,6 +54,9 @@ We need to connect our project to the computer to make it come to life with code
 The code will be the instructions that tell our micro:bit what to do.
 
 ```template
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
@@ -71,17 +74,26 @@ Click three dots beside the ``|Download|`` button, and click on _Connect Device_
 Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Modify your Project @showdialog 
-We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
-After each change, you will need to flash your updated code to your project.
+We are ready to modify our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
+After each change, you will need to download your updated code to your project.
 
 ## Modify Step 1
-The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
 
-~hint Tell me more?
+The code below will make our wind turbine turn. Let's test it out first. What happens when you turn the dial clockwise? What happens when you push the dial down?
+
+~hint Tell me more!
+- The green building block starts spinning when you turn the dial. It stops when you press the dial-down.
+  hint~ 
+
+
+## Modify Step 2 
+What happens when you make the number in the  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try changing it to 100%!
+
+~hint Tell me more!
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
-   hint~
-
-## Modify Step 2
+- hint~
+  
+## Modify Step 3
 What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
@@ -114,13 +126,17 @@ The first thing we want to happen is to make the Wind Turbine turn in another di
 hint~
 
 ```blocks 
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(-50)
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
 })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+
 ```
 
 ## Challenge Step 2 
-Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
+Now we need to tell the code when we want this to happen, this is called Input. Click   ``||fwdMotors:Motors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
 
 ~hint Why did we do that?
 - This is the block that is going to trigger the turning of the Wind turbine.
@@ -134,6 +150,9 @@ Next, how can you use these two blocks together to make the wind turbine turn in
 Did you get it right? Check the lightbulb before clicking the ``|download|`` button to download the code to your project.
 
 ```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })

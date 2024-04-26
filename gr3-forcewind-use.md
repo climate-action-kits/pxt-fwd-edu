@@ -9,7 +9,7 @@ Let's build a moving wind turbine!
 We are going to do this in 3 parts:
 1. Build our wind turbine
 2. Add code to make it move
-3. Play with our wind turbine to learn how it works
+3. Use our wind turbine to learn how it works
 
 ![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
@@ -48,7 +48,7 @@ We are going to do this in 3 parts:
 ## Build Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Activity 2: Coding your Project @showdialog 
+## Activity 2: Code your Project @showdialog 
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
@@ -64,9 +64,9 @@ Next, follow the steps to pair your micro:bit.
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Activity 3: Use your Project 
-We are ready to play with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
+We are ready to use our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 
-## Use Step 1 @showdialog 
+## Use Step 1  
 Think back to the wind turbine picture. 
 What part of our physical project represents: 
 The wind? 
@@ -78,28 +78,38 @@ The blades?
   hint~
 
 ```template
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
 ```
 
 ## Use Step 2 
-Take a look at the code below. What do you think will happen to your project when you turn the dial to the right? 
+Take a look at the code below. What do you think will happen to your project when you start turning? 
 Try it now
 
 ~hint Tell me more!
-- When we turn the dial to the right, the green building block should also turn to the right!
+- When we turn the dial to clockwise, the green building block should also turn to the right!
 -  This is what is called the input and output of the code.
   hint~
 
 ## Use Step 3 
-What do you think will happen when you turn the dial to the left? Try it now!
+What do you think will happen when you turn the dial to the opposite way? Try it now!
 
 ~hint Tell me more! 
--  Nothing happens! There is no code that tells the computer what to do when the dial is turned to the left.
+-  Nothing happens! There is no code that tells the computer what to do when the dial is turned this direction.
   hint~
 
 ## Use Step 4 
+Look at your code. How do you think we can stop the motor from spinning? Try it!
+
+~hint Tell me more!
+- Answer: The motor will stop when you press down on the dial!
+hint~
+
+## Use Step 5 
 Feeling confident? Can you add more blocks to your Wind turbine and still have it move? Give it a try now!
  Remember to add one thing at a time to see if your Turbine can still move with the extra pieces!
 
