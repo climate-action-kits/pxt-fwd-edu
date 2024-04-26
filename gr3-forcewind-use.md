@@ -9,7 +9,7 @@ Let's build a moving wind turbine!
 We are going to do this in 3 parts:
 1. Build our wind turbine
 2. Add code to make it move
-3. Play with our wind turbine to learn how it works
+3. Use our wind turbine to learn how it works
 
 ![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
 
