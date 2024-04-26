@@ -64,9 +64,9 @@ Next, follow the steps to pair your micro:bit.
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Activity 3: Use your Project 
-We are ready to play with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
+We are ready to use our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 
-## Use Step 1 @showdialog 
+## Use Step 1  
 Think back to the wind turbine picture. 
 What part of our physical project represents: 
 The wind? 
@@ -79,12 +79,11 @@ The blades?
 
 ```template
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.stop()
+    fwdMotors.leftServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
-
 ```
 
 ## Use Step 2 
