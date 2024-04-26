@@ -114,9 +114,13 @@ The first thing we want to happen is to make the Wind Turbine turn in another di
 hint~
 
 ```blocks 
-fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(-50)
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
 })
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.leftServo.fwdSetSpeed(50)
+})
+
 ```
 
 ## Challenge Step 2 
