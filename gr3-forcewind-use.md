@@ -78,9 +78,13 @@ The blades?
   hint~
 
 ```template
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.stop()
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
+
 ```
 
 ## Use Step 2 
