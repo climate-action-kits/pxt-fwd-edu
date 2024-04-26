@@ -104,6 +104,13 @@ What do you think will happen when you turn the dial to the opposite way? Try it
   hint~
 
 ## Use Step 4 
+Look at your code. How do you think we can stop the motor from spinning? Try it!
+
+~hint Tell me more!
+- Answer: The motor will stop when you press down on the dial!
+hint~
+
+## Use Step 5 
 Feeling confident? Can you add more blocks to your Wind turbine and still have it move? Give it a try now!
  Remember to add one thing at a time to see if your Turbine can still move with the extra pieces!
 
