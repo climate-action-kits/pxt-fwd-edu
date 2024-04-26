@@ -9,7 +9,7 @@ Let's build a wind turbine!
 We are going to do this in 4 parts:
 1. Build our wind turbine
 2. Add starter code to make it move
-3. Tinker with our code to learn how it works
+3. Modify our code to learn how it works
 4. Complete a small coding challenge
 
 ![Step by step](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp) 
@@ -71,7 +71,7 @@ Click three dots beside the ``|Download|`` button, and click on _Connect Device_
 Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Modify your Project @showdialog 
-We are ready to tinker with our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
+We are ready to modify our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
 After each change, you will need to flash your updated code to your project.
 
 ## Modify Step 1
