@@ -48,7 +48,7 @@ We are going to do this in 3 parts:
 ## Build Step 11 @showdialog 
 ![stepbystep](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
 
-## Activity 2: Coding your Project @showdialog 
+## Activity 2: Code your Project @showdialog 
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
