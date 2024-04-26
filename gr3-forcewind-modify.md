@@ -54,6 +54,9 @@ We need to connect our project to the computer to make it come to life with code
 The code will be the instructions that tell our micro:bit what to do.
 
 ```template
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(50)
 })
