@@ -72,7 +72,7 @@ Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Modify your Project @showdialog 
 We are ready to modify our wind turbine! Follow the instructions at the top of the screen. When you are ready for more information, click 'Tell me more!'
-After each change, you will need to flash your updated code to your project.
+After each change, you will need to download your updated code to your project.
 
 ## Modify Step 1
 The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
@@ -124,7 +124,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Challenge Step 2 
-Now we need to tell the code when we want this to happen, this is called Input. Click  ``||fwdSensors:Sensors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
+Now we need to tell the code when we want this to happen, this is called Input. Click   ``||fwdMotors:Motors||`` drag and drop ``||fwdSensors:on dial1 turned difference||`` into the workspace.  
 
 ~hint Why did we do that?
 - This is the block that is going to trigger the turning of the Wind turbine.
