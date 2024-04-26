@@ -84,19 +84,19 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Use Step 2 
-Take a look at the code below. What do you think will happen to your project when you turn the dial to the right? 
+Take a look at the code below. What do you think will happen to your project when you start turning? 
 Try it now
 
 ~hint Tell me more!
-- When we turn the dial to the right, the green building block should also turn to the right!
+- When we turn the dial to clockwise, the green building block should also turn to the right!
 -  This is what is called the input and output of the code.
   hint~
 
 ## Use Step 3 
-What do you think will happen when you turn the dial to the left? Try it now!
+What do you think will happen when you turn the dial to the opposite way? Try it now!
 
 ~hint Tell me more! 
--  Nothing happens! There is no code that tells the computer what to do when the dial is turned to the left.
+-  Nothing happens! There is no code that tells the computer what to do when the dial is turned this direction.
   hint~
 
 ## Use Step 4 
