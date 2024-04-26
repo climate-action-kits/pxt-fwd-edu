@@ -78,13 +78,22 @@ We are ready to modify our wind turbine! Follow the instructions at the top of t
 After each change, you will need to download your updated code to your project.
 
 ## Modify Step 1
-The code below will make our wind turbine turn. Let's learn some more.  What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try it!
 
-~hint Tell me more?
+The code below will make our wind turbine turn. Let's test it out first. What happens when you turn the dial clockwise? What happens when you push the dial down?
+
+~hint Tell me more!
+- The green building block starts spinning when you turn the dial. It stops when you press the dial-down.
+  hint~ 
+
+
+## Modify Step 2 
+What happens when you make the number in the  ``||fwdMotors:set leftServo to 50 %||`` bigger? Try changing it to 100%!
+
+~hint Tell me more!
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
-   hint~
-
-## Modify Step 2
+- hint~
+  
+## Modify Step 3
 What happens when you make the number in  ``||fwdMotors:set leftServo to 50 %||`` smaller? Try it!
 
 ~hint Tell me more!
@@ -141,6 +150,9 @@ Next, how can you use these two blocks together to make the wind turbine turn in
 Did you get it right? Check the lightbulb before clicking the ``|download|`` button to download the code to your project.
 
 ```blocks
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+})
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
     fwdMotors.leftServo.fwdSetSpeed(-50)
 })
