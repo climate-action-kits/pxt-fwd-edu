@@ -1,15 +1,15 @@
-## Tracking Pollinators with a Bee Counter 
+# Tracking Pollinators with a Bee Counter 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
 
-Let's build a Bee Counter! 
+Let's build a Bee Counter! <br> 
 We are going to do this in three parts: 
 1. Build your Bee Counter 
 2. Add code to make it work
-3. Play with the Bee Counter to learn how it works
+3. Use the Bee Counter to learn how it works
 
 ## Build Step 1 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
@@ -73,10 +73,11 @@ Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Use your Project @showdialog 
 
-We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click 'Tell me more!' 
+We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click *'Tell me more!'* 
 
 ```template
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -84,6 +85,7 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
+
 ```
 
 ## Use Step 1 
