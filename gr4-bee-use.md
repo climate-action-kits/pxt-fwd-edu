@@ -123,11 +123,11 @@ Try reading the code blocks below. What do you think will happen when you touch 
 
 ~hint Tell me more! 
 - Each time you touch the touch sensor, the number on the micro:bit goes up by 1.
-- We made this happen with a conditional statement in our code.
+- We made this happen with a **conditional statement** in our code.
   hint~
 
 ## Use Step 5
-We use conditional statements to help us make decisions all the time in real life/ For example, "If it is raining, then I will open my umbrella."
+We use **conditional statements** to help us make decisions all the time in real life <br> For example, "If it is raining, then I will open my umbrella."
 Can you identify the conditional statement?
 
 ~hint Tell me more!
@@ -145,7 +145,7 @@ basic.forever(function () {
 
 ## Use Step 6
 
-Click the ``|download|`` button to redownload the code to your project. What happens to the number of the LEDs?
+Click the ``|Download|`` button to redownload the code to your project. <br> What happens to the number of the LEDs?
 
 ```blocks
 let bugVisits = 0
@@ -161,8 +161,8 @@ basic.forever(function () {
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
 
-## Reflection @ Showdialog 
-List 2 new things you learned today. What is one thing you want to learn more about? 
+## Reflection @showdialog 
+List 2 new things you learned today. <br> What is one thing you want to learn more about? 
 
 ## Finished! @showdialog 
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
