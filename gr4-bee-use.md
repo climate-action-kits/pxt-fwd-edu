@@ -59,18 +59,17 @@ We are going to do this in three parts:
 ## Activity 2: Code your Project @showdialog  
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
 
-## Code Step 1 @showdialog 
-Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+## Code Step 1 @showdialog
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
-![pluginwp](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pluganim.webp)
 
-## Code Step 2 @showdialog
-
-Click the three dots beside ``|Download|`` button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
-![pairing](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pairmicrobitGIF.webp) 
+## Code Step 2 
+Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code Step 3 
-Next ``|Download|`` button to download the code to your Project and to see the smart component simulators. 
+Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Use your Project @showdialog 
 
