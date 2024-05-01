@@ -1,83 +1,83 @@
-## Tracking Pollinators with a Bee Counter 
+# Tracking Pollinators with a Bee Counter 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
 
-Let's build a Bee Counter! 
+Let's build a Bee Counter! <br> 
 We are going to do this in three parts: 
 1. Build your Bee Counter 
 2. Add code to make it work
-3. Play with the Bee Counter to learn how it works
+3. Use the Bee Counter to learn how it works
 
-## Build Step 1 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bee-sbs1.png?raw=true) 
+## Build Step 1 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
 
-## Build Step 2 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs2.png?raw=true)
+## Build Step 2 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs2.png)
 
-## Build Step 3  @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs3.png?raw=true) 
+## Build Step 3 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs3.png)
 
-## Build Step 4 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs4.png?raw=true) 
+## Build Step 4 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs4.png)
 
-## Build Step 5 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs5.png?raw=true) 
+## Build Step 5 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs5.png)
 
-## Build Step 6 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs6.png?raw=true)
+## Build Step 6 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs6.png)
 
-## Build Step 7 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs7.png?raw=true)
+## Build Step 7 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs7.png)
 
-## Build Step 8 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs8.png?raw=true)
+## Build Step 8 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs8.png)
 
-## Build Step 9 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs9.png?raw=true)
+## Build Step 9 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs9.png)
 
-## Build Step 10 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs10.png?raw=true)
+## Build Step 10 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs10.png)
 
-## Build Step 11 @showdialog  
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs11.png?raw=true) 
+## Build Step 11 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs11.png)
 
-## Build Step 12  @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs12.png?raw=true)
+## Build Step 12 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs12.png)
 
-## Build Step 13 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs13.png?raw=true) 
+## Build Step 13 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs13.png)
 
-## Build Step 14 @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs14.png?raw=true) 
+## Build Step 14 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs14.png)
 
-## Build Step 15  @showdialog 
-![beessbs](https://github.com/Jessica-forwardedu/pxt-fwd-edu/blob/Jessica-forwardedu-patch-1/tutorial-assets/Gr4-bees-sbs15.png?raw=true)
+## Build Step 15 @showdialog
+![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs15.png)
 
 ## Activity 2: Code your Project @showdialog  
 We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
 
-## Code Step 1 @showdialog 
-Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+## Code Step 1 @showdialog
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
-![pluginwp](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pluganim.webp)
 
-## Code Step 2 @showdialog
-
-Click the three dots beside ``|Download|`` button, and click on Connect Device. Next, follow the steps to pair your micro:bit. 
-![pairing](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/pairmicrobitGIF.webp) 
+## Code Step 2 
+Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code Step 3 
-Next ``|Download|`` button to download the code to your Project and to see the smart component simulators. 
+Next, click the ``|Download|`` button to download code to your project.
 
 ## Activity 3: Use your Project @showdialog 
 
-We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click 'Tell me more!' 
+We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click *'Tell me more!'* 
 
 ```template
 let bugVisits = 0
+bugVisits = 0
 basic.showNumber(bugVisits)
 basic.forever(function () {
     if (fwdSensors.touch.fwdIsPressed()) {
@@ -85,6 +85,7 @@ basic.forever(function () {
         basic.showNumber(bugVisits)
     }
 })
+
 ```
 
 ## Use Step 1 
@@ -122,11 +123,11 @@ Try reading the code blocks below. What do you think will happen when you touch 
 
 ~hint Tell me more! 
 - Each time you touch the touch sensor, the number on the micro:bit goes up by 1.
-- We made this happen with a conditional statement in our code.
+- We made this happen with a **conditional statement** in our code.
   hint~
 
 ## Use Step 5
-We use conditional statements to help us make decisions all the time in real life/ For example, "If it is raining, then I will open my umbrella."
+We use **conditional statements** to help us make decisions all the time in real life <br> For example, "If it is raining, then I will open my umbrella."
 Can you identify the conditional statement?
 
 ~hint Tell me more!
@@ -144,7 +145,7 @@ basic.forever(function () {
 
 ## Use Step 6
 
-Click the ``|download|`` button to redownload the code to your project. What happens to the number of the LEDs?
+Click the ``|Download|`` button to redownload the code to your project. <br> What happens to the number of the LEDs?
 
 ```blocks
 let bugVisits = 0
@@ -160,8 +161,8 @@ basic.forever(function () {
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
 
-## Reflection @ Showdialog 
-List 2 new things you learned today. What is one thing you want to learn more about? 
+## Reflection @showdialog 
+List 2 new things you learned today. <br> What is one thing you want to learn more about? 
 
 ## Finished! @showdialog 
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
