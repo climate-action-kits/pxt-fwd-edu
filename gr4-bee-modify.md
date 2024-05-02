@@ -9,6 +9,7 @@ Welcome to the Bee Counter Project!  We are going to do this in 4 steps!
 2. Code your project
 3. Modify your project 
 4. Complete a small coding challenge
+![projectrender](https://github.com/Jessica-forwardedu/pxt-fwd-edu/assets/136100569/d25249a4-4f21-41ff-8e30-f4d36f6e7288)
 
 
 
