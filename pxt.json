@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "1.19.0",
+    "version": "1.20.0",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
@@ -33,8 +33,8 @@
         "gr4-bees-lvl1.md",
         "gr4-bee-use.md",
         "gr4-bee-modify.md",
-        "gr6-glaciers-modify.md", 
-        "gr6-glaciers-use.md", 
+        "gr6-glaciers-modify.md",
+        "gr6-glaciers-use.md",
         "icon.png",
         "lesson-final-code/advagri-1-ext.md",
         "lesson-final-code/advagri-2-code.md",
