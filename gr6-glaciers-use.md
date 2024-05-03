@@ -29,8 +29,8 @@ Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in
 We need to connect our project to the computer to make it come to life with code! <br> The code will be the instructions that tell our micro: bit what to do.
 
 ## Code Step 1 @showdialog
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-![breakout board](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp)
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+<img src=""https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp"" width=""400"">
 
 ## Code Step 2 @showhint
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
