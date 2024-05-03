@@ -26,11 +26,11 @@ Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in
 ## Build Step 8 @showdialog 
 
 ## Activity 2: Code your Project @showdialog 
-We need to connect our project to the computer to make it come to life with code! <br> The code will be the instructions that tell our micro: bit what to do.
+We need to connect our project to the computer to make it come to life with code! <br> The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-<img src=""https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp"" width=""400"">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
 ## Code Step 2 @showhint
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
@@ -42,11 +42,12 @@ Next, click the ``|Download|`` button to download the blank project to start up 
 
 ## Activity 3: Use your Project @showdialog 
 We are now ready to use our **Glacier Tracking System**. Follow the instructions at the top of the screen. <br> When you are ready for more information, click *'Tell me more!'* <br>
-After each change, you will need to ``||Download||`` your updated code for your project.
+After each change, you will need to ``|Download|`` your updated code for your project.
 
 ## Use Step 1 
 The code below will make our Glacier tracking system measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question. <br>
 Think about the Albedo-Ice Feedback diagram when looking at your project. Which part of this project represents the sun?
+
 ~hint Tell me More 
 - here the LED lights represent the sun.
 hint~
