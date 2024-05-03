@@ -51,6 +51,14 @@ Think about the Albedo-Ice Feedback diagram when looking at your project. Which 
 - here the LED lights represent the sun.
 hint~
 
+```template
+fwdSensors.ledRing.fwdSetBrightness(10)
+fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
+basic.forever(function () {
+    datalogger.log(datalogger.createCV("Light Level", fwdSensors.solar1.fwdLightLevel()))
+})
+```
+
 ## Use Step 2 
 Now look again: which part do you think represents Earth's surface? Which part is meant to be the satellite?
 
@@ -75,9 +83,20 @@ Next, let's see what happens when we make some changes. To do that, we have to f
 3. Go back to the code for the next step.
 
 ## Use Step 7 
-Now let's try using a white piece of paper, then a yellow piece, and finally, aluminum foil. Follow the same steps: t
+Now let's try using a white piece of paper, then a yellow piece, and finally, aluminum foil. Follow the same steps,
 1. First, get a piece of black paper and cover the base plate.
 2. Then, open the data simulator and see what happens to your data.
 3. Go back to the code for the next step.
-   
+
+## Use Step 8 
+Welcome back! Were your predictions correct? Did any of the results surprise you?
+
+## Congratulations! @showdialog 
+You've completed the activity! Did anything surprise you about this project? 
+
+## Reflection @ Showdialog 
+List 2 new things you learned today. What is one thing you want to learn more about? 
+
+## Finished! @showdialog 
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
 
