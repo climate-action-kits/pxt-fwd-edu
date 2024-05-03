@@ -11,6 +11,8 @@ We are going to do this in three parts:
 2. Add code to make it work
 3. Use the Bee Counter to learn how it works
 
+![projectrender](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-projectrender.webp) 
+
 ## Build Step 1 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
 
