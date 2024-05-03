@@ -5,11 +5,12 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
 
-Let's build a Bee Counter! <br> 
-We are going to do this in three parts: 
+Let's build a Bee Counter! We are going to do this in three parts: 
 1. Build your Bee Counter 
 2. Add code to make it work
 3. Use the Bee Counter to learn how it works
+
+![projectrender](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-projectrender.webp) 
 
 ## Build Step 1 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
@@ -64,7 +65,7 @@ We need to connect our project to the computer to make it come to life with code
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
 
-## Code Step 2 
+## Code Step 2 @showdialog
 Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
@@ -96,25 +97,28 @@ What are all of its parts?
 
 
 ~hint Tell me more!
-- This project has building blocks that make up the structure
+- This project has building blocks that make up the structure.
 - It also has a touch sensor, a micro:bit, LEDs, a breakout board, and connectors.
 hint~
 
 ## Use Step 2 
-Looking at your completed project what should the project do?
+Looking at your completed project, what should the project do?
 
 
 ~hint Tell me more!
-- A Bee Counter should be able to count each time a Bee visits a flower and tell us the number! This was as Protectors of Bees we know if they like our flower or not!
-- If the number is low how can we help more bees visit? 
+- Your Bee Counter should keep track of how many times a bee visits a flower and let us know the total!
+- By counting, we can find out if the bees really like our flower!
+- If not many bees are visiting, what can we do to make our flower more popular with the bees?
 hint~
 
 ## Use Step 3 
 How do you think each part works together to make that happen?
 
 ~hint Tell me more!
-- The building blocks are for the structure! The blocks are holding up the touch sensor, the LED, the breakout board and the micro:bit.
-- The micro:bit is like the brain of this project, the sensors are the organs, and the building blocks are the bones of our project.
+- Think of the building blocks as the skeleton they support and hold everything together.
+- The micro:bit acts like the brain of your project. It makes decisions and tells the other parts what to do.
+- The sensors are like the organs. They sense what's happening and send this information to the micro:bit.
+- The building blocks are the bones that keep everything in place.
 hint~
 
 ## Use Step 4 
@@ -131,7 +135,8 @@ We use **conditional statements** to help us make decisions all the time in real
 Can you identify the conditional statement?
 
 ~hint Tell me more!
-  - The conditional statement in this code is: ||variables:set bugVisits to 0||
+  - The conditional statement in this code is: Set bugVisits to 0. 
+  - Check the light blub to be sure!
   hint~
 
 ```blocks
@@ -145,7 +150,13 @@ basic.forever(function () {
 
 ## Use Step 6
 
-Click the ``|Download|`` button to redownload the code to your project. <br> What happens to the number of the LEDs?
+Click the ``|Download|`` button to redownload the code to your project. <br> What happens to the number on the LEDs?
+
+~hint Tell me More
+- Now the number on the micro:bit goes back to 0 each time we download the code.
+- This is how we reset our Bee Counter.
+  hint~
+
 
 ```blocks
 let bugVisits = 0
@@ -157,6 +168,37 @@ basic.forever(function () {
     }
 })
 ```
+
+## Use Step 7 
+Can you guess which part of our code is used to reset the Bee Counter? 
+
+~hint Tell me More!
+- The block set:bugVisits to 0 is resetting the number!
+- Each time we do this the counting is reset!
+hint~
+
+```blocks
+let bugVisits = 0
+bugVisits = 0 
+basic.showNumber(bugVisits)
+```
+
+
+## Use Step 8 
+Let's test out resetting the number! Press the touch sensor until it shows the number 10, then ``|Download|`` the code again to reset the count. 
+
+```blocks
+let bugVisits = 0
+bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
