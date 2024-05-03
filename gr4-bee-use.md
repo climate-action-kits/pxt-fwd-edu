@@ -5,8 +5,7 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
 
-Let's build a Bee Counter! <br> 
-We are going to do this in three parts: 
+Let's build a Bee Counter! We are going to do this in three parts: 
 1. Build your Bee Counter 
 2. Add code to make it work
 3. Use the Bee Counter to learn how it works
@@ -173,7 +172,7 @@ basic.forever(function () {
 ## Use Step 7 
 Can you guess which part of our code is used to reset the Bee Counter? 
 
-~hint 
+~hint Tell me More!
 - The block set:bugVisits to 0 is resetting the number!
 - Each time we do this the counting is reset!
 hint~
@@ -187,6 +186,19 @@ basic.showNumber(bugVisits)
 
 ## Use Step 8 
 Let's test out resetting the number! Press the touch sensor until it shows the number 10, then ``|Download|`` the code again to reset the count. 
+
+```blocks
+let bugVisits = 0
+bugVisits = 0
+basic.showNumber(bugVisits)
+basic.forever(function () {
+    if (fwdSensors.touch.fwdIsPressed()) {
+        bugVisits += 1
+        basic.showNumber(bugVisits)
+    }
+})
+```
+
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
