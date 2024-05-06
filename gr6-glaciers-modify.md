@@ -157,7 +157,7 @@ Take your folded white pieces of paper that are like icebergs. Place them one by
 hint~
 
 ## Modify Step 10 
-Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file  explorer on your device. Then, select your mirco:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
+Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file  explorer on your device. Then, select your micro:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
 
 ~hint Tell me More 
 - Think of the micro:bit as the brain; it stores all the information.
@@ -171,3 +171,9 @@ What did you think of your data? Could you understand what was happening? Now fo
 ~hint Tell me More!
 - A conditional statement helps us organize and display data in a way that’s easy to understand.
 hint~
+
+## Challenge @showdialog 
+When we looked at our data logger, the graph was a bit messy! It was hard to tell what was our hand and what was our data. So let’s add another conditional to help clear up the data. Plug the micro:bit back into your computer now. 
+
+
+
