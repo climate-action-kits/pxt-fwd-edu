@@ -56,7 +56,7 @@ Next, follow the steps to pair your micro:bit.
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
 ## Activity 3: Modify your Project @showdialog
-We are now ready to modify our project to better understand how it works! Follow the instructions at the top pf the screen. 
+We are now ready to modify our project to better understand how it works! Follow the instructions at the top of the screen. 
 When you are ready for more information, click *'Tell me More!'*
 
 After each change to the code, you will need to ``|Download|`` the updated code to your project.
@@ -69,7 +69,16 @@ How many conditional statements do you see in the code below?
 ~hint Tell me More
 - Conditional statements tell our micro:bit what to do when a certain condition is met.
 - We use conditional statements in our own lives too.
-- For example, 'if it is raining, then I will bring an umbrella.' This decision depends on the condition of it raining.
+- For example, 'If it is raining, then I will bring an umbrella.' This decision depends on the condition of it raining.
   hint~ 
 
+## Modify Step 2 
+Did you guess correctly? The code below has only one conditional statement. This condition is triggered by an event.<br>
+Looking at the code below, which blocks represent the event?
+
+~hint
+- An event in coding is when one thing causes another thing to happen!
+- For example, when you press the button for the elevator, the elevator arrives!
+- Pressing the button of the elevator is the event that triggers an action.
+  hint~
 
