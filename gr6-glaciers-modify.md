@@ -121,3 +121,14 @@ basic.forever(function () {
     }
 })
 ```
+## Modify Step 6 
+First, let’s get our materials ready. You will need:<br>
+Two pieces of paper: one white and one black <br>
+Some small rectangles of white paper, folded in half—these are our 'icebergs.'
+
+~hint Tell me More
+We use black and white paper to show how different parts of our Earth work.
+The black paper is like the ocean. It helps us see how much light and heat the ocean can soak up or bounce off.
+The white paper 'icebergs' help reflect light back up into the sky, which keeps the ocean from getting too warm
+hint~
+
