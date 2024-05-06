@@ -163,3 +163,11 @@ Now we want to look at the data we have logged. Plugging the micro:bit back into
 - Think of the micro:bit as the brain; it stores all the information.
 - We need to open the micro:bit on your computer to see the data inside!
 hint~
+
+## Modify Step 11 
+
+What did you think of your data? Could you understand what was happening? Now for a fun challenge: We want you to use another conditional statement to make the data logger look neater.
+
+~hint Tell me More!
+- A conditional statement helps us organize and display data in a way that’s easy to understand.
+hint~
