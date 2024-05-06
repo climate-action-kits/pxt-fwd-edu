@@ -88,16 +88,36 @@ Did you guess that right? ``||Input:on button A pressed||`` is an Event block. <
 ~hint Tell me More
 - Pressing the A button will change the icon on the Micro:bit.
 - It will also start collecting data on light levels!
+- Holding the A button will record information.
 hint~
 
 ## Modify Step 4 
 
-Let's change the event block from ``||Input:on button A pressed||`` to ``||Input:on button B pressed||`` and see what happens. Click the arrow to open the dropdown menu in the 'on button A pressed' block. Change the event to 'Button B', then download the new code to your Micro:bit.
+Let's change the event block from ``||Input:on button A pressed||`` to ``||Input:on button B pressed||`` and see what happens. Click the arrow to open the dropdown menu in the ``||Input:on button A pressed||`` block. Change the event to 'Button B', then download the new code to your Micro:bit.
 
 ~hint Tell me More 
-- If you don't see the change on your Micro:bit, check that you've downloaded the new code.
-- Changing to 'Button B' won’t change what happens; your Micro:bit will still show the check mark if everything is set up right!
+- If you don't see the change on your micro:bit, check that you've downloaded the new code.
+- Changing to 'Button B' won’t change what happens; your micro:bit will still show the check mark if everything is set up right!
 hint~
 
+## Modify Step 5 
+Did you see the check mark when you pressed the B button? Great job! Now let’s switch it back. Change ``||Input:on button B pressed||`` to ``||Input:on button A pressed||`` Before we move on to collect data, make sure you did it right by looking for the lightbulb icon.
 
+~hint Tell me More
+- Didn't see the change? Make sure you've downloaded the new code to your Micro:bit.
+- Now, you can unplug the Micro:bit from your computer safely.
+hint~ 
 
+```blocks
+datalogger.setColumnTitles("Light Level (%)")
+fwdSensors.ledRing.fwdSetBrightness(10)
+fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showIcon(IconNames.Yes)
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    } else {
+        basic.showIcon(IconNames.No)
+    }
+})
+```
