@@ -195,3 +195,29 @@ How do we connect these two blocks to make something happen when we press the B 
 - That's why we insert it into the blank space in our 'if/then' block.
 hint~
 
+## Challenge Step 4 
+Think you got it right? Check the light bulb icon to see if you're correct. If not, change your code to match what's shown in the light bulb.
+
+~hint Tell me More
+We placed the second conditional within the 'forever' block.
+This setup ensures our code continuously checks if the buttons have been pressed.
+hint~
+
+```blocks
+datalogger.setColumnTitles("Light Level (%)")
+fwdSensors.ledRing.fwdSetBrightness(10)
+fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showIcon(IconNames.Yes)
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    } else {
+        basic.showIcon(IconNames.No)
+    }
+    if (input.buttonIsPressed(Button.B)) {
+    	
+    }
+})
+```
+
+
