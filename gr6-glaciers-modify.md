@@ -149,3 +149,9 @@ Now, grab your black piece of paper and cover the baseplate with it. This time, 
 hint~
 
 ## Modify Step 9 
+Take your folded white pieces of paper that are like icebergs. Place them one by one on the baseplate, counting to eight each time as you hold the A button. Then take them off one at a time. What do you think the data will show?
+
+~hint Tell me More 
+- The white paper acts as 'icebergs' in our ocean.
+- Just like real icebergs, they reflect light away from the ocean
+hint~
