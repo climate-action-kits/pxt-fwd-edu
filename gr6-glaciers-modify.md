@@ -4,7 +4,7 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger
 ```
-## Activity 1: Build your Project
+## Activity 1: Build your Project @showdialog 
 Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in four parts!
 1. Build your project
 2. Code your Project 
@@ -24,3 +24,33 @@ basic.forever(function () {
     }
 })
 ```
+## Build Step 1 @showdialog 
+
+## Build Step 2 @showdialog 
+
+## Build Step 3 @showdialog 
+
+## Build Step 4 @showdialog 
+
+## Build Step 5 @showdialog 
+
+## Build Step 6 @showdialog 
+
+## Build Step 7 @showdialog 
+
+## Build Step 8 @showdialog 
+
+## Activity 2: Code your Project @showdialog 
+We need to connect our project to the computer to make it come to life with code! <br> The code will be the instructions that tell our micro:bit what to do.
+
+## Code Step 1 @showdialog
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
+
+## Code Step 2 @showdialog
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp) 
+
+## Code  Step 3 
+Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
