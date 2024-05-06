@@ -175,5 +175,7 @@ hint~
 ## Challenge @showdialog 
 When we looked at our data logger, the graph was a bit messy! It was hard to tell what was our hand and what was our data. So let’s add another conditional to help clear up the data. Plug the micro:bit back into your computer now. 
 
+## Challenge Step 1 
+First, we need to set up our input, which triggers our code. Go to the ``||Input:Input||`` section and select the ``||Input:on button A pressed||`` block, change A to B. *Note: The block will be greyed out.* 
 
 
