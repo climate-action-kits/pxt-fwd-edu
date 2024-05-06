@@ -54,3 +54,9 @@ Next, follow the steps to pair your micro:bit.
 
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
+
+## Activity 3: Modify your Project 
+We are now ready to modify our project to better understand how it works! Follow the instructions at the top pf the screen. 
+When you are ready for more information, click *'Tell me More!'*
+
+After each change to the code, you will need to ``|Download|`` the updated code to your project.
