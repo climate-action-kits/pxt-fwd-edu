@@ -227,3 +227,19 @@ Lastly, we need to specify what happens after pressing the B button. Go to ``||d
 - This allows us to reset and collect different data under various settings
 hint~ 
 
+## Challenge Step 5 
+Let's see if this worked! Press the B button on the micro:bit, this will trigger the delete log event and clear your data. Check the data within the micro:bit using your file explorer. 
+
+~hint Tell me More!
+- This step checks that the 'delete log' command inside the 'if/then' block is working properly when you press the B button. 
+hint~
+
+## Congratulations! @showdialog 
+
+You've completed the activity! Congratulations!
+
+## Reflection @showdialog 
+Think about something about this project that challenged you. How did you overcome the challenge? How did that make you feel?
+
+## Finished! @showdialog 
+In the next step, you can click the `|Done|` button to finish the tutorial."
