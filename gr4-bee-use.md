@@ -6,11 +6,11 @@ ledRing=github:climate-action-kits/pxt-fwd-edu
 ## Activity 1: Build your Project @showdialog 
 
 Let's build a Bee Counter! We are going to do this in three parts: 
-1. Build your Bee Counter 
-2. Add code to make it work
-3. Use the Bee Counter to learn how it works
+1. Build your Bee Counter. 
+2. Add code to bring it to life.
+3. Use the Bee Counter to learn how it works.
 
-![projectrender](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr4-bees-projectrender.webp) 
+![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr4-bees-projectrender.webp) 
 
 ## Build Step 1 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bee-sbs1.png)
@@ -115,7 +115,6 @@ hint~
 How do you think each part works together to make that happen?
 
 ~hint Tell me more!
-- Think of the building blocks as the skeleton they support and hold everything together.
 - The micro:bit acts like the brain of your project. It makes decisions and tells the other parts what to do.
 - The sensors are like the organs. They sense what's happening and send this information to the micro:bit.
 - The building blocks are the bones that keep everything in place.
@@ -123,10 +122,10 @@ hint~
 
 ## Use Step 4 
 
-Try reading the code blocks below. What do you think will happen when you touch the sensors? Try touching it a few times in a row.
+Try reading the code blocks below. What do you think will happen when you touch the sensor? Try touching it a few times in a row.
 
 ~hint Tell me more! 
-- Each time you touch the touch sensor, the number on the micro:bit goes up by 1.
+- Each time you press the touch sensor, the number on the micro:bit goes up by 1.
 - We made this happen with a **conditional statement** in our code.
   hint~
 
@@ -135,7 +134,7 @@ We use **conditional statements** to help us make decisions all the time in real
 Can you identify the conditional statement?
 
 ~hint Tell me more!
-  - The conditional statement in this code is: Set bugVisits to 0. 
+  - The conditional statement in this code is: Set bugVisits to 1. 
   - Check the light blub to be sure!
   hint~
 

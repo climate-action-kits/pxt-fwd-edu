@@ -108,10 +108,10 @@ Let's look at variables in action.
 What number do you see on the micro:bit right now?
 What do you think this number means?
 
-~hint
+~hint Tell me More!
 - The number we see on the micro:bit is '0'
-- It is the numkber of bees that have visited our flower so far.
-- We set this number to '0' by outting the set bugVisits to 0
+- It is the number of bees that have visited our flower so far.
+- We set this number to '0' by putting the set bugVisits to 0
   block inside the On Start event.
   hint~
 
@@ -161,7 +161,7 @@ What happens when you increase the number in ``||Variables:change bugVisits by 1
 
 ~hint Tell me More 
 - Now each time you press the touch sensor, the number on the micro:bit goes up by 3.
-- This block changes the number in out variable.
+- This block changes the number in our variable.
 - Remember the piggy bank? It's like when we add money to it!
   hint~
 
@@ -196,7 +196,7 @@ First, we need to control the LED lights. Go to ``||fwdSensors:Sensors||`` and d
 
 ~hint Tell me More 
 - Just like a painter picks the right brush for a stroke, we need the right block to control our LED lights.
-- This block is like the switch it tells all the LEDs what to do at once
+- This block is like the switch it tells all the LEDs what to do at once.
 hint~
 
 
@@ -248,7 +248,7 @@ We’ve got green for go—when bees visit. How about red for when our garden is
 
 ~hint Tell me More!
 - If we want the lights to be a different colour BEFORE a bug visist it needs to be the first thing our code does
-- Don't forget to download your changed code onto the mirco:bit
+- Don't forget to download your changed code onto the micro:bit
 hint~
 
 

@@ -76,7 +76,7 @@ Take a look at the code below. What do you think it does? Make some predictions!
 Got your predictions? Let's see if you were right! Click the 'Download' button to load your code and test it out! 
 
 ## Use Step 5 
-Since the base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze. At the bottom of your screen, click ``||Show Data Simulator||``. Take a look at the data collected so far, then go back to the code. Try it now! 
+Since the base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit stores all of this information for us to analyze. At the bottom of your screen, click ``|Show Data Simulator|``. Take a look at the data collected so far, then go back to the code. Try it now! 
 
 ## Use Step 6 
 Next, let's see what happens when we make some changes. To do that, we have to follow three steps:
