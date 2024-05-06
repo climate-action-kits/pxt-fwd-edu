@@ -178,4 +178,20 @@ When we looked at our data logger, the graph was a bit messy! It was hard to tel
 ## Challenge Step 1 
 First, we need to set up our input, which triggers our code. Go to the ``||Input:Input||`` section and select the ``||Input:on button A pressed||`` block, change A to B. *Note: The block will be greyed out.* 
 
+## Challenge Step 2 
+Next, we need to build another conditional. Click on ``||logic:Logic||`` and select an ``||logic:if true then||`` block to add it to the workspace. You'll notice that both of these blocks will appear greyed out now.
+
+~hint Tell Me More 
+- We need this because we want something to happen when we press button B.
+- Remember, the A button is already being used to record data.
+hint~ 
+
+## Challenge Step 3 
+How do we connect these two blocks to make something happen when we press the B button? Also, where should we place this conditional in our code?
+
+~hint Tell me More
+- The 'if/then' block has a blank space meant for another block.
+- The 'button B pressed' block is shaped differently and needs to fit inside another block to function.
+- That's why we insert it into the blank space in our 'if/then' block.
+hint~
 
