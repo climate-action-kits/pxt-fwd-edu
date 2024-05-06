@@ -219,5 +219,11 @@ basic.forever(function () {
     }
 })
 ```
+## Challenge Step 5 
+Lastly, we need to specify what happens after pressing the B button. Go to ``||datalogger.datalogger||`` and add the ``||datalogger.deleteLog||`` action inside the ``||logic:if true then||`` block.
 
+~hint Tell me More
+- 'Delete log' clears the data you see in the simulator.
+- This allows us to reset and collect different data under various settings
+hint~ 
 
