@@ -155,3 +155,11 @@ Take your folded white pieces of paper that are like icebergs. Place them one by
 - The white paper acts as 'icebergs' in our ocean.
 - Just like real icebergs, they reflect light away from the ocean
 hint~
+
+## Modify Step 10 
+Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file  explorer on your device. Then, select your mirco:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
+
+~hint Tell me More 
+- Think of the micro:bit as the brain; it stores all the information.
+- We need to open the micro:bit on your computer to see the data inside!
+hint~
