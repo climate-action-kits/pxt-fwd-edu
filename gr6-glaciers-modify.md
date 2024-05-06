@@ -55,8 +55,21 @@ Next, follow the steps to pair your micro:bit.
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
-## Activity 3: Modify your Project 
+## Activity 3: Modify your Project @showdialog
 We are now ready to modify our project to better understand how it works! Follow the instructions at the top pf the screen. 
 When you are ready for more information, click *'Tell me More!'*
 
 After each change to the code, you will need to ``|Download|`` the updated code to your project.
+
+## Modify Step 1 
+
+In this project, we are tracking the levels of light being reflected onto different surfaces. We do this by using something called conditionals.<br>
+How many conditional statements do you see in the code below?
+
+~hint Tell me More
+- Conditional statements tell our micro:bit what to do when a certain condition is met.
+- We use conditional statements in our own lives too.
+- For example, 'if it is raining, then I will bring an umbrella.' This decision depends on the condition of it raining.
+  hint~ 
+
+
