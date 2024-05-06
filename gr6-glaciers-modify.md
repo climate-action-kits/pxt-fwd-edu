@@ -83,11 +83,20 @@ Looking at the code below, which blocks represent the event?
 hint~
 
 ## Modify Step 3 
-Did you guess that right? 'Button A pressed' is an Event block. <br>What do you think will happen when you press the A button?
+Did you guess that right? ``||Input:on button A pressed||`` is an Event block. <br>What do you think will happen when you press the A button?
 
 ~hint Tell me More
 - Pressing the A button will change the icon on the Micro:bit.
 - It will also start collecting data on light levels!
+hint~
+
+## Modify Step 4 
+
+Let's change the event block from ``||Input:on button A pressed||`` to ``||Input:on button B pressed||`` and see what happens. Click the arrow to open the dropdown menu in the 'on button A pressed' block. Change the event to 'Button B', then download the new code to your Micro:bit.
+
+~hint Tell me More 
+- If you don't see the change on your Micro:bit, check that you've downloaded the new code.
+- Changing to 'Button B' won’t change what happens; your Micro:bit will still show the check mark if everything is set up right!
 hint~
 
 
