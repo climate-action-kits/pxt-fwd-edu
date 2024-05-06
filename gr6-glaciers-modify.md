@@ -2,6 +2,7 @@
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
+datalogger=datalogger
 ```
 ## Activity 1: Build your Project
 Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in four parts!
