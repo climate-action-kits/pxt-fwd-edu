@@ -127,8 +127,15 @@ Two pieces of paper: one white and one black <br>
 Some small rectangles of white paper, folded in half—these are our 'icebergs.'
 
 ~hint Tell me More
-We use black and white paper to show how different parts of our Earth work.
-The black paper is like the ocean. It helps us see how much light and heat the ocean can soak up or bounce off.
-The white paper 'icebergs' help reflect light back up into the sky, which keeps the ocean from getting too warm
+- We use black and white paper to show how different parts of our Earth work.
+- The black paper is like the ocean. It helps us see how much light and heat the ocean can soak up or bounce off.
+- The white paper 'icebergs' help reflect light back up into the sky, which keeps the ocean from getting too warm
 hint~
 
+## Modify Step 7 
+Now, let’s get our code ready to log data. First, unplug your project from the computer. Next, hold down the A button on the micro:bit. While you’re holding it, cover the baseplate with the white paper. Keep holding the button for 8 seconds, then let go and take off the paper.
+
+~hint Tell me More 
+- We start with white paper to see what normal data looks like.
+- Holding the A button for 8 seconds lets our Micro:bit gather a lot of data.
+hint~ 
