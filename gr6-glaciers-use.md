@@ -4,7 +4,7 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger 
 ```
-## Activity 1: Build your Project
+## Activity 1: Build your Project @showdialog 
 Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in three parts!
 1. Build your project
 2. Code your Project 
@@ -33,13 +33,12 @@ We need to connect our project to the computer to make it come to life with code
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
-## Code Step 2 @showhint
+## Code Step 2 @showdialog 
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp) 
 
-## Code  Step 3 
-Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
+
 
 ## Activity 3: Use your Project @showdialog 
 We are now ready to use our **Glacier Tracking System**. Follow the instructions at the top of the screen. <br> When you are ready for more information, click *'Tell me more!'* <br>
@@ -47,10 +46,10 @@ After each change, you will need to ``|Download|`` your updated code for your pr
 
 ## Use Step 1 
 The code below will make our Glacier tracking system measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question. <br>
-Think about the Albedo-Ice Feedback diagram when looking at your project. Which part of this project represents the sun?
+Think about the **Albedo-Ice Feedback** diagram when looking at your project. Which part of this project represents the sun?
 
 ~hint Tell me More 
-- here the LED lights represent the sun.
+- Here the LED lights represent the sun.
 hint~
 
 ```template
@@ -73,7 +72,7 @@ hint~
 Take a look at the code below. What do you think it does? Make some predictions!
 
 ## Use Step 4 
-Got your predictions? Let's see if you were right! Click the 'Download' button to load your code and test it out! 
+Got your predictions? Let's see if you were right! Click the ``|Download|`` button to load your code and test it out! 
 
 ## Use Step 5 
 Since the base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit stores all of this information for us to analyze. At the bottom of your screen, click ``|Show Data Simulator|``. Take a look at the data collected so far, then go back to the code. Try it now! 
