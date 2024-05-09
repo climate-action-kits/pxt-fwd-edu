@@ -25,20 +25,37 @@ basic.forever(function () {
 })
 ```
 ## Build Step 1 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs1.webp)
 
 ## Build Step 2 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs2.webp)
 
 ## Build Step 3 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs3.webp)
 
 ## Build Step 4 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs4.webp)
 
 ## Build Step 5 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs5.webp)
 
 ## Build Step 6 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs6.webp)
 
 ## Build Step 7 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs7.webp)
 
 ## Build Step 8 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs8.webp)
+
+## Build Step 9 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs9.webp)
+
+## Build Step 10 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs10.webp)
+
+## Build Step 11 @showdialog 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs11.webp)
 
 ## Activity 2: Code your Project @showdialog 
 We need to connect our project to the computer to make it come to life with code! <br> The code will be the instructions that tell our micro:bit what to do.
