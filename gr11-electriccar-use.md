@@ -125,4 +125,6 @@ Look at the code in the ``||basic:forever||`` loop. What do you think this will 
 Once you've made a guess, unplug your car from the computer, place it on the floor, and test it out! What happens? <br> 
 Remember, you must press the **A** button to start driving.
 
+## Use Step 6 
+In this project, the sonar sensor functions like the ultrasonic sensors used in real-world applications. Take a look at the second conditional in your code. What do you think ``||fwdSensors:sonar1 distance is over 5 m||`` means for our project? 
 
