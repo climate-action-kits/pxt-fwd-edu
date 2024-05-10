@@ -128,3 +128,21 @@ Remember, you must press the **A** button to start driving.
 ## Use Step 6 
 In this project, the sonar sensor functions like the ultrasonic sensors used in real-world applications. Take a look at the second conditional in your code. What do you think ``||fwdSensors:sonar1 distance is over 5 m||`` means for our project? 
 
+~hint Tell me More!
+- This block of code checks for any objects in the way.
+- It specifically looks to see if anything is within 0.5 meters of the sensor.
+- If it detects something this close, it activates the actions defined in the 'then' part of the conditional to respond to the obstacle.
+hint~
+
+## Use Step 7
+Looking at the code, what happens when an object is in your project's path?
+
+~hint Tell me More
+- When something blocks your project's path, it triggers a sequence of actions:
+- Pause: First, the project will pause for 1000 milliseconds (1 second).
+- Reverse: Then, it drives in reverse.
+- Turn: Finally, the project turns 10 degrees to help navigate away from the obstacle.
+hint~
+
+
+
