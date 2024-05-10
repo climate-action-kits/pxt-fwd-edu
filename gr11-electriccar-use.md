@@ -68,7 +68,8 @@ The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
  Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-<img src=""""https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp"""" width=""""400"""">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
+
 
 ## Code Step 2 @showdialog
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
@@ -80,7 +81,7 @@ Next, click the ``|Download|`` button to download the blank project to start up 
 
 ## Activity 3: Use your Project @showdialog  
 We are now ready to use our Electric vehicle project. Follow the instructions at the top of the screen. 
-When you're ready for more information, click 'Tell me more!'
+When you're ready for more information, click *'Tell me more!'*
 
 ## Use Step 1
 Take a look at your physical project. <br> 
@@ -91,5 +92,14 @@ Which part of this project functions like a vehicle's Electronic Control Unit (E
 hint~
   
 ## Use Step 2 
+Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors?
+
+~hint Tell me More
+- The breakout board with its built-in battery functions like the battery in an electric vehicle. 
+- It provides all the power your project needs to run, just like a vehicle’s battery powers everything from lights to the radio.
+- The sonar sensor mimics the ultrasonic sensors found in electric vehicles. 
+- These sensors detect obstacles around the vehicle, helping to avoid collisions.
+hint~
+
 
 
