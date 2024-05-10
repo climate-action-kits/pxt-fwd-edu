@@ -77,3 +77,19 @@ Next, follow the steps to pair your micro:bit.
 
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
+
+## Activity 3: Use your Project @showdialog  
+We are now ready to use our Electric vehicle project. Follow the instructions at the top of the screen. 
+When you're ready for more information, click 'Tell me more!'
+
+## Use Step 1
+Take a look at your physical project. <br> 
+Which part of this project functions like a vehicle's Electronic Control Unit (ECU), essentially acting as the "brain" of the vehicle?
+
+~hint Tell me More 
+- The micro:bit functions as the "brain" of our project, similar to how the Electronic Control Unit (ECU) operates in real vehicles.
+hint~
+  
+## Use Step 2 
+
+
