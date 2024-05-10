@@ -92,14 +92,24 @@ Which part of this project functions like a vehicle's Electronic Control Unit (E
 hint~
   
 ## Use Step 2 
-Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors?
+Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors within the Electric vehicle?
 
 ~hint Tell me More
-- The breakout board with its built-in battery functions like the battery in an electric vehicle. 
+- The breakout board has built-in battery functions like the battery in an electric vehicle. 
 - It provides all the power your project needs to run, just like a vehicle’s battery powers everything from lights to the radio.
 - The sonar sensor mimics the ultrasonic sensors found in electric vehicles. 
 - These sensors detect obstacles around the vehicle, helping to avoid collisions.
 hint~
+
+## Use Step 3 
+Take a look at the code in the workspace. Why do you think we use the variable ``||Variables:IsDrivingEnabled||``? What might happen if we didn't have it?
+
+~hint  Tell me More!
+- The variable IsDrivingEnabled acts like a switch that controls whether your vehicle can move. 
+- Without this variable, we wouldn't have a simple way to start or stop the vehicle. 
+- If the vehicle was turned on without this variable, it would start moving right away and keep going until it was turned off.
+hint~
+
 
 
 
