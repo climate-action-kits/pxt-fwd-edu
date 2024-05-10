@@ -9,10 +9,10 @@ Let's build an Electric vehicle! We are going to complete this in 3 parts: <br>
 1. Build our wind turbine
 2. Add code to make it move
 3. Use our wind turbine to learn how it works
-4. ![projectrender](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr11-electriccar-render.png)
+![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
 ## Build Step 1 @showdialog 
-![sbs1](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr11-electriccar-sbs1edit.png) 
+![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs1edit.png) 
 
 ## Build Step 2 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs2.png) 
@@ -21,7 +21,7 @@ Let's build an Electric vehicle! We are going to complete this in 3 parts: <br>
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs3.png) 
 
 ## Build Step 3B @showdialog 
-![sbs3b](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/Jessica-forwardedu-patch-1/tutorial-assets/gr11-electriccar-sbs3b.png) 
+![sbs3b](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs3b.png) 
 
 ## Build Step 4 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs4.png) 
