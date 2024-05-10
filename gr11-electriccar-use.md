@@ -120,4 +120,9 @@ What do you think will happen when the **A** button is pressed? What about when 
 - We created the IsDrivingEnabled variable for this exact reason—to give you more control over the vehicle.
 hint~ 
 
+## Use Step 5 
+Look at the code in the ``||basic:forever||`` loop. What do you think this will accomplish? <br>
+Once you've made a guess, unplug your car from the computer, place it on the floor, and test it out! What happens? <br> 
+Remember, you must press the **A** button to start driving.
+
 
