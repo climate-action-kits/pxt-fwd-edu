@@ -144,5 +144,20 @@ Looking at the code, what happens when an object is in your project's path?
 - Turn: Finally, the project turns 10 degrees to help navigate away from the obstacle.
 hint~
 
+## Use Step 8 
+Let’s put our Electric Cars to the test and see how well they can avoid obstacles. Grab some items from around your room to create a simple track. Add a few obstacles along the track to check how well the sonar sensor in the code works. Run your car on the track twice, then come back here for the next step!
+
+## Use Step 9
+Welcome back! What obstacles did you use? How did your Electric Car manage to avoid the obstacles? <br> What did you notice about its performance? <br> Can you think of any ways to improve how the Electric Car functions? 
+
+## Congratulations! @showdialog 
+You've completed the activity! Did anything surprise you about this project? 
+
+## Reflection @ Showdialog 
+List 2 new things you learned today. What is one thing you want to learn more about? 
+
+## Finished! @showdialog 
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
+
 
 
