@@ -62,5 +62,18 @@ Let's build an Electric vehicle! We are going to complete this in 3 parts: <br>
 ## Build Step 16 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs16.png) 
 
+## Activity 2: Code your Project @showdialog 
+We need to connect our project to the computer to make it come to life with code!
+The code will be the instructions that tell our micro:bit what to do. 
 
+## Code Step 1 @showdialog
+ Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+<img src=""""https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp"""" width=""""400"""">
 
+## Code Step 2 @showdialog
+Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Next, follow the steps to pair your micro:bit.
+![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
+
+## Code  Step 3 
+Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
