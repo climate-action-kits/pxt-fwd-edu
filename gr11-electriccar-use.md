@@ -110,6 +110,14 @@ Take a look at the code in the workspace. Why do you think we use the variable `
 - If the vehicle was turned on without this variable, it would start moving right away and keep going until it was turned off.
 hint~
 
+## Use Step 4 
+What do you think will happen when the **A** button is pressed? What about when the **B** button is pressed?
 
+~hint  Tell me More!
+- When you press the A button, it activates the vehicle's driving function, similar to pressing the gas pedal in a car.
+- Pressing the B button stops the car, much like using the brake pedal or turning off the ignition.
+- This setup allows you to control when the vehicle moves and when it remains stationary.
+- We created the IsDrivingEnabled variable for this exact reason—to give you more control over the vehicle.
+hint~ 
 
 
