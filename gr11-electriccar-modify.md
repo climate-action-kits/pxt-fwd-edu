@@ -103,3 +103,23 @@ Can you identify the type of block we use to make this happen?
 ~hint Tell me More 
 - We are adding a decision-making point into the code. What kind of block allows us to do that?
 hint~
+
+## Modify Step 3 
+In the code, the use of two conditional blocks helps the electric vehicle determine what to do when it encounters an obstacle. In this case, it will turn away from the object.
+Let’s test this out: unplug your electric vehicle from your computer, place it on the ground, and press the A button to start driving!
+
+~hint Tell me More   
+- A conditional is a block of code that triggers an action if certain conditions are met. 
+- We use conditionals in real life, too. For example, “If it is raining, then I will take an umbrella.”
+hint~
+
+## Modify Step 4 
+Within our second conditional, the block  ``||fwdSensors:sonar1 distance is over 5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
+What do you think will happen if we decrease this distance? 
+Try it out—click on  ``||fwdSensors:sonar1 distance is over 5 m||``  and change it to  ``||fwdSensors:sonar1 distance is over  2m||``.
+
+~hint Tell me More!
+- To apply your changes, click Download at the bottom of the page. 
+- Then, unplug your project from the computer to test the new code.
+hint~ 
+
