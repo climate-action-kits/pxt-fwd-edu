@@ -8,8 +8,8 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 Let's build an electric vehicle! We are going to complete this in 3 parts: 
 1. Build our electric vehicle
 2. Add code to make it move
-3. Modify the code forour electric vehicle to learn how it works
-4. Comeplete a short challenge to improve your electric vehicle
+3. Modify the code for our electric vehicle to learn how it works
+4. Complete a short challenge to improve your electric vehicle
 
    ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
@@ -81,7 +81,9 @@ Next, follow the steps to pair your micro:bit.
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
-## Activity 3: Use your Project @showdialog  
-We are now ready to use our Electric vehicle project. Follow the instructions at the top of the screen. 
-When you're ready for more information, click *'Tell me more!'*
+## Activity 3: Modify your Project @showdialog  
+We are now ready to modify our electric vehicle project. Follow the instructions at the top of the screen. 
+When you're ready for more information, click *'Tell me more!'* <br>
+After each change to the code, you will need to download the updated code to your project.
+
 
