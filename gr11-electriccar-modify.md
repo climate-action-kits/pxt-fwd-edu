@@ -156,4 +156,7 @@ Start by having the Electric vehicle pause before making its next move. Click on
 - Click Download at the bottom of the page to update the new code to your micro:bit.
 hint~
 
+## Challenge Step 2 
+Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
+Click on ``||basic||``, drag another ``||basic:pause 1000||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
