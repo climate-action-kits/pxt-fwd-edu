@@ -160,3 +160,52 @@ hint~
 Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
 Click on ``||basic||``, drag another ``||basic:pause 1000||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
+
+~hint Tell me More 
+- What should the vehicle do after the pause? Should it turn in another direction or reverse?
+- The "Pause 100" block delays the vehicle's next action for 100 milliseconds, or 0.1 seconds. 
+- This short break allows you to better manage how the vehicle reacts to obstacles.
+- Click Download at the bottom of the page to update the new code to your micro:bit. 
+hint~
+
+## Challenge Step 3 
+Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  ``||fwdMotors:Turn 15°||`` in  action.
+
+Click on ``||basic||``, drag another ``||basic:pause 1000||``, and place it just below the turn 15 in place within the second  ``||Logic:if else||`` block.
+
+~hint Tell me More 
+- Adding a pause both before and after the turn action can help simulate a more realistic driving scenario.
+- It gives the vehicle a moment to 'decide' its next move, much like a driver would at a crossroads. 
+- This setup not only makes the vehicle's movements more deliberate but also easier to observe and adjust during testing.
+hint~
+
+## Challenge Step 4 
+Now that we have added another Pause block, we need to help the electric car get out of tight situations.
+ Click on  ``||fwdMotors:Motors||`` drag and drop `||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 1000||``block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.'.  <br> Then download the new code to test it.
+
+~hint Tell me More 
+- By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
+- Don’t see the change in your code? Don’t forget to download the updated code by plugging in your micro:bit.
+- Remember just in case leave the breakout off when connected to your computer.
+hint~ 
+
+## Challenge Step 5 
+What did you think of the updated code? Now, the electric car follows a more complex series of actions when it encounters an obstacle. For an extra challenge, click on 'Motors' and drag the 'stop all motors' block into the workspace. 
+Where do you think it would be best to place it?
+
+~hint 
+- Place 'stop all motors' as the first action in the sequence.
+- By positioning the 'stop all motors' block at the start, we ensure that the electric car halts immediately, allowing any obstacles to clear from its path. 
+- This is an excellent safety feature, similar to emergency stop systems used in real-world vehicles.
+hint~
+
+## Congratulations @showdialog 
+You've completed the activity! What did you think?
+
+## Reflection @showdialog 
+Think about something about this project that challenged you. <br> How did you overcome the challenge? How did that make you feel?
+
+## Finished 
+In the next step, you can click the ``||Done||`` button to finish the tutorial. 
+
+ 
