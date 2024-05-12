@@ -86,4 +86,20 @@ We are now ready to modify our electric vehicle project. Follow the instructions
 When you're ready for more information, click *'Tell me more!'* <br>
 After each change to the code, you will need to download the updated code to your project.
 
+## Modify Step 1 
+In this project, we use the sonar sensor to detect obstacles in the path of our electric vehicle. 
+Take a look at the code in the workspace below. What do you think will happen when there's an obstacle? Make a prediction!
 
+~hint  Tell me More!
+- The sonar sensor works similarly to how bats find their way around. It sends out sound waves and checks how long they take to bounce back after hitting an object.
+- Depending on what the sensor picks up, our electric vehicle can decide to keep going, slow down, or turn to avoid hitting something.
+hint~
+  
+## Modify Step 2 
+
+The code below directs the electric car to turn 15 degrees when it encounters an obstacle, controlled by the  ``||fwdMotors:Turn 0°||`` block.
+Can you identify the type of block we use to make this happen?
+
+~hint Tell me More 
+- We are adding a decision-making point into the code. What kind of block allows us to do that?
+hint~
