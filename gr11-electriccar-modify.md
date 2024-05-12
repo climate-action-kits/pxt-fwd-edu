@@ -123,3 +123,22 @@ Try it out—click on  ``||fwdSensors:sonar1 distance is over 5 m||``  and chang
 - Then, unplug your project from the computer to test the new code.
 hint~ 
 
+## Modify Step 5 
+Was your guess right? By lowering the threshold from 0.5 to 0.2 meters, your electric car now gets closer to objects before it turns and stops. This change has several benefits, including fewer false triggers from the sonar sensor!
+
+~hint Tell me More 
+- A smaller distance setting can be good in environments where the vehicle might react to distant objects that aren’t directly in its path. 
+-It will now ignore objects that are further than 0.2 meters away, focusing only on those that are immediately in front of it.
+hint~
+
+## Modify Step 6 
+Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios.
+
+What do you predict will happen with each change?
+
+~hint Tell me More 
+- Try testing your project in the same location after each adjustment to collect consistent data.
+- Consider adding or removing obstacles for another round of testing to see how well the vehicle adapts to different environments.
+- Don’t forget to click the Download button at the bottom of the page to update your code with each change.
+hint~ 
+
