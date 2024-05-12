@@ -142,3 +142,18 @@ What do you predict will happen with each change?
 - Don’t forget to click the Download button at the bottom of the page to update your code with each change.
 hint~ 
 
+## Challenge Time! @showdialog
+You might have noticed that with a shorter sonar distance, your electric vehicle ends up in tighter spots. Simply turning might not always be the best response. Let’s teach our electric car some new tricks for when it encounters obstacles.
+Think about what instructions we could add to the code to solve this problem. 
+
+## Challenge Step 1 
+Start by having the Electric vehicle pause before making its next move. Click on ``||basic||``, drag the ``||basic:pause 1000||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
+
+~hint Tell me More 
+- What should the vehicle do after the pause? Should it turn in another direction or reverse?
+- The "Pause 100" block delays the vehicle's next action for 100 milliseconds or 0.1 seconds. 
+- This short break allows you to better manage how the vehicle reacts to obstacles.
+- Click Download at the bottom of the page to update the new code to your micro:bit.
+hint~
+
+
