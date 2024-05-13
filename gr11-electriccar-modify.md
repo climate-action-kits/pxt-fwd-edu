@@ -86,6 +86,36 @@ We are now ready to modify our electric vehicle project. Follow the instructions
 When you're ready for more information, click *'Tell me more!'* <br>
 After each change to the code, you will need to download the updated code to your project.
 
+```template
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = true
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = false
+})
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+-35
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.stop()
+            basic.pause(1000)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+            basic.pause(1000)
+            fwdMotors.turn(10)
+            basic.pause(1000)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 ## Modify Step 1 
 In this project, we use the sonar sensor to detect obstacles in the path of our electric vehicle. 
 Take a look at the code in the workspace below. What do you think will happen when there's an obstacle? Make a prediction!
