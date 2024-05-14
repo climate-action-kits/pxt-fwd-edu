@@ -79,8 +79,35 @@ Next, follow the steps to pair your micro:bit.
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
+```template 
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = true
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = false
+})
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+-35
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(1000)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+            fwdMotors.turn(10)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 ## Activity 3: Use your Project @showdialog  
-We are now ready to use our Electric vehicle project. Follow the instructions at the top of the screen. 
+We are now ready to use our electric vehicle project. Follow the instructions at the top of the screen. <br> 
 When you're ready for more information, click *'Tell me more!'*
 
 ## Use Step 1
