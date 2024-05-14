@@ -5,13 +5,13 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project 
-Let's build an electric vehicle! We are going to complete this in 3 parts: 
+Let's build an electric vehicle! We are going to complete this in 4 parts: 
 1. Build our electric vehicle
 2. Add code to make it move
 3. Modify the code for our electric vehicle to learn how it works
 4. Complete a short challenge to improve your electric vehicle
 
-   ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
+  ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
 ## Build Step 1 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs1edit.png) 
@@ -81,6 +81,8 @@ Next, follow the steps to pair your micro:bit.
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
+Note: Just to be safe when the electric car project is not in use (i.e. plugged into your computer) turn off the breakout board to prevent it from driving away by accident. 
+
 ## Activity 3: Modify your Project @showdialog  
 We are now ready to modify our electric vehicle project. Follow the instructions at the top of the screen. 
 When you're ready for more information, click *'Tell me more!'* <br>
@@ -124,6 +126,22 @@ Take a look at the code in the workspace below. What do you think will happen wh
 - The sonar sensor works similarly to how bats find their way around. It sends out sound waves and checks how long they take to bounce back after hitting an object.
 - Depending on what the sensor picks up, our electric vehicle can decide to keep going, slow down, or turn to avoid hitting something.
 hint~
+
+```blocks
+basic.forever(function () {
+    let IsDrivingEnabled = 0
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.turn(15)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+
+```
   
 ## Modify Step 2 
 
@@ -146,7 +164,7 @@ hint~
 ## Modify Step 4 
 Within our second conditional, the block  ``||fwdSensors:sonar1 distance is over 5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
 What do you think will happen if we decrease this distance? 
-Try it out—click on  ``||fwdSensors:sonar1 distance is over 5 m||``  and change it to  ``||fwdSensors:sonar1 distance is over  2m||``.
+Try it out—click on  ``||fwdSensors:sonar1 distance is over 5 m||``  and change it to  ``||fwdSensors:sonar1 distance is over  2m||``. 
 
 ~hint Tell me More!
 - To apply your changes, click Download at the bottom of the page. 
@@ -154,7 +172,7 @@ Try it out—click on  ``||fwdSensors:sonar1 distance is over 5 m||``  and chang
 hint~ 
 
 ## Modify Step 5 
-Was your guess right? By lowering the threshold from 0.5 to 0.2 meters, your electric car now gets closer to objects before it turns and stops. This change has several benefits, including fewer false triggers from the sonar sensor!
+Did you test your electric vehicle? Was your guess right? By lowering the threshold from 0.5 to 0.2 meters, your electric car now gets closer to objects before it turns and stops. This change has several benefits, including fewer false triggers from the sonar sensor!
 
 ~hint Tell me More 
 - A smaller distance setting can be good in environments where the vehicle might react to distant objects that aren’t directly in its path. 
@@ -162,8 +180,7 @@ Was your guess right? By lowering the threshold from 0.5 to 0.2 meters, your ele
 hint~
 
 ## Modify Step 6 
-Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios.
-
+Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
 What do you predict will happen with each change?
 
 ~hint Tell me More 
@@ -173,7 +190,7 @@ What do you predict will happen with each change?
 hint~ 
 
 ## Challenge Time! @showdialog
-You might have noticed that with a shorter sonar distance, your electric vehicle ends up in tighter spots. Simply turning might not always be the best response. Let’s teach our electric car some new tricks for when it encounters obstacles.
+You might have noticed that with a shorter sonar distance, your electric vehicle ends up in tighter spots. Simply turning might not always be the best response. Let’s teach our electric car some new tricks for when it encounters obstacles.<br>
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
