@@ -256,7 +256,25 @@ Now that we have added another Pause block, we need to help the electric car get
 - By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
 - Don’t see the change in your code? Don’t forget to download the updated code by plugging in your micro:bit.
 - Remember just in case leave the breakout off when connected to your computer.
-hint~ 
+hint~
+
+```blocks
+basic.forever(function () {
+    let IsDrivingEnabled = 0
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(100)
+            fwdMotors.turn(15)
+            basic.pause(100)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 
 ## Challenge Step 4 
 What did you think of the updated code? Now, the electric car follows a more complex series of actions when it encounters an obstacle. For an extra challenge, click on ``||fwdMotors:Motors||`` and drag the ``||fwdMotors:stop motors||`` block into the workspace. 
@@ -267,6 +285,25 @@ Where do you think it would be best to place it?
 - By positioning the 'stop all motors' block at the start, we ensure that the electric car halts immediately, allowing any obstacles to clear from its path. 
 - This is an excellent safety feature, similar to emergency stop systems used in real-world vehicles.
 hint~
+
+```blocks
+basic.forever(function () {
+    let IsDrivingEnabled = 0
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.stop()
+            basic.pause(100)
+            fwdMotors.turn(15)
+            basic.pause(100)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 
 ## Congratulations @showdialog 
 You've completed the activity! What did you think?
