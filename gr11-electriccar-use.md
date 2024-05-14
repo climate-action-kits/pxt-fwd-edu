@@ -5,10 +5,10 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
-Let's build an Electric vehicle! We are going to complete this in 3 parts: <br>
-1. Build our wind turbine
-2. Add code to make it move
-3. Use our wind turbine to learn how it works
+Let's build an electric vehicle! We are going to complete this in 3 parts: <br>
+1. Build our electric vehicle.
+2. Add code to make it move.
+3. Use our electric vechile to learn how it works.
 ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
 ## Build Step 1 @showdialog 
