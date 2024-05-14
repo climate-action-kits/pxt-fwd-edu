@@ -4,7 +4,7 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 ```
-## Activity 1: Build your Project 
+## Activity 1: Build your Project @showdialog 
 Let's build an electric vehicle! We are going to complete this in 4 parts: 
 1. Build our electric vehicle
 2. Add code to make it move
@@ -145,15 +145,15 @@ basic.forever(function () {
   
 ## Modify Step 2 
 
-The code below directs the electric car to turn 15 degrees when it encounters an obstacle, controlled by the  ``||fwdMotors:Turn 0°||`` block.
+The code below directs the electric car to turn 15 degrees when it encounters an obstacle, controlled by the  ``||fwdMotors:Turn 0° in place||`` block.
 Can you identify the type of block we use to make this happen?
 
 ~hint Tell me More 
-- We are adding a decision-making point into the code. What kind of block allows us to do that?
+- We are adding a decision-making point to the code. What kind of block allows us to do that?
 hint~
 
 ## Modify Step 3 
-In the code, the use of two conditional blocks helps the electric vehicle determine what to do when it encounters an obstacle. In this case, it will turn away from the object.
+In the code, the use of two conditional blocks helps the electric vehicle determine what to do when it encounters an obstacle. In this case, it will turn away from the object. <br>
 Let’s test this out: unplug your electric vehicle from your computer, place it on the ground, and press the A button to start driving!
 
 ~hint Tell me More   
@@ -194,7 +194,7 @@ You might have noticed that with a shorter sonar distance, your electric vehicle
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
-Start by having the Electric vehicle pause before making its next move. Click on ``||basic||``, drag the ``||basic:pause 1000||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
+Start by having the Electric vehicle pause before making its next move. Click on ``||basic||``, drag the ``||basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
@@ -222,7 +222,7 @@ basic.forever(function () {
 ## Challenge Step 2 
 Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
-Click on ``||basic||``, drag another ``||basic:pause 1000||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
+Click on ``||basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
@@ -250,7 +250,7 @@ basic.forever(function () {
 
 ## Challenge Step 3  
 Now that we have added another Pause block, we need to help the electric car get out of tight situations.
- Click on  ``||fwdMotors:Motors||`` drag and drop `||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 1000||``block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.'.  <br> Then download the new code to test it.
+ Click on  ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 100||` block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.  <br> Then download the new code to test it.
 
 ~hint Tell me More 
 - By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
@@ -280,7 +280,7 @@ basic.forever(function () {
 What did you think of the updated code? Now, the electric car follows a more complex series of actions when it encounters an obstacle. For an extra challenge, click on ``||fwdMotors:Motors||`` and drag the ``||fwdMotors:stop motors||`` block into the workspace. 
 Where do you think it would be best to place it?
 
-~hint 
+~hint Tell me More
 - Place 'stop all motors' as the first action in the sequence.
 - By positioning the 'stop all motors' block at the start, we ensure that the electric car halts immediately, allowing any obstacles to clear from its path. 
 - This is an excellent safety feature, similar to emergency stop systems used in real-world vehicles.
