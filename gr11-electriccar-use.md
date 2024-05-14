@@ -6,9 +6,9 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
 Let's build an electric vehicle! We are going to complete this in 3 parts: <br>
-1. Build our electric vehicle.
-2. Add code to make it move.
-3. Use our electric vehicle to learn how it works.
+1. Build our electric vehicle
+2. Add code to make it move
+3. Use our electric vehicle to learn how it works
 ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
 ## Build Step 1 @showdialog 
@@ -122,7 +122,7 @@ hint~
 Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors within the Electric vehicle?
 
 ~hint Tell me More
-- The breakout board has built-in battery it functions like the battery in an electric vehicle. 
+- The breakout board has a built-in battery that functions like the battery in an electric vehicle. 
 - It provides all the power your project needs to run, just like a vehicle’s battery powers everything from lights to the radio.
 - The sonar sensor mimics the ultrasonic sensors found in electric vehicles. 
 - These sensors detect obstacles around the vehicle, helping to avoid collisions.
@@ -172,10 +172,10 @@ Looking at the code, what happens when an object is in your project's path?
 hint~
 
 ## Use Step 8 
-Let’s put our Electric Cars to the test and see how well they can avoid obstacles. Grab some items from around your room to create a simple track. Add a few obstacles along the track to check how well the sonar sensor in the code works. Run your car on the track twice, then come back here for the next step!
+Let’s put our electric cars to the test and see how well they can avoid obstacles. Grab some items from around your room to create a simple track. Add a few obstacles along the track to check how well the sonar sensor in the code works. Run your car on the track twice, then come back here for the next step!
 
 ## Use Step 9
-Welcome back! What obstacles did you use? How did your Electric Car manage to avoid the obstacles? <br> What did you notice about its performance? <br> Can you think of any ways to improve how the Electric Car functions? 
+**Welcome back!** What obstacles did you use? How did your Electric Car manage to avoid the obstacles? <br> What did you notice about its performance? <br> Can you think of any ways to improve how the Electric Car functions? 
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
