@@ -203,6 +203,22 @@ Start by having the Electric vehicle pause before making its next move. Click on
 - Click Download at the bottom of the page to update the new code to your micro:bit.
 hint~
 
+```blocks
+basic.forever(function () {
+    let IsDrivingEnabled = 0
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(100)
+            fwdMotors.turn(15)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
+
 ## Challenge Step 2 
 Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
@@ -215,18 +231,24 @@ Click on ``||basic||``, drag another ``||basic:pause 1000||``, and place it just
 - Click Download at the bottom of the page to update the new code to your micro:bit. 
 hint~
 
-## Challenge Step 3 
-Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  ``||fwdMotors:Turn 15°||`` in  action.
+```blocks
+basic.forever(function () {
+    let IsDrivingEnabled = 0
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(100)
+            fwdMotors.turn(15)
+            basic.pause(100)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 
-Click on ``||basic||``, drag another ``||basic:pause 1000||``, and place it just below the turn 15 in place within the second  ``||Logic:if else||`` block.
-
-~hint Tell me More 
-- Adding a pause both before and after the turn action can help simulate a more realistic driving scenario.
-- It gives the vehicle a moment to 'decide' its next move, much like a driver would at a crossroads. 
-- This setup not only makes the vehicle's movements more deliberate but also easier to observe and adjust during testing.
-hint~
-
-## Challenge Step 4 
+## Challenge Step 3  
 Now that we have added another Pause block, we need to help the electric car get out of tight situations.
  Click on  ``||fwdMotors:Motors||`` drag and drop `||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 1000||``block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.'.  <br> Then download the new code to test it.
 
@@ -236,8 +258,8 @@ Now that we have added another Pause block, we need to help the electric car get
 - Remember just in case leave the breakout off when connected to your computer.
 hint~ 
 
-## Challenge Step 5 
-What did you think of the updated code? Now, the electric car follows a more complex series of actions when it encounters an obstacle. For an extra challenge, click on 'Motors' and drag the 'stop all motors' block into the workspace. 
+## Challenge Step 4 
+What did you think of the updated code? Now, the electric car follows a more complex series of actions when it encounters an obstacle. For an extra challenge, click on ``||fwdMotors:Motors||`` and drag the ``||fwdMotors:stop motors||`` block into the workspace. 
 Where do you think it would be best to place it?
 
 ~hint 
