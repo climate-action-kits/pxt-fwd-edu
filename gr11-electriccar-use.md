@@ -8,7 +8,7 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 Let's build an electric vehicle! We are going to complete this in 3 parts: <br>
 1. Build our electric vehicle.
 2. Add code to make it move.
-3. Use our electric vechile to learn how it works.
+3. Use our electric vehicle to learn how it works.
 ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
 ## Build Step 1 @showdialog 
@@ -63,7 +63,7 @@ Let's build an electric vehicle! We are going to complete this in 3 parts: <br>
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs16.png) 
 
 ## Activity 2: Code your Project @showdialog 
-We need to connect our project to the computer to make it come to life with code!
+We need to connect our project to the computer to make it come to life with code!<br>
 The code will be the instructions that tell our micro:bit what to do. 
 
 ## Code Step 1 @showdialog
@@ -122,7 +122,7 @@ hint~
 Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors within the Electric vehicle?
 
 ~hint Tell me More
-- The breakout board has built-in battery functions like the battery in an electric vehicle. 
+- The breakout board has built-in battery it functions like the battery in an electric vehicle. 
 - It provides all the power your project needs to run, just like a vehicle’s battery powers everything from lights to the radio.
 - The sonar sensor mimics the ultrasonic sensors found in electric vehicles. 
 - These sensors detect obstacles around the vehicle, helping to avoid collisions.
@@ -149,7 +149,7 @@ hint~
 
 ## Use Step 5 
 Look at the code in the ``||basic:forever||`` loop. What do you think this will accomplish? <br>
-Once you've made a guess, unplug your car from the computer, place it on the floor, and test it out! What happens? <br> 
+Once you've made a guess, unplug your project from the computer, place it on the floor, and test it out! What happens? <br> 
 Remember, you must press the **A** button to start driving.
 
 ## Use Step 6 
