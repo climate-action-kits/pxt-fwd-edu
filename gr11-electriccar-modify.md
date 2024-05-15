@@ -1,14 +1,14 @@
-# Autonomous Electric Vehicles of the Future 
+# Autonomous Electric Cars of the Future 
 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
-Let's build an electric vehicle! We are going to complete this in 4 parts: 
+Let's build an electric car! We are going to complete this in 4 parts: 
 1. Build our electric vehicle
 2. Add code to make it move
-3. Modify the code for our electric vehicle to learn how it works
+3. Modify the code for our electric car to learn how it works
 4. Complete a short challenge to improve your electric vehicle
 
   ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
