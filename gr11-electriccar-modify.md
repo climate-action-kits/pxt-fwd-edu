@@ -74,12 +74,12 @@ The code will be the instructions that tell our micro:bit what to do.
 
 
 ## Code Step 2 @showdialog
-Click the three dots beside ``|Download|`` button, and click on _Connect Device_.
+Click the three dots beside the  ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code  Step 3 
-Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
+Next, click the ``|Download|`` button to download the code to your project. 
 
 Note: You may want to prop your electric vehicle up on something so it doesn't drive away by accident while still plugged into the computer. 
 
@@ -174,6 +174,7 @@ What do you think will happen if we decrease this distance?
 Try it out—click on  ``||fwdSensors:sonar1 distance is under 0.5 m||``  and change it to  ``||fwdSensors:sonar1 distance is under  0.2m||``. 
 
 ~hint Tell me More!
+- Plug your electric car back into your computer. 
 - To apply your changes, click Download at the bottom of the page. 
 - Then, unplug your project from the computer to test the new code.
 hint~
@@ -214,7 +215,7 @@ hint~
 
 ## Modify Step 6 
 Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is under  0.2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
-What do you predict will happen with each change?
+What do you predict will happen with each change? How could the shape of an obstacle make a difference with the sonar?
 
 ~hint Tell me More! 
 - Try testing your project in the same location after each adjustment to collect consistent data.
@@ -222,12 +223,18 @@ What do you predict will happen with each change?
 - Don’t forget to click the Download button at the bottom of the page to update your code with each change.
 hint~ 
 
+## Modify Step 7 
+Which one of those values gave your electric car the best result? Update your ``||fwdSensors:sonar1 distance is under 0 m||`` with the measurement that works best.
+
+
 ## Challenge Time! @showdialog
 You might have noticed that with a shorter sonar distance, your electric vehicle ends up in tighter spots. Simply turning might not always be the best response. Let’s teach our electric car some new tricks for when it encounters obstacles.<br>
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
-Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15° in place||`` in the second  ``||Logic:if else||`` block.
+Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15° in place||`` in the second  ``||Logic:if else||`` block.  Change Pause 100  to Pause 1000. 
+ Change Pause 100  to Pause 1000. 
+
 
 ~hint Tell me More! 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
@@ -253,15 +260,15 @@ basic.forever(function () {
 ```
 
 ## Challenge Step 2 
-Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
+Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our``||fwdMotors:turn 15° in place||`` action.
 
-Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15° in place||`` within the second  ``||Logic:if else||`` block.
+Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:turn 15° in place||`` within the second  ``||Logic:if else||`` block.  Change ``||basic:pause 100||``  to ``||basic:pause 1000||`` 
+
 
 ~hint Tell me More! 
-- What should the vehicle do after the pause? Should it turn in another direction or reverse?
-- The "Pause 100" block delays the vehicle's next action for 100 milliseconds or 0.1 seconds. 
-- This short break allows you to better manage how the vehicle reacts to obstacles.
-- Click Download at the bottom of the page to update the new code to your micro:bit. 
+- Adding a pause both before and after the turn action can help simulate a more realistic driving scenario.
+- It gives the vehicle a moment to 'decide' its next move, much like a driver would at a crossroads. 
+- This setup not only makes the vehicle's movements more deliberate but also easier to observe and adjust during testing.
 hint~
 
 ```blocks
