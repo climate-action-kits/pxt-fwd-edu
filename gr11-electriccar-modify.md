@@ -74,7 +74,7 @@ The code will be the instructions that tell our micro:bit what to do.
 
 
 ## Code Step 2 @showdialog
-Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Click the three dots beside ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
@@ -141,26 +141,27 @@ basic.forever(function () {
   
 ## Modify Step 2 
 
-The code below directs the electric car to ``||fwdMotors:turn 15° in place||``  when it encounters an obstacle, controlled by the  ``||fwdMotors:turn 15° in place||`` block.
+The code below directs the electric car to ``||fwdMotors:turn 15 degrees in place||`` when it encounters an obstacle.
+
 Can you identify the type of block we use to make this happen?
 
-~hint Tell me More 
+~hint Tell me More! 
 - We are adding a decision-making point to the code. What kind of block allows us to do that?
 hint~
 
 ## Modify Step 3 
 In the code, the use of two conditional blocks helps the electric vehicle determine what to do when it encounters an obstacle. In this case, it will turn away from the object. <br>
-Let’s test this out: unplug your electric vehicle from your computer, place it on the ground, and press the **A**  button to start driving!
+Let’s test this out: unplug your electric vehicle from your computer, place it on the ground, and press the **A**  button to start driving! Press **B** once you are ready to stop the car.
 
-~hint Tell me More   
+~hint Tell me More!   
 - A conditional is a block of code that triggers an action if certain conditions are met. 
 - We use conditionals in real life, too. For example, “If it is raining, then I will take an umbrella.”
 hint~
 
 ## Modify Step 4 
-Within our second conditional, the block  ``||fwdSensors:sonar1 distance is over 0.5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
+Within our second conditional, the block  ``||fwdSensors:sonar1 distance is under 0.5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
 What do you think will happen if we decrease this distance? 
-Try it out—click on  ``||fwdSensors:sonar1 distance is over 0.5 m||``  and change it to  ``||fwdSensors:sonar1 distance is over  0.2m||``. 
+Try it out—click on  ``||fwdSensors:sonar1 distance is under 0.5 m||``  and change it to  ``||fwdSensors:sonar1 distance is under  0.2m||``. 
 
 ~hint Tell me More!
 - To apply your changes, click Download at the bottom of the page. 
@@ -196,16 +197,16 @@ basic.forever(function () {
 ## Modify Step 5 
 Did you test your electric vehicle? Was your guess right? By lowering the threshold from 0.5 to 0.2 meters, your electric car now gets closer to objects before it turns and stops. This change has several benefits, including fewer false triggers from the sonar sensor!
 
-~hint Tell me More 
+~hint Tell me More! 
 - A smaller distance setting can be good in environments where the vehicle might react to distant objects that aren’t directly in its path. 
--It will now ignore objects that are further than 0.2 meters away, focusing only on those that are immediately in front of it.
+- It will now ignore objects that are further than 0.2 meters away, focusing only on those that are immediately in front of it.
 hint~
 
 ## Modify Step 6 
-Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  0.2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
+Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is under  0.2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
 What do you predict will happen with each change?
 
-~hint Tell me More 
+~hint Tell me More! 
 - Try testing your project in the same location after each adjustment to collect consistent data.
 - Consider adding or removing obstacles for another round of testing to see how well the vehicle adapts to different environments.
 - Don’t forget to click the Download button at the bottom of the page to update your code with each change.
@@ -216,9 +217,9 @@ You might have noticed that with a shorter sonar distance, your electric vehicle
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
-Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
+Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15° in place||`` in the second  ``||Logic:if else||`` block.
 
-~hint Tell me More 
+~hint Tell me More! 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
 - The "Pause 100" block delays the vehicle's next action for 100 milliseconds or 0.1 seconds. 
 - This short break allows you to better manage how the vehicle reacts to obstacles.
@@ -244,11 +245,11 @@ basic.forever(function () {
 ## Challenge Step 2 
 Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
-Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
+Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15° in place||`` within the second  ``||Logic:if else||`` block.
 
-~hint Tell me More 
+~hint Tell me More! 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
-- The "Pause 100" block delays the vehicle's next action for 100 milliseconds, or 0.1 seconds. 
+- The "Pause 100" block delays the vehicle's next action for 100 milliseconds or 0.1 seconds. 
 - This short break allows you to better manage how the vehicle reacts to obstacles.
 - Click Download at the bottom of the page to update the new code to your micro:bit. 
 hint~
@@ -274,7 +275,7 @@ basic.forever(function () {
 Now that we have added another Pause block, we need to help the electric car get out of tight situations.
  Click on  ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 100||`` block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.  <br> Then download the new code to test it.
 
-~hint Tell me More 
+~hint Tell me More! 
 - By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
 - Don’t see the change in your code? Don’t forget to download the updated code by plugging in your micro:bit.
 - Remember just in case leave the breakout off when connected to your computer.
@@ -302,7 +303,7 @@ basic.forever(function () {
 What did you think of the updated code? Now, the electric car follows a more complex series of actions when it encounters an obstacle. For an extra challenge, click on ``||fwdMotors:Motors||`` and drag the ``||fwdMotors:stop motors||`` block into the workspace. 
 Where do you think it would be best to place it?
 
-~hint Tell me More
+~hint Tell me More!
 - Place 'stop all motors' as the first action in the sequence.
 - By positioning the 'stop all motors' block at the start, we ensure that the electric car halts immediately, allowing any obstacles to clear from its path. 
 - This is an excellent safety feature, similar to emergency stop systems used in real-world vehicles.
