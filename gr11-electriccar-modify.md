@@ -158,6 +158,16 @@ Let’s test this out: unplug your electric vehicle from your computer, place it
 - We use conditionals in real life, too. For example, “If it is raining, then I will take an umbrella.”
 hint~
 
+```blocks
+let IsDrivingEnabled = false
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = true
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = false
+})
+```
+
 ## Modify Step 4 
 Within our second conditional, the block  ``||fwdSensors:sonar1 distance is under 0.5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
 What do you think will happen if we decrease this distance? 
