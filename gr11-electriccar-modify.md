@@ -345,6 +345,6 @@ You've completed the activity! What did you think?
 Think about something about this project that challenged you. <br> How did you overcome the challenge? How did that make you feel?
 
 ## Finished 
-In the next step, you can click the ``||Done||`` button to finish the tutorial. 
+In the next step, you can click the ``|Done|`` button to finish the tutorial. 
 
  
