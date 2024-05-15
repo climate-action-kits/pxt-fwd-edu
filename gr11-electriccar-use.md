@@ -5,10 +5,10 @@ fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 ## Activity 1: Build your Project @showdialog 
-Let's build an Electric vehicle! We are going to complete this in 3 parts: <br>
-1. Build our wind turbine
+Let's build an electric vehicle! We are going to complete this in 3 parts: <br>
+1. Build our electric vehicle
 2. Add code to make it move
-3. Use our wind turbine to learn how it works
+3. Use our electric vehicle to learn how it works
 ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-render.png)
 
 ## Build Step 1 @showdialog 
@@ -63,7 +63,7 @@ Let's build an Electric vehicle! We are going to complete this in 3 parts: <br>
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr11-electriccar-sbs16.png) 
 
 ## Activity 2: Code your Project @showdialog 
-We need to connect our project to the computer to make it come to life with code!
+We need to connect our project to the computer to make it come to life with code!<br>
 The code will be the instructions that tell our micro:bit what to do. 
 
 ## Code Step 1 @showdialog
@@ -79,8 +79,35 @@ Next, follow the steps to pair your micro:bit.
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
+```template 
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = true
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = false
+})
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+-35
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(1000)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+            fwdMotors.turn(10)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 ## Activity 3: Use your Project @showdialog  
-We are now ready to use our Electric vehicle project. Follow the instructions at the top of the screen. 
+We are now ready to use our electric vehicle project. Follow the instructions at the top of the screen. <br> 
 When you're ready for more information, click *'Tell me more!'*
 
 ## Use Step 1
@@ -95,7 +122,7 @@ hint~
 Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors within the Electric vehicle?
 
 ~hint Tell me More
-- The breakout board has built-in battery functions like the battery in an electric vehicle. 
+- The breakout board has a built-in battery that functions like the battery in an electric vehicle. 
 - It provides all the power your project needs to run, just like a vehicle’s battery powers everything from lights to the radio.
 - The sonar sensor mimics the ultrasonic sensors found in electric vehicles. 
 - These sensors detect obstacles around the vehicle, helping to avoid collisions.
@@ -122,7 +149,7 @@ hint~
 
 ## Use Step 5 
 Look at the code in the ``||basic:forever||`` loop. What do you think this will accomplish? <br>
-Once you've made a guess, unplug your car from the computer, place it on the floor, and test it out! What happens? <br> 
+Once you've made a guess, unplug your project from the computer, place it on the floor, and test it out! What happens? <br> 
 Remember, you must press the **A** button to start driving.
 
 ## Use Step 6 
@@ -133,6 +160,22 @@ In this project, the sonar sensor functions like the ultrasonic sensors used in 
 - It specifically looks to see if anything is within 0.5 meters of the sensor.
 - If it detects something this close, it activates the actions defined in the 'then' part of the conditional to respond to the obstacle.
 hint~
+
+```blocks
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(1000)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+            fwdMotors.turn(10)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 
 ## Use Step 7
 Looking at the code, what happens when an object is in your project's path?
@@ -145,10 +188,10 @@ Looking at the code, what happens when an object is in your project's path?
 hint~
 
 ## Use Step 8 
-Let’s put our Electric Cars to the test and see how well they can avoid obstacles. Grab some items from around your room to create a simple track. Add a few obstacles along the track to check how well the sonar sensor in the code works. Run your car on the track twice, then come back here for the next step!
+Let’s put our electric cars to the test and see how well they can avoid obstacles. Grab some items from around your room to create a simple track. Add a few obstacles along the track to check how well the sonar sensor in the code works. Run your car on the track twice, then come back here for the next step!
 
 ## Use Step 9
-Welcome back! What obstacles did you use? How did your Electric Car manage to avoid the obstacles? <br> What did you notice about its performance? <br> Can you think of any ways to improve how the Electric Car functions? 
+**Welcome back!** What obstacles did you use? How did your Electric Car manage to avoid the obstacles? <br> What did you notice about its performance? <br> Can you think of any ways to improve how the Electric Car functions? 
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
