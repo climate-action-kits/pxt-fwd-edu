@@ -72,12 +72,12 @@ The code will be the instructions that tell our micro:bit what to do.
 
 
 ## Code Step 2 @showdialog
-Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Click the three dots beside the  ``|Download|`` button, and click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code  Step 3 
-Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
+Next, click the ``|Download|`` button to download the code to your project. 
 
 ```template 
 input.onButtonPressed(Button.A, function () {
@@ -114,12 +114,12 @@ When you're ready for more information, click *'Tell me more!'*
 Take a look at your physical project. <br> 
 Which part of this project functions like a vehicle's Electronic Control Unit (ECU), essentially acting as the "brain" of the vehicle?
 
-~hint Tell me More 
+~hint Tell me More! 
 - The micro:bit functions as the "brain" of our project, similar to how the Electronic Control Unit (ECU) operates in real vehicles.
 hint~
   
 ## Use Step 2 
-Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors within the Electric vehicle?
+Which part of your project acts like the battery in electric vehicles? What about the ultrasonic sensors within the electric vehicle?
 
 ~hint Tell me More
 - The breakout board has a built-in battery that functions like the battery in an electric vehicle. 
@@ -134,14 +134,14 @@ Take a look at the code in the workspace. Why do you think we use the variable `
 ~hint  Tell me More!
 - The variable IsDrivingEnabled acts like a switch that controls whether your vehicle can move. 
 - Without this variable, we wouldn't have a simple way to start or stop the vehicle. 
-- If the vehicle was turned on without this variable, it would start moving right away and keep going until it was turned off.
+- If the breakout board was turned on without this variable, it would start moving right away and keep going until it was turned off.
 hint~
 
 ## Use Step 4 
 What do you think will happen when the **A** button is pressed? What about when the **B** button is pressed?
 
 ~hint  Tell me More!
-- When you press the A button, it activates the vehicle's driving function, similar to pressing the gas pedal in a car.
+- When you press the A button, it activates the vehicle's driving function, similar to pressing  the gas pedal or accelerator  in a car.
 - Pressing the B button stops the car, much like using the brake pedal or turning off the ignition.
 - This setup allows you to control when the vehicle moves and when it remains stationary.
 - We created the IsDrivingEnabled variable for this exact reason—to give you more control over the vehicle.
@@ -180,18 +180,19 @@ basic.forever(function () {
 ## Use Step 7
 Looking at the code, what happens when an object is in your project's path?
 
-~hint Tell me More
-- When something blocks your project's path, it triggers a sequence of actions:
-- Pause: First, the project will pause for 1000 milliseconds (1 second).
-- Reverse: Then, it drives in reverse.
-- Turn: Finally, the project turns 10 degrees to help navigate away from the obstacle.
+~hint Tell me More!
+ When something blocks your project's path, it triggers a sequence of actions:
+1. Pause: First, the project will pause for 1000 milliseconds (1 second).
+2. Reverse: Then, it drives in reverse.
+3. Turn: Finally, the project turns 10 degrees to help navigate away from the obstacle.
 hint~
 
+
 ## Use Step 8 
-Let’s put our electric cars to the test and see how well they can avoid obstacles. Grab some items from around your room to create a simple track. Add a few obstacles along the track to check how well the sonar sensor in the code works. Run your car on the track twice, then come back here for the next step!
+Let’s put our electric cars to the test and see how well they can avoid obstacles. Grab some items to use as obstacles for your electric vehicle. Add a few obstacles in your electric car's path to check how well the sonar sensor in the code works. Run this test a few times, then come back here for the next step!
 
 ## Use Step 9
-**Welcome back!** What obstacles did you use? How did your Electric Car manage to avoid the obstacles? <br> What did you notice about its performance? <br> Can you think of any ways to improve how the Electric Car functions? 
+**Welcome back!**What obstacles did you use? How did your electric car manage to avoid the obstacles? What did you notice about its performance? Can you think of any ways to improve how the electric car functions? 
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
