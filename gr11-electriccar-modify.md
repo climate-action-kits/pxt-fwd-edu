@@ -103,7 +103,7 @@ fwdMotors.rightServo,
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
             fwdMotors.turn(15)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
@@ -150,7 +150,7 @@ hint~
 
 ## Modify Step 3 
 In the code, the use of two conditional blocks helps the electric vehicle determine what to do when it encounters an obstacle. In this case, it will turn away from the object. <br>
-Let’s test this out: unplug your electric vehicle from your computer, place it on the ground, and press the A button to start driving!
+Let’s test this out: unplug your electric vehicle from your computer, place it on the ground, and press the **A**  button to start driving!
 
 ~hint Tell me More   
 - A conditional is a block of code that triggers an action if certain conditions are met. 
@@ -158,14 +158,40 @@ Let’s test this out: unplug your electric vehicle from your computer, place it
 hint~
 
 ## Modify Step 4 
-Within our second conditional, the block  ``||fwdSensors:sonar1 distance is over 5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
+Within our second conditional, the block  ``||fwdSensors:sonar1 distance is over 0.5 m||``  tells our electric vehicle to trigger an event when something is within 0.5 meters of it.
 What do you think will happen if we decrease this distance? 
-Try it out—click on  ``||fwdSensors:sonar1 distance is over 5 m||``  and change it to  ``||fwdSensors:sonar1 distance is over  2m||``. 
+Try it out—click on  ``||fwdSensors:sonar1 distance is over 0.5 m||``  and change it to  ``||fwdSensors:sonar1 distance is over  0.2m||``. 
 
 ~hint Tell me More!
 - To apply your changes, click Download at the bottom of the page. 
 - Then, unplug your project from the computer to test the new code.
-hint~ 
+hint~
+
+```blocks
+input.onButtonPressed(Button.A, function () {
+    IsDrivingEnabled = true
+})
+input.onButtonPressed(Button.B, function () {
+    IsDrivingEnabled = false
+})
+let IsDrivingEnabled = false
+fwdMotors.setupDriving(
+fwdMotors.leftServo,
+fwdMotors.rightServo,
+-35
+)
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.turn(15)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
 
 ## Modify Step 5 
 Did you test your electric vehicle? Was your guess right? By lowering the threshold from 0.5 to 0.2 meters, your electric car now gets closer to objects before it turns and stops. This change has several benefits, including fewer false triggers from the sonar sensor!
@@ -190,7 +216,7 @@ You might have noticed that with a shorter sonar distance, your electric vehicle
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
-Start by having the Electric vehicle pause before making its next move. Click on ``||basic||``, drag the ``||basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
+Start by having the electric vehicle pause before making its next move. Click on ``||Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
@@ -246,7 +272,7 @@ basic.forever(function () {
 
 ## Challenge Step 3  
 Now that we have added another Pause block, we need to help the electric car get out of tight situations.
- Click on  ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 100||` block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.  <br> Then download the new code to test it.
+ Click on  ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 100||`` block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.  <br> Then download the new code to test it.
 
 ~hint Tell me More 
 - By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
