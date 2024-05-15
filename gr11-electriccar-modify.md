@@ -141,7 +141,7 @@ basic.forever(function () {
   
 ## Modify Step 2 
 
-The code below directs the electric car to turn 15 degrees when it encounters an obstacle, controlled by the  ``||fwdMotors:Turn 0° in place||`` block.
+The code below directs the electric car to ``||fwdMotors:turn 15° in place||``  when it encounters an obstacle, controlled by the  ``||fwdMotors:turn 15° in place||`` block.
 Can you identify the type of block we use to make this happen?
 
 ~hint Tell me More 
