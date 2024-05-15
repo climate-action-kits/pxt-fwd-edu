@@ -202,7 +202,7 @@ Did you test your electric vehicle? Was your guess right? By lowering the thresh
 hint~
 
 ## Modify Step 6 
-Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
+Now that you've seen how adjusting the sonar distance affects the electric vehicle's behavior, let’s experiment with it further. Adjust the  ``||fwdSensors:sonar1 distance is over  0.2m||`` block to different values like 0.1, 0.3, and 0.7 meters, and observe how the vehicle responds in various scenarios. <br>
 What do you predict will happen with each change?
 
 ~hint Tell me More 
@@ -216,7 +216,7 @@ You might have noticed that with a shorter sonar distance, your electric vehicle
 Think about what instructions we could add to the code to solve this problem. 
 
 ## Challenge Step 1 
-Start by having the electric vehicle pause before making its next move. Click on ``||Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
+Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15°||`` in place in the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?
@@ -244,7 +244,7 @@ basic.forever(function () {
 ## Challenge Step 2 
 Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our  turn 15 in place  action.
 
-Click on ``||basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
+Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:Turn 15°||`` in place within the second  ``||Logic:if else||`` block.
 
 ~hint Tell me More 
 - What should the vehicle do after the pause? Should it turn in another direction or reverse?

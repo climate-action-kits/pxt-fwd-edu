@@ -153,7 +153,7 @@ Once you've made a guess, unplug your project from the computer, place it on the
 Remember, you must press the **A** button to start driving.
 
 ## Use Step 6 
-In this project, the sonar sensor functions like the ultrasonic sensors used in real-world applications. Take a look at the second conditional in your code. What do you think ``||fwdSensors:sonar1 distance is over 5 m||`` means for our project? 
+In this project, the sonar sensor functions like the ultrasonic sensors used in real-world applications. Take a look at the second conditional in your code. What do you think ``||fwdSensors:sonar1 distance is over 0.5 m||`` means for our project? 
 
 ~hint Tell me More!
 - This block of code checks for any objects in the way.
@@ -196,7 +196,7 @@ Let’s put our electric cars to the test and see how well they can avoid obstac
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
 
-## Reflection @ Showdialog 
+## Reflection @showdialog 
 List 2 new things you learned today. What is one thing you want to learn more about? 
 
 ## Finished! @showdialog 
