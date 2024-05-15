@@ -81,7 +81,7 @@ Next, follow the steps to pair your micro:bit.
 ## Code  Step 3 
 Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
 
-Note: Just to be safe when the electric car project is not in use (i.e. plugged into your computer) turn off the breakout board to prevent it from driving away by accident. 
+Note: You may want to prop your electric vehicle up on something so it doesn't drive away by accident while still plugged into the computer. 
 
 ## Activity 3: Modify your Project @showdialog  
 We are now ready to modify our electric vehicle project. Follow the instructions at the top of the screen. 
@@ -103,13 +103,8 @@ fwdMotors.rightServo,
 )
 basic.forever(function () {
     if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            fwdMotors.stop()
-            basic.pause(1000)
-            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
-            basic.pause(1000)
-            fwdMotors.turn(10)
-            basic.pause(1000)
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.turn(15)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
         }
@@ -117,6 +112,7 @@ basic.forever(function () {
         fwdMotors.stop()
     }
 })
+
 ```
 ## Modify Step 1 
 In this project, we use the sonar sensor to detect obstacles in the path of our electric vehicle. 
