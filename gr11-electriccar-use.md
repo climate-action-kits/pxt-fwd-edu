@@ -161,6 +161,22 @@ In this project, the sonar sensor functions like the ultrasonic sensors used in 
 - If it detects something this close, it activates the actions defined in the 'then' part of the conditional to respond to the obstacle.
 hint~
 
+```blocks
+basic.forever(function () {
+    if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            basic.pause(1000)
+            fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
+            fwdMotors.turn(10)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
+})
+```
+
 ## Use Step 7
 Looking at the code, what happens when an object is in your project's path?
 
