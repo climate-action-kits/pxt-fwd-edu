@@ -217,12 +217,11 @@ Think about what instructions we could add to the code to solve this problem.
 
 ## Challenge Step 1 
 Start by having the electric vehicle pause before making its next move. Click on ``||basic:Basic||``, drag the ``||Basic:pause 100||`` block, and place it just above the ``||fwdMotors:Turn 15° in place||`` in the second  ``||Logic:if else||`` block.  Change Pause 100  to Pause 1000. 
- Change Pause 100  to Pause 1000. 
+
 
 
 ~hint Tell me More! 
-- What should the vehicle do after the pause? Should it turn in another direction or reverse?
-- The "Pause 100" block delays the vehicle's next action for 100 milliseconds or 0.1 seconds. 
+- The "Pause 100" block delays the vehicle's next action for 1000 milliseconds or 1 second. 
 - This short break allows you to better manage how the vehicle reacts to obstacles.
 - Click Download at the bottom of the page to update the new code to your micro:bit.
 hint~
@@ -232,7 +231,7 @@ basic.forever(function () {
     let IsDrivingEnabled = 0
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            basic.pause(100)
+            basic.pause(1000)
             fwdMotors.turn(15)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
@@ -244,7 +243,7 @@ basic.forever(function () {
 ```
 
 ## Challenge Step 2 
-Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our``||fwdMotors:turn 15° in place||`` action.
+Did you test the new code? Now, let's enhance this by adding a second pause block to bracket our ``||fwdMotors:turn 15° in place||`` action.
 
 Click on ``||basic:Basic||`` , drag another ``||basic:pause 100||``, and place it just below the ``||fwdMotors:turn 15° in place||`` within the second  ``||Logic:if else||`` block.  Change ``||basic:pause 100||``  to ``||basic:pause 1000||`` 
 
@@ -260,9 +259,9 @@ basic.forever(function () {
     let IsDrivingEnabled = 0
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            basic.pause(100)
+            basic.pause(1000)
             fwdMotors.turn(15)
-            basic.pause(100)
+            basic.pause(1000)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
         }
@@ -273,8 +272,8 @@ basic.forever(function () {
 ```
 
 ## Challenge Step 3  
-Now that we have added another Pause block, we need to help the electric car get out of tight situations.
- Click on  ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 100||`` block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``.  <br> Then download the new code to test it.
+Now that we have added another ``||basic:pause 100||`` block, we need to help the electric car get out of tight situations.
+ Click on  ``||fwdMotors:Motors||`` drag and drop ``||fwdMotors:Drive Forward at 50||`` under the second ``||basic:pause 1000||`` block. Using the dropdown arrow, change ``||fwdMotors:Forward||`` to ``||fwdMotors:Reverse||``. Change ``||fwdMotors:Reverse 50||`` to ``||fwdMotors:Reverse 100||`` <br> Then download the new code to test it.
 
 ~hint Tell me More! 
 - By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
@@ -287,9 +286,9 @@ basic.forever(function () {
     let IsDrivingEnabled = 0
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
-            basic.pause(100)
+            basic.pause(1000)
             fwdMotors.turn(15)
-            basic.pause(100)
+            basic.pause(1000)
             fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
@@ -316,9 +315,9 @@ basic.forever(function () {
     if (IsDrivingEnabled) {
         if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
             fwdMotors.stop()
-            basic.pause(100)
+            basic.pause(1000)
             fwdMotors.turn(15)
-            basic.pause(100)
+            basic.pause(1000)
             fwdMotors.drive(fwdMotors.DrivingDirection.Reverse, 50)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
