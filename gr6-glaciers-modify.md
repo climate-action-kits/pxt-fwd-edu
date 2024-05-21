@@ -108,6 +108,15 @@ Did you guess that right? ``||Input:on button A pressed||`` is an Event block. <
 - Holding the A button will record information.
 hint~
 
+```block
+ if (input.buttonIsPressed(Button.A)) {
+        basic.showIcon(IconNames.Yes)
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    } else {
+        basic.showIcon(IconNames.No)
+    }
+```
+
 ## Modify Step 4 
 
 Let's change the event block from ``||Input:on button A pressed||`` to ``||Input:on button B pressed||`` and see what happens. Click the arrow to open the dropdown menu in the ``||Input:on button A pressed||`` block. Change the event to 'Button B', then download the new code to your Micro:bit.
