@@ -158,14 +158,16 @@ Let’s test this out: unplug your electric vehicle from your computer, place it
 - We use conditionals in real life, too. For example, “If it is raining, then I will take an umbrella.”
 hint~
 
-```blocks
-let IsDrivingEnabled = false
-input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = true
-})
-input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = false
-})
+```block
+if (IsDrivingEnabled) {
+        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.turn(10)
+        } else {
+            fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
+        }
+    } else {
+        fwdMotors.stop()
+    }
 ```
 
 ## Modify Step 4 
@@ -179,30 +181,12 @@ Try it out—click on  ``||fwdSensors:sonar1 distance is under 0.5 m||``  and ch
 - Then, unplug your project from the computer to test the new code.
 hint~
 
-```blocks
-input.onButtonPressed(Button.A, function () {
-    IsDrivingEnabled = true
-})
-input.onButtonPressed(Button.B, function () {
-    IsDrivingEnabled = false
-})
-let IsDrivingEnabled = false
-fwdMotors.setupDriving(
-fwdMotors.leftServo,
-fwdMotors.rightServo,
--35
-)
-basic.forever(function () {
-    if (IsDrivingEnabled) {
-        if (fwdSensors.sonar1.fwdDistancePastThreshold(0.2, fwdSensors.ThresholdDirection.Under)) {
-            fwdMotors.turn(15)
+```block
+if (fwdSensors.sonar1.fwdDistancePastThreshold(0.5, fwdSensors.ThresholdDirection.Under)) {
+            fwdMotors.turn(10)
         } else {
             fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 50)
         }
-    } else {
-        fwdMotors.stop()
-    }
-})
 ```
 
 ## Modify Step 5 
