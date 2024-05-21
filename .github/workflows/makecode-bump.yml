@@ -1,6 +1,9 @@
 ---
 name: Auto-bump
 
+on:
+  workflow_dispatch
+
 jobs:
   auto-bump:
     name: Auto-bump and release
