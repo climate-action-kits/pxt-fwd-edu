@@ -17,6 +17,7 @@
         "fwd-edu-touch": "github:climate-action-kits/pxt-fwd-edu/fwd-touch"
     },
     "files": [
+        "not-a-real-file.md",
         "README.md",
         "adv-agri-5-6-a.md",
         "adv-agri-7-8-a.md",
