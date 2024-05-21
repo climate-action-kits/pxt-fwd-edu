@@ -1,0 +1,26 @@
+---
+name: "Sanity check pxt.json"
+
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  no_missing_files:
+    name: "pxt.json only references existing files"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get pxt.json file list
+        uses: sergeysova/jq-action@v2
+        id: pxtjson_files
+        with:
+          cmd: jq -r '.files | join(",")' pxt.json
+
+      - name: Check all files exist
+        uses: thebinaryfelix/check-file-existence-action@1.0.0
+        with:
+          files: ${{ steps.pxtjson_files.outputs.value }}
