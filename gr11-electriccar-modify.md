@@ -278,7 +278,7 @@ Now that we have added another ``||basic:pause 100||`` block, we need to help th
 ~hint Tell me More! 
 - By adding this reverse block, we are enabling the electric car to back away from obstacles, providing it with a better strategy to avoid getting stuck.
 - Don’t see the change in your code? Don’t forget to download the updated code by plugging in your micro:bit.
-- Remember just in case leave the breakout off when connected to your computer.
+
 hint~
 
 ```blocks
