@@ -15,7 +15,7 @@ jobs:
           fetch-depth: 0
 
       - run: >
-          git diff $(git describe --tags):pxt.json pxt.json |
+          git diff $(git describe --tags --abbrev=0):pxt.json pxt.json |
           grep -e '^[+-][^/]*.md' |
           wc -l
         id: new_tutorials
