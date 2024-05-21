@@ -1,0 +1,36 @@
+---
+name: Auto-bump
+
+jobs:
+  auto-bump:
+    name: Auto-bump and release
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [14.x, 16.x, 18.x]
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - run: >
+          git diff $(git describe --tags):pxt.json pxt.json |
+          grep -e '^[+-][^/]*.md' |
+          wc -l
+        id: new_tutorials
+
+      # - name: Use Node.js ${{ matrix.node-version }}
+      #   uses: actions/setup-node@v3
+      #   with:
+      #     node-version: ${{ matrix.node-version }}
+      #     cache: 'npm'
+
+      # - run: npm install -g pxt
+
+      - name: minor version bump
+        if: ${{ steps.new_tutorials.outputs.value > 0 }}
+        run: echo "This is a minor version"
+
+      - name: increment patch
+        if: ${{ steps.new_tutorials.outputs.value == 0 }}
+        run: echo "This is a patch"
