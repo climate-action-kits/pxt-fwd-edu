@@ -32,12 +32,12 @@ jobs:
         run: >
           echo "New tutorials: ${{ steps.new_tutorials.outputs.tutorial_count }}";
           echo "bump: "`(
-          ${{ steps.new_tutorials.outputs.tutorial_count }} &&
+          [[ ${{ steps.new_tutorials.outputs.tutorial_count }} > 0 ]] &&
           echo "minor" ) ||
           echo "patch"`;
 
       - run: >
           makecode bump --`(
-          ${{ steps.new_tutorials.outputs.tutorial_count }} &&
+          [[ ${{ steps.new_tutorials.outputs.tutorial_count }} > 0 ]] &&
           echo "minor" ) ||
           echo "patch"`
