@@ -100,18 +100,14 @@ Let’s test it out! Flip your project on its side so you can see the LED ring c
 - When your hand is close but not touching the solar sensor, only 2 LED lights turn red.
 hint~
 
-
-
-
 ## Modify Step 3
 Look back at the code in the workspace. <br> What code blocks are controlling the LEDs? What is the difference between these blocks?
 
 ~hint Tell me more!
-- The ``||fwdSensors:set all ledRing LEDs to ()||`` block turns all the LEDs on or off at the same time. We can also choose a colour for the lights.
-- The ``||fwdSensors:set ledRing (#) to ()||`` block changes the colour of one specific LED. We tell the computer which LED to light up by choosing a number from 0 to 7.
+- The ``||fwdSensors:set all ledRing LEDs to ()||`` block turns all the LEDs on or off at the same time. We can also choose a color for the lights.
+- The ``||fwdSensors:set ledRing (#) to ()||`` block changes the color of one specific LED. We tell the computer which LED to light up by choosing a number from 0 to 7.
 - The ``||fwdSensors:set ledRing brightness to ()||`` block tells the micro:bit how bright the lights should be when they are on.
 hint~
-
 
 ```blocks
 // @highlight
@@ -131,5 +127,61 @@ basic.forever(function () {
     }
 })
 ```
+## Modify Step 4
+Can you identify the **conditional statement** that is controlling _when_ these LEDs turn on? <br>Check the lightbulb to see if you were right!
+
+
+~hint Tell me more!
+- Remember, conditional statements act as decision points or rules in our code.
+- Each rule in our code is written as a "true or false" question, called a **boolean expression**. If the answer to the question is true, the computer does what the code says. If it's false, the computer checks the next rule.
+hint~
+
+
+```block
+    // @highlight
+    if (fwdSensors.solar1.fwdLightLevel() < 40) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 40 && fwdSensors.solar1.fwdLightLevel() < 80) {
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+        fwdSensors.ledRing.fwdSetPixelColour(4, 0xff0000)
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+```
+
+## Modify Step 5
+What are the _specific rules_ that help the micro:bit decide what to do?
+
+
+~hint Tell me more!
+- The micro:bit decides how many LEDs to turn on based on how much light is present on the beach.
+- All the LEDs turn on when the light level in the environment is less than 40% (like night)! The ``||logic:<||`` is called a **comparison operator**. It compares two numbers.
+- If the light level is between 40% and 80% (like dusk), then only 2 LEDs turn on. We use a **compound conditional statement** for this. It uses the ``||logic:and||`` operator to make sure both parts of the condition are true.
+- If none of the above conditions are met, then all the LEDs stay off. This is like day and is the ``||logic:else||`` part of the conditional.
+- This feature is important for the turtle light because it makes sure we only get the brightest light in the darkest hours.
+hint~
+
+
+```block
+    if (fwdSensors.solar1.fwdLightLevel() < 40) {
+       
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 40 && fwdSensors.solar1.fwdLightLevel() < 80) {
+     
+    } else {
+   
+    }
+```
+
+## Modify Step 6
+It's time to customize your turtle-safe beach light. Did you know that these lights don’t have to be red? They can be any color that has a long wavelength, including orange and amber light! <br>Try changing the brightness and color of your LEDs. Then, change the specific LEDs that light up.
+
+~hint Tell me more!
+- Change the brightness by modifying the ``||fwdSensors:set ledRing brightness to ()||`` block or changing the number of LEDs that light up!
+- You can change the color by clicking on the red oval and picking a new color from the grid. Choose a colour that is safe for turtles! You can always change it back to red later!
+- If your light is coming on too easily, you may have to change the numbers in your expressions!
+- Don't forget to download your code after each change to see the impact on the beach light.
+hint~
+
+
 
 
