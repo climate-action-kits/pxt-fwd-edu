@@ -13,9 +13,9 @@ jobs:
       - run: |
          npm install -g makecode
 
-      - run: |
-        git config --global user.email "tech@forwardedu.com"
-        git config --global user.name "auto-bump bot" 
+      - run: 'git config --global user.email "tech@forwardedu.com"'
+
+      - run: 'git config --global user.name "auto-bump bot"'
 
       - uses: actions/checkout@v4
         with:
