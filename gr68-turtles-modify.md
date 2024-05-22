@@ -86,3 +86,50 @@ We are ready to **modify** our turtle-safe beach light!<br>
 1. Follow the instructions at the top of the screen.
 2. Whenever you are ready for more information, click **‘Tell me more!’**
 3. If you need help with the code, click the lightbulb!
+
+## Modify Step 1
+Let’s take a look at the instructions (aka the code!) that we’ve added to our light. This will help us understand how it works. <br>Based on the code in the workspace, can you make an initial guess regarding when the light should turn on? When should it turn off?
+
+
+## Modify Step 2
+Let’s test it out! Flip your project on its side so you can see the LED ring clearly. Move the palm of your hand gradually closer to the solar sensor. This simulates sunset by slowly blocking the light. What do you notice?
+
+~hint Tell me more!
+- When your hand is far from the sensor, all the LED lights on the LED ring are off.
+- If your hand completely covers the sensor, all LEDs turn red.
+- When your hand is close but not touching the solar sensor, only 2 LED lights turn red.
+hint~
+
+
+
+
+## Modify Step 3
+Look back at the code in the workspace. <br> What code blocks are controlling the LEDs? What is the difference between these blocks?
+
+~hint Tell me more!
+- The ``||fwdSensors:set all ledRing LEDs to ()||`` block turns all the LEDs on or off at the same time. We can also choose a colour for the lights.
+- The ``||fwdSensors:set ledRing (#) to ()||`` block changes the colour of one specific LED. We tell the computer which LED to light up by choosing a number from 0 to 7.
+- The ``||fwdSensors:set ledRing brightness to ()||`` block tells the micro:bit how bright the lights should be when they are on.
+hint~
+
+
+```blocks
+// @highlight
+fwdSensors.ledRing.fwdSetBrightness(7)
+basic.forever(function () {
+    if (fwdSensors.solar1.fwdLightLevel() < 40) {
+        // @highlight
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 40 && fwdSensors.solar1.fwdLightLevel() < 80) {
+        // @highlight
+        fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
+        // @highlight
+        fwdSensors.ledRing.fwdSetPixelColour(4, 0xff0000)
+    } else {
+        // @highlight
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
+
