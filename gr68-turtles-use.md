@@ -161,3 +161,14 @@ You might change the code so that:
 - the light only turns on when people are nearby
 hint~
 
+## Congratulations! @showdialog
+You've completed the activity! <br> Did anything surprise you about this project?
+
+
+## Reflection @showdialog
+List 2 new things you learned today. <br>What is one thing you want to learn more about?
+
+## Reflection @showdialog
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
+
+
