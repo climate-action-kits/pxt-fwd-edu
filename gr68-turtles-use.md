@@ -103,3 +103,61 @@ What do you think is the purpose of each part? How do they interact with one ano
 - The **battery** on the breakout board powers our project when it's not plugged into the computer. It’s like the project’s heart!
 hint~
 
+## Use Step 3
+Let’s take a look at the instructions (aka the code!) that we’ve added to our light. This will help us understand how it works.<br>
+Based on the code in the workspace, can you make an initial guess when the light should turn on? When will it turn off?
+
+
+## Use Step 4
+Let’s test it out! Try placing your hand over the solar sensor to block the light and simulate nighttime. What happens?
+
+~hint Tell me more!
+- When our hands are over the sensor, the red LEDs turn on. When our hands are removed, the LEDs turn off.
+- We are controlling the light with a **conditional statement**.
+- Conditional statements are "if-then" rules used in coding. They add checkpoints to our programs and tell the computer what to do in different situations, like showing a birthday message if it's your birthday.
+hint~
+
+
+## Use Step 5
+Can you identify the conditional statement that is controlling our LEDs? <br> What rules does the micro:bit use to decide when the LEDs are on?
+
+~hint Tell me more!
+- The micro:bit collects data from the solar sensor. It will turn on the beach light when environmental light levels are equal to or below 40%.
+- This is known as a **boolean expression**. Boolean expressions must be evaluated to be either true or false. If the boolean is true, the micro:bit will run the code below. If not, it will jump to the ``||logic:else||`` statement.
+hint~
+
+```block
+    if (fwdSensors.solar1.fwdLightLevel() <= 40) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+```
+
+## Use Step 6
+Think about the physical build and the code behind this light. In your opinion, what features make it “turtle-safe”?
+
+
+~hint Tell me more!
+- The white medium frames keep the light low.
+- The green circle and short frames direct the light downwards and prevent it from spreading.
+- The red LED lights are hard for sea turtles to see.
+- The conditional statement ensures the light is only turned on when absolutely necessary.
+hint~
+
+
+## Use Step 7
+Unplug your light from the computer and try moving to different areas. <br> How does the light respond?
+
+
+## Use Step 8
+Based on what you've learned, how might you improve the design of the beach light?
+
+~hint Tell me more!
+You might change the physical build by covering the green building blocks with black construction paper to create a better light shield.
+You might change the code so that:
+- the LEDs turn on at a lower percentage of sunlight
+- the brightness of the LEDs changes based on how dark it is outside
+- the light only turns on when people are nearby
+hint~
+
