@@ -19,7 +19,7 @@ basic.forever(function () {
 Let's build a turtle-safe beach light! We are going to do this in 3 parts:
 1. **Build** our light
 2. **Add code** to bring it to life
-3. **Use** or test out the light to learn how it works
+3. **Use** or test out the light to learn how it works <br> 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr68-turtles-projectrender.webp" alt="projectrender" width="400"/>
 
 ## Build Step 1 @showdialog
@@ -82,4 +82,24 @@ We are ready to **use** our turtle-safe beach light! <br>
 2. Whenever you are ready for more information, click **‘Tell me more!’**
 3. If you need help with the code, click the lightbulb!
 
+## Use Step 1
+Take a look at your turtle-safe beach light. Can you name all of its physical parts?
+
+~hint Tell me more!
+Our light has:
+- **Building blocks**: one baseplate, three white medium frames, two small frames, one circle, two cube connectors, and two back-to-back connectors
+- **Robotic components**: a micro:bit, a breakout board, a battery, an LED ring, and a solar sensor
+- **Cable connectors**: one short and one long
+hint~
+
+
+## Use Step 2
+What do you think is the purpose of each part? How do they interact with one another?
+
+~hint Tell me more!
+- The **building blocks** are like the bones of our project, providing structure, support, and basic function!
+- The **micro:bit** is like the brain of our project. It stores all the code (aka instructions!) that tells our light how to operate.
+- The **breakout board** sends these instructions from the micro:bit to the **solar sensor** and **LED ring** through **cables**. The sensor is similar to an organ like our eyes, while the LED ring acts like a limb.
+- The **battery** on the breakout board powers our project when it's not plugged into the computer. It’s like the project’s heart!
+hint~
 
