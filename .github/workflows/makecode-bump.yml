@@ -10,28 +10,34 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      - run: |
+         npm install -g makecode
+
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
 
-      - run: >
+      - name: Count new tutorials
+        id: new_tutorials
+        run: >
+          echo "tutorial_count="
+          `
           git diff $(git describe --tags --abbrev=0):pxt.json pxt.json |
           grep -e '^[+-][^/]*.md' |
           wc -l
-        id: new_tutorials
+          `
+          >> "$GITHUB_OUTPUT"
 
-      # - name: Use Node.js ${{ matrix.node-version }}
-      #   uses: actions/setup-node@v3
-      #   with:
-      #     node-version: ${{ matrix.node-version }}
-      #     cache: 'npm'
+      - name: SANITY CHECK
+        run: >
+          echo "New tutorials: ${{ steps.new_tutorials.outputs.tutorial_count }}";
+          echo "bump: "`(
+          ${{ steps.new_tutorials.outputs.tutorial_count }} &&
+          echo "minor" ) ||
+          echo "patch"`;
 
-      # - run: npm install -g pxt
-
-      - name: minor version bump
-        if: ${{ steps.new_tutorials.outputs.value > 0 }}
-        run: echo "This is a minor version"
-
-      - name: increment patch
-        if: ${{ steps.new_tutorials.outputs.value == 0 }}
-        run: echo "This is a patch"
+      - run: >
+          makecode bump --`(
+          ${{ steps.new_tutorials.outputs.tutorial_count }} &&
+          echo "minor" ) ||
+          echo "patch"`
