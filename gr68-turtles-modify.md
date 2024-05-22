@@ -219,4 +219,22 @@ Next, drag out two ``||fwdSensors:solar1 light level %||`` blocks from the Senso
     }
 ```
 
+## Challenge Step 3
+Change the numbers and comparison operators in your expressions to make sure the LEDs respond to all environmental light levels. Check the lightbulb for an example, but feel free to choose your own numbers!
+
+
+```block
+    if (fwdSensors.solar1.fwdLightLevel() < 25) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 25 && fwdSensors.solar1.fwdLightLevel() < 50) {
+        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+        fwdSensors.ledRing.fwdSetPixelColour(7, 0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 50 && fwdSensors.solar1.fwdLightLevel() < 75) {
+       
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+```
+
+
 
