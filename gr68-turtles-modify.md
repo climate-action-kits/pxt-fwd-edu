@@ -236,5 +236,140 @@ Change the numbers and comparison operators in your expressions to make sure the
     }
 ```
 
+## Challenge Step 4
+What should happen if this new expression is evaluated to be true? <br> Well, we want to make a _very_ dim light. There are a few ways to do this, so give it a try! After you test your idea, check the lightbulb for our solution. How is it different from yours?
+
+```block
+    if (fwdSensors.solar1.fwdLightLevel() < 25) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 25 && fwdSensors.solar1.fwdLightLevel() < 50) {
+        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+        fwdSensors.ledRing.fwdSetPixelColour(7, 0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 50 && fwdSensors.solar1.fwdLightLevel() < 75) {
+        // @highlight
+        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+
+
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+```
+
+
+## Challenge Step 5
+Now our LEDs respond very sensitively to different environmental light levels. Can you think of anything else we can use to control beach lights?
+
+~hint Tell me more!
+- We could code the LEDs to only turn on when people are nearby! Sonar sensors detect the distance of objects in their environment. We can use this technology to sense how close a person is to the beach light!
+- Connect the sonar sensor to your project and try to write your own conditional statement to check if people are nearby.
+- Don't forget to download and test your code as you work!
+hint~
+
+## Challenge Step 6
+We want to know if people are close _before_ we think about environmental light levels.<br>
+
+We’ll need another conditional statement for this. Drag another ``||logic:if then else||`` block into the workspace. Wrap another ``||basic:forever||`` loop around this for now.
+
+
+~hint Tell me more!
+- If you place your conditional statement in the workspace without a ``||basic:forever||`` loop, it will be hashed out because the micro:bit doesn't know when to evaluate the question.
+- When we put it inside a loop, it makes logical sense to the micro:bit, and as a bonus, we can see the blocks better.
+hint~
+
+
+```blocks
+basic.forever(function () {
+    if (true) {
+       
+    } else {
+       
+    }
+})
+```
+
+
+## Challenge Step 7
+Now we need to create a new expression to see if people are closer than 0.1 m (10 cm) to our beach light. <br>
+Drag a ``||logic:0 < 0||`` block from the Logic category. Add a ``||fwdSensors:sonar1 distance (m)||`` block to the left side of this block. Change the right side to say 0.1.
+
+
+```blocks
+basic.forever(function () {
+    if (fwdSensors.sonar1.fwdDistance() < 0.1){
+       
+    } else {
+       
+    }
+})
+```
+
+
+## Challenge Step 8
+The lights should be off if there are no people on the beach. To do this, add a ``||fwdSensors:set all ledRing LEDs to black||`` block after ``||logic:else||``.
+
+
+```blocks
+basic.forever(function () {
+    if (fwdSensors.sonar1.fwdDistance() < 0.1) {
+       
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
+
+## Challenge Step 9
+The second anyone _does_ move close to the beach light (< 10 cm), we want to start asking just _how much_ light is needed. This will depend on how dark it is out<br>
+We’ve already done this! We can drag our original conditional statements inside this new conditional statement.
+
+
+~hint Tell me more!
+- This is called a **nested conditional**. The first conditional must be true in order for any of the nested conditions to be tested.
+- In other words, the solar expressions will only ever be evaluated if people are close. Otherwise, the micro:bit jumps right to the final else statement and keeps the LEDs off.
+- Don't forget to delete the extra ``||basic:forever||`` loop now that we are done with it.
+hint~
+
+
+```blocks
+basic.forever(function () {
+    if (fwdSensors.sonar1.fwdDistance() < 0.1) {
+        // @highlight
+        if (fwdSensors.solar1.fwdLightLevel() < 25) {
+            fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
+        } else if (fwdSensors.solar1.fwdLightLevel() >= 25 && fwdSensors.solar1.fwdLightLevel() < 50) {
+            fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+            fwdSensors.ledRing.fwdSetPixelColour(7, 0xff8000)
+        } else if (fwdSensors.solar1.fwdLightLevel() >= 50 && fwdSensors.solar1.fwdLightLevel() < 75) {
+            fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+        } else {
+            fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+        }
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+})
+```
+
+## Explore
+Unplug your light from the computer and try moving to different areas. How does the light respond? <br> If nothing happens, what might we have to change?
+
+
+~hint Tell me more!
+- If the light is not responding, it might be because your room is too bright or because nothing is close to the sonar sensor. In both conditions, the light stays off to save the turtles!
+- You could try to find a darker room, move something close to the sonar sensor, or change the values in the expressions so the light is triggered more easily.
+hint~
+
+
+## Congratulations! @showdialog
+You've completed the activity!
+
+
+## Reflection @showdialog
+Think about something in this project that challenged you. <br>How did you overcome the challenge? How did that make you feel?
+
+
+## Reflection @showdialog
+In the next step, you can click the ``|Done|`` button to finish the tutorial.
 
 
