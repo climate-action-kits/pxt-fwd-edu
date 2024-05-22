@@ -177,11 +177,46 @@ It's time to customize your turtle-safe beach light. Did you know that these lig
 
 ~hint Tell me more!
 - Change the brightness by modifying the ``||fwdSensors:set ledRing brightness to ()||`` block or changing the number of LEDs that light up!
-- You can change the color by clicking on the red oval and picking a new color from the grid. Choose a colour that is safe for turtles! You can always change it back to red later!
+- You can change the color by clicking on the red oval and picking a new color from the grid. Choose a color that is safe for turtles! You can always change it back to red later!
 - If your light is coming on too easily, you may have to change the numbers in your expressions!
 - Don't forget to download your code after each change to see the impact on the beach light.
 hint~
 
+## Challenge Time! @showdialog
+A big part of protecting turtles on beaches is to make sure lights are only as bright as needed. <br> Let's have _more_ control over how bright our LEDs are. Right now, our light changes based on 3 different situations. What if we add a couple more?
 
+## Challenge Step 1
+First, click the + symbol at the bottom of ``||logic:if then else||`` block. This will create another rule or condition the micro:bit can evaluate.
+
+```block
+    if (fwdSensors.solar1.fwdLightLevel() < 40) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 40 && fwdSensors.solar1.fwdLightLevel() < 80) {
+        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+        fwdSensors.ledRing.fwdSetPixelColour(7, 0xff8000)
+    } else if (false) {
+       
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+```
+
+## Challenge Step 2
+
+Next, drag out two ``||fwdSensors:solar1 light level %||`` blocks from the Sensors category. Grab two ``||logic:0 < 0||`` comparison blocks and one ``||logic:and||`` operator from the Logic category. <br> Try to put these blocks together to create an expression that can be evaluated in our blank condition. Check the lightbulb for the answer!
+
+
+```block
+    if (fwdSensors.solar1.fwdLightLevel() < 40) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() >= 40 && fwdSensors.solar1.fwdLightLevel() < 80) {
+        fwdSensors.ledRing.fwdSetPixelColour(1, 0xff8000)
+        fwdSensors.ledRing.fwdSetPixelColour(7, 0xff8000)
+    } else if (fwdSensors.solar1.fwdLightLevel() < 0 && fwdSensors.solar1.fwdLightLevel() < 0) {
+       
+    } else {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
+    }
+```
 
 
