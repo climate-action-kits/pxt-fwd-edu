@@ -22,7 +22,7 @@ jobs:
           sed -i '
           /"commit"/
           s/newV/
-          `"${newV}\\n\\n\\nskipchecks:true"`, "--cleanup=ver batim"/'
+          `${newV}\\n\\n\\nskipchecks:true`, "--cleanup=ver batim"/'
           ~/.nvm/versions/node/*/**/bump.js
 
       - run: 'git config --global user.email "tech@forwardedu.com"'
