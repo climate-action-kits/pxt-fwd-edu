@@ -22,8 +22,8 @@ jobs:
           sed -i '
           /"commit"/
           s/newV/
-          `${newV}\\n\\n\\nskipchecks:true`, "--cleanup=ver batim"/'
-          ~/.nvm/versions/node/*/**/bump.js
+          `${newV}\\n\\n\\nskipchecks:true`, "--cleanup=verbatim"/'
+          /usr/local/lib/node_modules/makecode/built/bump.js
 
       - run: 'git config --global user.email "tech@forwardedu.com"'
 
