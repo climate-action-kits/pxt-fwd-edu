@@ -19,7 +19,7 @@ jobs:
 
       - run: 'git config --global user.email "rweir@forwardedu.com"'
 
-      - run: 'git config --global user.name "auto-bump bot"'
+      - run: 'git config --global user.name "ross-inksmith"'
 
       - uses: actions/checkout@v4
         with:
