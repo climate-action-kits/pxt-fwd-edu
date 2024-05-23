@@ -17,6 +17,14 @@ jobs:
       - run: |
          npm install -g makecode
 
+      - name: Stupid hacky commit workaround
+        run: >
+          sed -i '
+          /"commit"/
+          s/newV/
+          `"${newV}\\n\\nskipchecks:true"`, "--cleanup=ver batim"/'
+          ~/.nvm/versions/node/*/**/bump.js
+
       - run: 'git config --global user.email "tech@forwardedu.com"'
 
       - run: 'git config --global user.name "auto-bump bot"'
