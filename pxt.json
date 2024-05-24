@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "1.24.5",
+    "version": "1.25.0",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
@@ -74,8 +74,8 @@
         "gr68-turtles-use.md",
         "gr11-electriccar-modify.md",
         "gr11-electriccar-use.md",
-        "gr8-smartfarming-use.md", 
-        "gr8-smartfarming-modify.md", 
+        "gr8-smartfarming-use.md",
+        "gr8-smartfarming-modify.md",
         "icon.png",
         "motm-line.md",
         "motm-obs.md",
