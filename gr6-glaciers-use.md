@@ -93,22 +93,27 @@ Take a look at the code below. What do you think it does? Make some predictions!
 Got your predictions? Let's see if you were right! Click the ``|Download|`` button to load your code and test it out! 
 
 ## Use Step 5 
-Since the base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit stores all of this information for us to analyze. At the bottom of your screen, click ``|Show Data Simulator|``. Take a look at the data collected so far, then go back to the code. Try it now! 
+The base plate represents Earth's surface, and the solar sensor acts as the satellite. This project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit stores all of this information for us to analyze. 
 
 ## Use Step 6 
-Next, let's see what happens when we make some changes. To do that, we have to follow three steps:
-1. First, get a piece of black paper and cover the base plate.
-2. Then, open the data simulator and see what happens to your data.
-3. Go back to the code for the next step.
+Open your file explorer and click on MY_DATA. Open it with Google Chrome. Select 'Visual Review' to see a chart of your data. What do you notice about your data?
 
 ## Use Step 7 
-Now let's try using a white piece of paper, then a yellow piece, and finally, aluminum foil. Follow the same steps,
-1. First, get a piece of black paper and cover the base plate.
-2. Then, open the data simulator and see what happens to your data.
+Next, let's see what happens when we make some changes. Follow these three steps:
+
+1. Get a piece of black paper and cover the base plate.
+2. Open the data from the micro.
 3. Go back to the code for the next step.
 
 ## Use Step 8 
-Welcome back! Were your predictions correct? Did any of the results surprise you?
+Now let's try with a white piece of paper, then a yellow piece of paper, and finally aluminum foil. Follow these three steps:
+
+1. Place the paper over the base plate and count to ten.
+2. Open the data from the micro.
+3. Go back to the code for the next step.
+
+## Use Step 9 
+Welcome back! Were your predictions correct? Did any of the results surprise you? 
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
