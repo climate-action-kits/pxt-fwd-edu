@@ -87,28 +87,64 @@ hint~
 Take a look at the code below. What do you think it does? Make some predictions!
 
 ## Use Step 4 
-The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze
+The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze. 
 
 ## Use Step 5 
-At the bottom left-hand side of the page, click ``||Show Data Simulator||`` This is where you will see the live data collected by your project. 
+At the bottom left-hand side of the page, click ``||Show Data Simulator||`` This is where you will see the live data collected by your project.  
 
 ## Use Step 6 
 Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
 
 ## Use Step 7 
-The purple line on the graph shows the level of solar light reflection. The higher the line, the more reflection is occurring; the lower the line, the less reflection is going back into the environment.
+Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
 
 ## Use Step 8 
-Now, let's collect some data using our system. Start by placing a white piece of paper on the breakout board. What do you notice about the data below? 
+
+The purple line on the graph shows the level of solar light reflection over time. The X-axis represents time, while the Y-axis indicates the amount of light reflected back as a decimal. To convert this decimal to a percentage, simply multiply by 100. The higher the purple line, the more reflection is occurring; the lower the line, the less reflection is going back into the environment.
+
+~hint Tell me more!
+- The graph helps us understand how much solar light is being reflected at different times. 
+- By looking at the Y-axis values, you can see the reflection amount as a decimal. 
+- When you multiply this decimal by 100, you get the percentage of light being reflected. 
+- This can help you visualize how reflective surfaces can affect the environment. 
+hint~
 
 ## Use Step 9 
-Next, remove the white paper and test it with a yellow sheet of paper. What do you notice about the data below?
+Now let's collect some data using our system. Start by placing a piece of paper on the base plate. What do you notice about the data below? 
+~hint Tell me more!
+-Notice how the light level values change. 
+-The white paper reflects more light, so you should see an increase in the light level readings. 
+-This shows how different materials can affect light reflection.
+hint~
 
 ## Use Step 10 
-Now, put the white paper back and add bits of aluminum foil on top of it. Observe the changes in the data below. What differences do you notice compared to the previous tests?
+After looking at the data with the black paper, let's try a different color. Place a yellow piece of paper on the breakout board. What do you notice about the data below?
+
+~hint What should I be looking for?
+- Watch how the light level numbers change. 
+- The yellow paper reflects some light but not as much as the white paper.
+- You should see the light level go up, but maybe not as much as with the white paper.
+- This shows how different colors can change how light reflects.
+hint~
 
 ## Use Step 11 
-Were your predictions correct? Did any of the results surprise you? What other test could you do? 
+After looking at the data with the yellow paper, let's try another material. Place a piece of aluminum foil on the breakout board. What do you notice about the data below?
+
+~hint What should I be looking for?
+- Watch how the light level numbers change. 
+- The aluminum foil reflects a lot of light, so you should see a big increase in the light level readings. 
+- This shows how shiny materials can reflect light very well.
+hint~
+
+## Use Step 12 
+"After looking at the data with the aluminum foil, let's try a combination. Place a piece of white paper with some aluminum foil on top of it on the breakout board. This simulates icebergs (the foil). What do you notice about the data below?
+
+~hint Tell me more!
+- Watch how the light level numbers change. 
+- The white paper with foil reflects a lot of light, like icebergs in the ocean. 
+- You should see a big increase in the light level readings. 
+- This shows how icebergs can reflect sunlight.
+hint~
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
