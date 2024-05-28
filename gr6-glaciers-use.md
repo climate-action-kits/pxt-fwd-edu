@@ -5,9 +5,9 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger 
 ```
 ## Activity 1: Build your Project @showdialog 
-Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in three parts!
+Welcome to Glacier Tracking with Satellites! <br> We are going to do this in three parts!
 1. Build your project
-2. Code your Project 
+2. Code your project 
 3. Use your project to learn how it works
 
 ## Build Step 1 @showdialog 
@@ -49,22 +49,21 @@ We need to connect our project to the computer to make it come to life with code
 
 ## Code Step 1 @showdialog 
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
-Next, follow the steps to pair your micro:bit.
+Next, follow the steps to pair your micro:bit. <br> 
 ![pair gif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp) 
 
 ## Code Step 2 
-Next, click the ``|Download|`` button to download code to your project. 
+Next, click the ``|Download|`` button to download the code to your project. 
 
 ## Activity 3: Use your Project @showdialog 
-We are now ready to use our **Glacier Tracking System**. Follow the instructions at the top of the screen. <br> When you are ready for more information, click *'Tell me more!'* <br>
-After each change, you will need to ``|Download|`` your updated code for your project.
+We are now ready to use our **glacier tracking system**. Follow the instructions at the top of the screen. <br> When you are ready for more information, click *'Tell me more!'* <br>
+
 
 ## Use Step 1 
-The code below will make our Glacier tracking system measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question. <br>
-Think about the **Albedo-Ice Feedback** diagram when looking at your project. Which part of this project represents the sun?
+The code below will allow our glacier tracking system to measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question: Which part of this project represents the sun?
 
-~hint Tell me More 
-- Here the LED lights represent the sun.
+~hint Tell me more!
+- Here, the LED lights represent the sun's rays.
 hint~
 
 ```template
@@ -76,7 +75,7 @@ basic.forever(function () {
 ```
 
 ## Use Step 2 
-Now look again: which part do you think represents Earth's surface? Which part is meant to be the satellite?
+Now look again: Which part do you think represents Earth's surface? Which part is meant to be the satellite?
 
 ~hint Tell me more!
 - In this project, we are using the base plate to represent Earth's surface.
