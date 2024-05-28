@@ -9,7 +9,8 @@ Welcome to the **glacier tracking with satellites!** <br> We are going to do thi
 1. Build your project
 2. Code your project 
 3. Modify your project
-4. Complete a coding challenge
+4. Complete a coding challenge <br> 
+ 
    ![glaciersrender] (https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-thumbnail-render.webp) 
 
 
