@@ -5,11 +5,13 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger
 ```
 ## Activity 1: Build your Project @showdialog 
-Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in four parts!
+Welcome to the **glacier tracking with satellites!** <br> We are going to do this in four parts!
 1. Build your project
-2. Code your Project 
-3. Modify your Project
-4. Complete a coding challenge 
+2. Code your project 
+3. Modify your project
+4. Complete a coding challenge
+   ![glaciersrender] (https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-thumbnail-render.webp) 
+
 
 ```template 
 datalogger.setColumnTitles("Light Level (%)")
