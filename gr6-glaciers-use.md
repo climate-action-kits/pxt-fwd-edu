@@ -8,8 +8,10 @@ datalogger=datalogger
 Welcome to Glacier Tracking with Satellites! <br> We are going to do this in three parts!
 1. Build your project
 2. Code your project 
-3. Use your project to learn how it works
+3. Use your project to learn how it works <br>
+***Note:*** Before you begin, make sure you have your supplies: white paper, black paper, yellow paper, aluminum foil.
 
+ 
 ## Build Step 1 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs1.webp)
 
@@ -83,7 +85,7 @@ Now look again: Which part do you think represents Earth's surface? Which part i
 hint~
 
 ## Use Step 3 
-Take a look at the code below. What do you think it does? Make some predictions!
+Take a look at the code in the workspace below. What do you think it does? Make some predictions!
 
 ## Use Step 4 
 The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze. 
