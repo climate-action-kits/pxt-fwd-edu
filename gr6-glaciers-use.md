@@ -5,11 +5,13 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger 
 ```
 ## Activity 1: Build your Project @showdialog 
-Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in three parts!
+Welcome to Glacier Tracking with Satellites! <br> We are going to do this in three parts!
 1. Build your project
-2. Code your Project 
-3. Use your project to learn how it works
+2. Code your project 
+3. Use your project to learn how it works <br>
+***Note:*** Before you begin, make sure you have your supplies: white paper, black paper, yellow paper, aluminum foil.
 
+ 
 ## Build Step 1 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs1.webp)
 
@@ -49,22 +51,21 @@ We need to connect our project to the computer to make it come to life with code
 
 ## Code Step 1 @showdialog 
 Click three dots beside ``|Download|`` button, and click on _Connect Device_.
-Next, follow the steps to pair your micro:bit.
+Next, follow the steps to pair your micro:bit. <br> 
 ![pair gif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp) 
 
 ## Code Step 2 
-Next, click the ``|Download|`` button to download code to your project. 
+Next, click the ``|Download|`` button to download the code to your project. 
 
 ## Activity 3: Use your Project @showdialog 
-We are now ready to use our **Glacier Tracking System**. Follow the instructions at the top of the screen. <br> When you are ready for more information, click *'Tell me more!'* <br>
-After each change, you will need to ``|Download|`` your updated code for your project.
+We are now ready to use our **glacier tracking system**. Follow the instructions at the top of the screen. <br> When you are ready for more information, click *'Tell me more!'* <br>
+
 
 ## Use Step 1 
-The code below will make our Glacier tracking system measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question. <br>
-Think about the **Albedo-Ice Feedback** diagram when looking at your project. Which part of this project represents the sun?
+The code below will allow our glacier tracking system to measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question: Which part of this project represents the sun?
 
-~hint Tell me More 
-- Here the LED lights represent the sun.
+~hint Tell me more!
+- Here, the LED lights represent the sun's rays.
 hint~
 
 ```template
@@ -76,7 +77,7 @@ basic.forever(function () {
 ```
 
 ## Use Step 2 
-Now look again: which part do you think represents Earth's surface? Which part is meant to be the satellite?
+Now look again: Which part do you think represents Earth's surface? Which part is meant to be the satellite?
 
 ~hint Tell me more!
 - In this project, we are using the base plate to represent Earth's surface.
@@ -84,31 +85,67 @@ Now look again: which part do you think represents Earth's surface? Which part i
 hint~
 
 ## Use Step 3 
-Take a look at the code below. What do you think it does? Make some predictions!
+Take a look at the code in the workspace below. What do you think it does? Make some predictions!
 
 ## Use Step 4 
-The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze
+The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze. 
 
 ## Use Step 5 
-At the bottom left-hand side of the page, click ``||Show Data Simulator||`` This is where you will see the live data collected by your project. 
+At the bottom left-hand side of the page, click ``||Show Data Simulator||`` This is where you will see the live data collected by your project.  
 
 ## Use Step 6 
 Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
 
 ## Use Step 7 
-The purple line on the graph shows the level of solar light reflection. The higher the line, the more reflection is occurring; the lower the line, the less reflection is going back into the environment.
+Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
 
 ## Use Step 8 
-Now, let's collect some data using our system. Start by placing a white piece of paper on the breakout board. What do you notice about the data below? 
+
+The purple line on the graph shows the level of solar light reflection over time. The X-axis represents time, while the Y-axis indicates the amount of light reflected back as a decimal. To convert this decimal to a percentage, simply multiply by 100. The higher the purple line, the more reflection is occurring; the lower the line, the less reflection is going back into the environment.
+
+~hint Tell me more!
+- The graph helps us understand how much solar light is being reflected at different times. 
+- By looking at the Y-axis values, you can see the reflection amount as a decimal. 
+- When you multiply this decimal by 100, you get the percentage of light being reflected. 
+- This can help you visualize how reflective surfaces can affect the environment. 
+hint~
 
 ## Use Step 9 
-Next, remove the white paper and test it with a yellow sheet of paper. What do you notice about the data below?
+Now let's collect some data using our system. Start by placing a piece of paper on the base plate. What do you notice about the data below? 
+~hint Tell me more!
+-Notice how the light level values change. 
+-The white paper reflects more light, so you should see an increase in the light level readings. 
+-This shows how different materials can affect light reflection.
+hint~
 
 ## Use Step 10 
-Now, put the white paper back and add bits of aluminum foil on top of it. Observe the changes in the data below. What differences do you notice compared to the previous tests?
+After looking at the data with the black paper, let's try a different color. Place a yellow piece of paper on the breakout board. What do you notice about the data below?
+
+~hint What should I be looking for?
+- Watch how the light level numbers change. 
+- The yellow paper reflects some light but not as much as the white paper.
+- You should see the light level go up, but maybe not as much as with the white paper.
+- This shows how different colors can change how light reflects.
+hint~
 
 ## Use Step 11 
-Were your predictions correct? Did any of the results surprise you? What other test could you do? 
+After looking at the data with the yellow paper, let's try another material. Place a piece of aluminum foil on the breakout board. What do you notice about the data below?
+
+~hint What should I be looking for?
+- Watch how the light level numbers change. 
+- The aluminum foil reflects a lot of light, so you should see a big increase in the light level readings. 
+- This shows how shiny materials can reflect light very well.
+hint~
+
+## Use Step 12 
+"After looking at the data with the aluminum foil, let's try a combination. Place a piece of white paper with some aluminum foil on top of it on the breakout board. This simulates icebergs (the foil). What do you notice about the data below?
+
+~hint Tell me more!
+- Watch how the light level numbers change. 
+- The white paper with foil reflects a lot of light, like icebergs in the ocean. 
+- You should see a big increase in the light level readings. 
+- This shows how icebergs can reflect sunlight.
+hint~
 
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
