@@ -9,7 +9,7 @@ Welcome to Glacier Tracking with Satellites!  We are going to do this in three p
 1. **Build** your project
 2. **Code** your project 
 3. **Use** your project to learn how it works <br>
-<span style="font-size: 17;">***Note:*** Before you begin, make sure you have your supplies: white paper, black paper, yellow paper, aluminum foil.</span> 
+<span style="font-size: 17;">***Note:*** Before you begin, make sure you have your supplies: white paper, black paper, yellow paper, and aluminum foil.</span> 
 
 
 ## Build Step 1 @showdialog 
@@ -94,10 +94,10 @@ The base plate represents Earth's surface and the solar sensor acts as the satel
 At the bottom left-hand side of the page, click ``|Show Data Simulator|`` This is where you will see the live data collected by your project.  
 
 ## Use Step 6 
-Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
+Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system. 
 
 ## Use Step 7 
-Now, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
+Now, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system. 
 
 ## Use Step 8 
 
@@ -120,7 +120,7 @@ Now let's collect some data using our system. Start by placing a piece of paper 
 hint~
 
 ## Use Step 10 
-After looking at the data with the black paper, let's try a different color. Place a yellow piece of paper on the base plate. What do you notice about the data below?
+After looking at the data with the black paper, let's try a different color. Place a yellow piece of paper on the base plate. What do you notice about the data below? 
 
 ~hint What should I be looking for?
 - Watch how the light level numbers change. 
@@ -130,7 +130,7 @@ After looking at the data with the black paper, let's try a different color. Pla
 hint~
 
 ## Use Step 11 
-After looking at the data with the yellow paper, let's try another material. Place a piece of aluminum foil on the base plate. What do you notice about the data below?
+After looking at the data with the yellow paper, let's try another material. Place a piece of aluminum foil on the base plate. What do you notice about the data below? 
 
 ~hint What should I be looking for?
 - Watch how the light level numbers change. 
@@ -139,7 +139,7 @@ After looking at the data with the yellow paper, let's try another material. Pla
 hint~
 
 ## Use Step 12 
-After looking at the data with the aluminum foil, let's try a combination. Place a piece of white paper with some aluminum foil on top of it on the  base plate. This simulates icebergs (the foil). What do you notice about the data below?
+After looking at the data with the aluminum foil, let's try a combination. Place a piece of white paper with some aluminum foil on top of it on the base plate. This simulates icebergs (the foil). What do you notice about the data below? 
 
 ~hint Tell me more!
 - Watch how the light level numbers change. 
