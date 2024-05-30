@@ -187,9 +187,13 @@ Take your folded white pieces of paper that are like icebergs. Place them one by
 - Just like real icebergs, they reflect light away from the ocean
 hint~
 
-## Modify Step 10 
-Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file explorer or My Computer on your device. Then, select your micro:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
-
+## Modify Step 10  @showdialog 
+Now we want to look at the data we have logged. 
+Plugging the micro:bit back into your computer and open the file explorer or My Computer on your device. 
+Then, select your micro:bit and open the file called 'My Data.' 
+A new window will show all your data!
+Complete these steps, then come back here for a challenge.
+![mydayawalkthrough](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/MyDataWalkthrough.webp) 
 
 ~hint Tell me More! 
 - Think of the micro:bit as the brain; it stores all the information.
