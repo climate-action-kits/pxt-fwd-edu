@@ -5,11 +5,11 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger
 ```
 ## Activity 1: Build your Project @showdialog 
-Welcome to the **glacier tracking with satellites!** <br> We are going to do this in four parts!
-1. Build your project
-2. Code your project 
-3. Modify your project
-4. Complete a coding challenge <br> 
+Welcome to **glacier tracking with satellites!**  We are going to do this in four parts!
+1. **Build** your project
+2. **Code** your project 
+3. **Modify** your project
+4. Complete a coding **challenge** <br> 
  
 ![glaciersrender](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-thumbnail-render.webp) 
 
@@ -87,8 +87,7 @@ In this project, we are tracking the levels of light being reflected off differe
 How many conditional statements do you see in the code below?
 
 ~hint Tell me More!
-- Conditional statements tell our micro
-- what to do when a certain condition is met.
+- Conditional statements tell our micro:bit what to do when a certain condition is met.
 - We use conditional statements in our own lives too.
 - For example, "If it is raining, then I will bring an umbrella."
 hint~
@@ -108,7 +107,7 @@ Did you guess that right? ``||Input:on button A pressed||`` is an Event block. <
 What do you think will happen when you press the A button?
 
 ~hint Tell me more!
-- Pressing the A button will change the icon on the Micro.
+- Pressing the A button will change the icon on the micro:bit.
 - It will also start collecting data on light levels!
 - Holding the A button will record information.
 hint~
