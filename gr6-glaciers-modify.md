@@ -255,6 +255,7 @@ basic.forever(function () {
     }
 })
 ```
+
 ## Challenge Step 5 
 Lastly, we need to specify what happens after pressing the B button. Go to ``||datalogger.datalogger||`` and add the ``||datalogger.deleteLog||`` action inside the ``||logic:if true then||`` block.
 
@@ -268,8 +269,9 @@ hint~
         datalogger.deleteLog()
 ```
 
-## Challenge Step 5 
+## Challenge Step 5 @showdialog 
 Let's see if this worked! Press the B button on the micro:bit, this will trigger the delete log event and clear your data. Check the data within the micro:bit using your file explorer. 
+![mydayawalkthrough](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/MyDataWalkthrough.webp) 
 
 ~hint Tell me More!!
 - This step checks that the 'delete log' command inside the 'if/then' block is working properly when you press the B button. 
