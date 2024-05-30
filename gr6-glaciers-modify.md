@@ -212,7 +212,8 @@ hint~
 When we looked at our data logger, the graph was a bit messy! It was hard to tell what was our hand and what was our data. So let’s add another conditional to help clear up the data. Plug the micro:bit back into your computer now. 
 
 ## Challenge Step 1 
-First, we need to set up our input, which triggers our code. Go to the ``||Input:Input||`` section and select the ``||Input:on button A pressed||`` block, change A to B. *Note: The block will be greyed out.* 
+First, we need to set up our input, which triggers our code. Go to the ``||Input:Input||`` section and select the ``||Input:on button A pressed||`` block, change A to B. 
+*Note: The block will be greyed out.* 
 
 ## Challenge Step 2 
 Next, we need to build another conditional. Click on ``||logic:Logic||`` and select an ``||logic:if true then||`` block to add it to the workspace. You'll notice that both of these blocks will appear greyed out now.
@@ -231,18 +232,17 @@ How do we connect these two blocks to make something happen when we press the B 
 - That's why we insert it into the blank space in our 'if/then' block.
 hint~
 
+
 ## Challenge Step 4 
 Think you got it right? Check the light bulb icon to see if you're correct. If not, change your code to match what's shown in the light bulb.
 
 ~hint Tell me More!
-We placed the second conditional within the 'forever' block.
-This setup ensures our code continuously checks if the buttons have been pressed.
+- We placed the second conditional within the 'forever' block.
+- This setup ensures our code continuously checks if the buttons have been pressed.
+- Remember to download the changed code to your micro:bit.
 hint~
 
-```blocks
-datalogger.setColumnTitles("Light Level (%)")
-fwdSensors.ledRing.fwdSetBrightness(10)
-fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
+```block
 basic.forever(function () {
     if (input.buttonIsPressed(Button.A)) {
         basic.showIcon(IconNames.Yes)
@@ -262,6 +262,11 @@ Lastly, we need to specify what happens after pressing the B button. Go to ``||d
 - 'Delete log' clears the data you see in the simulator.
 - This allows us to reset and collect different data under various settings
 hint~ 
+
+```block
+    if (input.buttonIsPressed(Button.B)) {
+        datalogger.deleteLog()
+```
 
 ## Challenge Step 5 
 Let's see if this worked! Press the B button on the micro:bit, this will trigger the delete log event and clear your data. Check the data within the micro:bit using your file explorer. 
