@@ -62,7 +62,7 @@ We are now ready to use our **glacier tracking system**. Follow the instructions
 
 
 ## Use Step 1 
-The code below will allow our glacier tracking system to measure the light reflected off different surfaces! Look at your Glacier Tracking System and think about this question: Which part of this project represents the sun?
+The code below will allow our glacier tracking system to measure the light reflected off different surfaces! <br> Look at your Glacier Tracking System and think about this question: Which part of this project represents the sun?
 
 ~hint Tell me more!
 - Here, the LED lights represent the sun's rays.
@@ -85,23 +85,24 @@ Now look again: Which part do you think represents Earth's surface? Which part i
 hint~
 
 ## Use Step 3 
-Take a look at the code in the workspace below. What do you think it does? Make some predictions!
+Now take a look at the code in the workspace below. What do you think it does? Make some predictions!
 
 ## Use Step 4 
-The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit is storing all of this information for us to analyze. 
+The base plate represents Earth's surface and the solar sensor acts as the satellite, this project tracks the light levels being reflected onto different surfaces, like the ocean. The micro:bit stores all of this information for us to analyze later. 
 
 ## Use Step 5 
-At the bottom left-hand side of the page, click ``||Show Data Simulator||`` This is where you will see the live data collected by your project.  
+At the bottom left-hand side of the page, click ``|Show Data Simulator|`` This is where you will see the live data collected by your project.  
 
 ## Use Step 6 
 Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
 
 ## Use Step 7 
-Next, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
+Now, turn on your breakout board to begin collecting data from your project. Then click "Console" to see the live data from the glacier monitoring system.
 
 ## Use Step 8 
 
-The purple line on the graph shows the level of solar light reflection over time. The X-axis represents time, while the Y-axis indicates the amount of light reflected back as a decimal. To convert this decimal to a percentage, simply multiply by 100. The higher the purple line, the more reflection is occurring; the lower the line, the less reflection is going back into the environment.
+The purple line on the graph shows the level of solar light reflection over time. The **X-axis** represents time, while the **Y-axis** indicates the amount of light reflected back as a decimal. 
+To convert this decimal to a percentage, simply multiply by 100. The higher the purple line, the more reflection is occurring; the lower the line, the less reflection is going back into the environment.
 
 ~hint Tell me more!
 - The graph helps us understand how much solar light is being reflected at different times. 
@@ -119,7 +120,7 @@ Now let's collect some data using our system. Start by placing a piece of paper 
 hint~
 
 ## Use Step 10 
-After looking at the data with the black paper, let's try a different color. Place a yellow piece of paper on the breakout board. What do you notice about the data below?
+After looking at the data with the black paper, let's try a different color. Place a yellow piece of paper on the base plate. What do you notice about the data below?
 
 ~hint What should I be looking for?
 - Watch how the light level numbers change. 
@@ -129,7 +130,7 @@ After looking at the data with the black paper, let's try a different color. Pla
 hint~
 
 ## Use Step 11 
-After looking at the data with the yellow paper, let's try another material. Place a piece of aluminum foil on the breakout board. What do you notice about the data below?
+After looking at the data with the yellow paper, let's try another material. Place a piece of aluminum foil on the base plate. What do you notice about the data below?
 
 ~hint What should I be looking for?
 - Watch how the light level numbers change. 
@@ -138,7 +139,7 @@ After looking at the data with the yellow paper, let's try another material. Pla
 hint~
 
 ## Use Step 12 
-"After looking at the data with the aluminum foil, let's try a combination. Place a piece of white paper with some aluminum foil on top of it on the breakout board. This simulates icebergs (the foil). What do you notice about the data below?
+After looking at the data with the aluminum foil, let's try a combination. Place a piece of white paper with some aluminum foil on top of it on the  base plate. This simulates icebergs (the foil). What do you notice about the data below?
 
 ~hint Tell me more!
 - Watch how the light level numbers change. 
