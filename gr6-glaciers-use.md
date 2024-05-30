@@ -5,13 +5,13 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger 
 ```
 ## Activity 1: Build your Project @showdialog 
-Welcome to Glacier Tracking with Satellites! <br> We are going to do this in three parts!
-1. Build your project
-2. Code your project 
-3. Use your project to learn how it works <br>
-***Note:*** Before you begin, make sure you have your supplies: white paper, black paper, yellow paper, aluminum foil.
+Welcome to Glacier Tracking with Satellites!  We are going to do this in three parts!
+1. **Build** your project
+2. **Code** your project 
+3. **Use** your project to learn how it works <br>
+<span style="font-size: 17;">***Note:*** Before you begin, make sure you have your supplies: white paper, black paper, yellow paper, aluminum foil.</span> 
 
- 
+
 ## Build Step 1 @showdialog 
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs1.webp)
 
