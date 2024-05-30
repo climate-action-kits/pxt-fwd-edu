@@ -132,7 +132,7 @@ Let's change the event block from ``||Input:on button A pressed||`` to ``||Input
 hint~
 
 ## Modify Step 5 
-Let's change the event block from ||Input:on button A pressed|| to ||Input:on button B pressed|| and see what happens. Click the arrow to open the dropdown menu in the ||Input:on button A pressed|| block. Change the event to 'Button B', then download the new code to your. 
+Let's change the event block from ``||Input:on button A pressed||`` to ``||Input:on button B pressed||`` and see what happens. Click the arrow to open the dropdown menu in the ``||Input:on button A pressed||`` block. Change the event to 'Button B', then download the new code to your project. 
 
 ~hint Tell me more!
 - If you don't see the change on your micro:bit, check that you've downloaded the new code.
@@ -158,13 +158,13 @@ Two pieces of paper: one white and one black
 Some small rectangles of white paper, folded in half—these are our 'icebergs.'
 
 ~hint Tell me more!
-- We use black and white paper to show how different parts of our Earth work.
+- We use black and white paper to show how different parts of our Earth react to rays from the sun.
 - The black paper is like the ocean. It helps us see how much light and heat the ocean can soak up or bounce off.
-- The white paper 'icebergs' help reflect light back up into the sky, which keeps the ocean from getting too warm.
+- The white paper 'icebergs' help reflect light up into the sky, which keeps the ocean from getting too warm.
 hint~
 
 ## Modify Step 7 
-Now, let’s get our code ready to log data. First, unplug your project from the computer. Next, hold down the A button on the Micro. While you’re holding it, cover the baseplate with white paper. Keep holding the button for 8 seconds, then let go and take off the paper.
+Now, let’s get our code ready to log data. First, unplug your project from the computer. Next, hold down the A button on the micro:bit. While you’re holding it, cover the baseplate with white paper. Keep holding the button for 8 seconds, then let go and take off the paper.
 
 ~hint Tell me more!
 - We start with a white paper to see what normal data looks like.
@@ -172,15 +172,15 @@ Now, let’s get our code ready to log data. First, unplug your project from the
 hint~
 
 ## Modify Step 8 
-Now, grab your black piece of paper and cover the baseplate with it. This time, let's count to ten while you hold the A button!
+Now, grab your black piece of paper and cover the base plate with it. This time, let's count to 10 while you hold the A button!
 
 ~hint Tell me More! 
 - The black paper is like the ocean because it acts similar to how the ocean does with light.
-- Counting to ten helps us get a lot of information about our 'ocean'.
+- Counting to 10 helps us get a lot of information about our 'ocean'.
 hint~
 
 ## Modify Step 9 
-Take your folded white pieces of paper that are like icebergs. Place them one by one on the baseplate, counting to eight each time as you hold the A button. Then take them off one at a time. What do you think the data will show?
+Take your folded white pieces of paper that are like icebergs. Place them one by one on the baseplate, counting to 10 each time as you hold the A button. Then take them off one at a time. What do you think the data will show?
 
 ~hint Tell me More! 
 - The white paper acts as 'icebergs' in our ocean.
@@ -188,7 +188,8 @@ Take your folded white pieces of paper that are like icebergs. Place them one by
 hint~
 
 ## Modify Step 10 
-Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file  explorer on your device. Then, select your micro:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
+Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file explorer or My Computer on your device. Then, select your micro:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
+
 
 ~hint Tell me More! 
 - Think of the micro:bit as the brain; it stores all the information.
