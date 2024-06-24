@@ -1,4 +1,4 @@
-# Glacier Tracking with Satellites - Use
+# Glacier Tracking with Satellites - Use Tutorial
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
