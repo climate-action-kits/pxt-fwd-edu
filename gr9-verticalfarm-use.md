@@ -13,64 +13,64 @@ Let's build a vertical farm prototype! We are going to do this in three parts:
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-thumbnail-render.webp" alt="Full vertical farm render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs01.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs01.webp)
 
 ## Build Step 2 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs02.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs02.webp)
 
 ## Build Step 3 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs03.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs03.webp)
 
 ## Build Step 4 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs04.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs04.webp)
 
 ## Build Step 5 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs05.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs05.webp)
 
 ## Build Step 6 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs06.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs06.webp)
 
 ## Build Step 7 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs07.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs07.webp)
 
 ## Build Step 8 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs08.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs08.webp)
 
 ## Build Step 9 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs09.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs09.webp)
 
 ## Build Step 10 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs10.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs10.webp)
 
 ## Build Step 11 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs11.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs11.webp)
 
 ## Build Step 12 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs12.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs12.webp)
 
 ## Build Steps 13 + 14 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs13.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs13.webp)
 
 ## Build Step 15 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs14.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs15.webp)
 
 ## Build Step 16 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs15.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs16.webp)
 
 ## Build Step 17 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs16.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs17.webp)
 
 ## Build Step 18 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs17.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs18.webp)
 
 ## Build Step 19 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs18.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs19.webp)
 
 ## Build Step 20 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs19.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs20.webp)
 
 ## Build Step 21 @showdialog
-![verticalfarmsbs](https://github.com/climate-action-kits/pxt-fwd-edu/blob/main/tutorial-assets/gr9-verticalfarm-sbs20.webp)
+![verticalfarmsbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-verticalfarm-sbs21.webp)
 
 ## Activity 2: Code Your Project @showdialog
 We need to connect our project to the computer to make it come to life with code!

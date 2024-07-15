@@ -33,7 +33,7 @@ Let's build an automated tree seeder. We are going to do this in four parts:
 3. **Use** the tree seeder to learn how it works
 4. Become a company owner and **complete a math challenge** 
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-treeSeeder-thumbnail-render.webp" alt="Full tree seeder render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-treeseeder-thumbnail-render.webp" alt="Full tree seeder render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr9-treeseeder-sbs01.webp)
