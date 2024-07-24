@@ -349,9 +349,9 @@ Let's test it out! Download your new code and:
 What do you notice after each step? Did anything unexpected happen? If so, can you explain why?
 
 ## Challenge Step 13
-Right now, the timer and exposure thresholds are all in seconds. In reality, we know that for SODIS to work, water needs to be exposed to UV rays for 6 _hours_ on a sunny day and 48 _hours_ on a cloudy day. How might you change your program to convert seconds to hours? 
+Right now, the display and exposure thresholds are all in seconds. In reality, we know that for SODIS to work, water needs to be exposed to UV rays for 6 _hours_ on a sunny day and 48 _hours_ on a cloudy day. How might you change your program to have more accurate exposure thresholds and display _hours_ passed on the LEDs? 
 
-_Hint: You can find multiplication and division blocks in the ``||math:Math||`` category._
+_Hint: To convert between hours and seconds, you may use the multiplication and division blocks in the ``||math:Math||`` category._
 
 Try this on your own, then check the lightbulb for our solution.
 
