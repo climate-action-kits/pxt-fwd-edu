@@ -1,0 +1,51 @@
+---
+name: Auto-bump
+
+on:
+  workflow_dispatch
+
+concurrency:
+  group: ${{ github.head_ref || github.run_id }}
+  cancel-in-progress: true
+
+jobs:
+  auto-bump:
+    name: Auto-bump and release
+    runs-on: ubuntu-latest
+
+    steps:
+      - run: |
+         npm install -g makecode
+
+      - run: 'git config --global user.email "rweir@forwardedu.com"'
+
+      - run: 'git config --global user.name "ross-inksmith"'
+
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Count new tutorials
+        id: new_tutorials
+        run: >
+          echo "tutorial_count="
+          `
+          git diff $(git describe --tags --abbrev=0):pxt.json pxt.json |
+          grep -e '^[+-][^/]*.md' |
+          wc -l
+          `
+          >> "$GITHUB_OUTPUT"
+
+      - name: SANITY CHECK
+        run: >
+          echo "New tutorials: ${{ steps.new_tutorials.outputs.tutorial_count }}";
+          echo "bump: "`(
+          [[ ${{ steps.new_tutorials.outputs.tutorial_count }} > 0 ]] &&
+          echo "minor" ) ||
+          echo "patch"`;
+
+      - run: >
+          makecode bump --`(
+          [[ ${{ steps.new_tutorials.outputs.tutorial_count }} > 0 ]] &&
+          echo "minor" ) ||
+          echo "patch"`

@@ -1,0 +1,43 @@
+---
+name: "Sanity check pxt.json"
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  no_missing_files:
+    name: "pxt.json only references existing files"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Get pxt.json file list
+        uses: sergeysova/jq-action@v2
+        id: pxtjson_files
+        with:
+          cmd: jq -r '.files | join(",")' pxt.json
+
+      - name: Check all files exist
+        uses: thebinaryfelix/check-file-existence-action@1.0.0
+        with:
+          files: ${{ steps.pxtjson_files.outputs.value }}
+
+  all_tutorials_included:
+    name: "pxt.json includes all .md files"
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Diff pxt.json vs find
+        id: md_diff
+        run: >
+          diff
+          <(jq -r '.files[] | select(. | match(".md"))' pxt.json | sort)
+          <(find .  -name '*.md' | sed 's_^./__' | sort)

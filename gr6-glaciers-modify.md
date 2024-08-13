@@ -1,262 +1,332 @@
-# Glacier Tracking with Satellites
+# Glacier Tracking with Satellites - Modify Tutorial
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 datalogger=datalogger
 ```
-## Activity 1: Build your Project @showdialog 
-Welcome to the Glacier Tracking with Satellites! <br> We are going to do this in four parts!
-1. Build your project
-2. Code your Project 
-3. Modify your Project
-4. Complete a coding challenge 
 
-```template 
+```template
 datalogger.setColumnTitles("Light Level (%)")
 fwdSensors.ledRing.fwdSetBrightness(10)
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
 basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        basic.showIcon(IconNames.Yes)
+    if (input.buttonIsPressed(Button.B)) {
         datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
-    } else {
-        basic.showIcon(IconNames.No)
     }
 })
 ```
-## Build Step 1 @showdialog 
+
+## Activity 1: Build Your Project @showdialog
+Let's build a glacier satellite! We are going to do this in five parts:
+1. **Build** your satellite
+2. **Add code** to your satellite to bring it to life
+3. **Modify** the code of your satellite to learn how it works
+4. Complete a couple small coding **challenges**
+4. **Conduct an experiment** to better understand the impact climate change has on Earth's albedo
+
+Before you begin, make sure you have some white and black paper. You'll also need some small rectangles of white paper, folded in half. These will represent our glaciers.
+
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-thumbnail-render.webp" alt="Full glacier render" style="display: block; width: 60%; margin:auto;">
+
+## Build Step 1 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs1.webp)
 
-## Build Step 2 @showdialog 
+## Build Step 2 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs2.webp)
 
-## Build Step 3 @showdialog 
+## Build Step 3 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs3.webp)
 
-## Build Step 4 @showdialog 
+## Build Step 4 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs4.webp)
 
-## Build Step 5 @showdialog 
+## Build Step 5 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs5.webp)
 
-## Build Step 6 @showdialog 
+## Build Step 6 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs6.webp)
 
-## Build Step 7 @showdialog 
+## Build Step 7 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs7.webp)
 
-## Build Step 8 @showdialog 
+## Build Step 8 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs8.webp)
 
-## Build Step 9 @showdialog 
+## Build Step 9 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs9.webp)
 
-## Build Step 10 @showdialog 
+## Build Step 10 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs10.webp)
 
-## Build Step 11 @showdialog 
+## Build Step 11 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-sbs11.webp)
 
-## Activity 2: Code your Project @showdialog 
-We need to connect our project to the computer to make it come to life with code! <br> The code will be the instructions that tell our micro:bit what to do.
+## Activity 2: Code Your Project @showdialog
+We need to connect our project to the computer to make it come to life with code!
+
+The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
- Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
+IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 2 @showdialog
-Click three dots beside ``|Download|`` button, and click on _Connect Device_.
+Click the three dots beside the ``|Download|`` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
-![pair gif](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp) 
 
-## Code  Step 3 
-Next, click the ``|Download|`` button to download the blank project to start up the simulators. 
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
-## Activity 3: Modify your Project @showdialog
-We are now ready to modify our project to better understand how it works! Follow the instructions at the top of the screen. 
-When you are ready for more information, click *'Tell me More!'*
+## Code Step 3
+Next, click the ``|Download|`` button to download the code to your project.
 
-After each change to the code, you will need to ``|Download|`` the updated code to your project.
+## Activity 3: Modify Your Project @showdialog
+We are now ready to **modify** our satellite!
 
-## Modify Step 1 
+Tips
+1. Follow the instructions at the top of the screen.
+2. When you are ready for more information, click **'Tell me more!'**
+3. If you need help with the code, click the lightbulb!
+4. After each change, you will need to ``|Download|`` the updated code to your micro:bit.
 
-In this project, we are tracking the levels of light being reflected onto different surfaces. We do this by using something called conditionals.<br>
-How many conditional statements do you see in the code below?
+## Modify Step 1
+Let's take a look at our glacier satellite.
 
-~hint Tell me More
+What are the different parts of this project? How will these parts work together to track the amount of light being reflected off different surfaces?
+
+~hint Tell me more!
+- In this project, the LED ring acts like the sun and shines light down on the base plate which acts as Earth's surface.
+- We will place different coloured paper on the base plate to represent different surfaces, like a glacier, the ocean, the ground, etc.
+- The solar sensor will act as our satellite and will measure the amount of light being reflected off Earth.
+- This data will give us information on glacier melting.
+hint~
+
+## Modify Step 2
+We will be collecting data on light levels using something called a **conditional statement**. Can you find the conditional statement in our code?
+
+Check the lightbulb for the answer.
+
+~hint Tell me more!
 - Conditional statements tell our micro:bit what to do when a certain condition is met.
-- We use conditional statements in our own lives too.
-- For example, 'If it is raining, then I will bring an umbrella.'
-  hint~ 
-
-## Modify Step 2 
-Did you guess correctly? The code below has only one conditional statement. This condition is triggered by an event.<br>
-Looking at the code below, which blocks represent the event?
-
-~hint Tell me More 
-- An event in coding is when one thing causes another thing to happen!
-- For example, when you press the button for the elevator, the elevator arrives!
-- Pressing the button of the elevator is the event that triggers an action.
+- In this case, we are using a conditional statement to tell our micro:bit to collect solar sensor data when the B button is pressed. This is known as user **input**.
 hint~
 
-## Modify Step 3 
-Did you guess that right? ``||Input:on button A pressed||`` is an Event block. <br>What do you think will happen when you press the A button?
-
-~hint Tell me More
-- Pressing the A button will change the icon on the Micro:bit.
-- It will also start collecting data on light levels!
-- Holding the A button will record information.
-hint~
-
-## Modify Step 4 
-
-Let's change the event block from ``||Input:on button A pressed||`` to ``||Input:on button B pressed||`` and see what happens. Click the arrow to open the dropdown menu in the ``||Input:on button A pressed||`` block. Change the event to 'Button B', then download the new code to your Micro:bit.
-
-~hint Tell me More 
-- If you don't see the change on your micro:bit, check that you've downloaded the new code.
-- Changing to 'Button B' won’t change what happens; your micro:bit will still show the check mark if everything is set up right!
-hint~
-
-## Modify Step 5 
-Did you see the check mark when you pressed the B button? Great job! Now let’s switch it back. Change ``||Input:on button B pressed||`` to ``||Input:on button A pressed||`` Before we move on to collect data, make sure you did it right by looking for the lightbulb icon.
-
-~hint Tell me More
-- Didn't see the change? Make sure you've downloaded the new code to your Micro:bit.
-- Now, you can unplug the Micro:bit from your computer safely.
-hint~ 
-
-```blocks
-datalogger.setColumnTitles("Light Level (%)")
-fwdSensors.ledRing.fwdSetBrightness(10)
-fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
-basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        basic.showIcon(IconNames.Yes)
-        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
-    } else {
-        basic.showIcon(IconNames.No)
-    }
-})
-```
-## Modify Step 6 
-First, let’s get our materials ready. You will need:<br>
-Two pieces of paper: one white and one black <br>
-Some small rectangles of white paper, folded in half—these are our 'icebergs.'
-
-~hint Tell me More
-- We use black and white paper to show how different parts of our Earth works.
-- The black paper is like the ocean. It helps us see how much light and heat the ocean can soak up or bounce off.
-- The white paper 'icebergs' help reflect light back up into the sky, which keeps the ocean from getting too warm
-hint~
-
-## Modify Step 7 
-Now, let’s get our code ready to log data. First, unplug your project from the computer. Next, hold down the A button on the micro:bit. While you’re holding it, cover the baseplate with white paper. Keep holding the button for 8 seconds, then let go and take off the paper.
-
-~hint Tell me More 
-- We start with a white paper to see what normal data looks like.
-- Holding the A button for 8 seconds lets our Micro:bit gather a lot of data.
-hint~
-
-## Modify Step 8 
-Now, grab your black piece of paper and cover the baseplate with it. This time, let's count to ten while you hold the A button!
-
-~hint Tell me More 
-- The black paper is like the ocean because it acts similar to how the ocean does with light.
-- Counting to ten helps us get a lot of information about our 'ocean.
-hint~
-
-## Modify Step 9 
-Take your folded white pieces of paper that are like icebergs. Place them one by one on the baseplate, counting to eight each time as you hold the A button. Then take them off one at a time. What do you think the data will show?
-
-~hint Tell me More 
-- The white paper acts as 'icebergs' in our ocean.
-- Just like real icebergs, they reflect light away from the ocean
-hint~
-
-## Modify Step 10 
-Now we want to look at the data we have logged. Plugging the micro:bit back into your computer and open the file  explorer on your device. Then, select your micro:bit and open the file called 'My Data.' A new window will show all your data! Complete these steps, then come back here for a challenge.
-
-~hint Tell me More 
-- Think of the micro:bit as the brain; it stores all the information.
-- We need to open the micro:bit on your computer to see the data inside!
-hint~
-
-## Modify Step 11 
-
-What did you think of your data? Could you understand what was happening? Now for a fun challenge: We want you to use another conditional statement to make the data logger look neater.
-
-~hint Tell me More!
-- A conditional statement helps us organize and display data in a way that’s easy to understand.
-hint~
-
-## Challenge @showdialog 
-When we looked at our data logger, the graph was a bit messy! It was hard to tell what was our hand and what was our data. So let’s add another conditional to help clear up the data. Plug the micro:bit back into your computer now. 
-
-## Challenge Step 1 
-First, we need to set up our input, which triggers our code. Go to the ``||Input:Input||`` section and select the ``||Input:on button A pressed||`` block, change A to B. *Note: The block will be greyed out.* 
-
-## Challenge Step 2 
-Next, we need to build another conditional. Click on ``||logic:Logic||`` and select an ``||logic:if true then||`` block to add it to the workspace. You'll notice that both of these blocks will appear greyed out now.
-
-~hint Tell Me More 
-- We need this because we want something to happen when we press button B.
-- Remember, the A button is already being used to record data.
-hint~ 
-
-## Challenge Step 3 
-How do we connect these two blocks to make something happen when we press the B button? Also, where should we place this conditional in our code?
-
-~hint Tell me More
-- The 'if/then' block has a blank space meant for another block.
-- The 'button B pressed' block is shaped differently and needs to fit inside another block to function.
-- That's why we insert it into the blank space in our 'if/then' block.
-hint~
-
-## Challenge Step 4 
-Think you got it right? Check the light bulb icon to see if you're correct. If not, change your code to match what's shown in the light bulb.
-
-~hint Tell me More
-We placed the second conditional within the 'forever' block.
-This setup ensures our code continuously checks if the buttons have been pressed.
-hint~
-
-```blocks
-datalogger.setColumnTitles("Light Level (%)")
-fwdSensors.ledRing.fwdSetBrightness(10)
-fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
-basic.forever(function () {
-    if (input.buttonIsPressed(Button.A)) {
-        basic.showIcon(IconNames.Yes)
-        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
-    } else {
-        basic.showIcon(IconNames.No)
-    }
+```block
     if (input.buttonIsPressed(Button.B)) {
-    	
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    }
+```
+## Modify Step 3
+Let's change _when_ our micro:bit collects data by changing ``||input:on button B pressed||`` to ``||input:on button A pressed||``.
+
+~hint Tell me more!
+- Don't forget to download your new code!
+hint~
+
+```block
+    if (input.buttonIsPressed(Button.A)) {
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    }
+```
+## Modify Step 4
+Let's try collecting some data. 
+
+Unplug the micro:bit from the computer, then press and hold 'A' for 10 seconds. The collected data will be stored on our micro:bit.
+
+## Modify Step 5 @showdialog
+Time to view the data we just logged. To access it:
+
+1. Plug the micro:bit back into your computer.
+2. Open File Explorer or My Computer on your device.
+3. Select your micro:bit.
+4. Open the file called 'MY_DATA'.
+5. A new window will show all your data!
+6. Click 'Visual Preview' to view as a graph, where the Y-axis is 'Light Level' and X-axis is 'Time (seconds)'.
+
+**Complete these steps, then come back here for a challenge.**
+
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/MyDataWalkthrough.webp" style="width: 100%;">
+
+**Need more support?** Check out this [micro:bit resource on Data Logging](https://microbit.org/get-started/user-guide/data-logging/#reading-data).
+
+## Activity 4: Challenge @showdialog
+Let's improve the user experience of our glacier satellite. We are going to:
+
+1. Add visual output to tell the user when data is being collected
+2. Use a conditional statement to delete old data
+
+## Challenge Step 1
+As a user, we had to trust that our data had been saved. We could only confirm this had _actually_ happened once we opened the MY_DATA file.
+
+Let's add some visual sign or **output** on our micro:bit's display to reassure the user that data is being collected.
+
+## Challenge Step 2
+Drag a ``||basic:show icon||`` block from the ``||basic:Basic||`` category and add it to the workspace.
+
+If we want the icon to appear _while_ data is being collected, where should we put this block in our code?
+
+~hint Tell me more!
+- You will add the ``||basic:show icon||`` block right before the ``||datalogger:log data||`` block inside the conditional statement.
+- Feel free to change the icon.
+- Download your code and test it out!
+hint~
+
+```block
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showIcon(IconNames.Yes)
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    }
+```
+
+## Challenge Step 3
+You probably noticed that the icon stays visible all the time now! That's because we haven't told the micro:bit what to display when A is _not_ being pressed.
+
+Expand your conditional statement by clicking the + icon below it. This reveals an ``||logic:else||`` condition. Let's add a ``||basic:show icon||`` block here, too.
+
+~hint Tell me more!
+- If A is pressed, we'll show a checkmark and collect data, _else_ we'll display an 'X' icon.
+- Download your code and test it out!
+hint~
+
+```block
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showIcon(IconNames.Yes)
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    } else {
+        basic.showIcon(IconNames.No)
+    }
+```
+
+## Challenge Step 4
+We've collected some random data while testing our code, but we don't actually want to save this data. At the moment, there is no way to delete data from our log.
+
+Let's add another conditional statement to clear the data.
+
+## Challenge Step 5
+First, we need to set up our input, which will trigger our code. Go to the ``||input:Input||`` section and drag the ``||input:on button A pressed||`` block into the workspace. Change A to B.
+
+_Note: The block will be greyed out._
+
+## Challenge Step 6
+Next, we need to build another conditional statement. Click on ``||logic:Logic||`` and drag an ``||logic:if true then||`` block into the workspace. You'll notice that this block is also greyed out.
+
+## Challenge Step 7
+How do we connect these two blocks to make something happen _when_ we press 'B'? Also, where should we placed the completed conditional statement in our code?
+
+Think you got it right? Click the lightbulb to check your answer.
+
+~hint Tell me more!
+- The ``||logic:if then||`` block has a blank space meant for another block.
+- The ``||input:on button B pressed||`` block is shaped differently and needs to fit inside another block to function. We can insert it into the blank space in our conditional.
+- Then, place this new conditional within the ``||basic:forever||`` block. This will make our micro:bit continuously checks if the buttons have been pressed.
+hint~
+
+```blocks
+basic.forever(function () {
+    if (input.buttonIsPressed(Button.A)) {
+        basic.showIcon(IconNames.Yes)
+        datalogger.log(datalogger.createCV("Light Level (%)", fwdSensors.solar1.fwdLightLevel()))
+    } else {
+        basic.showIcon(IconNames.No)
+    }
+    // @highlight
+    if (input.buttonIsPressed(Button.B)) {
     }
 })
 ```
-## Challenge Step 5 
-Lastly, we need to specify what happens after pressing the B button. Go to ``||datalogger.datalogger||`` and add the ``||datalogger.deleteLog||`` action inside the ``||logic:if true then||`` block.
 
-~hint Tell me More
-- 'Delete log' clears the data you see in the simulator.
-- This allows us to reset and collect different data under various settings
-hint~ 
+## Challenge Step 8
+Lastly, we need to specify what happens after the B button is pressed. Go to the ``||datalogger:Data Logger||`` category and add the ``||datalogger:delete log||`` block inside the ``||logic:if then||`` block.
 
-## Challenge Step 5 
-Let's see if this worked! Press the B button on the micro:bit, this will trigger the delete log event and clear your data. Check the data within the micro:bit using your file explorer. 
-
-~hint Tell me More!
-- This step checks that the 'delete log' command inside the 'if/then' block is working properly when you press the B button. 
+~hint Tell me more!
+- ``||datalogger:delete log||`` clears any saved data.
+- Download your new code.
+- Test it out: Unplug your micro:bit, record some data, then clear it by pressing B!
 hint~
 
-## Congratulations! @showdialog 
+```block
+    if (input.buttonIsPressed(Button.B)) {
+        datalogger.deleteLog()
+    }
+```
 
-You've completed the activity! Congratulations!
+## Challenge Step 9 @showdialog
+Let's see if this worked! Plug your micro:bit back into your computer. Then, open your MY_DATA file to confirm the data log is empty.
 
-## Reflection @showdialog 
-Think about something about this project that challenged you. How did you overcome the challenge? How did that make you feel?
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/MyDataWalkthrough.webp" style="width: 100%;">
 
-## Finished! @showdialog 
-In the next step, you can click the `|Done|` button to finish the tutorial."
+## Activity 5: Experiment @showdialog
+Now we are ready to conduct our albedo experiment.
+
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr6-glacier-thumbnail-render.webp" alt="Full glacier render" style="display: block; width: 60%; margin:auto;">
+
+We are going to record the amount of light reflected back to the solar sensor (aka the satellite) in a few scenarios:
+
+1. Base plate alone
+2. White paper (snowy glacier)
+3. Black paper with four white rectangles (ocean or land with melting glaciers)
+4. Black paper with three white rectangles
+5. Black paper with two white rectangles
+6. Black paper with one white rectangle
+7. Black paper (dark ocean or land)
+
+How do you think the light level will change in these scenarios? Make a prediction!
+
+## Experiment Step 1
+Let's start logging some real data. Make sure there is nothing on your base plate. Then, unplug your project from the computer. Next, hold down the A button on the micro:bit for 10 seconds. Let go.
+
+~hint Tell me more!
+- We first collect light levels without any paper on the base plate to see what "normal" looks like. This is our control.
+- Holding the A button for 10 seconds allows us to gather a lot of data.
+hint~
+
+## Experiment Step 2
+Now, grab your white piece of paper and cover the base plate with it. Hold 'A' for 10 seconds. Let go.
+
+~hint Tell me more!
+- The white paper represents a healthy, snowy glacier. Glaciers are white and shiny, so they have high albedo and reflect a lot of sunlight back into space.
+hint~
+
+## Experiment Step 3
+Take your black piece of paper and add it to the base plate. Then, add the folded white rectangles randomly on top. Hold 'A' for 10 seconds to collect data on this condition.
+
+~hint Tell me more!
+- The black paper represents the ocean and ground because it is dark. It has a low albedo and will absorb a lot of light from the sun.
+- The white rectangles represent glaciers that are starting to melt. You can start to see the ocean and ground below.
+hint~
+
+## Experiment Step 4
+Now, remove one 'glacier' at a time. Each time you remove a glacier, press 'A' for 10 seconds to record data on the new condition.
+
+~hint Tell me more!
+- This represents glaciers that are melting over time.
+- What do you think will happen to the amount of light reflected back into the solar sensor each time you remove a glacier?
+hint~
+
+## Experiment Step 5
+Once all the white rectangles have been removed, take one last measurement of your black paper alone. Hold 'A' for 10 seconds. Let go.
+
+~hint Tell me more!
+- This condition represents the ocean or ground without _any_ glaciers.
+hint~
+
+## Experiment Step 6 @showdialog
+
+Let's compare our real data to our predictions.
+
+1. Plug the micro:bit back into your computer.
+2. Open File Explorer or My Computer on your device.
+3. Select your micro:bit.
+4. Open the file called 'MY_DATA'.
+5. A new window will show all your data!
+6. Click 'Visual Preview' to view as a graph, where Y-axis is 'Light Level' and X-axis is 'Time (seconds)'.
+
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/MyDataWalkthrough.webp" style="width: 100%;">
+
+## Reflection @showdialog
+How did the data you collected compare to your predictions?
+
+Can you explain any differences?
+
+## Finished! @showdialog
+In the next step, you can click the ``|Done|`` button to finish the tutorial.

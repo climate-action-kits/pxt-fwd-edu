@@ -3,12 +3,12 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 ledRing=github:climate-action-kits/pxt-fwd-edu
 ```
-## Activity 1: Build your Project @showdialog 
+## Activity 1: Build Your Project @showdialog 
 
-Let's build a Bee Counter! We are going to do this in three parts: 
-1. Build your Bee Counter. 
-2. Add code to bring it to life.
-3. Use the Bee Counter to learn how it works.
+Let's build a bee counter! We are going to do this in three parts: 
+1. **Build** your bee counter. 
+2. **Add code** to bring it to life.
+3. **Use** the bee counter to learn how it works.
 
 ![projectrender](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr4-bees-projectrender.webp) 
 
@@ -57,24 +57,26 @@ Let's build a Bee Counter! We are going to do this in three parts:
 ## Build Step 15 @showdialog
 ![beesbs](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/Gr4-bees-sbs15.png)
 
-## Activity 2: Code your Project @showdialog  
-We need to connect our project to the computer to make it come to life with code! The code will be the instructions that tell our micro: bit what to do.
+## Activity 2: Code Your Project @showdialog  
+We need to connect our project to the computer to make it come to life with code! 
+
+The code will be the instructions that tell our micro: bit what to do.
 
 ## Code Step 1 @showdialog
- Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
 
 ## Code Step 2 @showdialog
-Click three dots beside the ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
+Click the three dots beside the ``|Download|`` button, then click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 ![pair gif](https://raw.githubusercontent.com/Jessica-forwardedu/pxt-fwd-edu/main/tutorial-assets/DownloadButtonGIF.webp)
 
 ## Code Step 3 
-Next, click the ``|Download|`` button to download code to your project.
+Next, click the ``|Download|`` button to download the code to your project.
 
-## Activity 3: Use your Project @showdialog 
+## Activity 3: Use Your Project @showdialog 
 
-We are ready to use our Bee Counter. Follow the instructions at the top of the screen. When you are ready for more information click *'Tell me more!'* 
+We are ready to use our bee counter. Follow the instructions at the top of the screen. When you are ready for more information click *'Tell me more!'* 
 
 ```template
 let bugVisits = 0
@@ -91,7 +93,7 @@ basic.forever(function () {
 
 ## Use Step 1 
 
-Take a look at your completed Bee Counter and think about these questions.
+Take a look at the bee counter project you just built and think about these questions.
 
 What are all of its parts?
 
@@ -102,17 +104,17 @@ What are all of its parts?
 hint~
 
 ## Use Step 2 
-Looking at your completed project, what should the project do?
+Looking at your completed project, what do you think it should it do?
 
 
 ~hint Tell me more!
-- Your Bee Counter should keep track of how many times a bee visits a flower and let us know the total!
-- By counting, we can find out if the bees really like our flower!
-- If not many bees are visiting, what can we do to make our flower more popular with the bees?
+- Your bee counter should keep track of how many times a bee visits a flower and let us know the total!
+- By counting, we can find out if the bees like our flower!
+- If not many bees are visiting, what could we do to make our flower more popular?
 hint~
 
 ## Use Step 3 
-How do you think each part works together to make that happen?
+How do you think each part works together to make all of that happen?
 
 ~hint Tell me more!
 - The micro:bit acts like the brain of your project. It makes decisions and tells the other parts what to do.
@@ -130,50 +132,36 @@ Try reading the code blocks below. What do you think will happen when you touch 
   hint~
 
 ## Use Step 5
-We use **conditional statements** to help us make decisions all the time in real life <br> For example, "If it is raining, then I will open my umbrella."
-Can you identify the conditional statement?
+We use **conditional statements** to help us make decisions all the time in real life. For example, "If it is raining, then I will open my umbrella."
+
+Can you identify the conditional statement in the code below?
 
 ~hint Tell me more!
-  - The conditional statement in this code is: Set bugVisits to 1. 
-  - Check the light blub to be sure!
+  - Check the lightblub to see if you were right!
   hint~
 
-```blocks
-let bugVisits = 0
-basic.forever(function () {
+```block
     if (fwdSensors.touch.fwdIsPressed()) {
         bugVisits += 1
     }
-})
 ```
 
 ## Use Step 6
 
-Click the ``|Download|`` button to redownload the code to your project. <br> What happens to the number on the LEDs?
+Click the ``|Download|`` button to redownload the code to your project. 
 
-~hint Tell me More
-- Now the number on the micro:bit goes back to 0 each time we download the code.
-- This is how we reset our Bee Counter.
+What happens to the number on the LEDs?
+
+~hint Tell me more!
+- The number on the micro:bit goes back to '0' each time we download the code.
+- This is how we reset our bee counter.
   hint~
 
-
-```blocks
-let bugVisits = 0
-basic.showNumber(bugVisits)
-basic.forever(function () {
-    if (fwdSensors.touch.fwdIsPressed()) {
-        bugVisits += 1
-        basic.showNumber(bugVisits)
-    }
-})
-```
-
 ## Use Step 7 
-Can you guess which part of our code is used to reset the Bee Counter? 
+Can you guess which part of our code is used to reset the bee counter? 
 
-~hint Tell me More!
-- The block set:bugVisits to 0 is resetting the number!
-- Each time we do this the counting is reset!
+~hint Tell me more!
+- The block ``||variables:set bugVisits to 0||`` resets the number when our program starts!
 hint~
 
 ```blocks
@@ -186,24 +174,13 @@ basic.showNumber(bugVisits)
 ## Use Step 8 
 Let's test out resetting the number! Press the touch sensor until it shows the number 10, then ``|Download|`` the code again to reset the count. 
 
-```blocks
-let bugVisits = 0
-bugVisits = 0
-basic.showNumber(bugVisits)
-basic.forever(function () {
-    if (fwdSensors.touch.fwdIsPressed()) {
-        bugVisits += 1
-        basic.showNumber(bugVisits)
-    }
-})
-```
-
-
 ## Congratulations! @showdialog 
 You've completed the activity! Did anything surprise you about this project? 
 
 ## Reflection @showdialog 
-List 2 new things you learned today. <br> What is one thing you want to learn more about? 
+List 2 new things you learned today. 
+
+What is one thing you want to learn more about? 
 
 ## Finished! @showdialog 
 In the next step, you can click the ``|Done|`` button to finish the tutorial.

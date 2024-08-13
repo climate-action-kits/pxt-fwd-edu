@@ -71,8 +71,7 @@ namespace fwdSensors {
     /**
      * Set a specific LED to a color
      * @param index the LED number
-     * @param rgb color value using either the blocks color picker or hex value
-     * TODO: fix the color picker
+     * @param rgb color value using either the blocks color picker or hex
      */
     //% block="set $this $index to $rgb=colorNumberPicker"
     //% blockId=fwd_led_set_single_pixel_colour
@@ -81,8 +80,7 @@ namespace fwdSensors {
 
     /**
      * Set all LEDs to a color
-     * @param rgb color value using either the blocks color picker or hex value
-     * TODO: fix the color picker
+     * @param rgb color value using either the blocks color picker or hex 
      */
     //% block="set all $this LEDs to $rgb=colorNumberPicker"
     //% blockId=fwd_led_set_all_pixels_colour
