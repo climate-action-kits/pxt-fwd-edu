@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "1.29.5",
+    "version": "1.29.6",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
@@ -87,6 +87,8 @@
         "motm-obs.md",
         "ms-sodis-use.md",
         "ms-sodis-modify.md",
+        "ms-solarpanel-use.md",
+        "ms-solarpanel-modify.md",
         "plantsnpollinators.md",
         "robo-delivery-11-12.md",
         "sodis.md",
