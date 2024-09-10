@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "1.32.0",
+    "version": "1.32.1",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
@@ -59,6 +59,8 @@
         "ev-obstacle-py.md",
         "ev-wildfire.md",
         "glaciers.md",
+        "es-landbridge-modify.md",
+        "es-landbridge-use.md",
         "gr3-forcewind-modify.md",
         "gr3-forcewind-use.md",
         "gr3-wind-lvl1.md",
