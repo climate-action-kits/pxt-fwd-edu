@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-moisture",
-    "version": "1.35.0",
+    "version": "1.36.0",
     "description": "FWD Edu Climate Action Kit Gen. 2 Moisture",
     "license": "MIT",
     "dependencies": {
