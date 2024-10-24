@@ -183,7 +183,7 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## Modify Step 2
+## Modify Step 3
 
 What will happen when we increase the driving speed in the driving block from **20** to **40**?
 
@@ -196,7 +196,7 @@ hint~
 ```block
 fwdMotors.drive(fwdMotors.DrivingDirection.Forward, 40)
 ```
-## Modify Step 3
+## Modify Step 4
 Did you notice if the speed change impacted the reliability of the following line?
 
 How many times did the vehicle have to re-adjust before reaching the end of the straight line?
@@ -205,7 +205,7 @@ How many times did the vehicle have to re-adjust before reaching the end of the 
 It takes time for the micro:bit to process the data collected from the line sensor. The faster the vehicle moves, the less time the micro:bit has to sense where it is in relation to the line.
 hint~
 
-## Modify Step 4
+## Modify Step 5
 Updating our program doesn’t _always_ make it more efficient. How could you improve or adjust the code so the vehicle still senses the line properly?
 
 Adjust your code and document how many times the vehicle had to re-adjust before reaching the end of the straight line.
@@ -241,7 +241,7 @@ basic.forever(function () {
    }
 ```
 
-## Modify Step 5
+## Modify Step 6
 Let’s test another component that our Smart Warehouse Vehicle is using!
 
 How do you think that the **LED Light** is helping our warehouse vehicle drive on the black line?
@@ -255,7 +255,7 @@ hint~
 ```block
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
 ```
-## Modify Step 6 @showdialog
+## Modify Step 7 @showdialog
 Based on your understanding of how the vehicle acted the first time you tested it, how do you think it will navigate a black line when the LED is set to different lighting conditions?
 
 1. Set the LED light to white
@@ -265,7 +265,7 @@ Based on your understanding of how the vehicle acted the first time you tested i
 
 Write your prediction down!
 
-## Modify Step 7
+## Modify Step 8
 Now it’s time to test your prediction!
 
 Test each of the four lighting conditions 5 times on the straight line and document your findings in a table.
@@ -391,8 +391,6 @@ basic.forever(function () {
 })
 ```
 
-fwdSensors.sonar1.fwdDistancePastThreshold(.3, fwdSensors.ThresholdDirection.Over)
-```
 ## Challenge Complete!
 You did it!
 
