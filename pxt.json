@@ -1,6 +1,6 @@
 {
     "name": "pxt-fwd-edu",
-    "version": "1.36.0",
+    "version": "1.38.0",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
@@ -88,6 +88,8 @@
         "gr9-treeSeeder-modify.md",
         "gr9-verticalfarm-use.md",
         "gr9-verticalfarm-modify.md",
+        "hs-autodelivery-use.md",
+        "hs-autodelivery-modify.md",
         "hs-mobileirrigation-use.md",
         "hs-mobileirrigation-modify.md",
         "icon.png",
