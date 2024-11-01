@@ -170,7 +170,7 @@ input.onButtonPressed(Button.B, function () {
 ```
 
 ## Modify Step 4
-What do you think will happen if you liftthe bottom part of your moisture sensor back out of the water and hold it there? Try it now.
+What do you think will happen if you lift the bottom part of your moisture sensor back out of the water and hold it there? Try it now.
 
 Was this what you expected?
 
