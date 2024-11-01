@@ -202,10 +202,10 @@ Assume the SODIS timer is being used in a climate that is mostly sunny. Sunny co
 ## Challenge Step 2
 To create a visual indicator when the water is safe to drink on a sunny day, we need to write another decision point or conditional statement. This conditional will allow the micro:bit to evaluate whether the exposure threshold has been met. In sunny weather, this threshold is 6 hours.
 
-Think about how you could phrase this decision point in English using an if/then statement.
+Think about how you could phrase this decision point using an if/then statement.
 
 ~hint Tell me more!
-- In English, you might say "If the water has been exposed to UV for 6 hours, then show a smiley face on the micro:bit's LEDs."
+- You might say "If the water has been exposed to UV for 6 hours, then show a smiley face on the micro:bit's LEDs."
 - The visual indicator doesn't have to be a smiley face, it could be anything!
 hint~
 
