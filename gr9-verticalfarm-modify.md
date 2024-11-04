@@ -213,7 +213,7 @@ input.onButtonPressed(Button.AB, function () {
 ## Modify Step 4
 Each ``||functions:call||`` block has a couple different numbers. What do you think these numbers mean?
 
-Change the first number in the ``||functions:call||`` block under ``||input:on button A pressed||`` to something between ‘10’ and ‘60’. Then, re-download your code and test it out! What happened?
+Change the **first number** in the ``||functions:call||`` block under ``||input:on button A pressed||`` to something between ‘10’ and ‘60’. Then, re-download your code and test it out! What happened?
 
 ~hint Tell me more!
 - When A is pressed, the LED arm now moves to a new location.
@@ -405,39 +405,7 @@ function lightPlant (location: number, colour: number) {
     basic.pause(5000)
 }
 ```
-
 ## Modify Step 14
-In the ``||fwdMotors:set leftServo to||`` block, select the down arrow next to ``||variables:list||`` and replace with ``||variables:location||``.
-
-In the ``||fwdSensors:set all ledRing LEDs to||`` block, select the down arrow next to ``||variables:list||`` and replace with ``||variables:colour||``.
-
-~hint Tell me more!
-- This is how we can clarify that we want these two blocks to pull data from our ``||variables:location||`` and ``||variables:colour||`` lists.
-- _Note: You may notice an error message, but it will be resolved in the next couple steps._
-hint~
-
-```block
-function lightPlant (location: any[], colour: any[]) {
-    // @highlight
-    fwdMotors.leftServo.fwdSetAngleAndWait(location[0])
-    basic.showLeds(`
-        # . # . #
-        . # # # .
-        # # # # #
-        . # # # .
-        # . # . #
-        `)
-    // @highlight
-    fwdSensors.ledRing.fwdSetAllPixelsColour(colour[0])
-    basic.pause(5000)
-    fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
-    basic.clearScreen()
-    fwdMotors.leftServo.fwdSetAngleAndWait(0)
-    basic.pause(5000)
-}
-```
-
-## Modify Step 15
 So, we've added our lists to the function, but the micro:bit still doesn't know _which_ number to pull from each.
 
 Thankfully, lists are ordered! We can use a concept known as **index** to target a specific number in each list. In most programming languages, the first item in a list has an index of 0, the second item has an index of 1, and so on.
@@ -449,7 +417,7 @@ Today, we have stored the data in this order:
 - Data for plants in the _bottom_ row in our farm is always the third number in our lists (aka index 2).
 hint~
 
-## Modify Step 16
+## Modify Step 15
 Since each row is linked to a specific index, the ``||variables:index||`` can be our new parameter.
 
 Right click on the function block and click ‘Edit Function’. Delete the ‘colour’ parameter by clicking on it and selecting the trash can that appears. Rename the ‘location’ parameter ‘index’.
@@ -474,7 +442,7 @@ function lightPlant (index: number) {
 }
 ```
 
-## Modify Step 17
+## Modify Step 16
 Drag ``||variables:index||`` from the function block and add it to both ``||arrays:get value at 0||`` blocks.
 
 This is how we tell the micro:bit to pull the location and colour data for the top row of plants (index = 0), middle row of plants (index = 1), or bottom row of plants (index = 2).
@@ -500,7 +468,7 @@ function lightPlant (index: number) {
 }
 ```
 
-## Modify Step 18
+## Modify Step 17
 Finally, we must update our ``||functions:call||`` blocks to reflect these changes.
 
 When we press A, we want to light the plants on the _top row_ of our vertical farm. What value should we use for ``||variables:index||`` in the ``||functions:call lightPlant||`` under ``||input:on button A pressed||``?
@@ -534,7 +502,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Modify Step 19
+## Modify Step 18
 What argument should we use for ``||variables:index||`` in the ``||functions:call lightPlant||`` block under ``||input:on button B pressed||``? ``||input:On button A+B pressed||``?
 
 ~hint Tell me more!
@@ -571,7 +539,7 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-## Modify Step 20
+## Modify Step 19
 Download your code to test it out! What do you notice?
 
 ~hint Tell me more!
