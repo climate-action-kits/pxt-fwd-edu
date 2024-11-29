@@ -27,7 +27,7 @@ Let's build a smart seaweed farm! We'll do this in four parts:
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-seaweedfarming-render.webp" alt="Full seaweed farm model render" style="display: block; width: 70%; margin:auto;">
 
 ## Build Supplies @showdialog
-![sbs0A](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-seaweedfarming-sbs0A.webp)
+![sbs0A](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-seaweedfarming-sbs0B.webp)
 
 ## Build Step 1 @showdialog
 ![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-seaweedfarming-sbs01.webp)
@@ -59,7 +59,7 @@ Let's build a smart seaweed farm! We'll do this in four parts:
 ## Build Step 10 (Optional) @showdialog
 ![sbs10](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-seaweedfarming-sbs10.webp)
 
-If you have the CHARGE for micro:bit, you can use it here!
+_Note: If you have the CHARGE for micro:bit, you can use it here!_
 
 ## Activity 2: Code Your Project @showdialog
 Now it’s time to bring your farm model to life with code! The code will be the instructions that tell our micro:bit what to do.

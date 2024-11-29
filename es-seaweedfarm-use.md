@@ -58,7 +58,7 @@ Let's build our smart seaweed farm! We will do this in three parts:
 ## Build Step 10 (Optional) @showdialog
 ![sbs10](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-seaweedfarming-sbs10.webp)
 
-If you have the CHARGE for micro:bit, you can use it here!
+_Note: If you have the CHARGE for micro:bit, you can use it here!_
 
 ## Activity 2: Code Your Project @showdialog
 Now it’s time to bring your model to life with code! The code will be the instructions that tell our micro:bit what to do.
