@@ -1,4 +1,4 @@
-# Forward Education Sea Level Monitoring Station - Use Tutorial
+# Forward Education Sea Level Rise Satellite - Use Tutorial
 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
@@ -19,13 +19,13 @@ basic.forever(function () {
 ```
 
 ## Activity 1: Build Your Project @showdialog
-Let's build a sea level monitoring station! We are going to do this in four parts: 
-1. **Build** our sea level monitoring station  
+Let's build a satellite to monitor sea level change! We are going to do this in four parts: 
+1. **Build** our satellite  
 2. **Add code** to bring our project to life  
 3. **Use** sensors to understand how they work  
 4. Apply what we learned with a small **experiment**
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea level station render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea satellite render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 ![Build Step 1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs01.webp)
@@ -95,7 +95,7 @@ Next, follow the steps to pair your micro:bit.
 Click the ``|Download|`` button to download the starter code to your project.
 
 ## Activity 3: Use Your Project @showdialog
-Now that we've built our sea level monitoring station, we'll start by **using** the sample code to see how it works.
+Now that we've built our satellite to monitor sea level change, we'll start by **using** the sample code to see how it works.
 
 As you go through the next steps:
 
@@ -104,7 +104,7 @@ As you go through the next steps:
 * If you need help with the code, click the **lightbulb!**
 
 ## Use Step 1
-Think back to the lesson about how satellites track ocean's water levels around the world. Our Sea level monitoring station is modelling satellite radar altimetry like [Jason-3](https://www.youtube.com/watch?v=snhFHZlbYOk).
+Think back to the lesson about how satellites track sea levels around the world. Our project modelling satellite radar altimetry like [Jason-3](https://www.youtube.com/watch?v=snhFHZlbYOk).
 
 What should it be able to do?
 
@@ -120,9 +120,9 @@ Take a look at the physical project you just built.
 What robotic components do you notice? How do you think they’ll work together to make our model function as we expect?
 
 ~hint Tell Me More!
-The sea level monitoring station has:
+The satellite has:
 * One **sonar sensor** that detects the floating circular block on the surface of the water.
-* One **touch sensor** that we're not currently using in our code.
+* One **touch sensor** that we're not using __yet__ in our code, but we will in the Modify Tutorial.
 * These parts are all connected to the **breakout board** through **cables**.
 * Finally, the breakout board is connected to the **micro:bit** which holds all the code that will tell our sensors what to do and when to do it!
 hint~
@@ -168,7 +168,10 @@ basic.forever(function () {
 ```
 
 ## Activity 4: Sea Level Experiment @showdialog
-Now that we have **used** our code to understand how our sea level monitoring station **collects data**, using our hand we're going to add water!
+Now that we have **used** our code to understand how our satellite **collects data** using our hand, we're going to add water!
+
+**Important!** 
+Remember that our project uses electronic wires and sensors that should not get wet! If any part other than the building blocks gets wet, **turn off your project and fully dry it before continuing.**
 
 ## Build Step 17 @showdialog
 To help your green circular building block float in water, wrap it with plastic wrap.
@@ -233,7 +236,7 @@ hint~
 ## Congratulations! @showdialog
 You've completed the activity!
 
-Did anything surprise you about the project?
+Did anything surprise you about the project or experiment that you conducted?
 
 ## Reflection @showdialog
 1. How did using predictions and data collection help you better understand your code?
