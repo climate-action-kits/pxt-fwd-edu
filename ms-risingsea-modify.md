@@ -1,4 +1,4 @@
-# Forward Education Sea Level Monitoring Station - Modify Tutorial
+# Forward Education Sea Level Rise Satellite - Modify Tutorial
 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
@@ -35,13 +35,13 @@ basic.forever(function () {
 })
 ```
 ## Activity 1: Build Your Project @showdialog
-Let's build a sea level monitoring station! We are going to do this in four parts: 
-1. **Build** our sea level monitoring station  
+Let's build a satellite to monitor sea level change! We are going to do this in four parts: 
+1. **Build** our satellite
 2. **Add code** to bring our project to life  
 3. **Modify** our project to learn about other sensors  
 4. Apply what we learned with a small **experiment**
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea level station render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea satellite render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog
 ![Build Step 1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs01.webp)
@@ -111,7 +111,7 @@ Next, follow the steps to pair your micro:bit.
 Click the ``|Download|`` button to download the starter code to your project.
 
 ## Activity 3: Modify Your Project @showdialog
-We have a sea level monitoring station that **detects the water level** and **visualizes water level using the LED display**. Let’s explore how to optimize our sensors by **modifying** our code!
+We have a satellite that **detects the water level** and **visualizes water level using the LED display**. Let’s explore how to optimize our sensors by **modifying** our code!
 
 As you go through the next steps:
 
@@ -120,7 +120,7 @@ As you go through the next steps:
 * If you need help with the code, click the **lightbulb**!
 
 ## Modify Step 1
-Let’s test out our sea level monitoring station!
+Let’s test out our satellite to see how it can monitor sea level change!
 
 With your model on a table, gently move your hand between the table and the sonar sensor while looking at the **LED display** on the micro:bit.
 
@@ -153,7 +153,7 @@ basic.forever(function () {
 ## Modify Step 3
 Let's set up data logging to track sea water rise.
 
-Data logging will let us compare how much ice has melted, to how much our ocean is rising. This data can help us identifiy patterns, like differences between land and sea ice, or how temperature affects the speed of ice melting.
+Data logging will let us compare how much ice has melted, to how much our ocean is rising. This data can help us identify patterns, like differences between land and sea ice, or how temperature affects the speed of ice melting.
 
 ## Modify Step 4
 We can use the blocks from the [Data Logger Extension](https://microbit.org/get-started/user-guide/data-logging/) to record sea water level as ice melts. 
@@ -190,20 +190,22 @@ Let's reduce how often our data is being recorded.
 Select the dropdown on the ``||loops:everyInterval||`` block. What do you think a better frequency to log our ice melting is?
 
 ~hint Tell Me More! 
-Try selecting once every minute, or 6000 miliseconds. 
+Try selecting once every minute, or 60,000 milliseconds. 
 hint~
 
 ```blocks
 // @highlight
-    loops.everyInterval(6000, function () {
+    loops.everyInterval(60000, function () {
        datalogger.log(datalogger.createCV("Water Level", fwdSensors.sonar1.fwdDistance()))
 })
 ```
 
 ## Activity 4: Sea Level Experiment
-Now that we have **modified** our code to understand how our sea level monitoring station **collects data**, we're going to add water!
+Now that we have **modified** our code to understand how our satellite **collects data**, we're going to add water!
 
 Remember to press the ``|Download|`` button to download our modified code.
+
+**Important!** Remember that our project uses electronic wires and sensors that should not get wet! If any part other than the building blocks get wet, turn off your project and fully dry it before continuing. 
 
 ## Build Step 17 @showdialog
 To help your green circular building block float in water, wrap it with plastic wrap.
@@ -240,7 +242,7 @@ Write your prediction down!
 ## Experiment Step 2
 Now it’s time to test your prediction!
 
-Press the **A and B** buttons buttons on your micro:bit to delete any old logs. Then, press the **touch sensor** to turn on your data logger.
+Press the **A and B** buttons on your micro:bit to delete any old logs. Then, press the **touch sensor** to turn on your data logger.
 
 ~hint Tell Me More!
 As the ice melts and the water rises
