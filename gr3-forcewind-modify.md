@@ -5,46 +5,37 @@ Dial=github:climate-action-kits/pxt-fwd-edu
 ``` 
 
 ## Activity 1: Build Your Project @showdialog
-Let's build a wind turbine! We are going to do this in 4 parts:
+Let's build a wind turbine! We are going to do this in four parts:
 1. **Build** our wind turbine
 2. **Add code** to make it move
 3. **Modify** our code to learn how it works
 4. Complete a small coding **challenge**
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr5-wind-lvl1-render.webp" alt="Full wind turbine render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-render.webp" alt="Full wind turbine render" style="display: block; width: 60%; margin:auto;">
 
 ## Build Step 1 @showdialog 
-![Attach the breakout board to the middle of a long frame building block.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs1.png)
+![Grab a white long frame. Put a continuous servo motor through the frame's servo hole. Make sure the cord of the servo is closest to the long end of the frame.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs01.webp)
 
 ## Build Step 2 @showdialog 
-![Add two cube connectors to either end of the long frame. Set this piece aside.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs2.png) 
+![Connect a circle block to the continuous servo motor.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs02.webp) 
 
 ## Build Step 3 @showdialog 
-![Grab a second long frame. Put the continuous servo motor through the frame's servo hole.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs3.png). 
+![Add a cube connector to the bottom of the long frame.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs03.webp). 
 
 ## Build Step 4 @showdialog 
-![Make sure the cord of the servo is closest to the long end of the frame.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs4.png) 
+![Connect the long frame to the baseplate, so it stands upright like a wind turbine.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs04.webp) 
 
 ## Build Step 5 @showdialog 
-![Connect a circle block to the continuous servo motor.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs5.png) 
+![Attach the breakout board to the middle of a long frame building block. Connect the servo motor to the middle motor port.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs05.webp) 
 
 ## Build Step 6 @showdialog 
-![Take the long frame with the breakout board and snap it onto the center of the base plate. Then, turn the second long frame, turn it, and attach it to the right cube connector, so it looks like a wind turbine. All pieces should be attached now.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs6.png)
+![Grab the dial and a short cable. Connect them. Plug the other end of the cable into a sensor port on the breakout board.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs06.webp)
 
 ## Build Step 7 @showdialog 
-![Plug the servo motor into the left servo port on the breakout board.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs7.png)
+![Connect your micro:bit to the computer via USB port.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs07.webp)
 
 ## Build Step 8 @showdialog 
-![Grab the dial and a short cable. Connect them.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs8.png)
-
-## Build Step 9 @showdialog 
-![Snap the dial onto the left corner of the base plate. Connect its cable to one of the sensor ports on the breakout board.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs9.png)
-
-## Build Step 10 @showdialog 
-![Connect the micro:bit to your computer using the provided USB cord.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs10.png)
-
-## Build Step 11 @showdialog 
-![Your build is complete!](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/gr3-wind1-lvl2-sbs11.png)
+![Slide the micro:bit into the breakout board.](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-simplewind-sbs08.webp)
 
 ## Activity 2: Code Your Project @showdialog
 We need to connect our project to the computer to make it come to life with code!
@@ -53,22 +44,22 @@ The code will be the instructions that tell our micro:bit what to do.
 
 ```template
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdMotors.middleServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.middleServo.fwdSetSpeed(50)
 })
 ```
 
 ## Code Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" style="display: block; width: 50%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" style="display: block; width: 45%; margin:auto;">
 
 ## Code Step 2 @showdialog
 Click the three dots beside the ``|Download|`` button, then click on _Connect Device_. Follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp" alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3 
 Click the ``|Download|`` button to download the starter code to your project.
@@ -90,25 +81,27 @@ The code below will make our wind turbine turn.
 Let's test it out first. What happens when you turn the dial to the right? What happens when you push the dial down?
 
 ~hint Tell me more!
-- The green building block starts spinning when you turn the dial. It stops when you press the dial down.
+- The green building block starts spinning when you turn the dial to the right. It stops when you press the dial down.
 hint~ 
 
 ## Modify Step 2 
-What happens when you make the number in the  ``||fwdMotors:set leftServo to 50%||`` bigger? Try changing it to 100%!
+What happens when you make the number in the  ``||fwdMotors:set middleServo to 50%||`` bigger? Try changing it to 100%!
 
 ~hint Tell me more!
 - The blue block represents the output or result of our code. When we make the number bigger, the turbine spins faster!
+- Don't forget to download the new code to your micro:bit.
+- If you don't see the change right away, try pressing down the dial to stop the turbine. Then, try turning it again.
 hint~
 
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     // @highlight
-    fwdMotors.leftServo.fwdSetSpeed(100)
+    fwdMotors.middleServo.fwdSetSpeed(100)
 })
 ```
   
 ## Modify Step 3
-What happens when you make the number in  ``||fwdMotors:set leftServo to 100%||`` smaller? Try it!
+What happens when you make the number in  ``||fwdMotors:set middleServo to 100%||`` smaller? Try it!
 
 ~hint Tell me more!
 - When we make the number smaller, the turbine spins more slowly.
@@ -117,12 +110,12 @@ hint~
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     // @highlight
-    fwdMotors.leftServo.fwdSetSpeed(10)
+    fwdMotors.middleServo.fwdSetSpeed(20)
 })
 ```
 
 ## Modify Step 3 
-What happens when you make the number in  ``||fwdMotors:set leftServo to 10%||`` negative? Try it!
+What happens when you make the number in  ``||fwdMotors:set middleServo to 20%||`` negative? Try it!
 
 ~hint Tell me more! 
 - When you add a '-' sign to the number, the turbine spins in the opposite direction.
@@ -131,7 +124,7 @@ hint~
 ```blocks
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
     // @highlight
-    fwdMotors.leftServo.fwdSetSpeed(-10)
+    fwdMotors.middleServo.fwdSetSpeed(-20)
 })
 ```
 
@@ -144,9 +137,9 @@ What happens when you change the direction of the arrow in  ``||fwdSensors:on di
 hint~
 
 ```blocks
+// @highlight
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    // @highlight
-    fwdMotors.leftServo.fwdSetSpeed(-10)
+    fwdMotors.middleServo.fwdSetSpeed(-20)
 })
 ```
 
@@ -156,13 +149,15 @@ Can you add another event to your code to make the wind turbine turn in both dir
 ## Challenge Step 1
 The first thing we want to happen is to make the wind turbine turn in another direction. Open the ``||fwdMotors:Motors||`` category and drag and drop ``||fwdMotors:set leftServo to 50 %||`` into the workspace.
 
+_Note: Make sure to switch **leftServo** to **middleServo** because our servo motor is connected to the middle port!_
+
 ~hint Tell me more!
 - This is the output we want to happen!
 - Note: The block will be grey or hashed for now.
 hint~
 
 ```block
-fwdMotors.leftServo.fwdSetSpeed(50)
+fwdMotors.middleServo.fwdSetSpeed(50)
 ```
 
 ## Challenge Step 2 
@@ -179,20 +174,23 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Challenge Step 3 
-Next, how can you use these two blocks together to make the wind turbine turn in the opposite direction? 
+Next, how can you put these two blocks together to make sure the wind turbine can turn in both directions? 
 
-## Challenge Step 4 
+## Challenge Step 4
+How can you change the code so that the dial and turbine spin in the _same direction_ to mimic the force of wind?
+
+## Challenge Step 5 
 Did you get it right? Check the lightbulb before clicking the ``|Download|`` button to download the code to your project.
 
 ```blocks
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdMotors.middleServo.fwdSetSpeed(0)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(-50)
+    fwdMotors.middleServo.fwdSetSpeed(50)
 })
 fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
-    fwdMotors.leftServo.fwdSetSpeed(50)
+    fwdMotors.middleServo.fwdSetSpeed(-50)
 })
 ```
 
