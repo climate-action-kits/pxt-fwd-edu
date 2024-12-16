@@ -4,10 +4,28 @@
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
 ```
-<!-- 
-```template
 
-``` -->
+```template
+fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
+    if (fwdMotors.pump.fwdIsActive()) {
+        fwdMotors.pump.fwdSetActive(false)
+    } else {
+        fwdMotors.pump.fwdSetActive(true)
+    }
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (difference) {
+    fwdMotors.rightServo.fwdSetAngle(fwdSensors.dial1.fwdPosition())
+})
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.rightServo.fwdSetAngle(fwdSensors.dial1.fwdPosition())
+    FishCount += 1
+})
+fwdMotors.pump.fwdSetActive(false)
+let FishCount = 0
+basic.forever(function () {
+    basic.showNumber(FishCount)
+})
+```
 
 ## Activity 1: Build Your Project @showdialog
 Let's explore fish migration! We are going to do this in four parts: 
@@ -87,9 +105,6 @@ Let's explore fish migration! We are going to do this in four parts:
 ## Build Step 23 @showdialog
 ![Build Step 23](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/hs-fishways-sbs23.webp)
 
-## Build Step 24 @showdialog
-![Build Step 24](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/hs-fishways-sbs24.webp)
-
 ## Activity 2: Code Your Project @showdialog
 We need to connect our project to the computer to make it come to life with code!
 
@@ -119,14 +134,151 @@ As you go through the next steps:
 * If you need help with the code, click the **lightbulb!**
 
 ## Use Step 1
+Think back to the lesson about how engineers design fishways to fit its ecosystem.
+
+What physical features do you notice in the design of the fishway?
+
+~hint Tell Me More!
+1. The fishway is on an **angle** to get from the bottom of a body of water, to the top of a dam. 
+
+2. A **white grate** at the base of the fishway prevent large, invasive species like goldfish from entering. 
+
+3. Green, **horizontal pieces** on the angled slope form vertical slots to create resting pools for fish.
+
+4. A tube connected to the **water pump** allows water to flow from the dam through the fishway. 
+hint~
+
+## Use Step 2
+Think back to the lesson about how ecologists use fishways to track fish migration and types of fish in an ecosystem. Our project is modelling sanctuaries and conservation areas like the [Royal Botanical Gardens](https://www.rbg.ca/plants-conservation/nature-sanctuaries/fishway/) in Ontario, Canada.
+
+What should the fishway be able to do?
+
+~hint Tell Me More!
+To help fish migrate from one body of water to another **and** to help scientists track ecosystem health, our model should be able to: 
+1. **Count** how many fish have migrated through the fishway.
+
+2. Use a **barrier** to prevent fish from exiting the fishway until scientists have collected their data.
+
+3. **Rotate the barrier** to allow fish to pass through the fishway.
+
+4. Turn on and off the flow of **water** from the dam. 
+hint~
+
+## Use Step 3
+Let’s test it out! Unplug your model from your computer and place it on a table. 
+
+For now, we'll test our model without using water in the pump.
+
+## Use Step 4
+Rotate the **dial** to the right, then back to the left, what is happening?
+
+~hint Tell Me More! 
+* **If** the dial turns **clockwise**, the gate in the data collection station **opens** and the number on the Micro:Bit **increases by 1**
+
+* **If** the dial turns **counterclockwise**, the gate in the data collection station **closes**
+hint~
+
+## Use Step 6
+Can you identify the **code block** that represents the number of fish traveling through the fishway? 
+
+~hint Tell Me More! 
+* The **event** "dial turned clockwise" runs each time the dial is turned to the right. 
+* Each time the event loop is run, the **variable** "FishCount" increases by 1.
+hint~
+
+```blocks
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    fwdMotors.rightServo.fwdSetAngle(fwdSensors.dial1.fwdPosition())
+   // @highlight
+    FishCount += 1
+})
+```
 
 ## Activity 4: Challenge @showdialog
+Now that we have **used** our code to understand how our fishway **tracks fish migration** using the dial, we're going to add water!
+
+**Important!** 
+Remember that our project uses electronic wires and sensors that should not get wet! If any part other than the building blocks gets wet, **turn off your project and fully dry it before continuing.**
+
+## Build Step 24 @showdialog
+Fully submerge your water pump into a container of water. Make sure that your fishway ramp is in a watertight tray that will hold all of your water.
+
+Place your scientist monitoring station (the Micro:Bit and servo motor) away from the water, being careful not to disconnect any wires.
+
+![Build Step 24](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/hs-fishways-sbs24.webp)
 
 ## Challenge Step 1
+Now that our dam is filled with water, we're going to simulate fish traveling through our fishway.
 
-## Challenge Complete!
-You did it!
+Using your hand, or by attaching a small fish to a spare building block using craft materials, move the fish along the fishway!
 
+List all of the steps that a fish has to complete to exit the fishway.
+
+~hint Tell Me More! 
+1. Scientists turn on the pump with the **dial**, allowing water to flow through the fishway.
+2. A small, native fish enters the fishway through the **white grate** at the base of the fishway
+3. The fish travels up the fishway, resting at the two **green resting pools**. 
+4. The fish arrives at the **closed barrier**, scientists manually log data like the size, type of fish that have traveled through the fishway. 
+5. The scientist opens the barrier by turning the **dial clockwise**, a program automatically tracks the number of fish that have used the fishway today. 
+6. The fish exits the fishway and enters the dam!
+7. The scientist closes the barrier by turning the **dial counterclockwise** to get ready for more migrating fish. 
+hint~ 
+
+## Challenge Step 2
+Think about the steps that you just wrote down. Which of these tasks happen automatically using instructions from the code? 
+
+Which of these tasks happen manually? 
+
+~hint Tell Me More!
+
+**Automatic Steps:**
+1. Increasing the number of fish that have traveled through the fishway
+2. Displaying the number of fish that have traveled through the fishway on the Micro:bit
+3. Preventing large, invasive species from migrating
+
+**Manual Steps:**
+1. Turning on and off the water pump
+2. Opening and closing the gate
+3. Logging data like type of fish, and weight
+hint~ 
+
+## Challenge Step 3
+Lets **automate** one of the manual steps! 
+
+Right now, the gate opens slowly as you turn the dial clockwise and counterclockwise. 
+
+How might we update the code to fully open and close the gate automatically when the dial is turned? 
+
+~hint Tell Me More!
+* We can update both **"dial turned"** events to set the servo motor to a specific angle.
+* When the gate is fully **closed**, our dial shgould move to **0 degrees**
+* When the gate is fully **open**, our dial should move to **100 degrees**
+hint~
+
+``` blocks 
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.
+DialDirection.CCW, function (difference) {
+    // @highlight
+    fwdMotors.rightServo.fwdSetAngle(0)
+})
+
+fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (difference) {
+    // @highlight
+    fwdMotors.rightServo.fwdSetAngle(100)
+    FishCount += 1
+})
+``` 
+
+## Challenge Step 4
+Connect your Micro:bit and click the ``|Download|`` button to download the updated code to your project.
+
+How do you think that automating this step helps scientists do their jobs more effectively? 
+
+~hint Tell Me More!
+When a task is completed automatically with the help of a program, there can be less human error in the data that we log, so we have more accurate data about our ecosystem.
+
+The gate turns more quickly, so more fish can migrate using the fishway in a day!
+hint~
 
 ## Congratulations! @showdialog
 You've completed the activity!
@@ -134,7 +286,11 @@ You've completed the activity!
 Did anything surprise you about the project?
 
 ## Reflection @showdialog
+1. Which other steps can you automate to make your fishway more efficient? 
 
+2. What other designs might you implement into your fishway to help fish migrate more easily? 
+
+3. How do fishways help restore habitats and support fish migration?
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
