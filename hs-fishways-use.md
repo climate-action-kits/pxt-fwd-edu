@@ -88,6 +88,7 @@ Let's explore fish migration! We are going to do this in three parts:
 ![Build Step 17](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/hs-fishways-sbs17.webp)
 
 ## Build Step 18 @showdialog
+IMPORTANT! Make sure to attach your circular green, and long white building blocks to the positional servo motor facing **90 degrees to the left**, as pictured.
 ![Build Step 18](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/hs-fishways-sbs18.webp)
 
 ## Build Step 19 @showdialog
@@ -139,13 +140,18 @@ Think back to the lesson about how engineers design fishways to fit its ecosyste
 What physical features do you notice in the design of the fishway?
 
 ~hint Tell Me More!
+
 1. The fishway is on an **angle** to get from the bottom of a body of water, to the top of a dam. 
 
 2. A **white grate** at the base of the fishway prevent large, invasive species like goldfish from entering. 
 
 3. Green, **horizontal pieces** on the angled slope form vertical slots to create resting pools for fish.
 
-4. A tube connected to the **water pump** that we're not using now, but we'll use in the **create** phase.
+4. A data collection station with a ``||fwdSensors:dial||`` and ``||fwdMotors:servo||`` connected to the Micro:bit.
+
+5. A **white gate** in the **closed** position preventing fish from exiting the fishway until ecologists open it.
+
+6. A tube connected to the **water pump** that we're not using now, but we'll use in the **create** phase.
 hint~
 
 ## Use Step 2
@@ -154,23 +160,40 @@ Think back to the lesson about how ecologists use fishways to track fish migrati
 What should the fishway be able to do?
 
 ~hint Tell Me More!
+
 To help fish migrate from one body of water to another **and** to help ecologists track ecosystem health, our model should be able to: 
 1. **Count** how many fish have migrated through the fishway.
 
-2. Use a **barrier** to prevent fish from exiting the fishway until ecologists have collected their data.
+2. Use a **gate** to prevent fish from exiting the fishway until ecologists have collected their data.
 
-3. **Rotate the barrier** to allow fish to pass through the fishway.
+3. **Rotate the gate** to allow fish to pass through the fishway.
 hint~
 
 ## Use Step 3
-Let’s test it out! Unplug your model from your computer and place it on a table. 
+Unplug your model from your computer and place it on a table. 
 
-Rotate the ``||fwdSensors:dial||`` to the right, then back to the left, what is happening?
+Before we start testing our code, make sure that the **gate** on the **data collection station** is set to the **closed** position on your fishway. 
+
+~hint Tell Me More!
+If the **gate** is set to a different position, gently remove the **green circular** building block from your ``||fwdMotors:servo||`` and reattach it so that it is facing 90 degrees to the left, over top of your fishway.
+
+The **gate** is the **long white** building block attached to the **green circular** building block 
+
+The **data collection station** is the set of blocks, ``||fwdMotors:servo||`` motor, and ``||fwdSensors:dial||`` that is attached to the Micro:bit
+hint~
+
+## Use Step 4
+Let’s test it out! 
+
+Rotate the ``||fwdSensors:dial||`` to the **right** several full rotations, then back to the **left** several full rotations. 
+
+What is happening?
 
 ~hint Tell Me More! 
-* **If** the ``||fwdSensors:dial||`` turns **clockwise**, the gate in the data collection station **opens** 
+* **If** the ``||fwdSensors:dial||`` turns in one direction, the gate in the data collection station **opens** 
 
-* **If** the ``||fwdSensors:dial||`` turns **counterclockwise**, the gate in the data collection station **closes**
+* **If** the ``||fwdSensors:dial||`` turns in the other direction, the gate in the data collection station **closes**
+
 hint~
 
 ``` blocks 
@@ -184,7 +207,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 })
 ``` 
 
-## Use Step 4
+## Use Step 5
 Can you identify the ``||variables:variable||`` that represents the number of fish traveling through the fishway? 
 
 ~hint Tell Me More! 
@@ -199,7 +222,7 @@ fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
 })
 ```
 
-## Use Step 5
+## Use Step 6
 Using your hand, or by attaching a small fish to a spare building block using craft materials, move the fish along the fishway!
 
 **List** all of the steps that a fish has to complete to exit the fishway.
@@ -207,16 +230,16 @@ Using your hand, or by attaching a small fish to a spare building block using cr
 ~hint Tell Me More! 
 1. A small, native fish enters the fishway through the **white grate** at the base of the fishway
 2. The fish travels up the fishway, resting at the two **green resting pools**. 
-3. The fish arrives at the **closed barrier**, ecologists manually log data like the size, type of fish that have traveled through the fishway. 
-4. The ecologist opens the barrier by turning the ``||fwdSensors:dial||`` **clockwise**, and manually **presses**  the ``||fwdSensors:dial||`` to track the number of fish that have used the fishway today. 
+3. The fish arrives at the **closed gate**, ecologists manually log data like the size, type of fish that have traveled through the fishway. 
+4. The ecologist opens the gate by turning the ``||fwdSensors:dial||`` **in one direction**, and manually **presses**  the ``||fwdSensors:dial||`` to track the number of fish that have used the fishway today. 
 5. The fish exits the fishway and enters the dam!
-6. The ecologist closes the barrier by turning the ``||fwdSensors:dial||``  **counterclockwise** to get ready for more migrating fish. 
+6. The ecologist closes the gate by turning the ``||fwdSensors:dial||`` **the other direction** to get ready for more migrating fish. 
 hint~ 
 
-## Use Step 6
+## Use Step 7
 Think about the steps that you just **listed**. 
 
-Which of these tasks happen **automatically** using instructions from the code? 
+Which of these tasks happen **automatically** using instructions from the code and the physical design? 
 
 Which of these tasks happen **manually**? 
 
@@ -231,6 +254,8 @@ Which of these tasks happen **manually**?
 2. Pressing the ``||fwdSensors:dial||`` to count the number of fish.
 3. Closing the gate once a fish passes through the fishway
 4. Logging data like type of fish, and weight
+
+In the **Modify** tutorial, we'll start automating some of these steps!
 hint~ 
 
 ## Congratulations! @showdialog
