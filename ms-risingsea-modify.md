@@ -24,6 +24,8 @@ let Logging = false
 datalogger.setColumnTitles("Water Level")
 Logging = false
 loops.everyInterval(1000, function () {
+    if (Logging == true) {
+    }
 })
 basic.forever(function () {
     WaterLevel = fwdSensors.sonar1.fwdDistance()
@@ -42,6 +44,12 @@ Let's build a satellite to monitor sea level change! We are going to do this in 
 4. Apply what we learned with a small **experiment**
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea satellite render" style="display: block; width: 60%; margin:auto;">
+
+## Electronics Required @showdialog
+![Electronic Pieces Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs0A.webp)
+
+## Building Blocks Required @showdialog
+![Building Blocks Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs0B.webp)
 
 ## Build Step 1 @showdialog
 ![Build Step 1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs01.webp)
@@ -122,7 +130,7 @@ As you go through the next steps:
 ## Modify Step 1
 Let’s test out our satellite to see how it can monitor sea level change!
 
-With your model on a table, gently move your hand between the table and the sonar sensor while looking at the **LED display** on the micro:bit.
+With your model on a table, gently move your hand between the table and the ``||fwdSensors:sonar||`` sensor while looking at the ``||led:LED display||`` on the micro:bit.
 
 What is happening? 
 
@@ -132,11 +140,11 @@ What is happening?
 hint~
 
 ## Modify Step 2
-Can you identify the **code block** that is telling the code to control the LEDs on the micro:bit?
+Can you identify the **code block** that is telling the code to control the  ``||led:LED display||`` on the micro:bit?
 
 ~hint Tell Me More! 
-* The micro:bit collects data from the sonar sensor. 
-* The code creates a graph between 0.3 meters and your hand.
+* The micro:bit collects data from the ``||fwdSensors:sonar||`` sensor. 
+* The code creates a ``||led:graph||`` between 0.3 meters and your hand.
 hint~
 
 ```blocks
@@ -151,14 +159,14 @@ basic.forever(function () {
 })
 ```
 ## Modify Step 3
-Let's set up data logging to track sea water rise.
+Let's set up ``||Datalogger:data logging||``  to track sea water rise.
 
 Data logging will let us compare how much ice has melted, to how much our ocean is rising. This data can help us identify patterns, like differences between land and sea ice, or how temperature affects the speed of ice melting.
 
 ## Modify Step 4
 We can use the blocks from the [Data Logger Extension](https://microbit.org/get-started/user-guide/data-logging/) to record sea water level as ice melts. 
 
-In our code, we've already made sure we have a way to turn on data logs, and delete old data. 
+In our code, we've already made sure we have a way to turn on data logs  using the ``||variables:Logging||`` variable, and delete old data with the ``||Datalogger:delete log||`` block. 
 
 ```blocks 
 fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
@@ -175,12 +183,14 @@ input.onButtonPressed(Button.AB, function () {
 ```
 
 ## Modify Step 5
-Use the ``||Datalogger:log data||`` block to save the ``||fwdSensors:sonar distance||`` data as your ice is melting. Remember to name your column **"Water Level"**.
+Use the ``||Datalogger:log data||`` block to save the ``||variables:WaterLevel||`` value as your ice is melting. Remember to name your column **"Water Level"**.
 
-```block
-    loops.everyInterval(1000, function () {
+```blocks
+loops.everyInterval(1000, function () {
+    if (Logging == true) {
     // @highlight
-    datalogger.log(datalogger.createCV("Water Level", fwdSensors.sonar1.fwdDistance()))
+    datalogger.log(datalogger.createCV("Water Level", WaterLevel))
+    }
 })
 ```
 
@@ -196,7 +206,7 @@ hint~
 ```blocks
 // @highlight
     loops.everyInterval(60000, function () {
-       datalogger.log(datalogger.createCV("Water Level", fwdSensors.sonar1.fwdDistance()))
+       datalogger.log(datalogger.createCV("Water Level", WaterLevel)
 })
 ```
 
@@ -206,6 +216,21 @@ Now that we have **modified** our code to understand how our satellite **collect
 Remember to press the ``|Download|`` button to download our modified code.
 
 **Important!** Remember that our project uses electronic wires and sensors that should not get wet! If any part other than the building blocks get wet, turn off your project and fully dry it before continuing. 
+
+## Experiment Step 1
+Using craft materials, or building blocks from the Climate Action Kit, let's build a **shelf of land** for our ice to sit on! 
+
+* **Land Ice** like glaciers sit frozen on land, and **flow** into the ocean.
+* **Sea Ice** like icebergs float in the water, and are **already sitting** in the ocean when they melt. 
+
+~hint Tell Me More
+
+When we build a **shelf of land** for our ice to sit on, we can see how a **glacier** melting impacts sea level rise. 
+
+1. Build your shelf of land 
+2. Place your ice on top of it
+3. Fill the water so that the ice sits above the water level.
+hint~ 
 
 ## Build Step 17 @showdialog
 To help your green circular building block float in water, wrap it with plastic wrap.
@@ -220,7 +245,7 @@ Be careful not to drop any electronic components into the water.
 ![Build Step 18](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs18.webp)
 
 ## Build Step 19 @showdialog
-Fill one side of your container full of ice.
+Fill one side of your container full of ice on top of the shelf of land that you built.
 
 The large green rectangular building block should stop the ice from getting to the other side of the container.
 
@@ -234,46 +259,51 @@ The circular block is like **our hand**, it should sit in the container undernea
 ![Build Step 20](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs20.webp)
 
 
-## Experiment Step 1
-Leave your micro:bit on in your container of ice and water, what do you think will happen to the LEDs as the ice melts?
+## Experiment Step 2
+Think about what will happen to the water level as your ice melts: 
+
+1. Will the water rise, stay the same, or get smaller? 
+2. How much will it rise or shrink by?
 
 Write your prediction down!
 
-## Experiment Step 2
+## Experiment Step 3
 Now it’s time to test your prediction!
 
-Press the **A and B** buttons on your micro:bit to delete any old logs. Then, press the **touch sensor** to turn on your data logger.
+Press the **A and B** buttons on your micro:bit to ``||datalogger:delete||`` any old logs. Then, press the ``||fwdSensors:touch sensor||`` to turn on your data logger.
 
 ~hint Tell Me More!
-As the ice melts and the water rises
-* Our data logger will record the level of the sonar sensor into a table we can look at later.
-* Fewer LEDs will light up.
+When you delete your data log and start collecting data logs, the Micro:bit will make two different sounds! 
 
-Depending on the size of your container, the water will rise more or less as your ice melts.
+As the ice melts and the water rises:
+* Our ``||datalogger:data logger||`` will record the level of the ``||fwdSensors:sonar||`` sensor using the ``||variables:WaterLevel||`` variable into a table we can look at later.
+* Fewer ``||led:leds||`` on the Micro:bit will light up.
+
+Depending on the size of your container and shelf of land, the water will rise more or less significantly as your ice melts.
 hint~
 
-## Experiment Step 3
+## Experiment Step 4
 How quickly did the ice melt with the cold water? 
 
 Plug the micro:bit back in and [view the log data](https://microbit.org/get-started/user-guide/data-logging/#reading-data).
 
 Create a copy of your data log, and save it somewhere on your computer later. 
 
-## Experiment Step 4
+## Experiment Step 5
 Get a new container with the **same amount of ice** but this time, use **hot water**. 
 
-How quickly do you think that your ice will melt with the warmer water? Write your prediction down! 
+How quickly do you think that your ice will melt on your shelf of land with the warmer water? Write your prediction down! 
 
 ~hint Tell Me More! 
 Remember to use the same amount of ice and water so that you can compare the level of water rising over time.
 hint~
 
-## Experiment Step 5
+## Experiment Step 6
 Once your ice has melted, plug your micro:bit back into your computer and [view the log data](https://microbit.org/get-started/user-guide/data-logging/#reading-data).
 
 Save your data log on your computer for the next step.
 
-## Experiment Step 6
+## Experiment Step 7
 How do your two data logs compare? Create a graph to visualize your water level experiment.
 
 ~hint Tell Me More!
@@ -295,6 +325,8 @@ Did anything surprise you about the project?
 2. How do you think a different amount of ice would change the results of your experiment?
 
 3. How did the temperature of the water influence the speed of ice melting?
+
+4. How does creating a shelf of land in your container for ice to sit on change how much your sea rose?
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
