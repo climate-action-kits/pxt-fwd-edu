@@ -27,6 +27,12 @@ Let's build a satellite to monitor sea level change! We are going to do this in 
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-render.webp" alt="Full rising sea satellite render" style="display: block; width: 60%; margin:auto;">
 
+## Electronics Required @showdialog
+![Electronic Pieces Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs0A.webp)
+
+## Building Blocks Required @showdialog
+![Building Blocks Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs0B.webp)
+
 ## Build Step 1 @showdialog
 ![Build Step 1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs01.webp)
 
@@ -104,14 +110,14 @@ As you go through the next steps:
 * If you need help with the code, click the **lightbulb!**
 
 ## Use Step 1
-Think back to the lesson about how satellites track sea levels around the world. Our project modelling satellite radar altimetry like [Jason-3](https://www.youtube.com/watch?v=snhFHZlbYOk).
+Think back to the lesson about how satellites track sea levels around the world. Our project is modelling satellite radar altimetry like [Jason-3](https://www.youtube.com/watch?v=snhFHZlbYOk).
 
 What should it be able to do?
 
 ~hint Tell Me More!
 To measure the change in sea level, our model should be able to: 
-1. **Detect** the distance from the top of the water to the sonar sensor
-2. **Visualize** the change in water level using the micro:bit or data logger
+1. **Detect** the distance from the top of the water to the ``||fwdSensors:sonar||`` sensor
+2. **Visualize** the change in water level using the micro:bit or ``||datalogger:data logger||``
 hint~
 
 ## Use Step 2
@@ -128,30 +134,33 @@ The satellite has:
 hint~
 
 ## Use Step 3
-Let’s test it out! Unplug your model from your computer and place it on a table. 
+Let’s test out our satellite to see how it can monitor sea level change!
 
-## Use Step 4
-Look at the micro:bit **LED display**, what is happening? 
+With your model on a table, gently move your hand between the table and the ``||fwdSensors:sonar||`` sensor while looking at the ``||led:LED display||`` on the micro:bit.
+
+What is happening? 
+
+Look at the micro:bit ``||led:LED display||``, what is happening? 
 
 ~hint Tell Me More!
-* When the distance between the table and the sonar sensor is **bigger**, more LEDs turn on! 
+* When the distance between the table and the sonar sensor is **bigger**, more ``||led:LEDs||`` turn on! 
+hint~
+
+## Use Step 4
+Place your hand on the table underneath the ``||fwdSensors:sonar||`` sensor and gently move it closer to the ``||fwdSensors:sonar||`` sensor. 
+
+What happens to the ``||led:LEDs||`` on the Micro:bit?
+
+~hint Tell Me More! 
+* When the distance between your hand and the sonar sensor is **smaller**, fewer ``||led:LEDs||`` turn on!
 hint~
 
 ## Use Step 5
-Place your hand on the table underneath the sonar sensor and gently move it closer to the sonar sensor. 
-
-What happens to the LEDs on the micro:bit?
+Can you identify the **code block** that is telling the code to control the ``||led:LEDs||`` on the Micro:bit?
 
 ~hint Tell Me More! 
-* When the distance between your hand and the sonar sensor is **smaller**, fewer LEDs turn on!
-hint~
-
-## Use Step 6
-Can you identify the **code block** that is telling the code to control the LEDs on the micro:bit?
-
-~hint Tell Me More! 
-* The micro:bit collects data from the sonar sensor. 
-* The code creates a graph between 0.3 meters and your hand.
+* The micro:bit collects data from the ``||fwdSensors:sonar||`` sensor. 
+* The code creates a ``||led:graph||`` between 0.3 meters and your hand.
 hint~
 
 ```blocks
@@ -173,6 +182,21 @@ Now that we have **used** our code to understand how our satellite **collects da
 **Important!** 
 Remember that our project uses electronic wires and sensors that should not get wet! If any part other than the building blocks gets wet, **turn off your project and fully dry it before continuing.**
 
+## Experiment Step 1
+Using craft materials, or building blocks from the Climate Action Kit, let's build a **shelf of land** for our ice to sit on! 
+
+* **Land Ice** like glaciers sit frozen on land, and **flow** into the ocean.
+* **Sea Ice** like icebergs float in the water, and are **already sitting** in the ocean when they melt. 
+
+~hint Tell Me More
+
+When we build a **shelf of land** for our ice to sit on, we can see how a **glacier** melting impacts sea level rise. 
+
+1. Build your shelf of land 
+2. Place your ice on top of it
+3. Fill the water so that the ice sits above the water level.
+hint~ 
+
 ## Build Step 17 @showdialog
 To help your green circular building block float in water, wrap it with plastic wrap.
 
@@ -186,7 +210,7 @@ Be careful not to drop any electronic components into the water.
 ![Build Step 18](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs18.webp)
 
 ## Build Step 19 @showdialog
-Fill one side of your container full of ice.
+Fill one side of your container full of ice on top of the shelf of land that you built.
 
 The large green rectangular building block should stop the ice from getting to the other side of the container.
 
@@ -195,21 +219,21 @@ The large green rectangular building block should stop the ice from getting to t
 ## Build Step 20 @showdialog
 Place your green circular building block on the opposite side of the container. 
 
-The circular block is like **our hand**, it should sit in the container underneath the sonar sensor.
+The circular block is like **our hand**, it should sit in the container underneath the ``||fwdSensors:sonar||`` sensor.
 
 ![Build Step 20](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs20.webp)
 
 
-## Experiment Step 1
-Leave your micro:bit on in your container of ice and water, what do you think will happen to the LEDs as the ice melts?
+## Experiment Step 2
+Leave your micro:bit on in your container of ice and water, what do you think will happen to the ``||led:LEDs||`` as the ice melts?
 
 Write your prediction down!
 
 
-## Experiment Step 2
+## Experiment Step 3
 Now it’s time to test your prediction!
 
-As the ice melts, create a table to log how many LEDs are lit up: 
+As the ice melts, create a table to log how many ``||led:LEDs||`` are lit up on the Micro:bit: 
 
 1. When the ice has not melted
 2. When the ice is 50% melted
@@ -221,7 +245,7 @@ As the ice melts and the water rises, fewer LEDs will light up.
 Depending on the size of your container, the water will rise more or less as your ice melts.
 hint~
 
-## Experiment Step 3
+## Experiment Step 4
 How much did the water level change? 
 
 Create a graph to visualize your water level experiment.
@@ -244,6 +268,8 @@ Did anything surprise you about the project or experiment that you conducted?
 2. How do you think a different amount of ice would change the results of your experiment?
 
 3. What differences did you find in the accuracy of the sonar sensor?
+
+4. How does creating a shelf of land in your container for ice to sit on change how much your sea rose?
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial.

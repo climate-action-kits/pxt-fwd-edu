@@ -11,11 +11,10 @@ datalogger=datalogger
 ``` -->
 
 ## Activity 1: Build Your Project @showdialog
-Let's build an aquatic garbage collector to help with waterway cleanup! We are going to do this in four parts: 
+Let's build an aquatic garbage collector to help with waterway cleanup! We are going to do this in three parts: 
 1. **Build** our satellite  
 2. **Add code** to bring our project to life  
 3. **Use** sensors to understand how they work  
-4. Apply what we learned with a small **echallenge**
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-aquaticgarbage-render.webp" alt="Full Aquatic Garbage Collector" style="display: block; width: 60%; margin:auto;">
 

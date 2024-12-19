@@ -210,7 +210,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 })
 ``` 
 
-## Modify Step 6
+## Modify Step 5
 Now let's automate the movement! 
 
 * When the gate is fully **closed**, our dial should move to **0 degrees**
@@ -235,7 +235,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 })
 ``` 
 
-## Modify Step 7
+## Modify Step 6
 Now that our gate opens and closes more quickly, let's automate our ``||variables:FishCount||`` variable to increase each time the gate **opens**
 
 ~hint Tell Me More! 
@@ -253,7 +253,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 })
 ```
 
-## Modify Step 8
+## Modify Step 7
 Remember to connect your Micro:bit and click the ``|Download|`` button to test your updated code.
 
 How do you think that automating these steps helps ecologists do their jobs more effectively? 
