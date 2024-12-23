@@ -12,7 +12,7 @@ datalogger=datalogger
 
 ## Activity 1: Build Your Project @showdialog
 Let's build an aquatic garbage collector to help with waterway cleanup! We are going to do this in three parts: 
-1. **Build** our satellite  
+1. **Build** our aquatic garbage collector  
 2. **Add code** to bring our project to life  
 3. **Use** sensors to understand how they work  
 
@@ -109,7 +109,7 @@ Next, follow the steps to pair your micro:bit.
 ## Code Step 3
 Click the ``|Download|`` button to download the starter code to your project.
 
-## Activity 3: Modify Your Project @showdialog
+## Activity 3: Use Your Project @showdialog
 Now that we've built our aquatic garbage collector to help with waterway clean up, we'll start by **using** the sample code to see how it works.
 
 As you go through the next steps:
@@ -119,12 +119,6 @@ As you go through the next steps:
 * If you need help with the code, click the **lightbulb!**
 
 ## Use Step 1
-
-
-## Activity 4: Challenge
-Now that we have **used** our code to understand how our aquatic garbage collector works, we're going to complete a small challenge! 
-
-## Challenge Step 1
 
 ## Congratulations! @showdialog
 You've completed the activity!
