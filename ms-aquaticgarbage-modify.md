@@ -6,20 +6,10 @@ sonar=github:climate-action-kits/pxt-fwd-edu
 ```
 
 ```template
-input.onButtonPressed(Button.A, function () {
-    fwdMotors.leftServo.fwdSetSpeed(25)
-    fwdMotors.rightServo.fwdSetSpeed(0)
-    basic.showArrow(ArrowNames.West)
-})
 input.onButtonPressed(Button.AB, function () {
     fwdMotors.leftServo.fwdSetSpeed(25)
     fwdMotors.rightServo.fwdSetSpeed(-25)
     basic.showIcon(IconNames.Yes)
-})
-input.onButtonPressed(Button.B, function () {
-    fwdMotors.leftServo.fwdSetSpeed(0)
-    fwdMotors.rightServo.fwdSetSpeed(-25)
-    basic.showArrow(ArrowNames.East)
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     fwdMotors.leftServo.fwdSetSpeed(0)
@@ -132,7 +122,7 @@ Next, follow the steps to pair your micro:bit.
 Click the ``|Download|`` button to download the starter code to your project.
 
 ## Activity 3: Modify Your Project @showdialog
-We have an aquatic garbage collector model with rotating motors. Let’s explore how to optimize our sensors by **modifying** our code!
+We have an aquatic garbage collector model with rotating motors. Let’s explore how to optimize our project by **modifying** our code!
 
 As you go through the next steps:
 
@@ -154,22 +144,26 @@ hint~
 ## Modify Step 2
 Let’s test out our aquatic garbage collector to see how it works! 
 
+If your motors start running right away, press the logo to stop them. This will work at any point during your project.
+
+## Modify Step 3
 With your model on a table, press the **A+B** at the same time! 
 
 What is happening? 
 
 ~hint Tell Me More! 
 
-* The **A+B** button is an **input** that triggers a different set of instructions from either A or B
-* The left servo spins in one direction at 25% power
+* The **A+B** button is an event that triggers a unique set of instructions.
+* The motors spin in opposite directions to help move debris towards the model's built in **net**
+* The left servo spins in one direction at 25% power.
 * The right servo motor spins at 25% power in the opposite direction.
 * A ``||basic:checkmark||`` displays on the micro:bit LED display. 
 
 hint~
 
-## Modify Step 3
+## Modify Step 4
 
-Look at the difference in instructions for the **left** and **right** ``||fwdSensors:servo motors||`` 
+Look at the difference in instructions for the **left** and **right** ``||fwdMotors:servo motors||`` 
 
 Why do you think there are positive and negative numbers? 
 
@@ -189,10 +183,10 @@ input.onButtonPressed(Button.AB, function () {
 })
 ```
 
-## Modify Step 4
+## Modify Step 5
 What happens when we change the speed of the motors? 
 
-Pick another number between 0 and 100, and change the ``||fwdSensors:motor||`` value. 
+Pick another number between 0 and 100, and change the ``||fwdMotors:motor||`` value. 
 
 Remember to `|download|` any changes to your code to test it out!
 
@@ -207,7 +201,7 @@ input.onButtonPressed(Button.AB, function () {
     // @highlight
     fwdMotors.leftServo.fwdSetSpeed(50)
     // @highlight
-    fwdMotors.rightServo.fwdSetSpeed(-10)
+    fwdMotors.rightServo.fwdSetSpeed(-20)
     basic.showIcon(IconNames.Yes)
 })
 ```
@@ -320,6 +314,35 @@ input.onButtonPressed(Button.AB, function () {
         // @highlight
         fwdMotors.rightServo.fwdSetSpeed(0)
         // @highlight
+        basic.showIcon(IconNames.No)
+    }
+})
+```
+
+## Challenge Step 7
+
+We're ready to fully **automate** our aquatic garbage collector! 
+
+Let's remove the need to press the **A+B** button using a ``||basic:forever||`` loop. 
+
+~hint Tell Me More! 
+
+Drag a ``||basic:forever||`` loop into the workspace, and move all of the code blocks from the A+B event into your new loop. 
+
+Remember to `|Download|` the code from this challenge to test your work.
+
+hint~
+
+```blocks
+// @highlight
+basic.forever(function () {
+    if (fwdSensors.solar1.fwdIsLightLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        fwdMotors.leftServo.fwdSetSpeed(25)
+        fwdMotors.rightServo.fwdSetSpeed(-25)
+        basic.showIcon(IconNames.Yes)
+    } else {
+        fwdMotors.leftServo.fwdSetSpeed(0)
+        fwdMotors.rightServo.fwdSetSpeed(0)
         basic.showIcon(IconNames.No)
     }
 })

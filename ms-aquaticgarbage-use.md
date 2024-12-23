@@ -35,7 +35,7 @@ fwdMotors.rightServo.fwdSetSpeed(0)
 Let's build an aquatic garbage collector to help with waterway cleanup! We are going to do this in three parts: 
 1. **Build** our aquatic garbage collector  
 2. **Add code** to bring our project to life  
-3. **Use** sensors to understand how they work  
+3. **Use** your project to understand how they works
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-aquaticgarbage-render.webp" alt="Full Aquatic Garbage Collector" style="display: block; width: 60%; margin:auto;">
 
@@ -157,7 +157,7 @@ What robotic components do you notice? How do you think they’ll work together 
 
 ~hint Tell Me More!
 The garbage collector has:
-* Two ``||fwdSensors:continuous servo motors||`` that rotate in opposite directions to move debris in the water. 
+* Two ``||fwdMotors:continuous servo motors||`` that rotate in opposite directions to move debris in the water. 
 * The ``||basic:LED display||`` on the micro:bit to show which motor the garbage collector is spinning.
 * These parts are connected to the **breakout board** through **cables**.
 * The breakout board is connected to the **micro:bit** which holds all the code that will tell our sensors what to do and when to do it!
@@ -165,6 +165,10 @@ hint~
 
 ## Use Step 3
 Let’s test out our aquatic garbage collector to see how it works! 
+
+If your motors start running right away, press the logo to stop them. This will work at any point during your project.
+
+## Use Step 4
 
 With your model on a table, press the **A** button on the micro:bit.  
 
@@ -185,7 +189,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Use Step 4
+## Use Step 5
 
 Now let's press the **B** button. 
 
@@ -207,21 +211,22 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## Use Step 5
+## Use Step 6
 Next, let's press **A+B** at the same time! What is happening now? 
 
 ~hint Tell Me More! 
 
 * The **A+B** button is an **input** that triggers a different set of instructions from either A or B
+* The motors spin in opposite directions to help move debris towards the model's built in **net**
 * The left servo spins in one direction at 25% power
 * The right servo motor spins at 25% power in the opposite direction.
 * A ``||basic:checkmark||`` displays on the micro:bit LED display. 
 
 hint~
 
-## Use Step 6
+## Use Step 7
 
-Look at the difference in instructions for the **left** and **right** ``||fwdSensors:servo motors||`` 
+Look at the difference in instructions for the **left** and **right** ``||fwdMotors:servo motors||`` 
 
 Why do you think there are positive and negative numbers? 
 
