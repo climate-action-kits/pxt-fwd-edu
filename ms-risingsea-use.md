@@ -33,6 +33,9 @@ Let's build a satellite to monitor sea level change! We are going to do this in 
 ## Building Blocks Required @showdialog
 ![Building Blocks Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs0B.webp)
 
+## Additional Craft Materials @showdialog
+![Additional Craft Materials](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs0C.webp)
+
 ## Build Step 1 @showdialog
 ![Build Step 1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-risingsea-sbs01.webp)
 
