@@ -1,14 +1,35 @@
-## Forward Education Aquatic Garbage Collector - Use Tutorial
-
+# Forward Education Aquatic Garbage Collector - Use Tutorial
 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
 sonar=github:climate-action-kits/pxt-fwd-edu
-datalogger=datalogger
 ```
-<!-- 
+
 ```template
-``` -->
+input.onButtonPressed(Button.A, function () {
+    fwdMotors.leftServo.fwdSetSpeed(25)
+    fwdMotors.rightServo.fwdSetSpeed(0)
+    basic.showArrow(ArrowNames.West)
+})
+input.onButtonPressed(Button.AB, function () {
+    fwdMotors.leftServo.fwdSetSpeed(25)
+    fwdMotors.rightServo.fwdSetSpeed(-25)
+    basic.showIcon(IconNames.Yes)
+})
+input.onButtonPressed(Button.B, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdMotors.rightServo.fwdSetSpeed(-25)
+    basic.showArrow(ArrowNames.East)
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdMotors.rightServo.fwdSetSpeed(0)
+    basic.showIcon(IconNames.No)
+})
+basic.clearScreen()
+fwdMotors.leftServo.fwdSetSpeed(0)
+fwdMotors.rightServo.fwdSetSpeed(0)
+```
 
 ## Activity 1: Build Your Project @showdialog
 Let's build an aquatic garbage collector to help with waterway cleanup! We are going to do this in three parts: 
@@ -110,7 +131,7 @@ Next, follow the steps to pair your micro:bit.
 Click the ``|Download|`` button to download the starter code to your project.
 
 ## Activity 3: Use Your Project @showdialog
-Now that we've built our aquatic garbage collector to help with waterway clean up, we'll start by **using** the sample code to see how it works.
+Now that we've built our aquatic garbage collector to help with waterway cleanup, we'll start by **using** the sample code to see how it works.
 
 As you go through the next steps:
 
@@ -119,6 +140,106 @@ As you go through the next steps:
 * If you need help with the code, click the **lightbulb!**
 
 ## Use Step 1
+Think about the features of the aquatic garbage collectors and what they should be able to do.
+
+~hint Tell Me More!
+To help clean up aquatic waterways, our garbage collector needs to be able to: 
+1. Have a power source and a way to control the collector
+2. Move garbage toward the collector
+3. Collect garbage in a net
+4. Allow small debris like fish and plants to escape the net
+hint~
+
+## Use Step 2
+Take a look at the physical project you just built.
+
+What robotic components do you notice? How do you think they’ll work together to make our model function as we expect?
+
+~hint Tell Me More!
+The garbage collector has:
+* Two ``||fwdSensors:continuous servo motors||`` that rotate in opposite directions to move debris in the water. 
+* The ``||basic:LED display||`` on the micro:bit to show which motor the garbage collector is spinning.
+* These parts are connected to the **breakout board** through **cables**.
+* The breakout board is connected to the **micro:bit** which holds all the code that will tell our sensors what to do and when to do it!
+hint~
+
+## Use Step 3
+Let’s test out our aquatic garbage collector to see how it works! 
+
+With your model on a table, press the **A** button on the micro:bit.  
+
+What is happening? 
+
+~hint Tell Me More!
+
+* The **A** button is an **input** that triggers a set of instructions
+* The left servo motor spins at 25% power. 
+* The right servo motor does not spin.
+* A ``||basic:left arrow||`` displays on the micro:bit LED display. 
+hint~
+```blocks
+input.onButtonPressed(Button.A, function () {
+    fwdMotors.leftServo.fwdSetSpeed(25)
+    fwdMotors.rightServo.fwdSetSpeed(0)
+    basic.showArrow(ArrowNames.West)
+})
+```
+
+## Use Step 4
+
+Now let's press the **B** button. 
+
+Which direction are your motors spinning now? Is it the same, or a different direction? 
+
+~hint Tell Me More!
+
+* The **B** button is an **input** that triggers a different set of instructions
+* The left servo does not spin. 
+* The right servo motor spins at 25% power in the opposite direction.
+* A ``||basic:right arrow||`` displays on the micro:bit LED display. 
+hint~
+
+```blocks
+input.onButtonPressed(Button.B, function () {
+    fwdMotors.leftServo.fwdSetSpeed(0)
+    fwdMotors.rightServo.fwdSetSpeed(-25)
+    basic.showArrow(ArrowNames.East)
+})
+```
+
+## Use Step 5
+Next, let's press **A+B** at the same time! What is happening now? 
+
+~hint Tell Me More! 
+
+* The **A+B** button is an **input** that triggers a different set of instructions from either A or B
+* The left servo spins in one direction at 25% power
+* The right servo motor spins at 25% power in the opposite direction.
+* A ``||basic:checkmark||`` displays on the micro:bit LED display. 
+
+hint~
+
+## Use Step 6
+
+Look at the difference in instructions for the **left** and **right** ``||fwdSensors:servo motors||`` 
+
+Why do you think there are positive and negative numbers? 
+
+~hint Tell Me More! 
+* Continuous servo motors work from -100% to 100%! 
+* **Negative numbers** spin in one direction, while **positive numbers** spin in the opposite direction.
+* When a motor is set to 0, it doesn't spin in any direction. 
+hint~
+
+```blocks
+input.onButtonPressed(Button.AB, function () {
+    // @highlight
+    fwdMotors.leftServo.fwdSetSpeed(25)
+    // @highlight
+    fwdMotors.rightServo.fwdSetSpeed(-25)
+    basic.showIcon(IconNames.Yes)
+})
+```
 
 ## Congratulations! @showdialog
 You've completed the activity!
@@ -126,6 +247,8 @@ You've completed the activity!
 Did anything surprise you about the project?
 
 ## Reflection @showdialog
+1. How do you think the motors spinning in two different directions help the aquatic garbage collector gather debris?
+2. What other features might you adapt to help make your aquatic garbage collector more efficient? 
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
