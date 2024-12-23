@@ -17,9 +17,7 @@ basic.forever(function () {
    if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 33 && fwdSensors.soilMoisture1.fwdMoistureLevel() < 66) {
        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
    }
-   if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 66) {
-       fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-   }
+   if (true){}
 })
 ```
 
@@ -116,44 +114,85 @@ What do you think will happen when the container is filled
 
 * 1/3 of the way with water?
 * 1/2 of the way with water?
-* 3/4 of the way with water?
 
-Try it now and see if your predictions were correct!
+Try it now and see if your predictions are correct!
 
 ~hint Tell Me More!
 
-* The flood alarm uses **conditional statements** to decide how to warn people of the water level.
+* The flood alarm uses **conditional statements** to tell us how high the tide is.
 * The ``||fwdSensors:moisture sensor||`` detects water from 0 to 100%
 * When the water is less than 1/3 full, the ``||fwdSensors:LED ring||`` lights up **green**
 * When the water is more than 1/3 full, but less than 2/3 full the ``||fwdSensors:LED ring||`` lights up **yellow**
-* When the water is more than 2/3 full the ``||fwdSensors:LED ring||`` lights up **red**
 hint~
 
-```template
+```blocks
 basic.forever(function () {
-   led.plotBarGraph(
-   fwdSensors.soilMoisture1.fwdMoistureLevel(),
-   100
-   )
-
-   // @highlight
    if (fwdSensors.soilMoisture1.fwdMoistureLevel() < 33) {
        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
    }
-
-   // @highlight
    if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 33 && fwdSensors.soilMoisture1.fwdMoistureLevel() < 66) {
        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
    }
+})
+``` 
+## Modify Step 3
+Our flood alarm tells us when the tide is low and when the tide is high.
 
-   // @highlight
+What do you think would happen if a natural disaster caused the tide to be higher than 66% full?
+
+~hint Tell Me More! 
+The coastal flood alarm wouldn't be able to do anything!
+
+hint~
+
+## Modify Step 4
+Let's add a setting to alert people if there is a flood! 
+
+Let's create a comparison using the ``||fwdSensors:solar||`` block, and a ``||logic:greater than or equal to||`` block. 
+
+~hint Tell Me More! 
+If the water level is greater than or equal to 66%, it's flooding! 
+hint~
+
+```blocks
+basic.forever(function () {
+    if (fwdSensors.soilMoisture1.fwdMoistureLevel() < 33) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
+    }
+    if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 33 && fwdSensors.soilMoisture1.fwdMoistureLevel() < 66) {
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
+    }
+    // @highlight
+    if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 66) {
+    	
+    }
+})
+```
+
+## Modify Step 5
+Let's add a colour to represent that there is a flood warning! 
+
+Use the ``||fwdSensors:LED ring||`` to set the colour of all LEDs to one colour. 
+
+~hint Tell Me More! 
+We've picked red to represent flooding, but you can pick any colour other than green and yellow! 
+hint~
+
+```blocks
+basic.forever(function () {
    if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 66) {
+    // @highlight
        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
    }
 })
 ```
 
-## Modify Step 3
+## Activity 4: Challenge
+Now that we have **modified** our code to add another setting to our coastal alarm, we're going to complete a small challenge!
+
+## Challenge Step 1
+Let's add another warning system to get people's attention.
+
 Right now, our flood alarm alerts people if there is a flood by making the ``||fwdSensors:LED ring||`` red.
 
 Imagine what would happen if we weren't near enough to see the LED ring. Why do you think this could be a problem? 
@@ -162,16 +201,17 @@ Imagine what would happen if we weren't near enough to see the LED ring. Why do 
 If we weren't close enough to see the warning lights, we may not know if there's a flood!
 hint~
 
-## Modify Step 4
+## Challenge Step 2
 Let's update the code so the micro:bit makes a sound when there is a risk of flooding.
 
-When do you think we should make the flood alarm play a sound?
+When should we make the flood alarm play a sound?
 
 ~hint Tell Me More!
-If the water level is more than 2/3 full, we should make a noise until the water level goes down!
+
+If the water level is **more than 2/3 full**, we should make a noise until the water level goes down!
 hint~
 
-## Modify Step 5
+## Challenge Step 3
 Look at the conditional statement below. Try using a ``||music:play||`` block to add an audio alarm to the flood alarm if the water level is **greater than or equal to 2/3 full**
 
 ~hint Tell Me More!
@@ -190,7 +230,7 @@ hint~
    }
 ```
 
-## Modify Step 6
+## Challenge Step 4
 Test the changes you made! Does the sound automatically play when there is a risk of flooding?
 
 Add enough water to the container for the ``||fwdSensors:LED ring||`` to turn red. What happens?
@@ -199,108 +239,8 @@ Add enough water to the container for the ``||fwdSensors:LED ring||`` to turn re
 
 When the moisture sensor detects **more than 2/3 water**, the micro:bit should make a sound!
 
-This helps people who are far away from the flood alarm to hear the noise and safely leave the area.
+This helps people far away from the flood alarm hear the noise and safely leave the area.
 hint~
-
-## Activity 4: Challenge
-Now that we have **modified** our code to understand how our coastal flood alarm works, we're going to complete a small challenge!
-
-## Challenge Step 1
-Let's add another warning system to get people's attention.
-
-We can use something called a ``||functions:function||`` to repeat code instructions.
-
-~hint Tell Me More!
-A function is a list of instructions that we can use again and again.
-hint~
-
-## Challenge Step 2
-Let's create a new ``||functions:function||`` named **flash** using the "Make a function" button.
-~hint Tell Me More
-
-1. Click on the ``||functions:make a function||`` block in the drawer on the lefthand side.
-2. Name the function "flash" and click done.
-3. Your function will appear in the workspace!
-hint~
-
-```blocks
-function flash () {
-   }
-```
-
-## Challenge Step 3
-Which code blocks do you need to use to change the colour of the ``||fwdSensors:LED ring||``?
-
-~hint Tell Me More!
-
-Try using the ``||fwdSensors: set all LED ring||`` block
-
-Set the colour to black to turn off the LEDs.
-hint~
-
-```blocks
-function flash () {
-   // @highlight
-   fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
-  }
-```
-## Challenge Step 4
-We want our ``||fwdSensors:LED ring||`` to **pause**, turn off, and **pause** again.
-
-What code blocks do we need to add to our ``||functions:flash||`` function?
-
-~hint Tell Me More!
-
-1. Add a ``||basic:pause||`` block to your ``||functions:flash||`` function before and after your LED block.
-2. Set the block to **500 ms**
-hint~
-```blocks
-function flash () {
-   // @highlight
-   basic.pause(500)
-   fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
-   // @highlight
-   basic.pause(500)
-}
-```
-## Challenge Step 5
-When only want our ``||fwdSensors:LED ring||`` to flash when it is **low tide** or **high tide**
-
-To use our ``||functions:flash||`` function, we need to add the ``||functions:call flash||`` block to our code!
-
-Where should we put it?
-
-~hint Tell Me More!
-
-Use the ``||functions:call flash||`` block after setting the LEDs to green **and** after setting the LEDs to yellow.
-hint~
-
-```blocks
-function flash () {
-   basic.pause(500)
-   fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
-   basic.pause(500)
-}
-basic.forever(function () {
-   led.plotBarGraph(
-   fwdSensors.soilMoisture1.fwdMoistureLevel(),
-   100
-   )
-   if (fwdSensors.soilMoisture1.fwdMoistureLevel() < 33) {
-       fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
-       flash()
-   }
-   if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 33 && fwdSensors.soilMoisture1.fwdMoistureLevel() < 66) {
-       fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
-       flash()
-   }
-   if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 66) {
-       fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-       music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
-       music.rest(music.beat(BeatFraction.Double))
-   }
-})
-```
 
 ## Congratulations! @showdialog
 You've completed the activity!
@@ -309,7 +249,7 @@ Did anything surprise you about the project?
 
 ## Reflection @showdialog
 1. How does the Micro:bit use comparisons (<,=,>) to decide how high the tide is?
-2. How do functions help us to repeat instructions?
+2. How does the use of sound and other senses help keep people safe during a natural disaster?
 3. Think about something in this project that was tricky.
    * How did you figure it out? How did that make you feel?
 

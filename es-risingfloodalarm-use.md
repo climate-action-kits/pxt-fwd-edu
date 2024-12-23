@@ -18,9 +18,6 @@ basic.forever(function () {
    if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 33 && fwdSensors.soilMoisture1.fwdMoistureLevel() < 66) {
        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
    }
-   if (fwdSensors.soilMoisture1.fwdMoistureLevel() >= 66) {
-       fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-   }
 })
 ```
 
@@ -116,12 +113,11 @@ hint~
 ## Use Step 2
 Let's explore how these parts work together to help warn people of floods!
 
-How do you think the flood alarm works during **low tide**, **high tide** and a **flood**?
+How do you think the flood alarm works during **low tide** and **high tide**?
 
 ~hint Tell Me More!
 * During low tide, the ``||fwdSensors:LED ring||`` lights up **green**
 * During high tide, the ``||fwdSensors:LED ring||`` lights up **yellow**
-* During a flood, the ``||fwdSensors:LED ring||`` lights up **red**
 hint~
 
 ## Build Step 13 @showdialog

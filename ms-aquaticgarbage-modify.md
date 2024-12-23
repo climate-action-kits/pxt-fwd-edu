@@ -262,17 +262,50 @@ input.onButtonPressed(Button.AB, function () {
 ``` 
 
 ## Challenge Step 4 
-Let's create a comparison! 
-
-What blocks do you need to create the following condition? 
+Which block do you need to create the following condition? 
 
 * If the sunlight is **over 50%**, turn both motors on
-* Else, turn the motors off
 
 ~hint Tell Me More! 
 
-You'll need a ``||comparison:comparison||`` block and a ``||fwdSensors:solar||`` block!
+You'll need a ``||fwdSensors:solar||`` block to detect if the sunlight is **over 50%**!
+hint~ 
 
+```block
+fwdSensors.solar1.fwdIsLightLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)
+```
+
+## Challenge Step 5
+If the sunlight is **over 50%** we want our aquatic garbage collector to turn on. 
+
+Which blocks should we put in our ``||logic:if||`` condition to make our code work?
+
+~hint Tell Me More! 
+
+We can drag the motor blocks from the **A+B** event into this condition! 
+hint~
+
+```blocks
+input.onButtonPressed(Button.AB, function () {
+    if (fwdSensors.solar1.fwdIsLightLevelPastThreshold(50, fwdSensors.ThresholdDirection.Over)) {
+        // @highlight
+        fwdMotors.leftServo.fwdSetSpeed(25)
+        // @highlight
+        fwdMotors.rightServo.fwdSetSpeed(-25)
+        // @highlight
+        basic.showIcon(IconNames.Yes)
+    } 
+    else(){})
+```
+
+## Challenge Step 6
+If the sunlight is **not over 50%**, we want our aquatic garbage collector to turn off. 
+
+Which blocks should we put in our ``||logic:else||`` condition to make our code work? 
+
+~hint Tell Me More! 
+
+We can copy the blocks from the **on logo pressed** event! 
 hint~ 
 
 ```blocks
@@ -282,8 +315,11 @@ input.onButtonPressed(Button.AB, function () {
         fwdMotors.rightServo.fwdSetSpeed(-25)
         basic.showIcon(IconNames.Yes)
     } else {
+        // @highlight
         fwdMotors.leftServo.fwdSetSpeed(0)
+        // @highlight
         fwdMotors.rightServo.fwdSetSpeed(0)
+        // @highlight
         basic.showIcon(IconNames.No)
     }
 })
