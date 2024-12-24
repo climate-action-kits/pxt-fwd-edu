@@ -148,7 +148,7 @@ hint~
 ## Modify Step 4
 Let's add a setting to alert people if there is a flood! 
 
-Let's create a comparison using the ``||fwdSensors:solar||`` block, and a ``||logic:greater than or equal to||`` block. 
+Let's create a comparison using the ``||fwdSensors:moisture||`` block, and a ``||logic:greater than or equal to||`` block. 
 
 ~hint Tell Me More! 
 If the water level is greater than or equal to 66%, it's flooding! 
