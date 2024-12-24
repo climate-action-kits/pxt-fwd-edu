@@ -175,6 +175,7 @@ Unplug your model from your computer and place it on a table.
 Before we start testing our code, make sure that the **gate** on the **data collection station** is set to the **closed** position on your fishway. 
 
 ~hint Tell Me More!
+
 If the **gate** is set to a different position, gently remove the **green circular** building block from your ``||fwdMotors:servo||`` and reattach it so that it is facing 90 degrees to the left, over top of your fishway.
 
 The **gate** is the **long white** building block attached to the **green circular** building block 
