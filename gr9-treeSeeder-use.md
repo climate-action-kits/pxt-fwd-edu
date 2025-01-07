@@ -117,7 +117,7 @@ Tips
 3. If you need help with the code, click the lightbulb!
 
 ## Use Step 1
-Think back to the lesson or [watch this video](https://youtu.be/Iati2Yg7uYs?feature=shared). 
+Think back to the lesson or [watch this video](https://youtu.be/KpPWcFukGIM?feature=shared). 
 
 What should an automated tree seeder be able to do?
 
