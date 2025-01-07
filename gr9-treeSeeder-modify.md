@@ -132,7 +132,7 @@ Tips
 4. After each change, you will need to ``|Download|`` the updated code to your micro:bit.
 
 ## Modify Step 1
-Think back to the lesson or [watch this video](https://youtu.be/Iati2Yg7uYs?feature=shared). 
+Think back to the lesson or [watch this video](https://youtu.be/KpPWcFukGIM?feature=shared). 
 
 What should an automated tree seeder be able to do?
 
