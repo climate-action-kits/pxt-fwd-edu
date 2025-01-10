@@ -36,12 +36,12 @@ namespace fwdMotors {
     //% block="run $this for $duration"
     //% blockId=fwd_relay_timed_run
     //% duration.shadow="timePicker"
-    fwdTimedRun(duration: number): void { control.inBackground(() => {
-        this.setActive(true)
-        basic.pause(duration)
-        this.setActive(false)
-      })
-    }
+    //fwdTimedRun(duration: number): void { control.inBackground(() => {
+    //    this.setActive(true)
+    //    basic.pause(duration)
+    //    this.setActive(false)
+    //  })
+    //}
     
   }
 
