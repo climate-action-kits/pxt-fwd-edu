@@ -136,6 +136,7 @@
     ],
     "public": true,
     "supportedTargets": [
-        "microbit"
+        "microbit",
+	"arcade"
     ]
 }
