@@ -157,10 +157,15 @@ What robotic components do you notice? How do you think they’ll work together 
 
 ~hint Tell Me More!
 The garbage collector has:
+
 * Two ``||fwdMotors:continuous servo motors||`` that rotate in opposite directions to move debris in the water. 
+
 * The ``||basic:LED display||`` on the micro:bit to show which motor the garbage collector is spinning.
+
 * These parts are connected to the **breakout board** through **cables**.
+
 * The breakout board is connected to the **micro:bit** which holds all the code that will tell our sensors what to do and when to do it!
+
 hint~
 
 ## Use Step 3
@@ -177,9 +182,13 @@ What is happening?
 ~hint Tell Me More!
 
 * The **A** button is an **input** that triggers a set of instructions
+
 * The left servo motor spins at 25% power. 
+
 * The right servo motor does not spin.
+
 * A ``||basic:left arrow||`` displays on the micro:bit LED display. 
+
 hint~
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -198,9 +207,13 @@ Which direction are your motors spinning now? Is it the same, or a different dir
 ~hint Tell Me More!
 
 * The **B** button is an **input** that triggers a different set of instructions
+
 * The left servo does not spin. 
+
 * The right servo motor spins at 25% power in the opposite direction.
+
 * A ``||basic:right arrow||`` displays on the micro:bit LED display. 
+
 hint~
 
 ```blocks
@@ -217,9 +230,13 @@ Next, let's press **A+B** at the same time! What is happening now?
 ~hint Tell Me More! 
 
 * The **A+B** button is an **input** that triggers a different set of instructions from either A or B
+
 * The motors spin in opposite directions to help move debris towards the model's built in **net**
+
 * The left servo spins in one direction at 25% power
+
 * The right servo motor spins at 25% power in the opposite direction.
+
 * A ``||basic:checkmark||`` displays on the micro:bit LED display. 
 
 hint~

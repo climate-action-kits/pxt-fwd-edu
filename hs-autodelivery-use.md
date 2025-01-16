@@ -171,12 +171,18 @@ What robotic components do you notice? How do you think they’ll work together 
 ~hint Tell Me More!
 The smart warehouse vehicle has:
 
-* Two **continuous servo motors** that rotate a full 360 degrees. They will spin the wheels to allow the vehicle to drive forward.
-* One **line follower** with three sensors to identify black and white. They will identify if the robot is on the line, drifting one way or the other, and if it is at the end of a path.
-* One **LED ring** to light up the path to help the line follower see black and white.
-* One **sonar sensor** that you may use to see if there is an object in the vehicle’s way.
+* Two ``||fwdMotors:continuous servo motors||`` that rotate a full 360 degrees. They will spin the wheels to allow the vehicle to drive forward.
+
+* One ``||fwdSensors:line follower||`` with three sensors to identify black and white. They will identify if the robot is on the line, drifting one way or the other, and if it is at the end of a path.
+
+* One ``||fwdSensors:LED ring||`` to light up the path to help the line follower see black and white.
+
+* One ``||fwdSensors:sonar sensor||`` that you may use to see if there is an object in the vehicle’s way.
+
 * These parts are all connected to the **breakout board** through **cables**.
+
 * Finally, the breakout board is connected to the **micro:bit** which holds all the code that will tell our motors what to do and when to do it!
+
 hint~
 
 ## Use Step 3
@@ -185,9 +191,15 @@ Let’s test it out!
 Unplug your project from your computer, place it on a straight black line, and press **B**. What happens?
 
 ~hint Tell Me More!
-* The micro:bit collects data from the line follower. The criteria for turning the motors is:
-* **If** the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
-* This is known as a **conditional expression.** It is a **boolean**, meaning it must be evaluated as **true** or **false**.
+
+The micro:bit collects data from the ``fwdSensors:line follower||``. The criteria for turning the ``||fwdMotors:motors||`` is:
+
+* ``||logic:If||`` the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
+
+* This is known as a **conditional expression**.
+
+* It is a **boolean**, meaning it must be evaluated as ``||logic:true||`` or ``||logic:false||``.
+
 hint~
 
 ```blocks

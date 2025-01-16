@@ -146,8 +146,11 @@ hint~
 Can you identify the **code block** that is telling the code to control the  ``||led:LED display||`` on the micro:bit?
 
 ~hint Tell Me More! 
+
 * The micro:bit collects data from the ``||fwdSensors:sonar||`` sensor. 
+
 * The code creates a ``||led:graph||`` between 0.3 meters and your hand.
+
 hint~
 
 ```blocks
@@ -276,11 +279,11 @@ Now it’s time to test your prediction!
 Press the **A and B** buttons on your micro:bit to ``||datalogger:delete||`` any old logs. Then, press the ``||fwdSensors:touch sensor||`` to turn on your data logger.
 
 ~hint Tell Me More!
-When you delete your data log and start collecting data logs, the Micro:bit will make two different sounds! 
+When you delete your data log and start collecting data logs, the micro:bit will make two different sounds! 
 
 As the ice melts and the water rises:
 * Our ``||datalogger:data logger||`` will record the level of the ``||fwdSensors:sonar||`` sensor using the ``||variables:WaterLevel||`` variable into a table we can look at later.
-* Fewer ``||led:leds||`` on the Micro:bit will light up.
+* Fewer ``||led:leds||`` on the micro:bit will light up.
 
 Depending on the size of your container and shelf of land, the water will rise more or less significantly as your ice melts.
 hint~

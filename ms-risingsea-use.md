@@ -119,8 +119,11 @@ What should it be able to do?
 
 ~hint Tell Me More!
 To measure the change in sea level, our model should be able to: 
+
 1. **Detect** the distance from the top of the water to the ``||fwdSensors:sonar||`` sensor
+
 2. **Visualize** the change in water level using the micro:bit or ``||datalogger:data logger||``
+
 hint~
 
 ## Use Step 2
@@ -130,9 +133,13 @@ What robotic components do you notice? How do you think they’ll work together 
 
 ~hint Tell Me More!
 The satellite has:
-* One **sonar sensor** that detects the floating circular block on the surface of the water.
-* One **touch sensor** that we're not using __yet__ in our code, but we will in the Modify Tutorial.
+
+* One ``||fwdSensors:sonar sensor||`` that detects the floating circular block on the surface of the water.
+
+* One ``||fwdSensors:touch sensor||`` that we're not using __yet__ in our code, but we will in the Modify Tutorial.
+
 * These parts are all connected to the **breakout board** through **cables**.
+
 * Finally, the breakout board is connected to the **micro:bit** which holds all the code that will tell our sensors what to do and when to do it!
 hint~
 
@@ -146,24 +153,31 @@ What is happening?
 Look at the micro:bit ``||led:LED display||``, what is happening? 
 
 ~hint Tell Me More!
-* When the distance between the table and the sonar sensor is **bigger**, more ``||led:LEDs||`` turn on! 
+
+When the distance between the table and the sonar sensor is **bigger**, more ``||led:LEDs||`` turn on! 
+
 hint~
 
 ## Use Step 4
 Place your hand on the table underneath the ``||fwdSensors:sonar||`` sensor and gently move it closer to the ``||fwdSensors:sonar||`` sensor. 
 
-What happens to the ``||led:LEDs||`` on the Micro:bit?
+What happens to the ``||led:LEDs||`` on the micro:bit?
 
 ~hint Tell Me More! 
-* When the distance between your hand and the sonar sensor is **smaller**, fewer ``||led:LEDs||`` turn on!
+
+When the distance between your hand and the sonar sensor is **smaller**, fewer ``||led:LEDs||`` turn on!
+
 hint~
 
 ## Use Step 5
-Can you identify the **code block** that is telling the code to control the ``||led:LEDs||`` on the Micro:bit?
+Can you identify the **code block** that is telling the code to control the ``||led:LEDs||`` on the micro:bit?
 
 ~hint Tell Me More! 
+
 * The micro:bit collects data from the ``||fwdSensors:sonar||`` sensor. 
+
 * The code creates a ``||led:graph||`` between 0.3 meters and your hand.
+
 hint~
 
 ```blocks
@@ -236,7 +250,7 @@ Write your prediction down!
 ## Experiment Step 3
 Now it’s time to test your prediction!
 
-As the ice melts, create a table to log how many ``||led:LEDs||`` are lit up on the Micro:bit: 
+As the ice melts, create a table to log how many ``||led:LEDs||`` are lit up on the micro:bit: 
 
 1. When the ice has not melted
 2. When the ice is 50% melted

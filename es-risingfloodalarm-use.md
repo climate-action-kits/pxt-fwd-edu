@@ -116,7 +116,9 @@ Let's explore how these parts work together to help warn people of floods!
 How do you think the flood alarm works during **low tide** and **high tide**?
 
 ~hint Tell Me More!
+
 * During low tide, the ``||fwdSensors:LED ring||`` lights up **green**
+
 * During high tide, the ``||fwdSensors:LED ring||`` lights up **yellow**
 hint~
 
@@ -132,7 +134,9 @@ The flood alarm is connected to a ``||fwdSensors:moisture sensor||`` which sense
 Take a look at the code. How do you think the ``||fwdSensors:LED ring||`` will act when you only pour a little water into the container?
 
 ~hint Tell Me More!
-* When the ``||fwdSensors:moisture sensor||`` is less than 1/3 (or 33%) submerged, the ``||fwdSensors:LED ring||`` turns green.
+
+When the ``||fwdSensors:moisture sensor||`` is less than 1/3 (or 33%) submerged, the ``||fwdSensors:LED ring||`` turns green.
+
 hint~
 
 ```blocks
@@ -145,15 +149,16 @@ basic.forever(function () {
 ```
 
 ## Use Step 4
-What do you notice happens to the ``||LED:LEDs||`` on the Micro:bit as you fill the container half full?
+What do you notice happens to the ``||LED:LEDs||`` on the micro:bit as you fill the container half full?
 
 ~hint Tell Me More!
-The LEDs on the Micro:bit are documenting the height of the tide!
+The LEDs on the micro:bit are documenting the height of the tide!
 
 1. The ``||fwdSensors:moisture sensor||`` is filled from 0-100%
 2. The ``||LED:leds||`` display the percentage that the tide has risen.
 
 The higher the percentage, the more ``||LED:leds||`` are turned on!
+
 hint~
 
 ```blocks
@@ -171,7 +176,7 @@ You've completed the activity!
 Did anything surprise you about the project?
 
 ## Reflection @showdialog
-1. How does the Micro:bit use comparisons (<,=,>) to decide how high the tide is?
+1. How does the micro:bit use comparisons (<,=,>) to decide how high the tide is?
 2. What other types of alerts can you add to your flood alarm to improve the warning system even further?
 
 ## Finished! @showdialog

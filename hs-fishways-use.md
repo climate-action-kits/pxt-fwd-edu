@@ -147,7 +147,7 @@ What physical features do you notice in the design of the fishway?
 
 3. Green, **horizontal pieces** on the angled slope form vertical slots to create resting pools for fish.
 
-4. A data collection station with a ``||fwdSensors:dial||`` and ``||fwdMotors:servo||`` connected to the Micro:bit.
+4. A data collection station with a ``||fwdSensors:dial||`` and ``||fwdMotors:servo||`` connected to the micro:bit.
 
 5. A **white gate** in the **closed** position preventing fish from exiting the fishway until ecologists open it.
 
@@ -180,7 +180,8 @@ If the **gate** is set to a different position, gently remove the **green circul
 
 The **gate** is the **long white** building block attached to the **green circular** building block 
 
-The **data collection station** is the set of blocks, ``||fwdMotors:servo||`` motor, and ``||fwdSensors:dial||`` that is attached to the Micro:bit
+The **data collection station** is the set of blocks, ``||fwdMotors:servo||`` motor, and ``||fwdSensors:dial||`` that is attached to the micro:bit
+
 hint~
 
 ## Use Step 4
@@ -212,8 +213,11 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CCW, function (differe
 Can you identify the ``||variables:variable||`` that represents the number of fish traveling through the fishway? 
 
 ~hint Tell Me More! 
+
 * The **event**  ``||fwdSensors:on touch down||``  runs each time the dial is pressed down. 
+
 * Each time the event loop is run, the variable ``||variables:FishCount||`` increases by 1.
+
 hint~
 
 ```blocks
@@ -229,12 +233,19 @@ Using your hand, or by attaching a small fish to a spare building block using cr
 **List** all of the steps that a fish has to complete to exit the fishway.
 
 ~hint Tell Me More! 
+
 1. A small, native fish enters the fishway through the **white grate** at the base of the fishway
+
 2. The fish travels up the fishway, resting at the two **green resting pools**. 
+
 3. The fish arrives at the **closed gate**, ecologists manually log data like the size, type of fish that have traveled through the fishway. 
+
 4. The ecologist opens the gate by turning the ``||fwdSensors:dial||`` **in one direction**, and manually **presses**  the ``||fwdSensors:dial||`` to track the number of fish that have used the fishway today. 
+
 5. The fish exits the fishway and enters the dam!
+
 6. The ecologist closes the gate by turning the ``||fwdSensors:dial||`` **the other direction** to get ready for more migrating fish. 
+
 hint~ 
 
 ## Use Step 7
@@ -247,7 +258,7 @@ Which of these tasks happen **manually**?
 ~hint Tell Me More!
 
 **Automatic Steps:**
-1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the Micro:bit
+1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the micro:bit
 2. Preventing large, invasive species from migrating
 
 **Manual Steps:**

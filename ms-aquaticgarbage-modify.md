@@ -154,9 +154,13 @@ What is happening?
 ~hint Tell Me More! 
 
 * The **A+B** button is an event that triggers a unique set of instructions.
+
 * The motors spin in opposite directions to help move debris towards the model's built in **net**
+
 * The left servo spins in one direction at 25% power.
+
 * The right servo motor spins at 25% power in the opposite direction.
+
 * A ``||basic:checkmark||`` displays on the micro:bit LED display. 
 
 hint~
@@ -217,6 +221,7 @@ What type of sensor would we need to add to our project?
 ~hint Tell Me More! 
 
 The ``||fwdSensors:solar sensor||`` can detect light in a room! 
+
 hint~
 
 ## Challenge Step 2
@@ -238,6 +243,7 @@ What type of block could you add to your code to satisfy these **conditions**?
 ~hint Tell Me More! 
 
 A ``||logic:conditional statement||``! Look in the logic drawer for the "if/else" block and drag it below your code in the A+B event.
+
 hint~
 
 ```blocks
@@ -263,6 +269,7 @@ Which block do you need to create the following condition?
 ~hint Tell Me More! 
 
 You'll need a ``||fwdSensors:solar||`` block to detect if the sunlight is **over 50%**!
+
 hint~ 
 
 ```block
