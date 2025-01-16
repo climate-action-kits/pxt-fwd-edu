@@ -157,12 +157,19 @@ Using your hand, or by attaching a small fish to a spare building block using cr
 **List** all of the steps that a fish has to complete to exit the fishway.
 
 ~hint Tell Me More! 
+
 1. A small, native fish enters the fishway through the **white grate** at the base of the fishway
+
 2. The fish travels up the fishway, resting at the two **green resting pools**. 
+
 3. The fish arrives at the **closed gate**, ecologists manually log data like the size, type of fish that have traveled through the fishway. 
+
 4. The ecologist opens the gate by turning the ``||fwdSensors:dial||`` **clockwise**, and manually **presses**  the ``||fwdSensors:dial||`` to track the number of fish that have used the fishway today. 
+
 5. The fish exits the fishway and enters the dam!
+
 6. The ecologist closes the gate by turning the ``||fwdSensors:dial||``  **counterclockwise** to get ready for more migrating fish. 
+
 hint~ 
 
 ## Modify Step 3
@@ -175,13 +182,17 @@ Which of these tasks happen **manually**?
 ~hint Tell Me More!
 
 **Automatic Steps:**
-1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the Micro:bit
+1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the micro:bit
 2. Preventing large, invasive species from migrating
 
 **Manual Steps:**
+
 1. Turning the ``||fwdSensors:dial||``  to open and close the gate
+
 2. Pressing the ``||fwdSensors:dial||`` to count the number of fish.
+
 3. Closing the gate once a fish passes through the fishway
+
 4. Logging data like type of fish, and weight
 hint~ 
 
@@ -197,6 +208,7 @@ How might we update the code to fully open and close the gate **automatically** 
 We can update both ``||fwdSensors:dial turned||`` events to set the servo motor to a specific angle.
 
 Delete the ``||fwdSensors:dial absolute position||`` block from each ``||fwdMotors:set motor||`` block.
+
 hint~
 
 ``` blocks 
@@ -221,7 +233,7 @@ Now let's automate the movement!
 
 Type the numbers "0" and "100" into each space where you deleted the two ``||fwdSensors:dial absolute position||`` blocks.
 
-Remember to connect your Micro:bit and click the ``|Download|`` button to test your updated code.
+Remember to connect your micro:bit and click the ``|Download|`` button to test your updated code.
 hint~
 
 ```blocks 
@@ -241,8 +253,11 @@ Now that our gate opens and closes more quickly, let's automate our ``||variable
 ~hint Tell Me More! 
 
 1. We need to drag our ``||variables:FishCount||`` variable from the ``||fwdSensors:on touch down||`` event to the ``||fwdSensors:on dial turned by||`` event.
+
 2. When the ``||fwdMotors:set rightServo||`` block is set to 100, the gate is open.
+
 3. We can delete our ``||fwdSensors:on touch down||`` block now!
+
 hint~
 
 ```blocks
@@ -254,7 +269,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Modify Step 7
-Remember to connect your Micro:bit and click the ``|Download|`` button to test your updated code.
+Remember to connect your micro:bit and click the ``|Download|`` button to test your updated code.
 
 How do you think that automating these steps helps ecologists do their jobs more effectively? 
 
@@ -276,7 +291,7 @@ Can you **automate** another one of the manual steps?
 ~hint Tell Me More!
 
 **Modified Automatic Steps:**
-1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the Micro:bit
+1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the micro:bit
 2. Preventing large, invasive species from migrating
 3. **Modified:** increasing the ``||variables:FishCount||`` when the gate opens
 4. **Modified:** Opening and closing the gate to a specific location using the ``||fwdSensors:dial||``
@@ -294,6 +309,7 @@ Think about what type of sensor might **detect** when a fish has successfully pa
 ~hint Tell Me More!
 
 A ``||fwdSensors:sonar||`` sensor can detect when a fish is no longer in the way of the gate!
+
 hint~ 
 
 ```block
@@ -309,8 +325,11 @@ Try plugging the ``||fwdSensors:sonar||`` sensor into your micro:bit, and add it
 2. The sensor should sit in one position
 
 ~hint Tell Me More!
+
 * Try attaching the ``||fwdSensors:sonar||`` sensor to the top of your remote monitoring station (the building blocks with the motor and micro:bit)
+
 * You may need to add a **small white** building block, and **blue 90 degree** connector. 
+
 hint~
 
 ## Challenge Step 4
@@ -321,7 +340,7 @@ Your code should use the following criteria:
 2. ``||basic:pause||`` for 1 second
 3. Rotate the ``||fwdMotors:motor||`` to 0 degrees.
 
-Remember to connect your Micro:bit and click the ``|Download|`` button to test your updated code.
+Remember to connect your micro:bit and click the ``|Download|`` button to test your updated code.
 
 ~hint Tell Me More!
 
@@ -338,7 +357,7 @@ basic.forever(function () {
 ``` 
 
 ## Challenge Step 5
-Remember to connect your Micro:bit and click the ``|Download|`` button to test your updated code.
+Remember to connect your micro:bit and click the ``|Download|`` button to test your updated code.
 
 Let's test it out! 
 
@@ -350,7 +369,7 @@ Each time we set up new sensors, like our ``||fwdSensors:sonar||`` sensor, we ne
 
 Make sure you're using the live simulator to look at the distance that your sonar sensor is detecting. 
 
-Adjust the sonar distance from 0.2 m to another number, and download your code to your Micro:bit each time to test it!
+Adjust the sonar distance from 0.2 m to another number, and download your code to your micro:bit each time to test it!
 hint~ 
 
 ## Challenge Step 6

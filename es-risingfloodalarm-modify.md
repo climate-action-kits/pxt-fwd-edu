@@ -121,8 +121,11 @@ Try it now and see if your predictions are correct!
 
 * The flood alarm uses **conditional statements** to tell us how high the tide is.
 * The ``||fwdSensors:moisture sensor||`` detects water from 0 to 100%
+
 * When the water is less than 1/3 full, the ``||fwdSensors:LED ring||`` lights up **green**
+
 * When the water is more than 1/3 full, but less than 2/3 full the ``||fwdSensors:LED ring||`` lights up **yellow**
+
 hint~
 
 ```blocks
@@ -217,6 +220,7 @@ Look at the conditional statement below. Try using a ``||music:play||`` block to
 ~hint Tell Me More!
 
 Drag the ``||music:play||`` block and a ``||music:rest||`` block below the ``||fwdSensors:set LEDRing||`` to red.
+
 hint~
 
 ```blocks
@@ -248,7 +252,7 @@ You've completed the activity!
 Did anything surprise you about the project?
 
 ## Reflection @showdialog
-1. How does the Micro:bit use comparisons (<,=,>) to decide how high the tide is?
+1. How does the micro:bit use comparisons (<,=,>) to decide how high the tide is?
 2. How does the use of sound and other senses help keep people safe during a natural disaster?
 3. Think about something in this project that was tricky.
    * How did you figure it out? How did that make you feel?

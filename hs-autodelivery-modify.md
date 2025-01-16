@@ -171,9 +171,15 @@ Let’s test it out!
 Unplug your project from your computer, place it on a straight black line, and press **B**. What happens?
 
 ~hint Tell Me More!
-* The micro:bit collects data from the line follower. The criteria for turning the motors is:
-* **If** the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
-* This is known as a **conditional expression.** It is a **boolean**, meaning it must be evaluated as **true** or **false**.
+
+* The micro:bit collects data from the ``||fwdSensors:line follower||``. The criteria for turning the ``||fwdMotors:motors||`` is:
+
+* ``|logic:If||`` the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
+
+* This is known as a **conditional expression**.
+
+* It is a **boolean**, meaning it must be evaluated as ``||logic:true||`` or ``||locig:false||``.
+
 hint~
 
 ```blocks
@@ -185,7 +191,7 @@ input.onButtonPressed(Button.B, function () {
 
 ## Modify Step 3
 
-What will happen when we increase the driving speed in the driving block from **20** to **40**?
+What will happen when we increase the driving speed in the ``||fwdMotors:drive forward||`` block from **20** to **40**?
 
 Press the ``|Download|`` button to update the code on your micro:bit, set your vehicle down on the line again, and press **B** to test it.
 
@@ -206,16 +212,18 @@ It takes time for the micro:bit to process the data collected from the line sens
 hint~
 
 ## Modify Step 5
+
 Updating our program doesn’t _always_ make it more efficient. How could you improve or adjust the code so the vehicle still senses the line properly?
 
 Adjust your code and document how many times the vehicle had to re-adjust before reaching the end of the straight line.
 
 ~hint Tell Me More
-Remember to download your code to your micro:bit after editing your code!
+
+Remember to ``|download|`` your code to your micro:bit after editing your code!
 
 We could increase the accuracy of our line follower in a few ways:
-* Set the speed back to 20 (or lower!)
-* Add a wait block after each conditional statement
+* Set the ``||fwdMotors:drive forward||`` block back to 20 (or another number!)
+* Add a ``||basic:pause||`` block after each conditional statement
 hint~
 
 ```blocks
@@ -244,12 +252,13 @@ basic.forever(function () {
 ## Modify Step 6
 Let’s test another component that our Smart Warehouse Vehicle is using!
 
-How do you think that the **LED Light** is helping our warehouse vehicle drive on the black line?
+How do you think that the ``||fwdSensors:LED ring||`` is helping our warehouse vehicle drive on the black line?
 
 ~hint Tell Me More!
 Our line follower senses the contrast between black and white.
 
-The LED ring helps light up the **black** line on the **white** paper in different lighting conditions.
+The ``||fwdSensors:LED ring||`` helps light up the **black** line on the **white** paper in different lighting conditions.
+
 hint~
 
 ```block
@@ -258,10 +267,10 @@ fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
 ## Modify Step 7 @showdialog
 Based on your understanding of how the vehicle acted the first time you tested it, how do you think it will navigate a black line when the LED is set to different lighting conditions?
 
-1. Set the LED light to white
-2. Set the LED light to red
-3. Turn the LED light off
-4. Turn off the lights in the room with the LED light off
+1. Set the ``||fwdSensors:LED ring||`` to white
+2. Set the ``||fwdSensors:LED ring||`` to red
+3. Turn the ``||fwdSensors:LED ring||`` off
+4. Turn off the lights in the room with the ``||fwdSensors:LED ring||`` off
 
 Write your prediction down!
 
@@ -270,7 +279,7 @@ Now it’s time to test your prediction!
 
 Test each of the four lighting conditions 5 times on the straight line and document your findings in a table.
 
-Remember to download the code each time you change the lighting conditions.
+Remember to ``|download|`` the code each time you change the lighting conditions.
 
 ~hint Tell Me More!
 You may wish to collect data about:
@@ -281,20 +290,27 @@ You may wish to collect data about:
 hint~
 
 ## Challenge Time! @showdialog
-Our project build includes a **sonar sensor** we’re not currently using.
+
+Our project build includes a ``||fwdSensors:sonar||`` sensor we’re not currently using.
 
 Now that our smart warehouse vehicle drives on a line in different lighting conditions, add the ability to sense its surroundings and **wait until the path is clear**!
 
 ## Challenge Step 1
-Think about where in your conditional statement you should add the **sonar sensor** so that your vehicle detects an obstacle and safely waits until the path is clear.
 
-Remember to download your code once you add the sonar block to your conditional statement.
+Think about where in your ``||logic:conditional statement||`` you should add the ``||fwdSensors:sonar||`` sensor so that your vehicle detects an obstacle and safely waits until the path is clear.
+
+Remember to ``|download|`` your code once you add the sonar block to your conditional statement.
 
 ~hint Tell Me More!
-The sonar sensor should only drive forward if:
+
+The ``||fwdSensors:sonar||`` sensor should only tell the vehicle to drive forward if:
+
 * Obstacles are **Over** a certain distance in front of your vehicle.
-* **After** IsDrivingEnabled is set to true
+
+* **After** ``||fwdMotors:IsDrivingEnabled||`` is set to true
+
 * **Before** driving forward or turning on a line.
+
 hint~
 
 ```block
@@ -307,7 +323,9 @@ Test your vehicle again on the straight line. Does it act the way you expected i
 Did you include a way for your vehicle to signal that an obstacle is in the way?
 
 ~hint Tell Me More!
-Click on the lightbulb for one example of how to add a sonar sensor and signal to our code!
+
+Click on the lightbulb for one example of how to add a ``||fwdSensors:sonar||`` sensor and signal to our code!
+
 hint~
 
 ```blocks
@@ -370,7 +388,7 @@ For example: If we want the vehicle to sense obstacles under 30 cm, our code blo
 
 If your vehicle is plugged into your computer, you can use the **live visualizer** to see how far away your sonar sensor detects objects!
 
-Remember to download the code each time you change the code.
+Remember to ``|download|`` the code each time you change the code.
 hint~
 
 ```blocks
@@ -398,9 +416,13 @@ Think about how you would test the effectiveness of the sonar sensor. What tests
 
 ~hint Tell Me More!
 You may wish to think about:
-* How far away should the sonar sensor detect?
+
+* How far away should the ``||fwdSensors:sonar||`` sensor detect?
+
 * How should it signal that it senses an obstacle?
+
 * How should you test that the existing line follower is still accurate?
+
 hint~
 
 ## Congratulations! @showdialog
