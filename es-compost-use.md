@@ -144,10 +144,13 @@ We are using **loops** to check if there is enough light to spin the tumbler.
 Can you identify the two loops in this code?
 
 ~hint Tell me more!
+
 Loops make things happen more than once. In this code:
 
 - The ``||basic:forever||`` loop keeps running all the time. It repeats the code inside it over and over. In our project, the forever loop monitors sunlight levels all the time.
+
 - The code inside the ``||loops:while||`` loop runs as long as a certain condition is true. Here, it will only run when the solar sensor detects _enough_ sunlight (more than 95%). 
+
 hint~
 
 ```blocks

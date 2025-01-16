@@ -117,8 +117,11 @@ hint~
 Which code block do you think makes the tumbler spin _when light is present_?
 
 ~hint Tell me more!
+
 - The ``||loops:while||`` loop controls the motor.
+
 - When the solar sensor detects bright sunlight (more than 95%), then the motor is turned on.
+
 hint~
 
 ```block
@@ -163,8 +166,11 @@ Change the threshold back to 95%.
 Which specific blocks of code do you think make the tumbler spin and stop?
 
 ~hint Tell me more!
+
 - The ``||fwdMotors:set leftServo ON||`` block turns the motor on and makes the tumbler spin.
+
 - The ``||fwdMotors:set leftServo OFF||`` block turns the motor off and stops the tumbler.
+
 hint~
 
 ```block
@@ -223,8 +229,11 @@ Let’s add some visual output to show what part of the composting cycle we are 
 Drag a ``||basic:show LEDs||`` block and a ``||basic:clear screen||`` block into the workspace. Where should we add these in our existing code to show an animation _while_ the tumbler is spinning?
 
 ~hint Tell me more!
+
 - Add the ``||basic:show LEDs||`` block right after the motor turns on to show that the tumbler is spinning.
+
 - Add the ``||basic:clear screen||`` block after the motor turns off to show that the tumbler has stopped.
+
 hint~
 
 ```block
