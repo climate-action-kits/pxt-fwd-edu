@@ -141,17 +141,18 @@ What physical features do you notice in the design of the fishway?
 
 ~hint Tell Me More!
 
-1. The fishway is on an **angle** to get from the bottom of a body of water, to the top of a dam. 
+The fishway is on an **angle** to get from the bottom of a body of water, to the top of a dam. 
 
-2. A **white grate** at the base of the fishway prevent large, invasive species like goldfish from entering. 
+A **white grate** at the base of the fishway prevent large, invasive species like goldfish from entering. 
 
-3. Green, **horizontal pieces** on the angled slope form vertical slots to create resting pools for fish.
+Green, **horizontal pieces** on the angled slope form vertical slots to create resting pools for fish.
 
-4. A data collection station with a ``||fwdSensors:dial||`` and ``||fwdMotors:servo||`` connected to the micro:bit.
+A data collection station with a ``||fwdSensors:dial||`` and ``||fwdMotors:servo||`` connected to the micro:bit.
 
-5. A **white gate** in the **closed** position preventing fish from exiting the fishway until ecologists open it.
+A **white gate** in the **closed** position preventing fish from exiting the fishway until ecologists open it.
 
-6. A tube connected to the **water pump** that we're not using now, but we'll use in the **create** phase.
+A tube connected to the **water pump** that we're not using now, but we'll use in the **create** phase.
+
 hint~
 
 ## Use Step 2

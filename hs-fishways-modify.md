@@ -182,18 +182,20 @@ Which of these tasks happen **manually**?
 ~hint Tell Me More!
 
 **Automatic Steps:**
-1. Displaying the number of fish using the ``||variables:FishCount||`` variable on the micro:bit
-2. Preventing large, invasive species from migrating
+Displaying the number of fish using the ``||variables:FishCount||`` variable on the micro:bit
+
+Preventing large, invasive species from migrating
 
 **Manual Steps:**
 
-1. Turning the ``||fwdSensors:dial||``  to open and close the gate
+Turning the ``||fwdSensors:dial||``  to open and close the gate
 
-2. Pressing the ``||fwdSensors:dial||`` to count the number of fish.
+Pressing the ``||fwdSensors:dial||`` to count the number of fish.
 
-3. Closing the gate once a fish passes through the fishway
+Closing the gate once a fish passes through the fishway
 
-4. Logging data like type of fish, and weight
+Logging data like type of fish, and weight
+
 hint~ 
 
 ## Modify Step 4

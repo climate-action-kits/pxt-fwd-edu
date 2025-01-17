@@ -192,7 +192,7 @@ Unplug your project from your computer, place it on a straight black line, and p
 
 ~hint Tell Me More!
 
-The micro:bit collects data from the ``fwdSensors:line follower||``. The criteria for turning the ``||fwdMotors:motors||`` is:
+The micro:bit collects data from the ``||fwdSensors:line follower||``. The criteria for turning the ``||fwdMotors:motors||`` is:
 
 * ``||logic:If||`` the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
 

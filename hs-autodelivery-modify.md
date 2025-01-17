@@ -174,7 +174,7 @@ Unplug your project from your computer, place it on a straight black line, and p
 
 * The micro:bit collects data from the ``||fwdSensors:line follower||``. The criteria for turning the ``||fwdMotors:motors||`` is:
 
-* ``|logic:If||`` the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
+* ``||logic:If||`` the left OR right side of the line senses the white paper, turn the motor in the opposite direction.
 
 * This is known as a **conditional expression**.
 
@@ -224,6 +224,7 @@ Remember to ``|download|`` your code to your micro:bit after editing your code!
 We could increase the accuracy of our line follower in a few ways:
 * Set the ``||fwdMotors:drive forward||`` block back to 20 (or another number!)
 * Add a ``||basic:pause||`` block after each conditional statement
+
 hint~
 
 ```blocks
@@ -264,7 +265,7 @@ hint~
 ```block
 fwdSensors.ledRing.fwdSetAllPixelsColour(0xffffff)
 ```
-## Modify Step 7 @showdialog
+## Modify Step 7
 Based on your understanding of how the vehicle acted the first time you tested it, how do you think it will navigate a black line when the LED is set to different lighting conditions?
 
 1. Set the ``||fwdSensors:LED ring||`` to white

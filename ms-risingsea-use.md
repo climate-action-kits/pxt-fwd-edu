@@ -120,9 +120,9 @@ What should it be able to do?
 ~hint Tell Me More!
 To measure the change in sea level, our model should be able to: 
 
-1. **Detect** the distance from the top of the water to the ``||fwdSensors:sonar||`` sensor
+**Detect** the distance from the top of the water to the ``||fwdSensors:sonar||`` sensor
 
-2. **Visualize** the change in water level using the micro:bit or ``||datalogger:data logger||``
+**Visualize** the change in water level using the micro:bit or ``||Datalogger:data logger||``
 
 hint~
 
@@ -141,6 +141,7 @@ The satellite has:
 * These parts are all connected to the **breakout board** through **cables**.
 
 * Finally, the breakout board is connected to the **micro:bit** which holds all the code that will tell our sensors what to do and when to do it!
+
 hint~
 
 ## Use Step 3

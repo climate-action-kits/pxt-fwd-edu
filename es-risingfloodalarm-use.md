@@ -117,9 +117,10 @@ How do you think the flood alarm works during **low tide** and **high tide**?
 
 ~hint Tell Me More!
 
-* During low tide, the ``||fwdSensors:LED ring||`` lights up **green**
+During low tide, the ``||fwdSensors:LED ring||`` lights up **green**
 
-* During high tide, the ``||fwdSensors:LED ring||`` lights up **yellow**
+During high tide, the ``||fwdSensors:LED ring||`` lights up **yellow**
+
 hint~
 
 ## Build Step 13 @showdialog
