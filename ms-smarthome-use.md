@@ -60,17 +60,6 @@ Let's build an automated smart home model to reduce energy consumption! We are g
 2. **Add code** to bring our project to life  
 3. **Use** your project to understand how they works
 
-<!-- <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-smarthome-render.webp" alt="Full Smart Home render" style="display: block; width: 60%; margin:auto;">
-
-## Electronics Required @showdialog
-![Electronic Pieces Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-smarthome-sbs0A.webp)
-
-## Building Blocks Required @showdialog
-![Building Blocks Required](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-smarthome-sbs0B.webp)
-
-## Build Step 1 @showdialog
-![Build Step 1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/refs/heads/main/tutorial-assets/ms-smarthome-sbs01.webp) -->
-
 ## Activity 2: Code Your Project @showdialog
 We need to connect our project to the computer to make it come to life with code!
 

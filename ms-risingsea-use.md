@@ -122,7 +122,7 @@ To measure the change in sea level, our model should be able to:
 
 **Detect** the distance from the top of the water to the ``||fwdSensors:sonar||`` sensor
 
-**Visualize** the change in water level using the micro:bit or ``||Datalogger:data logger||``
+**Visualize** the change in water level using the micro:bit or data logger
 
 hint~
 
