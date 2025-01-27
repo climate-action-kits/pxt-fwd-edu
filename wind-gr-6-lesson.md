@@ -1,7 +1,7 @@
 # How Wind Turbines Capture Kinetic Energy
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+=github:ssande-fwd/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to How Wind Turbines Capture Kinetic Energy Coding Tutorial.

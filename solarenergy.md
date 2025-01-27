@@ -1,7 +1,7 @@
 # Harnessing the Sun's Energy with Solar Panels
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-solar=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+solar=github:ssande-fwd/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to Harnessing the Sun's Energy with Solar Panels Coding Tutorial

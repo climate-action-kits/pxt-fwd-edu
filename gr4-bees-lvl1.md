@@ -1,7 +1,7 @@
 # Protecting Pollinators with a Bee Counter
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-ledRing=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+ledRing=github:ssande-fwd/fwd-ext-testing
 ```
 
 ## Activity 1 Building your Project @showdialog 

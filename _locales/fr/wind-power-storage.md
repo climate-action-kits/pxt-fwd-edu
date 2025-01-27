@@ -1,7 +1,7 @@
 # Stockage d’énergie pour l’énergie éolienne
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-Dial=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+Dial=github:ssande-fwd/fwd-ext-testing
 ```
 
 ## Step 1 @showdialog

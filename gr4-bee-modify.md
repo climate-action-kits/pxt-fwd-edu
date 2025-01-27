@@ -1,7 +1,7 @@
 # Tracking Pollinators with a Bee Counter 
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-ledRing=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+ledRing=github:ssande-fwd/fwd-ext-testing
 ```
 ## Activity 1: Build Your Project @showdialog 
 Welcome to the bee counter project!  We are going to do this in 4 steps! 

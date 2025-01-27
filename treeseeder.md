@@ -1,7 +1,7 @@
 # Replanting Our Forests with Automated Tree Seeders      
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+=github:ssande-fwd/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to Replanting Our Forests with Automated Tree Seeders Coding Tutorial

@@ -1,7 +1,7 @@
 # Wind Turbine Energy Storage - Modify Tutorial
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-sonar=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+sonar=github:ssande-fwd/fwd-ext-testing
 datalogger=datalogger
 ```
 

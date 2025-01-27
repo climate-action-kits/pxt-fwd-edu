@@ -1,8 +1,8 @@
 # Forward Education Flood Detection with Coastal Flood Alarms - Use Tutorial
 
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-sonar=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+sonar=github:ssande-fwd/fwd-ext-testing
 datalogger=datalogger
 ```
 

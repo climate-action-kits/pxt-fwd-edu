@@ -1,7 +1,7 @@
 # Wildfire Tracking with Autonomous Vehicles 
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-sonar=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+sonar=github:ssande-fwd/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to Wildfire Tracking with Autonomous Vehicles

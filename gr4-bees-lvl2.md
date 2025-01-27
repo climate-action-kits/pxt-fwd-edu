@@ -1,8 +1,8 @@
 # Monitoring Bees and Pollination with a Bug Counter
 
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-ledRing=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+ledRing=github:ssande-fwd/fwd-ext-testing
 ```
 ## Activity 1: Building Your Project @showdialog 
 Welcome to Monitoring Bees and Pollination with a Bug Counter! 

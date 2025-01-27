@@ -1,7 +1,7 @@
 # Powering the Future with Wind Energy
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-Dial=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+Dial=github:ssande-fwd/fwd-ext-testing
 ``` 
 ## Activity 1: Building your Protoype @showdialog 
 Welcome to the Level 2 Wind Turbine Project! In this project, you will use the dial to control the servo motor! 

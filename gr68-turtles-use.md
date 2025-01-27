@@ -1,8 +1,8 @@
 #  Turtle-safe Beach Lights - Use Tutorial
 
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-ledRing=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+ledRing=github:ssande-fwd/fwd-ext-testing
 ```
 
 ```template

@@ -1,8 +1,8 @@
 # Blank Project
 
 ```package
-=github:ssande/fwd-ext-testing/fwd-breakout
-=github:ssande/fwd-ext-testing
+=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+=github:ssande-fwd/fwd-ext-testing
 ```
 ## 
 - This is a blank template for coding independently. 

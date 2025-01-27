@@ -1,7 +1,7 @@
 # Comment les turbines éoliennes capturent  l’énergie cinétique
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+=github:ssande-fwd/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Bienvenue dans le tutoriel de codage pour Comment les turbines éoliennes capturent  l’énergie cinétique.

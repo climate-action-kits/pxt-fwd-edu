@@ -6,7 +6,7 @@
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac",
-        "fwd-edu-common": "github:ssande/fwd-ext-testing/fwd-common",
+        "fwd-edu-common": "github:ssande-fwd/fwd-ext-testing/fwd-common",
         "jacdac-led": "github:microsoft/pxt-jacdac/led"
     },
     "files": [

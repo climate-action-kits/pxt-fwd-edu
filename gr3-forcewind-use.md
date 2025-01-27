@@ -1,7 +1,7 @@
 # The Powerful Force of Wind - Use Tutorial
 ```package
-fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
-Dial=github:ssande/fwd-ext-testing
+fwd-edu-breakout=github:ssande-fwd/fwd-ext-testing/fwd-breakout
+Dial=github:ssande-fwd/fwd-ext-testing
 ``` 
 
 ## Activity 1: Build Your Project @showdialog

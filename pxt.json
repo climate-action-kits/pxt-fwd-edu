@@ -6,15 +6,15 @@
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac#v1.9.28",
-        "fwd-edu-common": "github:ssande/fwd-ext-testing/fwd-common",
-        "fwd-edu-breakout": "github:ssande/fwd-ext-testing/fwd-breakout",
-        "fwd-edu-dial": "github:ssande/fwd-ext-testing/fwd-dial",
-        "fwd-edu-led": "github:ssande/fwd-ext-testing/fwd-led",
-        "fwd-edu-line": "github:ssande/fwd-ext-testing/fwd-line",
-        "fwd-edu-moisture": "github:ssande/fwd-ext-testing/fwd-moisture",
-        "fwd-edu-solar": "github:ssande/fwd-ext-testing/fwd-solar",
-        "fwd-edu-sonar": "github:ssande/fwd-ext-testing/fwd-sonar",
-        "fwd-edu-touch": "github:ssande/fwd-ext-testing/fwd-touch"
+        "fwd-edu-common": "github:ssande-fwd/fwd-ext-testing/fwd-common",
+        "fwd-edu-breakout": "github:ssande-fwd/fwd-ext-testing/fwd-breakout",
+        "fwd-edu-dial": "github:ssande-fwd/fwd-ext-testing/fwd-dial",
+        "fwd-edu-led": "github:ssande-fwd/fwd-ext-testing/fwd-led",
+        "fwd-edu-line": "github:ssande-fwd/fwd-ext-testing/fwd-line",
+        "fwd-edu-moisture": "github:ssande-fwd/fwd-ext-testing/fwd-moisture",
+        "fwd-edu-solar": "github:ssande-fwd/fwd-ext-testing/fwd-solar",
+        "fwd-edu-sonar": "github:ssande-fwd/fwd-ext-testing/fwd-sonar",
+        "fwd-edu-touch": "github:ssande-fwd/fwd-ext-testing/fwd-touch"
     },
     "files": [
         "README.md",
