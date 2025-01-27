@@ -4,7 +4,7 @@ name: Auto-bump
 on:
   push:
     branches:
-      - master
+        - main
     paths-ignore:
       - '.github/workflows/**'
       - '.gitignore'
