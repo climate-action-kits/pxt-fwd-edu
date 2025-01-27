@@ -1,8 +1,8 @@
 # Monitoring Bees and Pollination with a Bug Counter
 
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-ledRing=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+ledRing=github:ssande/fwd-ext-testing
 ```
 
 let bugvisits = 0

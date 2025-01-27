@@ -1,7 +1,7 @@
 # Powering the Future with Wind Energy
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-Dial=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+Dial=github:ssande/fwd-ext-testing
 ``` 
 
 ## Activity 1: Building Your Project @showdialog

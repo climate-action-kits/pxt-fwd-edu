@@ -1,7 +1,7 @@
 # Warehouse Efficiency using Autonomous Delivery Robots and AI 
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-solar=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+solar=github:ssande/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to Automating Deivery: Integrating AI with Electric Vehichles

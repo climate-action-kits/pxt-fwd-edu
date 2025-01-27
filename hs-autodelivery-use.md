@@ -1,8 +1,8 @@
 # Forward Education Smart Warehouse Vehicle - Use Tutorial
 
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-sonar=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+sonar=github:ssande/fwd-ext-testing
 ```
 ```template
 input.onButtonPressed(Button.A, function () {

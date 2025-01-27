@@ -1,7 +1,7 @@
 # Smart Seaweed Farm - Modify Tutorial
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-sonar=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+sonar=github:ssande/fwd-ext-testing
 datalogger=datalogger
 ```
 

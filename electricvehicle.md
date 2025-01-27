@@ -1,7 +1,7 @@
 # Electric Vehicle Prototype
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-solar=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+solar=github:ssande/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to Electric Vehicle Coding Tutorial

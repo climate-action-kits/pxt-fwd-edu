@@ -1,7 +1,7 @@
 # Power Storage for Wind Energy - Extension
 ```package
-=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-=github:climate-action-kits/pxt-fwd-edu
+=github:ssande/fwd-ext-testing/fwd-breakout
+=github:ssande/fwd-ext-testing
 ```
 ## 
 * This is the complete code for this activity.

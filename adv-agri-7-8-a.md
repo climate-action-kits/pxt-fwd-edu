@@ -1,8 +1,8 @@
 # Smart Farming with Hydroponics & Grow Lights
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-ledRing=github:climate-action-kits/pxt-fwd-edu
-soilMoisture=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+ledRing=github:ssande/fwd-ext-testing
+soilMoisture=github:ssande/fwd-ext-testing
 ```
 ## Step 1 @showdialog
 Welcome to the Smart Farming with Hydroponics & Grow Lights Coding Tutorial

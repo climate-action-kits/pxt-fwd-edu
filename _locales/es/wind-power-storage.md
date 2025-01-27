@@ -1,7 +1,7 @@
 # Almacenamiento de energía para energía eólica.
 ```package
-fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
-Dial=github:climate-action-kits/pxt-fwd-edu
+fwd-edu-breakout=github:ssande/fwd-ext-testing/fwd-breakout
+Dial=github:ssande/fwd-ext-testing
 ```
 
 ## Step 1 @showdialog

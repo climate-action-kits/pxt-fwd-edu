@@ -1,20 +1,20 @@
 {
-    "name": "pxt-fwd-edu",
+    "name": "pxt-fwd-edu-testing",
     "version": "1.45.2",
     "description": "Forward Education (FWD EDU) Climate Action Kit Gen. 2",
     "license": "MIT",
     "dependencies": {
         "core": "*",
         "jacdac": "github:microsoft/pxt-jacdac#v1.9.28",
-        "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
-        "fwd-edu-breakout": "github:climate-action-kits/pxt-fwd-edu/fwd-breakout",
-        "fwd-edu-dial": "github:climate-action-kits/pxt-fwd-edu/fwd-dial",
-        "fwd-edu-led": "github:climate-action-kits/pxt-fwd-edu/fwd-led",
-        "fwd-edu-line": "github:climate-action-kits/pxt-fwd-edu/fwd-line",
-        "fwd-edu-moisture": "github:climate-action-kits/pxt-fwd-edu/fwd-moisture",
-        "fwd-edu-solar": "github:climate-action-kits/pxt-fwd-edu/fwd-solar",
-        "fwd-edu-sonar": "github:climate-action-kits/pxt-fwd-edu/fwd-sonar",
-        "fwd-edu-touch": "github:climate-action-kits/pxt-fwd-edu/fwd-touch"
+        "fwd-edu-common": "github:ssande/fwd-ext-testing/fwd-common",
+        "fwd-edu-breakout": "github:ssande/fwd-ext-testing/fwd-breakout",
+        "fwd-edu-dial": "github:ssande/fwd-ext-testing/fwd-dial",
+        "fwd-edu-led": "github:ssande/fwd-ext-testing/fwd-led",
+        "fwd-edu-line": "github:ssande/fwd-ext-testing/fwd-line",
+        "fwd-edu-moisture": "github:ssande/fwd-ext-testing/fwd-moisture",
+        "fwd-edu-solar": "github:ssande/fwd-ext-testing/fwd-solar",
+        "fwd-edu-sonar": "github:ssande/fwd-ext-testing/fwd-sonar",
+        "fwd-edu-touch": "github:ssande/fwd-ext-testing/fwd-touch"
     },
     "files": [
         "README.md",
