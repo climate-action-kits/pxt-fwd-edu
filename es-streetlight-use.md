@@ -20,49 +20,29 @@ basic.forever(function () {
 })
 ```
 
-## Activity 1: Build Your Project @showdialog
-Let's build a smart streetlight that is motion-activated! We are going to do this in three parts:
-1. **Build** your streetlight
-2. **Add code** to your streetlight to bring it to life
-3. **Use** your streetlight to learn how it works
+## Smart Streetlights - Use Tutorial @showdialog
+Today, we are building a **smart streetlight**! 
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-compost-render.webp" alt="Full compost tumbler render" style="display: block; width: 70%; margin:auto;">
+Let's add some **starter code** to make sure our streetlight is activated by nearby movement!
 
-## Build Step 1 @showdialog
-![sbs1](https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-compost-sbs01.webp)
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/es-smartstreetlight-render.webp" alt="Full streetlight render" style="display: block; width: 70%; margin:auto;">
 
-## Activity 2: Code Your Project @showdialog
-We need to connect our project to the computer to make it come to life with code!
-
-The code will be the instructions that tell our micro:bit what to do.
-
-## Code Step 1 @showdialog
+## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
-## Code Step 2 @showdialog
+## Step 2 @showdialog
 Click the three dots beside the ``|Download|`` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
-## Code Step 3
+## Step 3
 Next, click the ``|Download|`` button to download the code to your project.
 
-## Activity 3: Use Your Project @showdialog
-We are now ready to **use** our streetlight!
-
-**Tutorial Tips**
-
-1. **Follow the** steps at the top of the screen.
-2. When you are ready for more details, click **'Tell me more!'**
-3. If you need help with the code, click the **lightbulb!**
-
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/tellmore_hintbox_gif.webp" style="display: block; width: 80%; margin:auto;">
-
-## Use Step 1
-Take a close look at the streetlight you just built. Can you name the different parts you used to make it? Be specific!
+## Step 4
+Look at the streetlight you just built. Can you name the different parts you used to make it? Be specific!
 
 ~hint Tell me more!
 This streetlight uses:
@@ -71,19 +51,19 @@ This streetlight uses:
 - an **LED ring** that can light up. 
 hint~
 
-## Use Step 2
-Think back to the lesson. Why do you think we incorporated a [**sonar sensor**](https://learn.forwardedu.com/sonar-sensor/) on our streetlight?
+## Step 5
+Think back to the lesson. Why do you think we added a [**sonar sensor**](https://learn.forwardedu.com/sonar-sensor/) to our streetlight?
 
 ~hint Tell me more!
-- The sonar sensor works like a bat’s echolocation! It sends out sound waves and measures how long they take to bounce back. This helps the sensor detect how far it is from objects.
+- The sonar sensor works like a bat’s echolocation! It sends out sound waves and measures how long they take to bounce back. This allows the sensor to detect how far it is from objects.
 - We are using a sonar sensor because we want our light to turn on when cars and people are nearby!
 hint~
 
-## Use Step 3
+## Step 6
 Take a look at the code that controls our streetlight. Read it top to bottom. Then, predict what will happen as you move your hand closer to the sonar sensor.
 
-## Use Step 4
-Let's test out the streetlight.
+## Step 7
+Next, test out the streetlight.
 
 1. Move your hand slowly towards the sonar sensor. What happens?
 2. Move your hand away from the sonar sensor. What happens?
@@ -91,7 +71,7 @@ Let's test out the streetlight.
 
 Were your predictions correct?
 
-## Use Step 5
+## Step 8
 This project uses a **conditional statement** to decide _when_ the light should turn on.
 
 Can you identify the conditional statement in our code?
@@ -109,31 +89,29 @@ hint~
     }
 ```
 
-## Use Step 6
-Smart streetlights do more than just provide light—they can also share important information!
-
-Right now, your streetlight displays the current temperature on the micro:bit screen. In real cities, smart streetlights can show the weather, display traffic warnings, advertise community events, etc.
+## Step 9
+Right now, your streetlight displays the current temperature on the micro:bit's screen. In real cities, smart streetlights can show the weather, display traffic warnings, advertise community events, etc.
 
 ```block
     basic.showNumber(input.temperature())
 ```
 
-## Use Step 7
-Now that you've tested your smart streetlight, think about how you could improve it.
+## Step 10
+Now that you've tested your smart streetlight, think about how you might improve it.
 
 ~hint Tell me more!
-- How long should the light stay on after detecting motion?
-- Why might you change the colour of the LED ring?
+Consider the following:
+- How long should the light stay on _after_ detecting motion?
+- Why might you change the _colour_ of the LED ring?
 - What else could a smart streetlight communicate?
 hint~
 
-## Congratulations! @showdialog
-You've completed the activity!
-
 ## Reflection @showdialog
-List 2 new things you learned today. 
+Congratulations, you've completed the activity! 
 
-What is one thing you want to learn more about? 
+Before we wrap up:
+- List 2 new things you learned today. 
+- What is one thing you want to learn more about? 
 
-## Finished! @showdialog
-In the next step, you can click the ``|Done|`` button to finish the tutorial.
+## Finished
+Click the ``|Done|`` button to finish this tutorial.
