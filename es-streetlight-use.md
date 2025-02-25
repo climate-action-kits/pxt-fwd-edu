@@ -39,10 +39,10 @@ Next, follow the steps to pair your micro:bit.
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
 ## Step 3
-Next, click the ``|Download|`` button to download the code to your project.
+Click the ``|Download|`` button to download the code to your project.
 
 ## Step 4
-Look at the streetlight you just built. Can you name the different parts you used to make it? Be specific!
+Look at the streetlight you built. Can you name the different parts you used to make it? Be specific!
 
 ~hint Tell me more!
 This streetlight uses:
@@ -97,7 +97,7 @@ Right now, your streetlight displays the current temperature on the micro:bit's 
 ```
 
 ## Step 10
-Now that you've tested your smart streetlight, think about how you might improve it.
+Now that you've tested your smart streetlight, think about how you might _improve_ it.
 
 ~hint Tell me more!
 Consider the following:
@@ -106,9 +106,7 @@ Consider the following:
 - What else could a smart streetlight communicate?
 hint~
 
-## Reflection @showdialog
-Congratulations, you've completed the activity! 
-
+## Reflection
 Before we wrap up:
 - List 2 new things you learned today. 
 - What is one thing you want to learn more about? 
