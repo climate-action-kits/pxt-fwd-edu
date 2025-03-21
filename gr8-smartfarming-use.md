@@ -9,9 +9,9 @@ let pumpStart = 0
 let pumpStop = 0
 input.onButtonPressed(Button.A, function () {
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     pumpStop = input.runningTime()
 })
@@ -137,9 +137,9 @@ Find the ``||input:on button A pressed||`` block in the workspace and read the c
 Based on this, when do you think the water pump will turn on? When will it turn off?
 
 ```block
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
 ```
 
@@ -150,15 +150,15 @@ Press A on the micro:bit and watch what happens! Were your predictions right?
 
 ~hint Tell me more!
 - Pressing A is an **event** that triggers the code below it in order. Each time we press A, we are checking the moisture level of our plant and determining whether it needs to be watered.
-- As long as the moisture level remains below 50%, the pump stays on. We do this using a ``||loops:while||`` loop. A ``||loops:while||`` loop repeats a series of instructions until a certain condition is met.
-- When the moisture level reaches 50% or more, the loops ends and the pump turns off!
+- As long as the moisture level remains below 20%, the pump stays on. We do this using a ``||loops:while||`` loop. A ``||loops:while||`` loop repeats a series of instructions until a certain condition is met.
+- When the moisture level reaches 20% or more, the loops ends and the pump turns off!
 hint~
 
 ```block
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         // @highlight
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
 ```
 
@@ -203,9 +203,9 @@ input.onButtonPressed(Button.A, function () {
     // @highlight
     pumpStart = input.runningTime()
    
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     // @highlight
     pumpStop = input.runningTime()
@@ -247,9 +247,9 @@ input.onButtonPressed(Button.A, function () {
     // @highlight
     pumpStart = input.runningTime()
    
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     // @highlight
     pumpStop = input.runningTime()

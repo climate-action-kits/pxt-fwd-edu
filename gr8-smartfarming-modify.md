@@ -9,9 +9,9 @@ let pumpStop = 0
 let pumpStart = 0
 input.onButtonPressed(Button.A, function () {
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     pumpStop = input.runningTime()
 })
@@ -93,7 +93,7 @@ IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and you
 ## Code Step 2 @showdialog
 Click the three dots beside the  ``|Download|`` button, and click on _Connect Device_. Next, follow the steps to pair your micro:bit.
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full wildfire render" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp" alt="Full smart farm render" style="display: block; width: 60%; margin:auto;">
 
 ## Code Step 3
 Click the ``|Download|`` button to download the starter code.
@@ -119,15 +119,15 @@ Press A and watch what happens! Were your predictions right?
 
 ~hint Tell me more!
 - Pressing A is an **event** that triggers the code below it in order.
-- As long as the moisture level remains below 50%, the pump stays on to water the plant. We do this using a ``||loops:while||`` loop. A ``||loops:while||`` loop repeats a series of instructions until a certain condition is met.
-- When the moisture level reaches 50% or more, the code *after* the ``||loops:while||`` loop is executed, so the pump turns off.
+- As long as the moisture level remains below 20%, the pump stays on to water the plant. We do this using a ``||loops:while||`` loop. A ``||loops:while||`` loop repeats a series of instructions until a certain condition is met.
+- When the moisture level reaches 20% or more, the code *after* the ``||loops:while||`` loop is executed, so the pump turns off.
 hint~
 
 ```block
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         // @highlight
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
 ```
 
@@ -146,9 +146,9 @@ let pumpStop = 0
 input.onButtonPressed(Button.A, function () {
     // @highlight
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     // @highlight
     pumpStop = input.runningTime()
@@ -186,9 +186,9 @@ let pumpStop = 0
 input.onButtonPressed(Button.A, function () {
     pumpStart = input.runningTime()
     // @highlight
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     pumpStop = input.runningTime()
 })
@@ -200,7 +200,7 @@ We want our smart farming system to _automatically_ check the moisture levels _r
 Now move the bottom of the moisture sensor in and out of the water. What has changed? What happens when you press B?
 
 ~hint Tell me more!
-- The sensor is now measuring moisture levels *constantly*. The pump should start *any time* the moisture is below 50%.
+- The sensor is now measuring moisture levels *constantly*. The pump should start *any time* the moisture is below 20%.
 - Using a ``||basic:forever||`` loop breaks the pump timer, though. If you press B, you’ll only ever see ‘0’ on the LEDs. Why do you think this is happening?
 - Can you think of another loop we could use instead of ``||basic:forever||`` that might not break the timer?
 hint~
@@ -211,9 +211,9 @@ let pumpStart = 0
 // @highlight
 basic.forever(function () {
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     pumpStop = input.runningTime()
 })
@@ -234,9 +234,9 @@ let pumpStart = 0
 // @highlight
 loops.everyInterval(120000, function () {
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     pumpStop = input.runningTime()
 })
@@ -264,9 +264,9 @@ loops.everyInterval(120000, function () {
     // @highlight
     music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
     }
     pumpStop = input.runningTime()
 })
@@ -299,9 +299,9 @@ loops.everyInterval(120000, function () {
     // @highlight
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
         // @highlight
         fwdSensors.ledRing.fwdRotate(1)
     }
@@ -325,9 +325,9 @@ loops.everyInterval(120000, function () {
     music.play(music.tonePlayable(262, music.beat(BeatFraction.Whole)), music.PlaybackMode.UntilDone)
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
     pumpStart = input.runningTime()
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
         fwdSensors.ledRing.fwdRotate(1)
     }
     pumpStop = input.runningTime()
@@ -353,9 +353,9 @@ loops.everyInterval(120000, function () {
     fwdSensors.ledRing.fwdSetPixelColour(0, 0xff0000)
     pumpStart = input.runningTime()
     // @collapsed
-    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(50, fwdSensors.ThresholdDirection.Under)) {
+    while (fwdSensors.soilMoisture1.fwdIsMoistureLevelPastThreshold(20, fwdSensors.ThresholdDirection.Under)) {
         fwdMotors.pump.fwdTimedRun(500)
-        basic.pause(500)
+        basic.pause(1000)
         fwdSensors.ledRing.fwdRotate(1)
     }
     pumpStop = input.runningTime()
