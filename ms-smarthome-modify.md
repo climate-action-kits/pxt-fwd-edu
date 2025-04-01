@@ -41,9 +41,6 @@ input.onButtonPressed(Button.B, function () {
     radio.sendNumber(1)
 })
 
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-})
-
 let Temperature = 0
 let openDoor = ""
 openDoor = "openDoor"
@@ -257,43 +254,6 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-## Modify Step 6
-
-Let's add the ability to unlock the door using the ``||fwdSensors:touch||`` sensor on our model!
-
-There's an empty ``||fwdSensors:on touch down||`` event in the code space, what code do you think you should add to control the door unlocking? 
-
-~hint Tell Me More! 
-
-Right-click and select "duplicate" on the ``||logic:if leftservo angle < 100||`` statement. 
-
-Next, drag it into the empty ``||fwdSensors: on touch down||`` event.
-
-Remember to ``|download|`` your code onto **both** of your micro:bits when you're ready to test out your change! 
-
-hint~
-
-```blocks
-radio.onReceivedString(function (receivedString) {
-    if (receivedString == openDoor) {
-        // @highlight
-        if (fwdMotors.leftServo.fwdGetAngle() < 100) {
-            fwdMotors.leftServo.fwdSetAngle(100)
-        } else {
-            fwdMotors.leftServo.fwdSetAngle(0)
-        }
-    }
-})
-
-// @highlight
-fwdSensors.touch.fwdOnTouch(jacdac.ButtonEvent.Down, function () {
-    if (fwdMotors.leftServo.fwdGetAngle() < 100) {
-        fwdMotors.leftServo.fwdSetAngle(100)
-    } else {
-        fwdMotors.leftServo.fwdSetAngle(0)
-    }
-})
-```
 ## Activity 4: Challenge @showdialog
 Now that we have **modified** our code to understand how the automated smart home model works, we will complete a small challenge! 
 
@@ -454,6 +414,8 @@ Did anything surprise you about the project?
 ## Reflection @showdialog
 
 Do you think a ``||variables:change Temperature by||`` 1, or 5 degrees Celsius is more eco-friendly? Share your reasoning. 
+
+How might you incorporate a touch sensor into your smart home model to open a door manually?
 
 What other features might you adapt to help make your automated smart home more sustainable?
 
