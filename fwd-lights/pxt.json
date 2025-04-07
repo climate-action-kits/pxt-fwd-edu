@@ -1,0 +1,22 @@
+{
+    "name": "Forward Education Lights Module V4",
+    "version": "1.46.43",
+    "description": "Controls LED lights",
+    "files": [
+        "constants.ts",
+        "client.g.ts"
+    ],
+    "supportedTargets": [
+        "arcade",
+        "microbit",
+        "maker",
+        "calliopemini"
+    ],
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac"
+    },
+    "testDependencies": {
+        "nucleo-f411re": "*"
+    }
+}

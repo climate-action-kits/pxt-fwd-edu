@@ -1,0 +1,18 @@
+{
+    "name": "fwd-edu-ph",
+    "version": "1.46.43",
+    "description": "FWD Edu Climate Action Kit Gen. 2 pH",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac",
+        "fwd-edu-common": "github:climate-action-kits/pxt-fwd-edu/fwd-common",
+        "jacdac-acidity": "github:microsoft/pxt-jacdac/acidity"
+    },
+    "files": [
+        "client.ts"
+    ],
+    "supportedTargets": [
+        "microbit"
+    ]
+}

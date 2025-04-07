@@ -1,0 +1,22 @@
+{
+    "name": "Forward Education Color Sensor V39",
+    "version": "1.46.43",
+    "description": "Senses RGB colors",
+    "files": [
+        "constants.ts",
+        "client.g.ts"
+    ],
+    "supportedTargets": [
+        "arcade",
+        "microbit",
+        "maker",
+        "calliopemini"
+    ],
+    "dependencies": {
+        "core": "*",
+        "jacdac": "github:microsoft/pxt-jacdac"
+    },
+    "testDependencies": {
+        "nucleo-f411re": "*"
+    }
+}
