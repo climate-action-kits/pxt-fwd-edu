@@ -53,7 +53,7 @@ basic.forever(function () {
 ```
 
 ## Activity 1: Build Your Project @showdialog
-Let's build an automated smart home model to reduce energy consumption! We are going to do this in three parts:  
+Let's build an automated smart home model to reduce energy consumption! We are going to do this in four parts:  
 1. **Build** our automated smart home
 2. **Add code** to bring our project to life  
 3. **Modify** our project to learn about other sensors  
