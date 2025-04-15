@@ -31,9 +31,9 @@ basic.forever(function () {
 
 ## Activity 1: Build Your Project @showdialog
 
-Let's build an automated smart garbage bin to optimize waste collection routes! We are going to do this in four parts: 
+Let's build an automated Smart Garbage Bin to optimize waste collection routes! We are going to do this in four parts: 
 
-1. **Build** our smart garbage bin   
+1. **Build** our Smart Garbage Bin   
 2. **Add code** to bring our project to life  
 3. **Use** your project to understand how they works
 4. Calculate the volume of our garbage bin in a small **challenge**
@@ -63,7 +63,7 @@ Click the ``|Download|`` button to download the starter code to your micro:bit.
 
 ## Activity 3: Use Your Project @showdialog
 
-Now that we've built our smart garbage bin to help optimize waste collection routes, we'll start by **using** the sample code to see how it works.
+Now that we've built our Smart Garbage Bin to help optimize waste collection routes, we'll start by **using** the sample code to see how it works.
 
 As you go through the next steps:
 
@@ -73,7 +73,7 @@ As you go through the next steps:
 
 ## Use Step 1
 
-Think about how smart garbage bins in our lesson worked. 
+Think about how Smart Garbage Bins in our lesson worked. 
 
 What do you think that the building blocks and electronic components in your **model** represents?
 
@@ -93,7 +93,7 @@ hint~
 
 ## Use Step 2
 
-Let's test the functionality of our **smart garbage bin**!
+Let's test the functionality of our **Smart Garbage Bin**!
 
 Press the **B** button on the micro:bit. What do you notice happens? 
 
@@ -114,13 +114,13 @@ input.onButtonPressed(Button.B, function () {
 
 ## Use Step 3
 
-Now let's test how the smart garbage bin **senses** how full it is. 
+Now let's test how the Smart Garbage Bin **senses** how full it is. 
 
 ~hint Tell Me More! 
 
-The **sonar sensor** measures the **distance between** the waste and the top of the smart garbage bin. 
+The **sonar sensor** measures the **distance between** the waste and the top of the Smart Garbage Bin. 
 
-If there is **less than 2 cm** of space between the sonar sensor and the waste in the smart garbage bin, the bin is 75% full! 
+If there is **less than 2 cm** of space between the sonar sensor and the waste in the Smart Garbage Bin, the bin is 75% full! 
  
 hint~
 
@@ -137,11 +137,11 @@ basic.forever(function () {
 
 With the garbage bin door still open, gently place your fingers near the sonar sensor. 
 
-What do you notice happens to the smart garbage bin when your hand is **very close** to the sonar sensor? 
+What do you notice happens to the Smart Garbage Bin when your hand is **very close** to the sonar sensor? 
 
 ~hint Tell Me More! 
 
-* The **LED Ring** on the smart garbage bin changes from **green** to **red**.
+* The **LED Ring** on the Smart Garbage Bin changes from **green** to **red**.
 * The **micro:bit display** graph updates the fillLevel variable from 0 to 75% full.
 
 hint~
@@ -163,11 +163,11 @@ led.plotBarGraph(
 
 ## Use Step 5
 
-Now that you understand how to adjust the **fillLevel** using your hand, crumple up some paper and add it to your smart garbage bin until it is 75% full! 
+Now that you understand how to adjust the **fillLevel** using your hand, crumple up some paper and add it to your Smart Garbage Bin until it is 75% full! 
 
 ~hint Tell Me More! 
 
-Think about how tightly you crumple the paper - if the waste is **tightly crumpled** how many more pieces can you fit into your smart garbage bin before the **LED ring** turns red? 
+Think about how tightly you crumple the paper - if the waste is **tightly crumpled** how many more pieces can you fit into your Smart Garbage Bin before the **LED ring** turns red? 
 
 hint~
 
@@ -180,7 +180,7 @@ Now that your bin is full, what code block do you think controls the door closin
 The **A** button returns the **servo motor** to 0 degrees!
 
 hint~
-Once your smart garbage bin is full, press the **A** button to close the door! 
+Once your Smart Garbage Bin is full, press the **A** button to close the door! 
 
 ```blocks
 input.onButtonPressed(Button.A, function () {
@@ -191,13 +191,13 @@ input.onButtonPressed(Button.A, function () {
 
 ## Activity 4: Challenge @showdialog
 
-Now that we've **used** our model to understand how our smart garbage bin works, we're going to complete a small **challenge**.
+Now that we've **used** our model to understand how our Smart Garbage Bin works, we're going to complete a small **challenge**.
 
-Our smart garbage bin is a **rectangular prism**! Let's calculate the area, surface area, and volume of our container to understand how much waste our **Waste Management Specialists** collect from our model. 
+Our Smart Garbage Bin is a **rectangular prism**! Let's calculate the area, surface area, and volume of our container to understand how much waste our **Waste Management Specialists** collect from our model. 
 
 ## Challenge Step 1
 
-Using a ruler or a **connector cube** from the Climate Action Kit, identify the **length, width, and height** of our smart garbage bin container.
+Using a ruler or a **connector cube** from the Climate Action Kit, identify the **length, width, and height** of our Smart Garbage Bin container.
 
 ~hint Tell Me More!
 
@@ -207,13 +207,13 @@ Using a connector cube from the Climate Action Kit, we measured the following va
 * Length: 4 Connector Cubes
 * Height: 4 Connector Cubes
 
-Remember, our **model** includes electronic components that are not part of our smart garbage bin **container**. 
+Remember, our **model** includes electronic components that are not part of our Smart Garbage Bin **container**. 
 
 hint~
 
 ## Challenge Step 2
 
-Now that you know the length, width, and height of your smart garbage bin, represent your rectangular prism as a **net**. 
+Now that you know the length, width, and height of your Smart Garbage Bin, represent your rectangular prism as a **net**. 
 
 Remember to label the **length, width, and height** on your drawing!
 
@@ -224,7 +224,7 @@ Using the measurements from **Challenge Step 1** we created the following net:
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/ms-smartbin-net.webp" alt="Rectangular prism net with length, width, and height labels" style="display: block; width: 60%; margin:auto;">
 hint~ 
 
-## Challenge Step 2
+## Challenge Step 3
 
 What is the surface area of our Smart Garbage Bin?
 
@@ -245,7 +245,7 @@ Remember, with **surface area**, we are adding the areas of each face together, 
 
 hint~ 
 
-## Challenge Step 3
+## Challenge Step 4
 What is the **volume** of our Smart Garbage Bin? 
 
 
@@ -268,9 +268,9 @@ Remember, since we are multiplying by **three dimensions**, our units are **cube
 
 hint~
 
-## Challenge Step 4
+## Challenge Step 5
 
-If a Waste Management Specialist empties our smart garbage bin when it is **75% full**, what is the volume of garbage that they collect? 
+If a Waste Management Specialist empties our Smart Garbage Bin when it is **75% full**, what is the volume of garbage that they collect? 
 
 ~hint Tell Me More! 
 
@@ -280,7 +280,7 @@ Use the following formula to calculate **75% of the volume** of our Smart Garbag
 * 48 * 0.75
 * 36 Units Cubed
 
-When the smart garbage bin is holding **more than 36 units cubed** worth of waste, the Waste Management Specialist will include it in their waste collection route. 
+When the Smart Garbage Bin is holding **more than 36 units cubed** worth of waste, the Waste Management Specialist will include it in their waste collection route. 
 
 hint~
 
@@ -290,9 +290,9 @@ You've completed the activity!
 Did anything surprise you about the project?
 
 ## Reflection @showdialog
-1. How might you improve the **physical structure** of your smart garbage bin? 
+1. How might you improve the **physical structure** of your Smart Garbage Bin? 
 2. How might you improve the **code** of your model?
-3. How do you think the smart garbage bin helps to reduce the **environmental impact** of a community? 
+3. How do you think the Smart Garbage Bin helps to reduce the **environmental impact** of a community? 
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
