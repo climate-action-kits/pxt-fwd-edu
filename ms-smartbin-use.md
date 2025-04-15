@@ -29,16 +29,7 @@ basic.forever(function () {
 })
 ```
 
-## Activity 1: Build Your Project @showdialog
-
-Let's build an automated Smart Garbage Bin to optimize waste collection routes! We are going to do this in four parts: 
-
-1. **Build** our Smart Garbage Bin   
-2. **Add code** to bring our project to life  
-3. **Use** your project to understand how they works
-4. Calculate the volume of our garbage bin in a small **challenge**
-
-## Activity 2: Code Your Project @showdialog
+## Activity 1: Code Your Project @showdialog
 
 We need to connect our project to the computer to make it come to life with code!
 
@@ -61,7 +52,7 @@ Next, follow the steps to pair your micro:bit.
 
 Click the ``|Download|`` button to download the starter code to your micro:bit.
 
-## Activity 3: Use Your Project @showdialog
+## Activity 2: Use Your Project @showdialog
 
 Now that we've built our Smart Garbage Bin to help optimize waste collection routes, we'll start by **using** the sample code to see how it works.
 
@@ -81,11 +72,11 @@ What do you think that the building blocks and electronic components in your **m
 
 * The **building blocks** represent the container to hold waste.
 
-* The **servo motor** opens and closes the waste container to keep it away from pests or environmental elements like wind and rain.
+* The ``||fwdMotors:servo||`` opens and closes the waste container to keep it away from pests or environmental elements like wind and rain.
 
-* The **sonar sensor** measures the percentage of waste in the container.
+* The ``||fwdSensors:sonar sensor||`` measures the percentage of waste in the container.
 
-* The **micro:bit display** and the **LED ring** communicate how full the container is. 
+* The **micro:bit display** and the ``||fwdSensors:LED ring||`` communicate how full the container is. 
 
 * These components help to communicate to **Waste Management Specialists** if the bin should be emptied during their waste collection route. 
 
@@ -99,9 +90,9 @@ Press the **B** button on the micro:bit. What do you notice happens?
 
 ~hint Tell Me More! 
 
-The **B** button is an **input** that triggers the instructions **"set right servo motor to 60 degrees"** 
+The **B** button is an **input** that triggers the instructions ``||fwdMotors:set rightServo to 60 degrees||``
 
-When the servo motor rotates, the garbage bin is open! 
+When the ``||fwdMotors:servo||`` rotates, the garbage bin is open! 
 
 hint~
 
@@ -118,9 +109,9 @@ Now let's test how the Smart Garbage Bin **senses** how full it is.
 
 ~hint Tell Me More! 
 
-The **sonar sensor** measures the **distance between** the waste and the top of the Smart Garbage Bin. 
+The ``||fwdSensors:sonar sensor||`` measures the **distance between** the waste and the top of the Smart Garbage Bin. 
 
-If there is **less than 2 cm** of space between the sonar sensor and the waste in the Smart Garbage Bin, the bin is 75% full! 
+If there is **less than 2 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the Smart Garbage Bin, the bin is 75% full! 
  
 hint~
 
@@ -135,14 +126,14 @@ basic.forever(function () {
 
 ## Use Step 4
 
-With the garbage bin door still open, gently place your fingers near the sonar sensor. 
+With the garbage bin door still open, gently place your fingers near the ``||fwdSensors:sonar sensor||``. 
 
-What do you notice happens to the Smart Garbage Bin when your hand is **very close** to the sonar sensor? 
+What do you notice happens to the Smart Garbage Bin when your hand is **very close** to the ``||fwdSensors:sonar sensor||``? 
 
 ~hint Tell Me More! 
 
-* The **LED Ring** on the Smart Garbage Bin changes from **green** to **red**.
-* The **micro:bit display** graph updates the fillLevel variable from 0 to 75% full.
+* The ``||fwdSensors:LED ring||`` on the Smart Garbage Bin changes from **green** to **red**.
+* The **micro:bit display** graph updates the ``||variables:fillLevel||`` variable from 0% to 75% full.
 
 hint~
 
@@ -163,11 +154,11 @@ led.plotBarGraph(
 
 ## Use Step 5
 
-Now that you understand how to adjust the **fillLevel** using your hand, crumple up some paper and add it to your Smart Garbage Bin until it is 75% full! 
+Now that you understand how to adjust the ``||variables:fillLevel||`` using your hand, crumple up some paper and add it to your Smart Garbage Bin until it is 75% full! 
 
 ~hint Tell Me More! 
 
-Think about how tightly you crumple the paper - if the waste is **tightly crumpled** how many more pieces can you fit into your Smart Garbage Bin before the **LED ring** turns red? 
+Think about how tightly you crumple the paper - if the waste is **tightly crumpled** how many more pieces can you fit into your Smart Garbage Bin before the ``||fwdSensors:LED ring||`` turns red? 
 
 hint~
 
@@ -177,7 +168,7 @@ Now that your bin is full, what code block do you think controls the door closin
 
 ~hint Tell Me More! 
 
-The **A** button returns the **servo motor** to 0 degrees!
+The **A** button returns the ``||fwdMotors:servo||`` to 0 degrees!
 
 hint~
 Once your Smart Garbage Bin is full, press the **A** button to close the door! 
@@ -189,7 +180,7 @@ input.onButtonPressed(Button.A, function () {
 })
 ```
 
-## Activity 4: Challenge @showdialog
+## Activity 3: Challenge @showdialog
 
 Now that we've **used** our model to understand how our Smart Garbage Bin works, we're going to complete a small **challenge**.
 
@@ -232,13 +223,13 @@ What is the surface area of our Smart Garbage Bin?
 
 Use the following formula to calculate the **surface area** of a rectangular prism: 
 
-* 2(Length x Width) + 2(Length + Width)Height = Surface Area
+**Surface Area = 2(Length x Width) + 2(Length + Width)Height**
 
-1. 2(4 x 3) + 2(4 + 3)4 = Surface Area
-2. 2(12) + 2(7)4 = Surface Area
-3. 24 + (14x4) = Surface Area
-4.  24 + 56 = Surface Area
-5. 80 units squared = Surface Area
+1. Surface Area = 2(4 x 3) + 2(4 + 3)4
+2. Surface Area = 2(12) + 2(7)4
+3. Surface Area = 24 + (14x4)
+4. Surface Area = 24 + 56
+5. Surface Area = 80 units squared
 
 
 Remember, with **surface area**, we are adding the areas of each face together, so we are only multiplying by two dimensions, which is why we **square** our units.
@@ -253,16 +244,15 @@ What is the **volume** of our Smart Garbage Bin?
 
 **Either** of the formulas below can be used to calculate the **volume** of a rectangular prism: 
 
-* Length x Width x Height = Volume
-* 4 x 3 x 4 = Volume
-* 48 Units Cubed = Volume 
+**Volume = Length x Width x Height**
+* Volume = 4 x 3 x 4
+* Volume = 48 Units Cubed
 
-* Area of Base x Height = Volume
-* (Length x Width) x Height = Volume
-
-1. (4 x 3) x 4 = Volume
-2. 12 x 4 = Volume
-3. 48 Units Cubed = Volume
+**Volume = Area of Base x Height**
+* Volume = (Length x Width) x Height
+* Volume = (4 x 3) x 4
+* Volume = 12 x 4
+* Volume = 48 Units Cubed
 
 Remember, since we are multiplying by **three dimensions**, our units are **cubed**.
 
@@ -276,8 +266,8 @@ If a Waste Management Specialist empties our Smart Garbage Bin when it is **75% 
 
 Use the following formula to calculate **75% of the volume** of our Smart Garbage Bin: 
 
-* Volume * 0.75
-* 48 * 0.75
+* Volume x 0.75
+* 48 x 0.75
 * 36 Units Cubed
 
 When the Smart Garbage Bin is holding **more than 36 units cubed** worth of waste, the Waste Management Specialist will include it in their waste collection route. 
