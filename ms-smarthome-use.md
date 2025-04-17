@@ -1,4 +1,4 @@
-# Forward Education Designing Sustainable Smart Homes - Use Tutorial
+# Forward Education - Designing Sustainable Smart Homes - Use Tutorial
 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
@@ -54,43 +54,32 @@ basic.forever(function () {
 })
 ```
 
-## Activity 1: Build Your Project @showdialog
-Let's build an automated smart home model to reduce energy consumption! We are going to do this in three parts: 
-1. **Build** our automated smart home model   
-2. **Add code** to bring our project to life  
-3. **Use** your project to understand how they works
+## Smart Home - Use Tutorial @showdialog
+Today, we are building a smart home model to reduce energy consumption! 
 
-## Activity 2: Code Your Project @showdialog
-We need to connect our project to the computer to make it come to life with code!
+Let's add some **starter code** to bring it to life!
 
-The code will be the instructions that tell our micro:bits what to do.
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/ms-smarthome-render.webp" alt="Full smart home render" style="display: block; width: 80%; margin:auto;">
 
-## Code Step 1 @showdialog
+
+## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
-## Code Step 2 @showdialog
+## Step 2 @showdialog
 Click the three dots beside the ``|Download|`` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
-## Code Step 3
+## Step 3
 Click the ``|Download|`` button to download the starter code to your project on **both** of the micro:bits in your project.
 
+## Step 4
 Place one micro:bit into the **breakout board in the model**, and hold one micro:bit **in your hand** throughout this project.
 
-## Activity 3: Use Your Project @showdialog
-Now that we've built our automated smart home model to help reduce energy consumption, we'll start by **using** the sample code to see how it works.
-
-As you go through the next steps:
-
-* **Use** the instructions at the top of the screen.  
-* When you are ready for more information, click **'Tell Me More!'**  
-* If you need help with the code, click the **lightbulb!**
-
-## Use Step 1
+## Step 5
 Take a look at the physical project you just built.
 
 What robotic components do you notice? How do you think they’ll work together to make our model function as we expect?
@@ -112,7 +101,7 @@ The automated smart home model has:
 
 hint~
 
-## Use Step 2
+## Step 6
 Think about how smart homes in our lesson worked. 
 
 What do you think that the micro:bit in your **model** represents inside of your house? 
@@ -129,7 +118,7 @@ What do you think that the micro:bit in your hand represents?
 
 hint~ 
 
-## Use Step 3
+## Step 7
 Think back to our lesson about wireless communication. Which blocks do you think the two micro:bits use to communicate with each other using **radio waves**? 
 
 ~hint Tell Me More!
@@ -167,7 +156,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-## Use Step 4
+## Step 8
 
 Let's test the functionality of our **thermostat inside our house**!
 
@@ -209,7 +198,7 @@ basic.forever(function () {
 })
 ```
 
-## Use Step 5
+## Step 9
 
 Now let's test the same functionality with our **remote controlled app**. 
 
@@ -241,7 +230,7 @@ basic.forever(function () {
 })
 ``` 
 
-## Use Step 6
+## Step 10
 
 How can we **increase** the temperature of our thermostat? 
 
@@ -271,7 +260,7 @@ basic.forever(function () {
 })
 ```
 
-## Use Step 7
+## Step 11
 
 Now that you understand how to adjust the **thermostat** using both micro:bits, which code blocks do you think **unlock the door** and **turns on the lights**? 
 
@@ -306,7 +295,7 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-## Use Step 8 
+## Step 12
 
 What will happen when we press **A+B** a second time? 
 
@@ -339,14 +328,10 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-## Congratulations! @showdialog
-You've completed the activity!
-
-Did anything surprise you about the project?
-
-## Reflection @showdialog
+## Reflection
+Before we wrap up:
 1. How do you think using the remote controller or automated features helps reduce energy usage in our home? 
 2. What other features might you adapt to help make your automated smart home more sustainable?
 
-## Finished! @showdialog
-In the next step, you can click the ``|Done|`` button to finish the tutorial.
+## Finished
+Click the ``|Done|`` button to finish this tutorial.

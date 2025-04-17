@@ -52,44 +52,31 @@ basic.forever(function () {
 })
 ```
 
-## Activity 1: Build Your Project @showdialog
-Let's build an automated smart home model to reduce energy consumption! We are going to do this in four parts:  
-1. **Build** our automated smart home
-2. **Add code** to bring our project to life  
-3. **Modify** our project to learn about other sensors  
-4. Apply what we learned with a small **challenge**
+## Smart Home - Modify Tutorial @showdialog
+Today, we are building and coding a **smart home**! 
 
-## Activity 2: Code Your Project @showdialog
-We need to connect our project to the computer to make it come to life with code!
+As it stands, we have an automated smart home model with a remote thermostat and a door that unlocks. Let’s explore how to optimize our project by **modifying** our code!
 
-The code will be the instructions that tell our micro:bits what to do.
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/ms-smarthome-render.webp" alt="Full smart home render" style="display: block; width: 80%; margin:auto;">
 
-## Code Step 1 @showdialog
+## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
-<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
-## Code Step 2 @showdialog
+## Step 2 @showdialog
 Click the three dots beside the ``|Download|`` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
-## Code Step 3
+## Step 3
 Click the ``|Download|`` button to download the starter code to your project on **both** of the micro:bits in your project.
 
+## Step 4
 Place one micro:bit into the **breakout board in the model**, and hold one micro:bit **in your hand** throughout this project.
 
-## Activity 3: Modify Your Project @showdialog
-We have an automated smart home model with a remote thermostat and a door that unlocks. Let’s explore how to optimize our project by **modifying** our code!
-
-As you go through the next steps:
-
-* Use the instructions at the top of the screen to **modify** your code.  
-* When you are ready for more information, click **'Tell Me More!'**  
-* If you need help with the code, click the **lightbulb**!
-
-## Modify Step 1
+## Step 5
 Think about how smart homes in our lesson worked. 
 
 What do you think that the micro:bit in your **model** represents inside of your house? 
@@ -106,7 +93,7 @@ What do you think that the micro:bit in your hand represents?
 
 hint~ 
 
-## Modify Step 2
+## Step 6
 Think back to our lesson about wireless communication. Which blocks do you think the two micro:bits use to communicate with each other using **radio waves**? 
 
 ~hint Tell Me More!
@@ -144,7 +131,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-## Modify Step 3
+## Step 7
 Let’s test out our automated smart home model and see how it works! 
 
 Look at the difference in the code when we press **A**, versus when we press **B** on either of the micro:bits. 
@@ -185,7 +172,7 @@ basic.forever(function () {
     basic.showNumber(Temperature)
 })
 ```
-## Modify Step 4
+## Step 8
 
 What do you think will happen if we change the number in the ``||variables:change Temperature by||`` block from 1 to 5? 
 
@@ -225,7 +212,7 @@ radio.onReceivedNumber(function (receivedNumber) {
 })
 ```
 
-## Modify Step 5
+## Step 9
 Now that you understand how to adjust the **thermostat** using both micro:bits, which code blocks do you think **unlock the door** and **turns on the lights**? 
 
 ~hint Tell Me More! 
@@ -254,10 +241,10 @@ radio.onReceivedString(function (receivedString) {
 })
 ```
 
-## Activity 4: Challenge @showdialog
+## Step 10
 Now that we have **modified** our code to understand how the automated smart home model works, we will complete a small challenge! 
 
-## Challenge Step 1
+## Step 11
 To make our home more sustainable, we can **sense** how much sunlight is coming through the windows to help us adjust the **lights** inside our house automatically! 
 
 What type of sensor would we need to add to our project? 
@@ -271,7 +258,7 @@ hint~
 ```block
 fwdSensors.solar1.fwdIsLightLevelPastThreshold(,fwdSensors.ThresholdDirection.Under)
 ```
-## Challenge Step 2
+## Step 12
 Let's think about the functionality we want to add to our model: 
 
 1. When it is **night time** our ``||fwdSensors:LED light||`` will turn on all the pixels in the ring.
@@ -301,7 +288,7 @@ basic.forever(function () {
 })
 ``` 
 
-## Challenge Step 3
+## Step 13
 If it's dark outside, we'll need to turn on all of the lights in our room so we can see! 
 
 Which blocks do you need to add to your code to create the following condition? 
@@ -328,7 +315,7 @@ hint~
     }
 ```
 
-## Challenge Step 4
+## Step 14
 If it's cloudy outside, we have some sunlight, but we may need to turn our lights on dimly. 
 
 Which blocks do you need to add to your code to create the following condition? 
@@ -362,7 +349,7 @@ hint~
     }
 ```
 
-## Challenge Step 5
+## Step 15
 If it's sunny outside, we don't need to turn the lights on in our house at all! 
 
 Which block will you need to add to your code to create the following condition? 
@@ -393,7 +380,7 @@ hint~
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x000000)
     }
 ```
-## Challenge Step 6
+## Step 16
 What do you notice happens to the ``||fwdSensors:LED ring||`` when you cover the ``||fwdSensors:solar||`` sensor with your hand? 
 
 What happens to the ``||fwdSensors:LED ring||`` when you move your project to another room? 
@@ -406,18 +393,11 @@ When you move your project to another room, the ``||fwdSensors:LED ring||`` may 
 
 hint~
 
-## Congratulations! @showdialog
-You've completed the activity!
+## Reflection
+Before we wrap up:
+- Do you think a ``||variables:change Temperature by||`` 1, or 5 degrees Celsius is more eco-friendly? Share your reasoning. 
+- How might you incorporate a touch sensor into your smart home model to open a door manually?
+- What other features might you adapt to help make your automated smart home more sustainable?
 
-Did anything surprise you about the project?
-
-## Reflection @showdialog
-
-Do you think a ``||variables:change Temperature by||`` 1, or 5 degrees Celsius is more eco-friendly? Share your reasoning. 
-
-How might you incorporate a touch sensor into your smart home model to open a door manually?
-
-What other features might you adapt to help make your automated smart home more sustainable?
-
-## Finished! @showdialog
-In the next step, you can click the ``|Done|`` button to finish the tutorial.
+## Finished
+Click ``|Done|`` to finish the tutorial.
