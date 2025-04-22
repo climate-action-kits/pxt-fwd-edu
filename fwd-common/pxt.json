@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-common",
-    "version": "1.48.3",
+    "version": "1.48.4",
     "description": "FWD Edu Climate Action Kit Gen. 2 Shared resources",
     "license": "MIT",
     "dependencies": {
