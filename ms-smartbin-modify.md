@@ -147,8 +147,6 @@ basic.forever(function () {
 // @highlight
 else if (false) {
     } 
-    // @highlight 
-    else if (false){}
 else {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
         fillLevel = 0
