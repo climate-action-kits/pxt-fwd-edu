@@ -1,4 +1,4 @@
-# Forward Education Optimizing Waste Management with Smart Garbage Bins - Modify Tutorial
+# Smart Garbage Bins - Modify Tutorial
 
 ```package
 fwd-edu-breakout=github:climate-action-kits/pxt-fwd-edu/fwd-breakout
@@ -34,36 +34,30 @@ basic.forever(function () {
 })
 ```
 
-## Activity 1: Code Your Project @showdialog
-We need to connect our project to the computer to make it come to life with code!
+## Smart Garbage Bin: Modify Tutorial @showdialog
 
-The code will be the instructions that tell our micro:bits what to do.
+Today, we are building and coding a smart garbage bin! 
 
-## Code Step 1 @showdialog
+We'll add some starter code to make sure our garbage bin opens and closes with a button push. Then, we'll modify the code to make it our own! 
+
+<img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/ms-smartbin-render.webp" alt="Smart garbage bin full build render" style="display: block; width: 60%; margin:auto;">
+
+## Step 1 @showdialog
 IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
 
-## Code Step 2 @showdialog
+## Step 2 @showdialog
 Click the three dots beside the ``|Download|`` button, then click on _Connect Device_.
 Next, follow the steps to pair your micro:bit.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pairmicrobitGIF.webp"  alt="Pairing gif" style="display: block; width: 60%; margin:auto;">
 
-## Code Step 3
+## Step 3
 Click the ``|Download|`` button to download the starter code to the micro:bit.
 
-## Activity 2: Modify Your Project @showdialog
-We have a Smart Garbage Bin that **senses** how much waste is in the container. Let’s explore how to optimize our project by **modifying** our code!
-
-As you go through the next steps:
-
-* Use the instructions at the top of the screen to **modify** your code.  
-* When you are ready for more information, click **'Tell Me More!'**  
-* If you need help with the code, click the **lightbulb**!
-
-## Modify Step 1
-Think about how Smart Garbage Bins in our lesson worked. 
+## Step 4
+Think about how smart garbage bins in our lesson worked. 
 
 What do you think that the building blocks and electronic components in your **model** represents?
 
@@ -81,9 +75,9 @@ What do you think that the building blocks and electronic components in your **m
 
 hint~ 
 
-## Modify Step 2
+## Step 5
 
-Let's test the functionality of our **Smart Garbage Bin**!
+Let's test the functionality of our **smart garbage bin**!
 
 Press the **B** button on the micro:bit. What do you notice happens? 
 
@@ -102,15 +96,15 @@ input.onButtonPressed(Button.B, function () {
 })
 ```
 
-## Modify Step 3
+## Step 6
 
-Now let's test how the Smart Garbage Bin **senses** how full it is. 
+Now let's test how the smart garbage bin **senses** how full it is. 
 
 ~hint Tell Me More! 
 
-The ``||fwdSensors:sonar sensor||`` measures the **distance between** the waste and the top of the Smart Garbage Bin. 
+The ``||fwdSensors:sonar sensor||`` measures the **distance between** the waste and the top of the smart garbage bin. 
 
-If there is **less than 2 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the Smart Garbage Bin, the bin is 75% full! 
+If there is **less than 2 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the smart garbage bin, the bin is 75% full! 
  
 hint~
 
@@ -123,11 +117,11 @@ basic.forever(function () {
  
 ```
 
-## Modify Step 4
+## Step 7
 
 We need to know when the bin is 0%, 25%, 50%, and 75% full. 
 
-What code block will help us create more **conditions** to our Smart Garbage Bin ``||variables:fillLevel||``? 
+What code block will help us create more **conditions** to our smart garbage bin ``||variables:fillLevel||``? 
 
 ~hint Tell Me More! 
 
@@ -156,7 +150,7 @@ else {
     }
 ```
 
-## Modify Step 5
+## Step 8
 
 What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **half full**?
 
@@ -172,7 +166,7 @@ What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **ha
 
 hint~
 
-## Modify Step 6
+## Step 9
 
 What code blocks should we use to tell a Waste Management Specialist when our bin is **50% full**? 
 
@@ -204,7 +198,7 @@ hint~
     }
 ```
 
-## Modify Step 7
+## Step 10
 
 What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **one quarter full**?
 
@@ -216,7 +210,7 @@ If the bin is 25% full, there should be less than **six centimeters** of space b
 
 hint~
 
-## Modify Step 8 
+## Step 11 
 
 What code blocks should we use to tell a Waste Management Specialist when our bin is **25% full**? 
 
@@ -249,7 +243,7 @@ fillLevel = 25
     })
 ```
 
-## Modify Step 9 
+## Step 12 
 
 Let's test our code! Remember to hit the `|Download|` button when you're ready to test your new settings. 
 
@@ -263,7 +257,7 @@ Did anything surprise you about the project?
 
 How does having four fill levels instead of two help Waste Management Specialists make more sustainable route collection choices? 
 
-What other features might you adapt to help make your Smart Garbage Bin more sustainable for the community? 
+What other features might you adapt to help make your smart garbage bin more sustainable for the community? 
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial.
