@@ -10,7 +10,7 @@ input.onButtonPressed(Button.A, function () {
     fwdMotors.rightServo.fwdSetAngle(0)
 })
 input.onButtonPressed(Button.B, function () {
-    fwdMotors.rightServo.fwdSetAngle(60)
+    fwdMotors.rightServo.fwdSetAngle(45)
 })
 fwdMotors.rightServo.fwdSetAngle(0)
 let fillLevel = 0
@@ -19,12 +19,14 @@ basic.forever(function () {
     fillLevel,
     100
     )
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
         fillLevel = 75
+        basic.pause(500)
     } else {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
         fillLevel = 0
+        basic.pause(500)
     }
 })
 ```
@@ -82,7 +84,7 @@ Press the **B** button on the micro:bit. What do you notice happens?
 
 ~hint Tell Me More! 
 
-The **B** button is an **input** that triggers the instructions ``||fwdMotors:set rightServo to 60 degrees||``
+The **B** button is an **input** that triggers the instructions ``||fwdMotors:set rightServo to 45 degrees||``
 
 When the ``||fwdMotors:servo||`` rotates, the garbage bin is open! 
 
@@ -91,7 +93,7 @@ hint~
 ```blocks
 input.onButtonPressed(Button.B, function () {
 // @highlight   
- fwdMotors.rightServo.fwdSetAngle(60)
+ fwdMotors.rightServo.fwdSetAngle(45)
 })
 ```
 
@@ -103,16 +105,18 @@ Now let's test how the smart garbage bin **senses** how full it is.
 
 The ``||fwdSensors:sonar sensor||`` measures the **distance between** the waste and the top of the smart garbage bin. 
 
-If there is **less than 2 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the smart garbage bin, the bin is 75% full! 
+If there is **less than 3 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the smart garbage bin, the bin is 75% full! 
  
 hint~
 
 ```blocks
 basic.forever(function () {
-      if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+      if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
         //@highlight
         fillLevel = 75
+        basic.pause(500)
+      }
  
 ```
 
@@ -136,10 +140,11 @@ led.plotBarGraph(
     fillLevel,
     100
     )
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
 // @highlight      
   fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)   
   fillLevel = 75
+  basic.pause(500)
     } 
 })
 ``` 

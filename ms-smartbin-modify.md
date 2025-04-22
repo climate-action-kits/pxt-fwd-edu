@@ -15,7 +15,7 @@ input.onButtonPressed(Button.A, function () {
     fwdMotors.rightServo.fwdSetAngle(0)
 })
 input.onButtonPressed(Button.B, function () {
-    fwdMotors.rightServo.fwdSetAngle(60)
+    fwdMotors.rightServo.fwdSetAngle(45)
 })
 fwdMotors.rightServo.fwdSetAngle(0)
 let fillLevel = 0
@@ -24,12 +24,14 @@ basic.forever(function () {
     fillLevel,
     100
     )
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
         fillLevel = 75
+        basic.pause(500)
     } else {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
         fillLevel = 0
+        basic.pause(500)
     }
 })
 ```
@@ -83,7 +85,7 @@ Press the **B** button on the micro:bit. What do you notice happens?
 
 ~hint Tell Me More! 
 
-The **B** button is an **input** that triggers the instructions ``||fwdMotors:set rightServo to 60 degrees||``
+The **B** button is an **input** that triggers the instructions ``||fwdMotors:set rightServo to 45 degrees||``
 
 When the ``||fwdMotors:servo||`` rotates, the garbage bin is open! 
 
@@ -92,7 +94,7 @@ hint~
 ```blocks
 input.onButtonPressed(Button.B, function () {
 // @highlight   
- fwdMotors.rightServo.fwdSetAngle(60)
+ fwdMotors.rightServo.fwdSetAngle(45)
 })
 ```
 
@@ -104,22 +106,24 @@ Now let's test how the smart garbage bin **senses** how full it is.
 
 The ``||fwdSensors:sonar sensor||`` measures the **distance between** the waste and the top of the smart garbage bin. 
 
-If there is **less than 2 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the smart garbage bin, the bin is 75% full! 
+If there is **less than 3 cm** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the smart garbage bin, the bin is 75% full! 
  
 hint~
 
 ```blocks
 basic.forever(function () {
-      if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+      if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
         //@highlight
         fillLevel = 75
+        basic.pause(500)
+      }
  
 ```
 
 ## Step 7
 
-We need to know when the bin is 0%, 25%, 50%, and 75% full. 
+We need to know when the bin is 0%, 25% and 75% full. 
 
 What code block will help us create more **conditions** to our smart garbage bin ``||variables:fillLevel||``? 
 
@@ -135,9 +139,10 @@ hint~
 
 ```blocks 
 basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
         fillLevel = 75
+        basic.pause(500)
     } 
 // @highlight
 else if (false) {
@@ -152,7 +157,7 @@ else {
 
 ## Step 8
 
-What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **half full**?
+What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **one quarter full**?
 
 ~hint Tell Me More! 
 
@@ -160,9 +165,9 @@ What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **ha
 
 2. Make sure to look at the **simulator** to get live readings of the distance between your waste and the ``||fwdSensors:sonar sensor||``.
 
-3. We know that when the bin is **three quarters full**, there is less than **two centimeters** between the ``||fwdSensors:sonar sensor||`` and the waste in the bin. 
+3. We know that when the bin is **three quarters full**, there is less than **three centimeters** between the ``||fwdSensors:sonar sensor||`` and the waste in the bin. 
 
-4. If the bin is **50% full**, there should be less than **four centimeters** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the bin! 
+4. If the bin is **25% full**, there should be less than **seven centimeters** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the bin! 
 
 hint~
 
@@ -173,25 +178,27 @@ What code blocks should we use to tell a Waste Management Specialist when our bi
 ~hint Tell Me More! 
 
 1. Drag a ``||fwdSensors:sonar distance is under||`` block into an empty ``||logic:if else||`` condition.
-2. Set the value of the ``||fwdSensors:sonar distance||`` to be 0.04 meters 
+2. Set the value of the ``||fwdSensors:sonar distance||`` to be 0.07 meters 
 3. Change the colour of the ``||fwdSensors:LED ring||`` to another colour!
-4. Set the value of the ``||variables:fillLevel||`` variable to 50
+4. Set the value of the ``||variables:fillLevel||`` variable to 25
+5. Add a ``||basic:pause||`` block and set the time interval to 500 ms
 
 hint~
 
 ```blocks 
 {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
+    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.03, fwdSensors.ThresholdDirection.Under)) {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
         fillLevel = 75
-    } else if (fwdSensors.sonar1.fwdDistancePastThreshold(0.04, fwdSensors.ThresholdDirection.Under)) {
+        basic.pause(500)
+    } else if (fwdSensors.sonar1.fwdDistancePastThreshold(0.07, fwdSensors.ThresholdDirection.Under)) {
 // @highlight
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
+        fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
 // @highlight
-        fillLevel = 50
+        fillLevel = 25
+        // @highlight
+        basic.pause(500)
     } 
-    else if (false)
-    {}
     } else {
         fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
         fillLevel = 0
@@ -199,51 +206,6 @@ hint~
 ```
 
 ## Step 10
-
-What is the average ``||fwdSensors:sonar sensor||`` reading when the bin is **one quarter full**?
-
-~hint Tell Me More! 
-
-Remember to look at the **simulator** to get live readings of the distance between your waste and the ``||fwdSensors:sonar sensor||``.
-
-If the bin is 25% full, there should be less than **six centimeters** of space between the ``||fwdSensors:sonar sensor||`` and the waste in the bin! 
-
-hint~
-
-## Step 11 
-
-What code blocks should we use to tell a Waste Management Specialist when our bin is **25% full**? 
-
-~hint Tell Me More! 
-
-1. Drag a ``||fwdSensors:sonar distance is under||`` block into the empty ``||logic:if else||`` condition.
-2. Set the value of the ``||fwdSensors:sonar distance||`` to be 0.06 meters 
-3. Change the colour of the ``||fwdSensors:LED ring||`` to another colour!
-4. Set the value of the ``||variables:fillLevel||`` variable to 25
-
-hint~
-
-```blocks 
-basic.forever(function () {
-    if (fwdSensors.sonar1.fwdDistancePastThreshold(0.02, fwdSensors.ThresholdDirection.Under)) {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff0000)
-        fillLevel = 75
-    } else if (fwdSensors.sonar1.fwdDistancePastThreshold(0.04, fwdSensors.ThresholdDirection.Under)) {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0xff8000)
-        fillLevel = 50
-    } else if (fwdSensors.sonar1.fwdDistancePastThreshold(0.06, fwdSensors.ThresholdDirection.Under)) {
-// @highlight         
-fwdSensors.ledRing.fwdSetAllPixelsColour(0xffff00)
-// @highlight        
-fillLevel = 25
-    } else {
-        fwdSensors.ledRing.fwdSetAllPixelsColour(0x00ff00)
-        fillLevel = 0
-    }
-    })
-```
-
-## Step 12 
 
 Let's test our code! Remember to hit the `|Download|` button when you're ready to test your new settings. 
 
