@@ -171,7 +171,7 @@ hint~
 
 ## Step 9
 
-What code blocks should we use to tell a Waste Management Specialist when our bin is **50% full**? 
+What code blocks should we use to tell a Waste Management Specialist when our bin is **25% full**? 
 
 ~hint Tell Me More! 
 
