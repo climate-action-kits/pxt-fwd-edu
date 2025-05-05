@@ -6,9 +6,14 @@ datalogger=datalogger
 ```
 
 ```template
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    datalogger.deleteLog()
+})
 datalogger.setColumnTitles("Temperature")
 loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
+})
+basic.forever(function () {
     basic.showNumber(input.temperature())
 })
 ```
@@ -53,7 +58,6 @@ hint~
 ```block
     loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
-    basic.showNumber(input.temperature())
 })
 ```
 

@@ -6,17 +6,22 @@ datalogger=datalogger
 ```
 
 ```template
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    datalogger.deleteLog()
+})
 datalogger.setColumnTitles("Temperature")
 loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
+})
+basic.forever(function () {
     basic.showNumber(input.temperature())
 })
 ```
 
 ## Urban Heat Islands - Use Tutorial @showdialog
-Today, we are setting up temperature-monitoring devices to compare temperature in the two different models that you built.
+Today, we are going to compare how quickly a dry, dark model city and a damp, light model city heat up.
 
-We'll use these devices to collect temperature data and learn more about how to mitigate the urban heat island effect.
+We'll use the micro:bit's temperature sensor to collect data and learn more about how colour and moisture levels impact the urban heat island effect.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/ms-heatislands-render.webp" alt="Full model city render" style="display: block; width: 70%; margin:auto;">
 
@@ -39,46 +44,57 @@ Take a look at the code in the workspace. What do you think this code will do?
 
 ~hint Tell me more!
 - We are using the [Data Logger extension](https://microbit.org/get-started/user-guide/data-logging/) to track and save data from the [temperature sensor](https://microbit.org/get-started/features/sensors/#temperature-sensor) on the micro:bit.
-- Every _60,000 milliseconds (60 seconds or 1 minute)_, the micro:bit will take a temperature reading and save it to the data log. It will also update the LED display with this new temperature reading.
+- Every _60,000 milliseconds (60 seconds or 1 minute)_, the micro:bit will take a temperature reading and save it to the data log.
+
+- The ``||basic:forever||`` loop will ensure the micro:bit continuously displays the current temperature on its LED screen.
+
+- The ``||input:on logo pressed||`` block will clear any previously logged data when the micro:bit logo is pressed.
+
 hint~
 
 ```block
-    loops.everyInterval(60000, function () {
+loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
+})
+basic.forever(function () {
     basic.showNumber(input.temperature())
+})
+input.onLogoEvent(TouchButtonEvent.Pressed, function () {
+    datalogger.deleteLog()
 })
 ```
 
 ## Step 5
-Observe the micro:bit. What do you see on the LED screen?
-
-~hint Tell me more!
-You should see the current temperature of the model.
-hint~
-
-## Step 6
 It's time to set up our experiment! 
 
-Unplug your micro:bit. Move both models to your chosen location (e.g., under a heat lamp, near a window, or directly outside on a sunny day). Ensure both models experience the same environmental conditions.
+Unplug your micro:bit. Place the _dark_ model city under your chosen light source (e.g. heat lamp, window sill, outdoors). Position it so it receives direct light.
+
+## Step 6
+Press the micro:bit logo to erase any old data. Then, let the micro:bit collect temperature readings for a set period of time (e.g. 2 hours).
 
 ## Step 7
-Then, power on the breakout board and let the micro:bit collect temperature data for a set period of time.
+After the experiment, download your data by plugging the micro:bit back into your computer and following [these instructions](https://microbit.org/get-started/user-guide/data-logging/#reading-data).
 
 ## Step 8
-After the experiment, you'll need to analyze your data.
-
-To view the data saved on your micro:bit, follow [these instructions](https://microbit.org/get-started/user-guide/data-logging/#reading-data).
+Repeat steps 5-7 with the _light_ model city. Ensure the model is the same distance from the light source as before.
 
 ## Step 9
-Analyze the data:
-1. Compare the temperature data from your different model designs and/or locations.
+Analyze your data*:
+1. Compare the temperature data from the dry, dark model and the damp, light model.
 2. What differences do you observe in the temperature readings?
-3. Can you explain these differences based on the design of each model?
+3. What was the starting temperature of each model?
+4. How quickly did each model heat up?
+5. What was the highest temperature reached by each model?
+6. Can you explain these differences?
+
+*[Or take a look at our sample data](https://docs.google.com/spreadsheets/d/1BZM0QFmotUuUeRaMSvCKPePYzB9TCcv0LGryT8MtGmc/edit?usp=sharing)
 
 ## Reflection
 Before we wrap up:
 - Why is it important to compare data from two different models in this experiment?
-- What did you learn about how design affects temperature in urban environments?
+- What does this experiment teach us about how color and moisture affect the heating of urban environments?
+- What other factors could affect temperature in a real city that we didn't include in our models?
+- What are some ways that cities use this information to design cooler, more sustainable urban spaces?
 
 ## Finished
 Click the ``|Done|`` button to finish this tutorial.
