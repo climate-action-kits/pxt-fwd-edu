@@ -1,6 +1,6 @@
 {
     "name": "fwd-edu-solar",
-    "version": "1.49.0",
+    "version": "1.49.1",
     "description": "FWD Edu Climate Action Kit Gen. 2 Solar",
     "license": "MIT",
     "dependencies": {
