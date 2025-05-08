@@ -86,7 +86,7 @@ basic.forever(function () {
 
 ```
 
-## Habitat Monitoring: Modify Tutorial @showdialog
+## Habitat Monitoring - Modify Tutorial @showdialog
 
 Today, we are building a habitat monitoring device to collect data in the field! 
 
