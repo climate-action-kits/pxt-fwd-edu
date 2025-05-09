@@ -95,7 +95,6 @@ hint~
 ```blocks
 loops.everyInterval(60000, function () {
     datalogger.log(datalogger.createCV("Temperature", input.temperature()))
-    basic.showNumber(input.temperature())
     // @highlight
     if (input.temperature() > maxTemp) {
         // @highlight
@@ -140,7 +139,7 @@ Use another conditional statement and variable to play a sound when the temperat
 ~hint Tell me more!
 1. Create a **variable** called ``||Variables:tempThreshold||`` and set it to the threshold temperature.
 
-2. Use a **conditional statement** inside the ``||Loop:loop||`` to check if the current ``||Input:temperature||`` is greater than ``||Variable:tempThreshold||``.
+2. Use a **conditional statement** inside the ``||Loop:loop||`` to check if the current ``||Input:temperature||`` is greater than ``||Variables:tempThreshold||``.
 
 3. If it is, use the ``||Music:play tone||`` block to play a sound.
 
@@ -171,10 +170,40 @@ loops.everyInterval(60000, function () {
 })
 ```
 
+## Step 11
+Click the ``|Download|`` button to download the code to your micro:bit.
+
+## Step 12
+Set up your experiment! 
+
+Unplug the micro:bit. Place the your first model city under your chosen light source (e.g. heat lamp, window sill, outdoors). Position it so it receives direct light.
+
+## Step 13
+Press the micro:bit logo to erase any old data. Then, let the micro:bit collect temperature readings for a set period of time (e.g. 2 hours).
+
+## Step 14
+After the experiment, download your data by plugging the micro:bit back into your computer and following [these instructions](https://microbit.org/get-started/user-guide/data-logging/#reading-data).
+
+## Step 15
+Repeat steps 11-14 with the second model city. Ensure the model is the same distance from the light source as before.
+
+## Step 16
+Analyze your data*:
+1. Compare the temperature data from the damp, light model and the dry, dark model.
+2. What differences do you observe in the temperature readings?
+3. What was the starting temperature of each model?
+4. How quickly did each model heat up?
+5. What was the highest temperature reached by each model?
+6. Can you explain these differences?
+
+*[Or take a look at our sample data](https://docs.google.com/spreadsheets/d/1BZM0QFmotUuUeRaMSvCKPePYzB9TCcv0LGryT8MtGmc/edit?usp=sharing)
+
 ## Reflection
-- How might adding code to track the maximum and minimum temperature improve your tracking device?
-- How can a temperature threshold alert be useful in a real-world scenario?
-- What challenges did you encounter while modifying the code, and how did you overcome them?
+Before we wrap up:
+- Why is it important to compare data from two different models in this experiment?
+- What does this experiment teach us about how colour and moisture affect the heating of urban environments?
+- What other factors could affect temperature that we _didn't_ include in our models?
+- What are some ways that cities can use this information to design cooler, more sustainable urban spaces?
 
 ## Finished
 Click the ``|Done|`` button to finish this tutorial.
