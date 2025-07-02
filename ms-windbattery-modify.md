@@ -507,7 +507,7 @@ Think about something in this project that was tricky.
 
 How did you figure it out? How did that make you feel?
 
-What is one additional thing you could do to improve your farm?
+What is one additional thing you could do to improve your project?
 
 ## Finished! @showdialog
 In the next step, you can click the ``|Done|`` button to finish the tutorial. 
