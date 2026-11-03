@@ -41,7 +41,7 @@ Let's add some starter code to make sure our garbage bin opens and closes when w
 
 ## Step 1 @showdialog
 
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
 
@@ -185,11 +185,11 @@ Our smart garbage bin is a **rectangular prism**! Let's calculate the area, surf
 
 ## Step 10
 
-Using a ruler or a **back to back connector cube** from the Climate Action Kit, identify the **length, width, and height** of our smart garbage bin container.
+Using a ruler or a **back to back connector cube** from your kit, identify the **length, width, and height** of our smart garbage bin container.
 
 ~hint Tell Me More!
 
-Using a back to back connector cube from the Climate Action Kit, we measured the following values for our rectangular prism: 
+Using a back to back connector cube from your kit, we measured the following values for our rectangular prism: 
 
 * Width: 3 Back to Back Connector Cubes
 * Length: 4 Back to Back Connector Cubes

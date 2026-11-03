@@ -90,7 +90,7 @@ We need to connect our project to the computer to make it come to life with code
 The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 60%; margin:auto;">
 
@@ -201,7 +201,7 @@ Now that we have **used** our code to understand how our satellite **collects da
 Remember that our project uses electronic wires and sensors that should not get wet! If any part other than the building blocks gets wet, **turn off your project and fully dry it before continuing.**
 
 ## Experiment Step 1
-Using craft materials, or building blocks from the Climate Action Kit, let's build a **shelf of land** for our ice to sit on! 
+Using craft materials, or building blocks from your kit, let's build a **shelf of land** for our ice to sit on! 
 
 * **Land Ice** like glaciers sit frozen on land, and **flow** into the ocean.
 * **Sea Ice** like icebergs float in the water, and are **already sitting** in the ocean when they melt. 

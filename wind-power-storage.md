@@ -12,7 +12,7 @@ Welcome to Power Storage for Wind Energy Coding Tutorial.
 In this coding tutorial, we will use the LED lights to indicate the level of 'charge' the wind turbine's battery has based on how fast the wind turbine is spinning. The faster it's spinning, the higher the charge. The wind turbine should move in the same direction as the dial is being turned, and use the button function to stop. When the wind turbine is not moving, and therefore not generating power, the battery is considered 'dead' and should not display any lights.
 
 ## Step 3 @showdialog
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4
@@ -29,7 +29,7 @@ the Touch and the Servo Motors along side the Pump.
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
 ## Step 7
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try turning the Dial on your project, the virtual  simulator will react to it.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try turning the Dial on your project, the virtual  simulator will react to it.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8

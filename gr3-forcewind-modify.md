@@ -52,7 +52,7 @@ fwdSensors.dial1.fwdOnDialTurned(fwdSensors.DialDirection.CW, function (differen
 ```
 
 ## Code Step 1 @showdialog
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer. 
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" style="display: block; width: 45%; margin:auto;">
 

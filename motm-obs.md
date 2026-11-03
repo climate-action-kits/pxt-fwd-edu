@@ -12,7 +12,7 @@ Plug your USB cable into the micro:bit.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/connect-microbit.gif)
 
 ## Step 3 @showdialog
-Insert it into the Climate Action Kit board. 
+Insert it into the Breakout Board. 
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-resized.png)
 
 ## Step 4 @showhint

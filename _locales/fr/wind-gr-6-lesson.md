@@ -11,7 +11,7 @@ Bienvenue dans le tutoriel de codage pour Comment les turbines éoliennes captur
 Dans ce tutoriel, nous allons calculer le temps des révolutions, puis nous allons l’utiliser pour résoudre l’équation permettant de trouver le (TPM) de la turbine éolienne.
 
 ## Step 3 @showdialog
-Allume la plaque de la trousse d’action climatique.
+Allume la plaque de connexion.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -22,7 +22,7 @@ Clique sur les trois points à côté du bouton ``|Download|`` et puis, clique s
 Ensuite, clique sur le bouton ``|Download|`` pour télécharger le projet vide afin de  démarrer les simulateurs.
 
 ## Step 6 @showhint
-Regarde sous le simulateur @boardname@ pour voir la carte de la trousse d’action climatique et les capteurs connectés.  Essaie de tourner le cadran de ton projet, le simulateur virtuel y réagira.![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
+Regarde sous le simulateur @boardname@ pour voir la plaque de connexion et les capteurs connectés.  Essaie de tourner le cadran de ton projet, le simulateur virtuel y réagira.![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 7
 Clique sur ``||fwdSensors:Capteurs||``. Ensuite, fait glisser et dépose le bloc

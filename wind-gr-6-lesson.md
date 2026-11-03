@@ -12,7 +12,7 @@ In this tutorial we will calculate the time for revolutions and then use it to s
 find the (RPM) of the Wind Turbine.
 
 ## Step 3 @showdialog
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -24,7 +24,7 @@ Next, follow the steps to pair your micro:bit.
 Next, click the ``|Download|`` button to download the blank project to start-up the simulators.
 
 ## Step 6 @showhint
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try turning the Dial on your project, the virtual  simulator will react to it.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try turning the Dial on your project, the virtual  simulator will react to it.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 7
