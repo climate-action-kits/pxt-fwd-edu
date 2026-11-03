@@ -76,7 +76,7 @@ We need to connect our model to the computer to make it come to life with code!
 The code will be the instructions that tell our micro:bit what to do.
 
 ## Code Step 1 @showdialog
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
@@ -209,7 +209,7 @@ What are some limitations of this model? Does it show _everything_ that happens 
 - This model doesn’t show the ways corals can recover and become healthy again.
 - The model doesn’t show how coral bleaching affects other animals that live in the reef.
 
-Pick one of these limitations. How could we improve the model to address it? What components of the Climate Action Kit would you add?
+Pick one of these limitations. How could we improve the model to address it? What components of your kit would you add?
 hint~
 
 ## Congratulations! @showdialog

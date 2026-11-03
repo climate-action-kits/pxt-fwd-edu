@@ -12,7 +12,7 @@ Bienvenido al Tutorial de Codificación de Impulsando el Futuro con Energía Eó
 En este tutorial, codificaremos el componente selector para girar la turbina eólica en la misma dirección en la que este se gira. Utiliza la función de botón del selector para detener la turbina eólica.
 
 ## Step 3 @showdialog
-Enciende la placa del Kit de Acción por el Clima.
+Enciende la placa de conexiones.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -27,7 +27,7 @@ Así es como deberían de verse los simuladores después de realizar la descarga
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
 ## Step 7 @showhint
-Mira debajo del simulador @boardname@ para ver la placa de Acción por el Clima y los sensores conectados. Intenta girar el selector en tu proyecto, el simulador virtual reaccionará a él.
+Mira debajo del simulador @boardname@ para ver la placa de conexiones y los sensores conectados. Intenta girar el selector en tu proyecto, el simulador virtual reaccionará a él.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8

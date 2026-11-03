@@ -11,7 +11,7 @@ Welcome to Autonomous Electric Vehicles of the Future
 In this coding tutorial Use the EVs Sonar Sensor to avoid obstacles in its path by following a preset collision avoidance mechanism.
 
 ## Step 3 @showdialog
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -27,7 +27,7 @@ the Servo Motors along side the Pump.
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/board-no-sensors.png)
 
 ## Step 7 @showhint
-Look below the @boardname@ simulator to see the Climate Action Board and the connected devices. Try to turn the motors on and off using
+Look below the @boardname@ simulator to see the Breakout Board and the connected devices. Try to turn the motors on and off using
 the simulator and observe the changes.
 ![servo-nocode](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-sim-tree.gif)
 

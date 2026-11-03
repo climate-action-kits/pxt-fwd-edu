@@ -76,7 +76,7 @@ basic.forever(function () {
 
 ```
 ## Code Step 1 @showdialog
- Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is plugged into your computer. 
+ Make sure your Breakout Board is turned on and your micro:bit is plugged into your computer. 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" width="400">
 
 

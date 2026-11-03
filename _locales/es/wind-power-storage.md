@@ -12,7 +12,7 @@ Bienvenido al Tutorial de Codificación de Almacenamiento de energía para energ
 En este tutorial de codificación, usaremos las luces LED para indicar el nivel de "carga" que tiene la batería de la turbina eólica en función de la velocidad a la que gira dicha  turbina. Cuanto más rápido gire, mayor será la carga. La turbina eólica debe moverse en la misma dirección en la que se gira el selector y debe detenerse al momento que se presiona el botón. Cuando la turbina eólica no se mueve y, por lo tanto, no genera energía, la batería se considera "muerta" y no debe mostrar ninguna luz.
 
 ## Step 3 @showdialog
-Enciende la placa del Kit de Acción por el Clima.
+Enciende la placa de conexiones.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4
@@ -27,7 +27,7 @@ Así es como deberían de verse los simuladores después de realizar la descarga
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
 ## Step 7
-Mira debajo del simulador @boardname@ para ver la placa de Acción por el Clima y los sensores conectados. Intenta girar el selector en tu proyecto, el simulador virtual reaccionará a él.
+Mira debajo del simulador @boardname@ para ver la placa de conexiones y los sensores conectados. Intenta girar el selector en tu proyecto, el simulador virtual reaccionará a él.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8

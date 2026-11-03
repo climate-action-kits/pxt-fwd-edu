@@ -5,7 +5,7 @@ In this tutorial, you'll learn how to code a step counter using the micro:bit.
 
 <img src="https://i0.wp.com/learn.forwardedu.com/wp-content/uploads/2024/09/project-step-counter.webp?resize=1170%2C780&ssl=1" alt="micro:bit step counter strapped to child's ankle" style="display: block; width: 50%; margin:auto;">
 
-This project will introduce you to the Climate Action Kit tutorial format, detailing how structured steps and features like "Tell Me More!" and lightbulb hints can help guide your students through the coding process. 
+This project will introduce you to the Forward Education tutorial format, detailing how structured steps and features like "Tell Me More!" and lightbulb hints can help guide your students through the coding process. 
 
 Click 'Ok' to get started!
 

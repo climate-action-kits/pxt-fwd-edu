@@ -104,7 +104,7 @@ We are going to do this in three parts:
 Now that your station is built, let’s connect it to your computer and upload code so it can detect ships and issue alerts.
 
 ## Code Step 1 @showdialog
-IMPORTANT! Make sure your Climate Action Kit Breakout Board is turned on and your micro:bit is connected to your computer.
+IMPORTANT! Make sure your Breakout Board is turned on and your micro:bit is connected to your computer.
 
 <img src="https://raw.githubusercontent.com/climate-action-kits/pxt-fwd-edu/main/tutorial-assets/pluganim.webp" alt="Plug micro:bit into USB port on computer" style="display: block; width: 40%; margin:auto;">
 
@@ -237,7 +237,7 @@ if (fwdSensors.sonar1.fwdDistance() > 0.1) {
 ```
 
 ## Use Step 9
-What additional features could make this station more effective at protecting its Hope Spot? How might you use the Climate Action Kit to incorporate these features?
+What additional features could make this station more effective at protecting its Hope Spot? How might you use your kit to incorporate these features?
 
 ~hint Tell me more!
 - **Data Logging:** Recording each detected ship’s distance and timestamp could help track ship activity trends.

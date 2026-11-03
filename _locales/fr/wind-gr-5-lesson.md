@@ -12,7 +12,7 @@ Bienvenue au tutoriel de codage Alimenter l’avenir avec l’énergie éolienne
 Dans ce tutoriel, nous allons coder le composant sélecteur pour faire tourner la turbine éolienne dans le même sens que le sélecteur tourne. Utilise la fonction bouton du sélecteur pour arrêter la turbine éolienne.
 
 ## Step 3 @showdialog
-Allume la plaque du kit d’Action pour le Climat.
+Allume la plaque de connexion.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -27,7 +27,7 @@ Voici à quoi devraient ressembler les simulateurs une fois le téléchargement 
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
 ## Step 7 @showhint
-Regarde sous le simulateur micro:bit pour voir la plaque d’Action pour le Climat et les capteurs connectés. Essaye d’activer le sélecteur sur votre projet, le simulateur virtuel y réagira.
+Regarde sous le simulateur micro:bit pour voir la plaque de connexion et les capteurs connectés. Essaye d’activer le sélecteur sur votre projet, le simulateur virtuel y réagira.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8

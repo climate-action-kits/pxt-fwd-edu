@@ -12,7 +12,7 @@ Welcome to Advanced Agriculture Coding Tutorial
 In this coding tutorial we will build a moisture level indicator using the LED Ring's pixels.
 
 ## Step 3 @showdialog
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -23,7 +23,7 @@ Click three dots besides ``|Download|`` button, and click on _Connect Device_. N
 Next, click the ``|Download|`` button to download the blank project to start-up the simulators.
 
 ## Step 6 @showhint
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try holding the Moisture Sensor or dipping it in a glass of water. See how the virtual simulators react.
 ![moisture](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-4-moisture.gif)
 
 ## Step 7

@@ -12,7 +12,7 @@ Bienvenue dans le tutoriel de codage pour Stockage d’énergie pour l’énergi
 Dans ce tutoriel de codage, nous utiliserons les lumières DEL pour indiquer le niveau de « charge » de la batterie de l'éolienne en fonction de la vitesse de rotation de l'éolienne. Plus elle tourne vite, plus la charge est élevée. L'éolienne doit tourner dans le même sens que le cadran, et utiliser le bouton pour s'arrêter. Lorsque l'éolienne ne bouge pas et ne produit donc pas d'électricité, la batterie est considérée comme "à plat" et ne doit pas s'allumer.
 
 ## Step 3 @showdialog
-Allume la trousse d’action climatique.
+Allume la plaque de connexion.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4
@@ -27,7 +27,7 @@ Voici à quoi devraient ressembler les simulateurs après un téléchargement r�
 ![initial-dowload-gif](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/initial-download.gif)
 
 ## Step 7
-Regarde sous le simulateur micro:bit pour voir la carte de la trousse d’action climatique et les capteurs connectés.  Essaie de tourner le cadran de ton projet, le simulateur virtuel y réagira.
+Regarde sous le simulateur micro:bit pour voir la plaque de connexion et les capteurs connectés.  Essaie de tourner le cadran de ton projet, le simulateur virtuel y réagira.
 ![wind](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-6-Dial.gif)
 
 ## Step 8

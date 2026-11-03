@@ -11,7 +11,7 @@ Welcome to Harnessing the Sun's Energy with Solar Panels Coding Tutorial
 In this coding tutorial we will move the solar panel using the positional servo motor from east to west in small increments to search for sunlight. When sufficient sunlight is detected by the solar sensor, have the solar panel stop in that position for as long as optimal sunlight is present.
 
 ## Step 3 @showdialog
-Turn on the Climate Action Kit board.
+Turn on the Breakout Board.
 ![breakout board](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/breakout-turn-on.png)
 
 ## Step 4 @showhint
@@ -23,7 +23,7 @@ Next, follow the steps to pair your micro:bit.
 Next, click the ``|Download|`` button to download the blank project to start-up the simulators.
 
 ## Step 6 @showhint
-Look below the @boardname@ simulator to see the Climate Action Board and the connected sensors. Try interacting with the Solar Sensor on your project. Cover and uncover the sensor to see the light percentage change on your virtual simulator.
+Look below the @boardname@ simulator to see the Breakout Board and the connected sensors. Try interacting with the Solar Sensor on your project. Cover and uncover the sensor to see the light percentage change on your virtual simulator.
 ![solar](https://climate-action-kits.github.io/pxt-fwd-edu/tutorial-assets/simulator-8-Solar.gif)
 
 ## Step 7
